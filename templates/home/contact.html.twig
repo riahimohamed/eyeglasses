@@ -1,0 +1,203 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Contact' %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/faq.css') }}"/>
+{% endblock %}	
+
+{% block body %}
+
+<div itemprop="mainContentOfPage" id="content" class="col1-layout">
+
+    <div id="content-header"></div>
+
+    <div class="mainContent">
+        <div class="faq_Q">
+			<h1>Besoin d'aide ?<span>Laissez vous guider...</span></h1>
+			<div class="leftFaq_Q">
+			<img src="https://www.optic2000.com/skin/frontend/default/o2v2/images/Ques-left.jpg">
+			</div>
+			<div class="rightFaq_Q">
+				<div class="faqBar"></div>
+				<div class="FaqQuestion">
+				<h1>Vous avez des questions, des suggestions...</h1>
+				<h3>Nous sommes à votre écoute et à votre service.</h3>
+
+				</div>
+			</div>
+		</div>
+        <div class="Question">
+            <div class="leftQuestion">
+                <ul class="tabs">
+
+                    <li id="tab1" class="LiLeft active" onclick="showTab(1)">
+                        <div>
+                            <div class="LiLeftLeft">
+                                <a href="javascript:void(0)" class="Qmail active"></a>
+                            </div>
+                            <div class="LiLeftRight">
+                                <p class="active" id="p1">Par formulaire</p>
+
+                            </div>
+                        </div>
+                        <div class="LiRight">
+                            <a href="javascript:void(0)" id="a1" class="faq-next active"></a>
+                        </div>
+                    </li>
+
+                    <li id="tab2" class="LiLeft" onclick="showTab(2)">
+                        <div>
+                            <div class="LiLeftLeft">
+                                <a href="javascript:void(0)" class="faq-tel"></a>
+                            </div>
+                            <div class="LiLeftRight">
+                                <p id="p2" class="">Par téléphone</p>
+
+                            </div>
+                        </div>
+                        <div class="LiRight">
+                            <a href="javascript:void(0)" id="a2" class="faq-next"></a>
+                        </div>
+                    </li>
+
+                    <li id="tab3" class="LiLeft" onclick="showTab(3)">
+                        <div>
+                            <div class="LiLeftLeft">
+                                <a href="javascript:void(0)" class="faq-courrier"></a>
+                            </div>
+                            <div class="LiLeftRight">
+                                <p id="p3" class="">Par Courrier</p>
+                            </div>
+                        </div>
+                        <div class="LiRight">
+                            <a href="javascript:void(0)" id="a3" class="faq-next last"></a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="panes" class="panes">
+                <div id="pane_3" class="Qpanesf" style="display: none;">
+                    <div class="rightQuestion">
+                        <h2>Par courrier</h2>
+                        <br>Service Consommateurs
+                        <br>5 avenue Newton
+                    </div>
+                </div>
+                <div id="pane_2" class="Qpanesf" style="display: none;">
+                    <div class="rightQuestion">
+                        <h2>Par téléphone</h2>
+                        <br> Tèl. : <b>20.001.001</b>
+                        <br>
+                        <span>(prix d'un appel local)</span>
+                    </div>
+                </div>
+
+                <div id="pane_1" style="display: block;" class="Qpanesf">
+
+                	{% if app.user %}
+                		{% set lastname = app.user.lastname %}
+                		{% set firstname = app.user.firstname %}
+                		{% set email = app.user.email %}
+                		{% set tel = app.user.tel %}
+                	{% else %}
+                		{% set lastname = null %}
+                		{% set firstname = null %}
+                		{% set email = null %}
+                		{% set tel = null %}
+                	{% endif %}
+
+                    {{ form_start(form) }}
+                        <div class="rightQuestion">
+                            <h2>Formulaire</h2>
+                            
+                            <div class="civilite_Q">
+                                <label for="civilite" class="required">civilité<span>*</span></label>
+                                <div class="input-box">
+                                    <span>
+					            	{{ form_row(form.civility,
+					            			{'attr': {'class': 'input-text required-entry validation-passed'},
+					            			'label': false}
+					            	) }}
+					            	</span>
+                                </div>
+                                <div class="nom_Q">
+                                    <div class="nom_Q_left">
+                                        <label for="name" class="required">Nom<span>*</span></label>
+                                        <div class="input-box">
+                                            {{ form_row(form.lastname,
+					            					{'attr': {'class': 'QInput nom input-text required-entry validation-passed'},
+					            					'value': lastname,
+					            					'label': false}
+					            			) }}
+                                        </div>
+                                    </div>
+                                    <div class="prenom_Q">
+                                        <label for="prenom" class="required">Prénom<span>*</span></label>
+                                        <div class="input-box">
+                                            {{ form_row(form.firstname,
+					            					{'attr': {'class': 'QInput nom input-text required-entry validation-passed'},
+					            					'value': firstname,
+					            					'label': false}
+					            			) }}
+                                        </div>
+                                    </div>
+                                    <div class="clear_both"></div>
+                                </div>
+                                <div class="nom_Q">
+                                    <div class="nom_Q_left">
+                                        <label for="email" class="required">Email<span>*</span></label>
+                                        <div class="input-box">
+                                            
+                                            {{ form_row(form.email,
+					            					{'attr': {'class': 'QInput nom input-text required-entry validate-email validation-passed'},
+					            					'value': email,
+					            					'label': false}
+					            			) }}
+                                        </div>
+                                    </div>
+                                    <div class="prenom_Q">
+                                        <label for="telephone" class="required">Téléphone</label>
+                                            {{ form_row(form.tel,
+					            					{'attr': {'class': 'QInput nom input-text required-entry validation-passed'},
+					            					'value': tel,
+					            					'label': false}
+					            			) }}
+                                        </div>	
+                                    </div>
+                                    <div class="clear_both"></div>
+                                </div>
+                                <div class="message_Q">
+                                    <label for="comment" class="required">Message<span>*</span></label>
+                                    <div class="input-box">
+                                        {{ form_row(form.message,
+				            					{'attr': {'class': 'required-entry input-text QInput area validation-failed'},
+				            					'label': false}
+					            		) }}
+                                    </div>
+                                </div>
+                                <div class="actionQ">
+                                    
+                                    <div class="EnvoyerD">
+                                        <button type="submit" title="Valider" class="EnvoyerD2 validation-passed" id="button">
+                                        	<span>Envoyer ma demande</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="map" style="margin-top:15px;">
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6384.460892011083!2d10.159390244640784!3d36.86090249130655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd337f5e7ef543%3A0xd671924e714a0275!2sTunis!5e0!3m2!1sfr!2stn!4v1573974052457!5m2!1sfr!2stn" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+
+</div>
+
+{% endblock %}

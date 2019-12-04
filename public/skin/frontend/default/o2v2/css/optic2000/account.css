@@ -1,0 +1,91 @@
+.customer-main {background: #ffffff; padding: 10px; font-family:"AvenirLTStd55Roman";}
+.customer-title {text-transform: capitalize;}
+.customer-section {padding: 5px; margin: 25px 5px; background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/account/pattern-stripes.png');}
+.customer-section > .customer-section-in {padding: 2px 0px 2px 20px; background: #ffffff;}
+.customer-section-content {display: none; font-size: 1.1em;}
+.customer-section-order-recap {padding: 10px;}
+.customer-section-order-recap-item {width: 100%; padding: 5px;}
+.customer-section-header {cursor: pointer;}
+.customer-section-header.open:before {content: "\25be";}
+.customer-section-header:before {content: "\25b8"; font-size: 48px; float: right; position: relative; bottom: 19px; right: 25px;}
+div.customer-section-order-recap-header{background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/account/pattern-stripes.png'); padding: 5px 0 5px 0; width: 927px}
+div.customer-section-order-recap-header>div{background: white; padding: 10px 0 10px 0;}
+div.customer-section-order-recap-header>div>div{padding: 0 10px 0 15px;}
+.customer-section-order-recap-header>div>div>p {letter-spacing: 1px; font-size: 0.7em; color: #a9a9a9;}
+.customer-section-order-recap-header>div>div>p>span {padding-right: 10px;}
+.customer-section-order-recap-header>div>div>p>span>span {color: black; font-weight: bold;}
+.customer-section-order-recap-header>div>div>p:first-child {font-size: 1.1em; letter-spacing: 0px; font-weight: bold; color: #000000;}
+.table-cell {display: table;padding: 10px 0 10px 15px;}
+.table-cell.address-display {padding: 15px 0 15px 15px !important;}
+div.cell {display: table-cell; vertical-align: middle;}
+div.cell-status {display: table-cell; vertical-align: top;}
+div.align-right {text-align: right;}
+div.half-page{width: 450px}
+.item-img {width: 350px; align-content: center; vertical-align: middle;}
+.item-description {width: 480px; vertical-align: middle;}
+.item-price {text-align: right;}
+.item-price>p {padding-right: 40px}
+.bold {font-weight : bold;}
+hr {width: 800px; align-content: center; color: #a9a9a9; padding: 0px; width: 800px; margin: 0 auto;}
+.order-return-form>a {color: black; font-weight: bold; font-size: 1.1em;}
+.modif-link {color: black; font-weight: bold; letter-spacing: 1px; font-size: 0.9em;}
+.order-status {text-transform: capitalize; color: orange;}
+.order-status:before {margin-right: 10px; font-family: sans-serif; font-weight: normal;}
+.order-status.pending, .order-status.processing {color: orange;}
+.order-status.complete {color: green;}
+.order-status.new {color: orange;}
+.order-status.pending:before {content: "\231b";}
+.order-status.finished {color: green; content: "\2713";}
+.capitalize {text-transform: capitalize;}
+.uppercase {text-transform: uppercase;}
+.customer-section-content {padding-right: 0px;}
+.customer-section-address {padding: 0 10px 0 10px;}
+.customer-section-address>ul {padding-top:  20px;}
+.customer-address {font-size: 1.2em; font-weight: bold; background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/account/pattern-stripes.png'); padding: 5px 0 5px 0; margin-right: 10px}
+div.customer-address>div{background-color: white; padding: 10px 0 10px 10px;}
+.bullet-point>li {list-style: disc; margin-left: 25px;}
+.purple-btn {background-color: #8183C2; color: white; padding: 5px 20px 5px 20px; text-transform: uppercase;}
+.customer-logout-button>a {color: black; float: right; text-transform: uppercase;}
+.not-loggin {height: 400px; background-color: white; padding: 20px;}
+.not-loggin>p {font-size: 1.2em;}
+.success-msg {border: solid green 1px; color: green; padding: 10px; margin:  10px 5px;}
+.tunnel-forms>p:first-child {font-size: 1.5em; text-transform: uppercase; font-weight: bold; padding-top: 20px;}
+article.tunnel-forms {margin: 0 210px;}
+.customer-address-form {background-color: white;}
+.customer-address-form>form>ul>li {padding: 10px 40px;}
+.customer-address-form>form>ul>li>label {display: block; font-weight: bold;}
+.customer-address-form>form>ul>li>span {font-weight: bold;}
+.customer-address-form>form>ul>li>input[type=text] {border: solid lightgrey 1px; color: grey; width: 400px; text-indent: 5px;}
+.customer-address-form>form>ul>li>select {border: solid lightgrey 1px; color: grey; text-indent: 5px;}
+input[type=submit].purple-btn {text-transform: uppercase; color: white; background-color: #8183c2; font-size: 1.2em; padding: 5px 10px 5px 10px;}
+.customer-address-border {padding: 5px 5px 5px 5px; background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/account/pattern-stripes.png');}
+.customer-address-base {padding: 20px; background-color: #fff;}
+.customer-back {background-color: #fff; font-weight: bold; color: #000; padding: 0 0 0 30px;}
+.customer-info {background-color: white;}
+.customer-info>form>ul>li {padding: 10px 20px 10px 40px;}
+.customer-info>form>ul>li>label {display: block; font-weight: bold;}
+.customer-info>form>ul>li>span {font-weight: bold;}
+.customer-info>form>ul>li>input[type=text],.customer-info>form>ul>li>input[type=password] {border: solid lightgrey 1px; color: grey; width: 400px; text-indent: 5px;}
+.customer-info>form>ul>li>select {border: solid lightgrey 1px; color: grey; text-indent: 5px;}
+.customer-info>form>ul>li>#date-of-birth {border: solid lightgrey 1px; color: grey; text-indent: 5px; width: 150px;}
+input[type=submit].purple-btn {text-transform: uppercase; color: white; background-color: #8183c2; font-size: 1.2em; padding: 5px 10px 5px 10px; margin: 15px 0px 10px 40px;}
+h4 {padding: 10px 10px 0px 10px; font-size: 1.4em; background-color: white; margin: 0;}
+.footer-container h4 {background-color: transparent!important;}
+.customer-back {background-color: #fff; font-weight: bold; color: #000; padding: 0 0 0 30px;}
+.customer-info-base {background-color: #fff; padding: 20px;}
+.customer-info-border {padding: 5px 5px 5px 5px; background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/account/pattern-stripes.png'); margin: 10px 0 10px 0;}
+section.tunnel {padding-left: 175px !important;}
+article.tunnel-forms>p {padding: 0 0 0 20px;}
+article.tunnel-forms>p.triangle { height: 22px;  padding: 0 0 0 80px;}
+div.customer-main>ul.messages {margin: 0 !important;}
+div.info-display{background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/account/pattern-stripes.png');padding-top: 5px !important; margin: 0 17px 0 0}
+div.info-display>div{background: white;}
+div.customer-section-content>div.table-cell>div.half-page>ul>li>span{font-weight: bold;}
+div.customer-register {background-color: #fff;max-width: 575px;margin: 0 auto;display: block;}
+div#content>h1 {padding: 20px 0 0 0; font-size: 20px; font-family: "AvenirLTStd55Roman",Helvetica, Arial, sans-serif; margin: 0;}
+div.customer-register article.tunnel-forms {margin: 0 auto; min-height: 0; width: auto; vertical-align: initial; display: block;}
+div.customer-register article.tunnel-forms table {border: none;}
+div.customer-info-separator{padding: 5px 0 0 0;margin: 0 20px 0 0; background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/account/pattern-stripes.png');}
+#register-customer-form {width: auto;margin: 0 auto;}
+.note {color: #8C8C8C; font-style: italic; font-family: "AvenirLTStd55Roman"; font-size: 12px; font-weight: normal !important; margin: 0;}
+li.error-msg>ul {border: 1px solid #F00; color: #D00; font-family: "AvenirLTStd55Roman"; font-size: 13px; padding: 10px; font-weight: normal;}

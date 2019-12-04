@@ -1,0 +1,9 @@
+
+<form id="search_mini_form" action="{{ path('search_result') }}" method="get" autocomplete="off">
+    <input id="search" type="text" name="query" placeholder="je recherche une marque, une référence..">
+
+    <button type="submit" title="Search" class="button" id="searchButton" >
+    </button>
+</form>
+<div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
+<div id="search_modal" style="display: none;"></div>

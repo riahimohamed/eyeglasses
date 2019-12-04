@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Profile' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/optic2000/acecustomer.css') }}" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/jquery-ui.min.css') }}" media="all"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/base/default/CapAdresse/style.css') }}" media="all"/>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('js/jq/jquery-ui.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/optic2000/enhancedcustomer.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/optic2000/acecustomer.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    
+<div itemprop="mainContentOfPage" id="content">
+    <div class="acecustomer-full-page">
+        <div class="acecustomer-container">
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="customer-breadcrumbs">
+                        <ul class="list-nav">
+                            <li class="item-nav">
+                                <a class="link-nav" href="{{ path('home') }}">Accueil</a>
+                            </li>&nbsp;
+                            <li class="item-nav font-small-bold">
+                                <a class="link-nav" href="">&gt; {{ menuTitle }}</a>
+                            </li>&nbsp;
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                
+    <!-- Menu -->
+        {% include 'header/submenu.html.twig' %}
+    <!-- /Menu -->
+
+    <div class="ten columns">
+        <div class="customer-content-wrapper">
+        <div class="customer-content">
+        <div class="acecustomer-flex-container ace-block-information">
+
+        <!--  Block titre  -->
+        <div class="row row-title">
+            <h1 class="font-title-bold">Mes {{ menuTitle }}</h1>
+        </div>
+
+        {% if messages %}
+        {% for message in messages %}
+        <div class="row">
+		    <div class="nine columns">
+
+	            <div class="ace-mesconseilsvisions-sm-block" style="height:auto">
+                    <!--<img class="ace-img-force-cover" src="/media/wysiwyg/conseil/tendance-western.png" alt="">-->
+                    <div class="mail-img">
+                        <div class="mail-icon">
+                           <span class="fa fa-envelope"></span> 
+                        </div>
+                    </div>
+                    
+	                <div class="ace-mesconseilsvisions-sm-block-text">
+	                    <h4 class="title-category font-size-open-h4 font-color-purple">
+	                    	Nom: {{ message.lastname }}<br> 
+	                    	Prénom: {{ message.firstname }}
+	                    </h4>
+	                    <p>Email: {{ message.email }}</p>
+	                    <p>Tel: {{ message.tel }}</p>
+                        <p><strong>message</strong></p>
+                        <p class="font-size-small">
+                            {{ message.message }}
+                        </p>
+	                </div>
+	            </div>
+		    </div>
+		</div>
+        {% endfor %}
+        {% endif %}
+        
+    	</div>
+	</div>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="customer-footer">
+
+        {% include 'footer/subfooter.html.twig' %}
+        
+    </div>
+    </div>
+</div>
+{% endblock %}

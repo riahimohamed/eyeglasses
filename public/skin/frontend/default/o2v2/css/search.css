@@ -1,0 +1,171 @@
+/*.searchPageHeader{background: #FFF; color:#000; padding: 20px 20px;height: 60px;}
+.searchPageHeader h1{font-size:13px;font-weight:normal;}
+.searchPageLabel{font-size:32px;text-transform: uppercase;} 	 
+
+.searchOnglets{background: #b6b6da; color:#FFF; padding:0px;}
+
+.bottom-toolbar #search.toolbar {
+	margin-top: 0px;
+	position: relative;
+width: 760px;
+}
+
+.sort-by div.selector span {
+    width: 119px !important;
+}
+.sort-by div.selector select {
+	width: 150px;
+}
+.sort-by div.selector {
+    width: 143px !important;
+}
+.bottom-toolbar{
+	position: absolute;
+	bottom: 0px;
+	width: 761px;
+}
+.serachPanes .bottom-toolbar {
+	bottom: -36px;
+}
+.bottom-toolbar #search.toolbar {
+	margin-top: 0px;
+	position: relative;
+width: 760px;
+}
+.productsGrid {
+	position:relative; 
+	float: left; 
+	width: 761px;
+	height: 100%;
+}
+productsGridVenteFlash{
+	position:relative; 
+	float: left; 
+	width: 100%;
+	height: 100%;
+}
+.whiteRows{
+	background-color: #FFFFFF;
+    height:127px;
+    margin-left: 1px;
+    margin-top: 0;
+    overflow: auto;
+    padding: 3px 7px 5px;
+    width: 136px;
+}
+.filterBloc .whiteRows label {
+    color: #656565;
+    display: block;
+    float: left;
+    line-height: 11px;
+    margin-top: 3px;
+    width: 98px;
+}
+.filterBloc .whiteRows div.checker{float: left;margin-right: 2px;}
+
+
+.searchAreaB{
+    background-color: black;
+    bottom: 19px;
+    height: 18px;
+    padding: 10px 1px;
+    position: absolute;
+    right: -33px;
+}
+
+/********* recherche *************/
+/*
+.searchOnglets{
+	height: 40px;
+	background-image:url(../images/header-sep-bar.png);
+	background-position:0 -5px;
+	background-repeat:repeat-x;
+	background-color:#b5b6da;
+}
+.searchOnglets ul li{
+	float: left;height: 30px;border: 0;border-left: 0px !important;padding-top: 10px;
+	}
+.searchOnglets ul li a{
+	text-decoration: none;
+	color: #FFF;
+	display: block;
+	font-weight: bold;
+	font-size: 10px;
+	text-transform: uppercase;
+	padding-left: 15px;
+	padding-right:15px;
+	height: 30px;
+	width: 160px;
+	padding-top: 4px !important;
+}
+
+.searchOnglets ul li.active{
+background-image: url(../images/header-sep-bar.png);
+background-position: 0 -5px;
+background-repeat: repeat-x;
+background-color: white;
+width: 189px;
+height: 30px;
+}
+.searchOnglets ul li.active a{color: #8283b1;}
+.searchOnglets ul li.last{border-right: none;}
+.serachPanes{padding: 0px !important;width: background: url("../images/layerednavigation-leftbg.jpg") repeat-y scroll left top white !important;height: 1226px !important;}
+.serachPanes2{padding: 0px !important;width: 950px !important;height: 1226px !important;background-color:#fff;}
+.searchLeft{float:left;width:190px;}
+/* .searchRight{float:right;width: 760px;height: 1190px;} */
+/*.searchRight {position: relative; }
+#search.toolbar{/*background-color: white;*/
+/*margin-top: -78px;
+height: 37px;
+position: absolute;
+right: 0px;
+width: 380px;}
+#search.productsGrid {margin-left: -1px;}
+.SearchContent{height:170px;padding: 0px 20px;}
+.SearchContent h1{font-size:16px;color:#8183c2;padding-top: 20px;}
+.SearchContentText{height:160px;width:600px;float: left;position:relative;}
+.SearchContentImg{width: 190px;position: absolute;right: 0;}
+.liBottom{border-bottom:1px solid #e4e4e4; width: 570px;}
+.savoirplus{background: url("../images/btn_savoirplus.png") no-repeat;width: 117px;height: 31px;display: block;cursor:pointer;margin-left: 600px;padding-top: 4px;padding-left: 13px;position: absolute;bottom: 0px}
+.savoirplus span{font-size:10px;color:#fff;text-transform: uppercase;text-decoration:none;cursor:pointer;}
+.SearchContent a{text-decoration:none;}
+.resultatVide{width:340px;height:130px;background-color:#dbdbdb;padding:20px;position:relative;}
+.resultatVide h1{font-size:16px;font-weight:normal;width: 210px;padding-bottom: 20px;}
+#search.searchArea404{width: 350px !important;position: absolute;bottom: 15px;left: 12px;}
+#search.searchArea404 input.searchKeysWords{width:292px;}
+#search input.searchBtnIcon {margin-top: 4px;}
+#search.toolbar .pager .pages .next{position: absolute;bottom: 5px;}
+#search.toolbar .pager .pages{position: relative;}
+.searchLeft .selectorItems .nbrItems{height: 86px !important;padding-top: 40px !important;}
+.searchLeft .selectorItems .nbrItems span{font-size:10px !important;text-transform: uppercase !important;margin-top: -10px;}
+.substr{overflow: hidden;height: 66px;padding-top: 20px;}
+/********* fin recherche *************/
+
+/*
+.searchOnglets ul li.last{border-right: none;}
+#uniform-region_id .validation-advice{
+	font-size: 11px;
+    margin-left: -4px;
+    margin-top: -6px;
+}
+.selectType{height: 30px;}
+.searchOnglets ul li.last{border-right: none;}
+
+
+.FilteringColumn {
+/*    color: black;*/
+    /*float: left;
+    position: absolute;
+}
+
+.ProductContainer { position: absolute; left: 257px; width: 75%; } 
+ .productContainer .col_by_3 { position: absolute; left: 257px;  } 
+.productsItems > li.productItem.hideVideo .videoItemContainer  {display:none !important ;}
+.productsItems > li.productItem.hideVideo .lunetteItem.LunetteView {display:block !important ;}
+
+.lunetteItem{text-align:center; }
+ul.lunettes .portraitItem{display:none;}
+ul.lunettes .lunetteItem{border-bottom: 1px solid #DBDBDB;border-left: 1px solid #DBDBDB;display: block;height: 169px;background: none repeat scroll 0 0 #FFFFFF;z-index: 102;}
+.lunetteItem .name{font-family: Verdana; color:#000; font-size:10px;font-weight:normal;}
+*/
+

@@ -1,0 +1,5 @@
+easy_admin:
+  user:
+      name_property_path: 'username'
+      display_avatar: true
+  site_name: 'Lunettes <em style="font-size: 80%">Tableau de board</em>'

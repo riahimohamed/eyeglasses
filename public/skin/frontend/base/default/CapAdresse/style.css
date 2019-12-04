@@ -1,0 +1,341 @@
+/**
+ * Cap Adresse / Cap Email
+ *
+ * @category    design
+ * @package     default
+ * @copyright   Copyright (c) 2014 Cap Adresse (http://www.capadresse.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+/*
+AUTOCOMPLETE
+******************************************************/
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+/* Conteneur de la liste des propositions */
+.ui-autocomplete {
+    /* Couleur de l'arrière plan de la liste */
+    background-color: #ffffff;
+
+    /* Couleur de la bordure de la liste */
+    border: 1px solid #ccc;
+
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+
+    /* Ombre sous la liste */
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+    display: none;
+    float: left;
+    left: 0; top: 100%;
+    list-style: none;
+    margin: 0 0 10px 25px;
+    min-width: 160px;
+    padding: 4px 0;
+    position: absolute;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+    z-index: 1000;
+}
+
+/* Proposition par défaut */
+.ui-menu-item {
+    /* Couleur du texte */
+    color: #555555;
+
+    clear: both;
+    display: block;
+    font-weight: normal;
+    line-height: 18px;
+    padding: 3px 15px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Proposition en surbrillance */
+.ui-state-hover, .ui-state-active, .ui-state-focus {
+    /* Couleur de l'arrière plan de la proposition */
+    background: none repeat scroll 0 0 #3399cc;
+
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+
+    /* Couleur du texte */
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+/*
+POPUP EMAIL
+******************************************************/
+/* Conteneur */
+.ui-dialog {
+    /* Couleur de l'arrière plan */
+    background: none repeat scroll 0 0 white;
+
+    font-family: Arial,"Helvetica",sans-serif;
+
+    z-index: 9999;
+}
+
+/* Aplat noir */
+.ui-widget-overlay {
+    /* Couleur de l'aplat */
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9998;
+}
+
+/* Entête */
+.ui-dialog-titlebar {
+    /* Couleur du texte */
+    background-color: #3399cc;
+    color: white;
+
+    font-size: 1.25em;
+    font-weight: bold;
+
+    /* Taille de l'entête */
+    line-height: 26px;
+
+    padding: 14px;
+    text-align: center;
+}
+    .ui-dialog-titlebar:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+    /* Bouton pour fermer la popup */
+    .ui-dialog-titlebar > .ui-button {
+        border: medium none;
+
+        /* Couleur du texte */
+        /*background-color: #3399cc;*/
+        color: white;
+
+        display: none;
+
+        float: right;
+
+        /* Taille du bouton */
+        height: 26px;
+    }
+        /*.ui-dialog-titlebar > .ui-button.ui-state-hover {
+            background-color: #297ca6;
+        }
+
+        .ui-dialog-titlebar > .ui-button.ui-state-active {
+            background-color: #206080;
+        } */
+
+/* Contenu */
+.ui-dialog-content {
+    padding: 0 24px;
+}
+
+
+/* Conteneur des boutons */
+.ui-dialog-buttonset {
+    text-align: center;
+    padding-bottom: 8px;
+    margin-top: 16px;
+}
+    /* Bouton Oui / Non / Ok */
+    .ui-dialog-buttonset .ui-button {
+        /* Couleur des boutons */
+        background: none repeat scroll 0 0 white;
+
+        border: 0 none;
+
+        /* Couleur du texte */
+        color: #3399cc;
+
+        display: inline-block;
+        font-family: "Raleway",Arial,"Helvetica",sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+
+        /* Taille des boutons */
+        height: 36px;
+        line-height: 36px;
+        margin: 0 4px;
+        padding: 0 8px;
+
+        text-align: center;
+        text-transform: uppercase;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+        .ui-dialog-buttonset .ui-button.ui-state-hover {
+            /* Couleur lorsqu'on passe la souris sur un bouton */
+            background: none repeat scroll 0 0 rgba(153, 153, 153, .2);
+        }
+        .ui-dialog-buttonset .ui-button.ui-state-active {
+            /* Couleur lorsqu'on clique sur un bouton */
+            background: none repeat scroll 0 0 rgba(153, 153, 153, .4);
+        }
+
+/* Texte à l'intérieur de la popup */
+#cap-popup-confirme-email, .cap-alert-popup {
+    color: #757575;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 26px;
+    text-align: center;
+}
+
+#cap-spn-message {
+    font-weight: bold;
+}
+
+/*
+POPUP CAP VERIF INT
+******************************************************/
+#cap-popup-form-adresse {
+    text-align: left;
+}
+
+.cap-popup-text_indent {
+    text-indent: 20px;
+}
+
+.cap-popup-adresse_info h6,
+.cap-popup-adresse_liste h6 {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: "Raleway",Arial,"Helvetica",sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 0 6px;
+    text-transform: none;
+}
+
+
+.cap-popup-adresse_info li span,
+.cap-popup-adresse_liste li span {
+    display: inline-block;
+    font-weight: bold;
+    height: 17px;
+    line-height: 17px;
+     margin-left: 10px;
+}
+
+.cap-popup-adresse_liste li span {
+    color: #3399cc;
+}
+
+#rechtext {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding-bottom: 15px;
+}
+    #rechtext p.first {
+        margin-bottom: 10px;
+    }
+
+    #rechtext ul {
+        font-style: italic;
+    }
+
+.texteimportant {
+    color: #3399cc;
+    font-weight: bold;
+}
+
+.cap-popup-adresse_info {
+    margin-bottom: 16px;
+    margin-top: 12px;
+    padding-bottom: 16px;
+}
+    .cap-popup-adresse_info ul.cap-popup-adresse_recap {
+        color: rgba(0, 0, 0, 0.54);
+        vertical-align: middle;
+    }
+
+.cap-popup-radio {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.cap-popup-adresse_liste {
+    height: 280px;
+    overflow: auto;
+}
+    .cap-popup-adresse_liste .cap-popup-text_adresse {
+        height: auto;
+        width: 70px;
+    }
+
+    .cap-popup-adresse_liste .cap-popup-text_adresse, .cap-popup-adresse_liste .cap-popup-select_adresse {
+        font-family: "Raleway",Arial,"Helvetica",sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+
+        margin-left: 10px;
+        width: 70px;
+    }
+
+.cap-popup-li_result {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    cursor: default;
+    list-style: none;
+    padding: 8px 0;
+}
+    .cap-popup-li_result:hover {
+        background-color: rgba(153, 153, 153, .2);
+    }
+
+    .cap-popup-li_result.cap-popup-li_result_selected,
+    .cap-popup-li_result.cap-popup-li_result_selected:hover {
+        background-color: rgba(153, 153, 153, .4);
+    }
+
+    .cap-popup-li_result .select_adresse {
+        width: 65px;
+    }
+    .cap-popup-li_result .input-popup-small {
+        width: 57px;
+    }
+
+    .cap-popup-li_result .input {
+        margin: 0;
+    }
+
+.cap-popup-success {
+    color: white;
+    background-color: #3399cc;
+}
+.cap-popup-error {
+    color: white;
+    background-color:  #f44336;
+}
+
+
+/*
+MESSAGES
+******************************************************/
+.cap-error-msg {
+    /* Couleur des messages */
+    color: #cc4444;
+
+    display: block;
+    margin: 5px 0;
+}

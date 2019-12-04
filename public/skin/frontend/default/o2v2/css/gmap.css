@@ -1,0 +1,50 @@
+#map_canvas {
+  height: 100%;
+}
+
+@media print {
+  html, body {
+    height: auto;
+  }
+
+  #map_canvas {
+    height: 650px;
+  }
+}
+
+.bulleTop{background:url(../images/bulle-top.png) no-repeat 0 0; padding-top:50px;}
+.bulleBottom{background:url(../images/bulle-bottom.png) no-repeat 0 bottom; padding-bottom:47px;}
+.bulleBody{background:url(../images/bulle-body.png) repeat-y 0 0; padding:2px 32px 10px 15px;}
+.bulleBody .storeTitle {display: block;font-family: Verdana;font-weight: normal;margin: 0 0 4px;text-transform: uppercase;font-weight: bold;}
+.bulleBody .bulleStoreContent{overflow:hidden;}
+.bulleBody .storeImg{float:left;}
+.bulleBody .storeImg img{}
+.bulleBody .storeDetails{ margin: 0 0 0 204px;}
+.bulleBody .storeDetails p{margin:0 0 8px}
+.bulleBody .storeDetails a{text-decoration: underline;}
+span.index{bottom: -10px;color: #52539D;display: none;font-family: Verdana;font-size: 10px;left: 93px;position: absolute;text-align: center;width: 17px;}
+.itineraire .element {
+	margin-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.itineraire .element label {
+	display: block;
+    float: left;
+    width: 80px;
+}
+.itineraire .element input.fullsize {
+	float: left;
+	width: 283px;
+	border: solid 1px #b3b3b3;
+	padding: 2px;
+}
+.itineraire .element input.meduimsize {
+	float: left;
+	width: 100px;
+	border: solid 1px #b3b3b3;
+	padding: 2px;
+}
+.itineraire .grisLinkAndArrow {
+	float: right;
+}

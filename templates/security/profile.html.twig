@@ -1,0 +1,254 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Profile' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/optic2000/acecustomer.css') }}" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/jquery-ui.min.css') }}" media="all"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/base/default/CapAdresse/style.css') }}" media="all"/>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('js/jq/jquery-ui.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/optic2000/enhancedcustomer.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/optic2000/acecustomer.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    
+<div itemprop="mainContentOfPage" id="content">
+    <div class="acecustomer-full-page">
+        <div class="acecustomer-container">
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="customer-breadcrumbs">
+                        <ul class="list-nav">
+                            <li class="item-nav">
+                                <a class="link-nav" href="{{ path('home') }}">Accueil</a>
+                            </li>&nbsp;
+                            <li class="item-nav font-small-bold">
+                                <a class="link-nav" href="">&gt; {{ menuTitle }}</a>
+                            </li>&nbsp;
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                
+    <!-- Menu -->
+        {% include 'header/submenu.html.twig' %}
+    <!-- /Menu -->
+
+    <div class="ten columns">
+        <div class="customer-content-wrapper">
+        <div class="customer-content">
+        <div class="acecustomer-flex-container ace-block-information">
+
+        <!--  Block titre  -->
+        <div class="row row-title">
+            <h1 class="font-title-bold">Mes {{ menuTitle }}</h1>
+        </div>
+
+        <!--  Block Mon compte  -->
+        <div class="row">
+            <div class="ten columns container-info">
+                <div class="ace-panel account-info">
+                    <h2 class="font-color-purple">Mon compte</h2>
+                    <div class="panel-content" data-id="form-account-info">
+                        <p class="panel-text">
+                            {{ app.user.civility|upper }}.
+                            {{ app.user.firstname|upper }} {{ app.user.lastname|upper }}<br>
+                           
+                            Ma date de naissance : {{ app.user.birthday|date('Y/m/d') }}<br>
+                            Mon numéro de téléphone : {{ app.user.tel }} <br>
+                            <i>Renseignez votre adresse pour retrouver l'opticien le plus proche de chez vous.</i>
+                    </p>
+                    </div>
+                    <div data-id="form-account-info" data-form-wrapper="account-info" class="panel-content" style="display: none">
+                        <div class="row">
+                            <div class="five columns">
+                                {{ form_start(formInfo, {'attr': { 'class': 'ace-form' }}) }}
+                                    <div class="ace-form-group" data-field="prefix">
+                                        <legend class="mb-16">Civilité *</legend>
+                                        <div class="ace-form-row">
+                                            <div class="gender-selection">
+                                                <!--
+                                                <input id="female" type="radio" class="ace-form-control" name="prefix" value="mme" {% if app.user.civility == 'mme' %}checked="checked" {% endif %}>
+                                                <label for="female">Mme</label> -->
+
+                                                {{ form_row(formInfo.civility[0], {
+                                                        'attr': {'class': 'ace-form-control'}
+                                                }) }}
+                                            </div>
+                                            <div class="gender-selection">
+
+                                                {{ form_row(formInfo.civility[1], {
+                                                        'attr': {'class': 'ace-form-control'}
+                                                }) }}
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ace-form-group" data-field="lastname">
+                                        <label for="last_name">Nom *</label>
+                                        
+                                        {{ form_row(formInfo.lastname, 
+                                            {'attr': {'class': 'ace-form-control'},
+                                             'label': false,
+                                             'value': app.user.lastname }
+                                        ) }}
+                                    </div>
+                                    <div class="ace-form-group" data-field="firstname">
+                                        <label for="first_name">Prénom *</label>
+                                        
+                                        {{ form_row(formInfo.firstname, 
+                                            {'attr': {'class': 'ace-form-control'},
+                                             'label': false,
+                                             'value': app.user.firstname }
+                                        ) }}
+                                    </div>
+                                    <div class="ace-form-group" data-field="dob">
+                                        <legend>Ma date de naissance *</legend>
+                                            <div class="ace-form-row">
+                                            <div class="date-of-birth">
+                                                <label for="date_of_birth_1"></label>
+                                                
+                                                {{ form_row(formInfo.birthday.day, 
+                                                    {'attr': {'class': 'ace-form-control'},
+                                                     'label': false,
+                                                     'value': app.user.birthday|date("d"),
+                                                      }
+                                                ) }}
+                                            </div>
+
+                                            <div class="date-of-birth">
+                                                <label for="date_of_birth_2"></label>
+                                                {{ form_row(formInfo.birthday.month, 
+                                                    {'attr': {'class': 'ace-form-control'},
+                                                     'label': false,
+                                                     'value': app.user.birthday|date("m"),
+                                                      }
+                                                ) }}
+                                            </div>
+
+                                            <div class="date-of-birth">
+                                                <label for="date_of_birth_3"></label>
+                                                {{ form_row(formInfo.birthday.year, 
+                                                    {'attr': {'class': 'ace-form-control'},
+                                                     'label': false,
+                                                     'value': app.user.birthday|date("Y"),
+                                                      }
+                                                ) }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ace-form-group" data-field="telephone_portable">
+                                        <label for="phone_number">Mon numéro de téléphone *</label>
+                                        
+                                        {{ form_row(formInfo.tel, 
+                                            {'attr': {'class': 'ace-form-control'},
+                                             'label': false,
+                                             'value': app.user.tel }
+                                        ) }}
+                                    </div>
+
+                                    <button type="submit" class="ace-btn-submit">Enregistrer</button>
+                                {{ form_end(formInfo) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer mt-40">
+                        <button class="ace-btn" data-toggle="ace-collapse" data-target="form-account-info">modifier</button>
+                    </div>
+                </div>
+                <div class="ace-panel account-email">
+                    <h3 class="font-color-purple" data-id="form-account-email">Mon e-mail</h3>
+                    <div class="panel-content" data-id="form-account-email">
+                        {{app.user.email}}                
+                    </div>
+                    <div data-id="form-account-email" data-form-wrapper="account-email" class="panel-content" style="display: none">
+                        
+                        {{ form_start(formEmail, {'attr': { 'class': 'ace-form' }}) }}
+                            <div class="row">
+                                <div class="five columns">
+                                    <div class="ace-form-group" data-field="email">
+                                        <label for="email">Mon e-mail *</label>
+                                            {{ form_row(formEmail.email, 
+                                            {'attr': {'class': 'ace-form-control'},
+                                             'label': false,
+                                             'value': app.user.email }
+                                        ) }}
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button type="submit" class="ace-btn-submit">Enregistrer</button>
+                        {{ form_end(formEmail) }}
+                    </div>
+                    <div class="panel-footer mt-20">
+                        <button class="ace-btn" data-toggle="ace-collapse" data-target="form-account-email">modifier
+                        </button>
+                    </div>
+                </div>
+
+                <div class="ace-panel account-password">
+                    <h3 class="font-color-purple" data-id="form-account-password">Mon mot de passe</h3>
+                    <div class="panel-content" data-id="form-account-password">
+                        <span class="password">• • • • • • • •</span>
+                    </div>
+                    <div data-id="form-account-password" data-form-wrapper="account-password" class="panel-content" style="display: none">
+                        {{ form_start(formPassword, {'attr': { 'class': 'ace-form' }}) }}
+                            <input autocomplete="off" name="hidden" type="text" style="display:none;">
+                            <div class="row">
+                                <div class="five columns">
+                                    <div class="ace-form-group" data-field="password">
+                                        <label for="new_password">Mon nouveau mot de passe *</label>
+                                        <div class="ace-form-icon">
+                                            {{ form_row(formPassword.plainPassword.first, 
+                                                {'attr': {'class': 'ace-form-control'},
+                                                 'label': false }
+                                            ) }}
+                                        </div>
+                                    </div>
+                                    <div class="ace-form-group" data-field="password_confirmation">
+                                        <label for="password">Confirmer mon nouveau mot de passe *</label>
+                                        <div class="ace-form-icon">
+                                            {{ form_row(formPassword.plainPassword.second, 
+                                                {'attr': {'class': 'ace-form-control'},
+                                                 'label': false }
+                                            ) }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="ace-btn-submit">Enregistrer</button>
+                        {{ form_end(formPassword) }}
+                    </div>
+                    <div class="panel-footer mt-20">
+                        <button class="ace-btn" data-toggle="ace-collapse" data-target="form-account-password">
+                            modifier
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript">
+    (function($){$(function(){$('[data-form-wrapper]').formValidating({errors:[],afterErrorPrint:function($formWrapper){var btnCollapse=$formWrapper.parent('.ace-panel').find('[data-toggle="ace-collapse"]');if(btnCollapse.is(':visible')){btnCollapse.trigger('click');}}});});$(function(){var target=$('[data-type="see-password"]');target.click(function(e){e.preventDefault();var parent=$(this).parent();if($(this).hasClass('o2k-interface-afficher-code')){$(this).addClass('o2k-interface-masquercode').removeClass('o2k-interface-afficher-code');parent.find('input').prop("type","text");}else{$(this).addClass('o2k-interface-afficher-code').removeClass('o2k-interface-masquercode');parent.find('input').prop("type","password");}});});})(jQuery);
+    </script>
+    </div>
+                </div>
+            </div>
+        </div>
+        <div class="customer-footer">
+
+        {% include 'footer/subfooter.html.twig' %}
+        
+    </div>
+    </div>
+</div>
+{% endblock %}

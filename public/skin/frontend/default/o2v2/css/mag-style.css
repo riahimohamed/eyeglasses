@@ -1,0 +1,326 @@
+/********** header le mag  ***********/
+#mag_header {
+    height: 125px;
+    background-color: transparent;
+}
+
+.mag_slider, .mag_logo, .mag_social, .mag_logo h1 {
+    display: inline-block;
+}
+
+.mag_logo {
+    height: 100%;
+    width: 610px;
+    vertical-align: top;
+    background: url(../images/mag/logo_tendances.png) no-repeat center;
+}
+
+.mag_logo h1 {
+    overflow: hidden;
+    text-indent: -300px;
+}
+
+.mag_social {
+    height: 100%;
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+    width: 150px;
+}
+
+.mag_social a {
+    display: inline-block;
+    height: 30px;
+    margin-top: 80px;
+    width: 30px;
+}
+
+/************ body le mag  ************/
+#mag_body {
+    background: #fff;
+}
+
+.mag_large {
+    position: relative;
+    opacity: 1;
+    clear: both;
+}
+
+.mag_large h2, .mag_large h3, .mag_large h1 {
+    margin: 0;
+    text-transform: uppercase
+}
+
+.mag_large h1 {
+    font-size: 2.7em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.mag_large h2 {
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 35px;
+    padding-top: 25px
+}
+
+.mag_large h3 {
+    margin-bottom: 10px;
+}
+
+.mag_large h3 {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.cat {
+    font-weight: bolder;
+    font-size: 0.8em;
+    text-transform: uppercase
+}
+
+.mag_large {
+    position: relative;
+    height: 313px;
+}
+
+.mag_l, .mag_r {
+    position: absolute;
+    height: 313px;
+    overflow: hidden;
+
+}
+
+.mag_l {
+    left: 0px;
+    width: 55%;
+    z-index: 10;
+}
+
+.mag_r {
+    right: 0px;
+    width: 60%;
+    z-index: 13;
+}
+
+.aw_mag {
+    position: relative;
+    top: 30%;
+    left: 55px;
+    display: inline-block;
+    /*  triangle  */
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid #7A7A7A;
+}
+
+.content_mag {
+    display: inline-block;
+    width: 412px;
+    float: right;
+    padding: 50px;
+    height: 244px;
+    background: #fff;
+    position: relative;
+}
+
+.zoom_mag {
+    -moz-transform: scale(1, 1); /* Moz-browsers */
+    zoom: 1; /* Other non-webkit browsers */
+    zoom: 100%; /* Webkit browsers */
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    z-index: 90;
+    position: relative;
+}
+
+.zoom_transition {
+    -webkit-transform: scale(1.1) translate(0, -15px);
+    -moz-transform: scale(1.1) translate(0, -15px);
+    -o-transform: scale(1.1) translate(0, -15px);
+    transform: scale(1.1) translate(0, -15px);
+    z-index: 100;
+    position: relative;
+}
+
+.txt-content p {
+    font-size: 0.8em
+}
+
+.mag_article {
+    position: relative;
+    padding: 50px;
+    clear: both;
+    height: auto;
+    overflow: hidden;
+    display: none;
+    cursor: pointer;
+}
+
+.mag_close {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: block;
+    font-size: 1.4em;
+    color: #555;
+
+}
+
+.mag_close:hover {
+    cursor: pointer
+}
+
+.mag_col h1 {
+    font-size: 2.4em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.mag_col {
+    width: 50%;
+    float: left;
+
+}
+
+.fontw-normal {
+    font-weight: normal;
+}
+
+.mag_col .aw_mag {
+    left: 14px;
+}
+
+.mag_col .mag_r {
+    width: 375px;
+}
+
+.mag_col .content_mag {
+    width: 264px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.mag_readmore {
+    font-size: 0.8em;
+    font-style: italic;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+div.bg_e3e0db {
+    background-image: url(../images/mag/aw_e3e0db.png);
+}
+
+div.bg_d4cdbb {
+    background-image: url(../images/mag/aw_d4cdbb.png);
+}
+
+.mag_action {
+    cursor: pointer;
+}
+
+/**** DATE SLIDER *****/
+.mag_slider {
+    overflow: hidden;
+    width: 230px;
+    height: inherit;
+    position: relative;
+}
+
+.mag_slider ul {
+    height: inherit;
+    width: 180px;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.clear {
+    border: none;
+    clear: both;
+}
+
+.mag_slider li {
+    display: inline-block;
+    padding: 0;
+    margin-top: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.7);
+    width: 50px;
+    height: 50px;
+    font-size: 1.3em;
+    line-height: 20px;
+    opacity: 0.4;
+    z-index: 2;
+    white-space: nowrap;
+}
+
+.mag_slider li .mag_number {
+    font-size: 25px;
+    padding-top: 13px;
+    line-height: 20px;
+}
+
+.mag_slider li .mag_date {
+    font-size: 6px;
+}
+
+/** cursor slider **/
+.mag_slider .active_slide {
+    display: inline-block;
+    margin-left: -15px;
+    margin-right: -15px;
+    width: 90px;
+    height: 90px;
+    z-index: 3;
+    opacity: 1;
+    position: relative;
+}
+
+.active_slide a .mag_number {
+    font-size: 40px;
+    padding-top: 33px;
+}
+
+.active_slide a .mag_date {
+    text-transform: uppercase;
+    padding-top: 1px;
+    font-size: 9px;
+}
+
+.nav_previews_slide, .nav_next_slide {
+    width: 25px;
+    height: 120px;
+    position: absolute;
+    top: 6px;
+    z-index: 10;
+}
+
+.nav_previews_slide:hover, .nav_next_slide:hover {
+    cursor: pointer;
+}
+
+.nav_previews_slide {
+    background: #ffffff url(../images/mag/sprite.png) no-repeat -4px center;
+}
+
+.nav_next_slide {
+    background: #ffffff url(../images/mag/sprite.png) no-repeat -48px center;
+    right: 0;
+}
+
+.hide_nav {
+    display: none;
+}

@@ -1,0 +1,436 @@
+/***************************************************************** Commun ********************************************************************/
+#content>h1 {font-size: 24px; margin: 0 0 25px 10px; font-family: "AvenirLTStd55Black"; text-transform: uppercase;}
+.form-error {color: #d00; font-family: "AvenirLTStd55Roman"; font-size: 14px; font-weight: normal;}
+.page-empty {background-color: #F3F3F3;}
+.tunnel {background-color: #FFF; padding: 1px 0;}
+.tunnel header {color: #000; margin: 10px;}
+.tunnel header h1 {margin: 0; padding: 0; font-family: "AvenirLTStd55Black"; font-size: 24px; text-transform: uppercase;}
+.tunnel header h2 {margin: 0; padding: 0; font-family: "AvenirLTStd55Roman"; font-size: 14px; text-transform: capitalize;}
+/***************************************************************** Header ********************************************************************/
+.payment-tunnel-header{height: 134px; color: #FFF; margin: 0 auto; background-color: #000;}
+.payment-tunnel-header>img{margin: 23px 0;}
+ol.payment-tunnel-steps {counter-reset: step; display: inline-block; vertical-align: middle; width: 770px; text-align: right; color: #BDBEC0;}
+ol.payment-tunnel-steps>li {display: inline-block; width: 150px; counter-increment: step; list-style-type: decimal; text-align: center; text-transform: uppercase;
+    font-family: "AvenirLTStd55Roman"; font-size: 12px;}
+ol.payment-tunnel-steps>li.active {color: #F79428;}
+ol.payment-tunnel-steps>li::marker {color: #000}
+ol.payment-tunnel-steps>li.active::before {background-color: #F79428; color: #000; border-color: #F79428;}
+ol.payment-tunnel-steps>li::before {content: counter(step); margin: 0 auto 5px; width: 40px; height: 40px; display: block; border-radius: 22px;
+    border: 2px solid #BDBEC0;  text-align: center; line-height: 42px; color: #BDBEC0; font-size: 20px; font-family: "AvenirLTStd55Heavy";}
+
+/***************************************************************** Footer ********************************************************************/
+div.checkout-multipage-footer {background-color: #000; height: 50px; font-size: 12px; font-family: "AvenirLTStd55Roman";}
+div.checkout-multipage-footer a, div.checkout-multipage-footer a:visited {color: #FFF;}
+div.checkout-multipage-footer>div.left {float: left; margin: 15px 10px;}
+div.checkout-multipage-footer>div.right {float: right; width: 200px; margin: 10px;}
+div.checkout-multipage-footer p {text-transform: uppercase; color: #FFF;}
+div.checkout-multipage-footer .violet {color: #8183C2;}
+
+/************************************************************* Recap Order ******************************************************************/
+asside.recap-order {width: 355px; display: inline-block; vertical-align: top; margin-right: 10px; padding-top: 60px;}
+asside.recap-order div {margin: 0;}
+asside.recap-order div.recap-order-content {margin-top: 0; border-top: none;}
+asside.recap-order div.recap-order-content>h1 {font-size: 24px; font-family: "AvenirLTStd55Roman"; text-transform: uppercase; margin: 0;}
+asside.recap-order hr {background-color: #000;}
+asside.recap-order div.recap-order-content>ul>li {border-bottom: 1px solid #000; text-align: center; margin: 20px 0; padding-bottom: 20px;}
+asside.recap-order div.recap-order-content>ul>li.last {border: none; margin: 0;}
+asside.recap-order div.recap-order-content>ul>li::after {content: ''; clear: both;}
+asside.recap-order div.recap-order-content>ul>li>article {text-align: left;}
+asside.recap-order div.recap-order-content>ul>li>article>img {margin-bottom: 20px;}
+asside.recap-order div.recap-order-content>ul>li header, ul#recap-order-items>li>article>p {font-size: 16px; font-family: "AvenirLTStd55Roman"; margin: 0;}
+asside.recap-order span.item-qty{font-size: 12px; font-family: "AvenirLTStd55Roman"; color: #888; display: block;}
+asside.recap-order div.recap-order-content>ul>li header {text-transform: uppercase;}
+asside.recap-order div.recap-order-content>ul>li header h3 {font-size: 13px; font-family: "AvenirLTStd55Heavy"; text-transform: uppercase; margin: 0; color: #000; font-weight: normal;}
+asside.recap-order div.recap-order-content>ul>li header h3, ul#recap-order-items>li>article>header h4 {padding: 0; font-size: 12px; text-transform: uppercase; margin: 0; color: #000; font-weight: normal;}
+asside.recap-order div.recap-order-content>ul>li>article p {text-align: right;}
+asside.recap-order div.recap-order-content>ul>li span.price {font-size: 24px; font-family: "AvenirLTStd55Heavy";}
+asside.recap-order div.recap-order-content>ul>li span.price>span {font-size: 16px; font-family: "AvenirLTStd55Roman";}
+asside.recap-order div.recap-order-content>ul>li>div {font-size: 20px; font-family: "AvenirLTStd55Black"; text-align: left;}
+asside.recap-order div.recap-order-content>ul>li>div>span.fleche {font-size: 48px; vertical-align: sub; cursor: pointer;}
+asside.recap-order div.recap-order-content>ul>li>div>span.item-price{float: right; font-size: 16px; font-family: "AvenirLTStd55Roman"; margin-top: 10px; text-align: right;}
+asside.recap-order div.recap-order-content>ul>li table {width: 100%;}
+asside.recap-order div.recap-order-content>ul>li table tr td {vertical-align: middle; white-space: nowrap;}
+asside.recap-order div.recap-order-content>ul>li table tr td:first-child {text-align: left;}
+asside.recap-order div.recap-order-content>ul>li table tr td:last-child {text-align: right;}
+asside.recap-order div.recap-order-content>ul>li table td.total-price {font-size: 20px; font-family: "AvenirLTStd55Heavy"; text-transform: uppercase;}
+asside.recap-order span.discount-name {font-size: 12px;}
+
+/************************************************************* Login Forms ******************************************************************/
+article.tunnel-forms, article.tunnel-content {width: 634px; display: inline-block; vertical-align: top; margin: 0 10px; min-height: 700px;}
+article.tunnel-forms>nav {display: block; float: none; width: 100%; height: auto; float: none;}
+article.tunnel-forms>nav>ul>li {border: none; margin: 0; padding: 0; position: initial; height: 60px; line-height: 50px; display: inline-block;
+    font-size: 20px; font-family: "AvenirLTStd55Heavy"; text-transform: uppercase; text-align: center; width: 314px; float: none; cursor: pointer;}
+article.tunnel-forms>nav>ul>li::after { content: ''; display: block; height: 18px; margin-top: -7px; position: relative; z-index: 1;}
+article.tunnel-forms>nav>ul>li.active {color: #F79428; text-decoration: none;}
+article.tunnel-forms>nav>ul>li.active::after {background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/tunnel/fleche-haut.png") no-repeat 50% bottom;}
+/*article.tunnel-forms>div {border-top: 1px solid #8C8C8C;}*/
+article.tunnel-forms a {color: #000; text-decoration: underline; font-style: italic; outline: none;}
+article.tunnel-forms a:visited {color: #000;}
+article.tunnel-forms .note {color: #8C8C8C; font-style: italic; font-family: "AvenirLTStd55Roman"; font-size: 12px; font-weight: normal !important; margin: 0;}
+article.tunnel-forms input[type=text],
+article.tunnel-forms select,
+article.tunnel-forms input[type=number],
+article.tunnel-forms input[type=password],
+article.tunnel-forms input[type=date],
+article.tunnel-forms input[type=email] {border: 1px solid #DDD; display: block; width: 100%;height: 25px; line-height: 25px; vertical-align: middle; color: #777; text-indent: 10px;}
+article.tunnel-forms .form-row{display: flex;}
+article.tunnel-forms .form-row .form-col{display: block;margin: 0 10px;}
+article.tunnel-forms .form-row .form-col:first-child{display: block;margin-left: 0;}
+/*article.tunnel-forms input#date-of-birth {width: 255px; display: inline-block; margin-right: 5px;}*/
+article.tunnel-forms .error-field {border-color: #F00 !important; }
+article.tunnel-forms select {width: 150px; margin-right: 10px;}
+article.tunnel-forms button {background: none; padding: 0; vertical-align: middle; outline: none;}
+article.tunnel-forms label {font-family: "AvenirLTStd55Heavy"; font-size: 14px; display: block;}
+article.tunnel-forms label.newsletter-label {display: inline; font-family: "AvenirLTStd55Roman"; font-size: 12px; font-weight: bold;}
+article.tunnel-forms table {border: none; width: 100%;}
+/*article.tunnel-forms>div {border: 1px solid #8C8C8C; padding: 0 15px; max-width: 575px; margin: 0 auto;}*/
+article.tunnel-forms #freeshipping_freeshipping,
+article.tunnel-forms #owebiashipping2_home{border-top: 1px solid #8C8C8C;}
+article.tunnel-forms .register-customer,
+article.tunnel-forms .login-customer{border: 1px solid #8C8C8C; padding: 0 15px; margin: 0 auto;}
+article.tunnel-forms .tunnel-forms-wrap {border: 1px solid #8C8C8C; padding: 25px 15px;}
+article.tunnel-forms .validate-form.orange{outline: 1px solid #F79428; background-color: #F79428;    font-size: 16px;
+    font-family: "AvenirLTStd55Roman";
+    color: #FFF;
+    border: 1px solid #FFF;
+    width: 320px;
+    margin: 20px 0;
+    display: block;
+    height: 38px;
+    cursor: pointer;
+    text-transform: uppercase;}
+article.tunnel-forms .form-row.col2 {display: flex;}
+article.tunnel-forms .form-row.col2 .col-l,.form-row.col2 .col-r {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+article.tunnel-forms .form-row.col2 .col-r {
+    padding-right: 0;
+    padding-left: 10px;
+}
+
+article.tunnel-forms .form-row {
+    margin: 11px 0px;
+}
+.tunnel li.error-msg>ul {border: 1px solid #F00; color: #D00; font-family: "AvenirLTStd55Roman"; font-size: 13px; padding: 10px; font-weight: normal;}
+article.tunnel-forms table td {padding-left: 0;padding-right: 0;}
+article div.form-buttons {padding: 0 !important;; text-align: right; border: none !important;}
+article div.form-buttons button {display: inline-block}
+
+article.tunnel-forms li[data-rel="register-customer"].active {
+    visibility: hidden;
+}
+
+/*************************************************************** Livraison ********************************************************************/
+article.tunnel-forms>div>div { border: 1px solid #8C8C8C; border-top: none; padding: 20px;}
+article.tunnel-forms>div>div.services {position: relative;}
+article.tunnel-forms>div>div.services>ul {display: inline-block; vertical-align: middle; width: 370px;}
+article.tunnel-forms>div>div>img {margin: 20px 20px 20px 50px;}
+article.tunnel-forms span.corner-top {background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/tunnel/triangle-top.png") 0 0 no-repeat; width: 86px; height: 50px;
+    text-align: center; display: inline-block; position: absolute; top: -19px; left: -40px; color: #FFF; text-transform: uppercase;
+    -webkit-transform: rotate(315deg); -moz-transform: rotate(315deg); -o-transform: rotate(315deg); transform: rotate(315deg);
+    writing-mode: lr-tb; padding: 38px 41px; font-size: 13px;}
+article.tunnel-forms span.corner-bottom {background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/tunnel/triangle-bottom.png") 0 0 no-repeat; width: 93px;
+    height: 60px; text-align: center; display: inline-block; position: absolute; bottom: -13px; right: -54px; color: #FFF;
+    text-transform: uppercase; -webkit-transform: rotate(315deg); -moz-transform: rotate(315deg); -o-transform: rotate(315deg);
+    transform: rotate(315deg); writing-mode: lr-tb; padding: 5px 35px 19px 39px; font-size: 13px; left: auto;}
+article div.addresses {background-color: #F3F3F3;}
+article div.addresses>article {display: inline-block; vertical-align: top; width: 285px;}
+article div.addresses>article>header {text-transform: uppercase; margin: 10px 0; font-weight: bold;}
+article div.addresses>article>p { margin: 20px 0;}
+article div.addresses>article>p>span {font-weight: bold;}
+article div.addresses>article>p>a, article.tunnel-forms div.addresses>article>p>a:visited {color: #777;}
+article div.addresses>article>p>table {border: none;}
+article div.addresses>article>p>table td {width: auto;}
+article.tunnel-forms div#owebiashipping2_home table {border: none;}
+article.tunnel-forms div#owebiashipping2_home input[type=text] {display: inline-block;}
+article.tunnel-forms div#owebiashipping2_home div#form-lentille input[type=text] {width: 250px;}
+article.tunnel-forms div#owebiashipping2_home label {display: block; cursor: pointer;}
+article.tunnel-forms div#owebiashipping2_home input[type=radio] {margin-right : 5px;}
+article.tunnel-forms div#owebiashipping2_home header {margin: 10px 0; text-transform: uppercase;}
+article.tunnel-forms div#owebiashipping2_home .cap-error-msg {max-width: 260px !important;}
+article.tunnel-forms #register-customer-form .cap-error-msg {max-width: 285px !important;}
+div.alert-store {background-color: #D2232A; color: #fff; padding: 10px !important; text-align: center;}
+div.alert-store a {color: #fff; text-decoration: none; font-style: normal;}
+div.alert-store a:visited {color: #fff;}
+/*************************************************************** Store locator ********************************************************************/
+div#stores-map-container {width: 1024px; height: 700px; background-color: #FFF;}
+.pac-container {z-index: 10000 !important;} /** important : pour placer le resultat de recherche google maps audessus du colorbox **/
+article.tunnel-forms .proximis a {text-decoration: none; font-style: normal;}
+article.tunnel-forms .proximis .row {margin: 0 !important;}
+article.tunnel-forms .proximis .form-search {width: auto !important; height: auto; padding: 10px 5px; font-size: 14px;}
+article.tunnel-forms .proximis .form-search .proximis-search {width: auto; border: none;}
+article.tunnel-forms .proximis .form-search .proximis-search .span5 {width: 400px;}
+article.tunnel-forms .proximis .form-search .proximis-search>img {display: none;}
+article.tunnel-forms .proximis .proximis-search input {display: inline-block;}
+article.tunnel-forms .proximis [class*="span"] {margin-left: 0;}
+article.tunnel-forms .proximis .span6, article.tunnel-forms .proximis .fiche  {width: auto;}
+article.tunnel-forms .proximis .contentsearch {background: none; width: auto;}
+article.tunnel-forms .proximis .contentsearch .span3 {width: 280px;}
+article.tunnel-forms .proximis .bloc-search-magasin {padding: 5px 0;}
+article.tunnel-forms .proximis .bloc-search-magasin .span1 {width: 50px; font-size: 11px; margin-right: 2px;}
+article.tunnel-forms .proximis .bloc-search-magasin .span2 {width: 220px;}
+article.tunnel-forms .proximis .contentsearch .span6, article.tunnel-forms .proximis .contentsearch .map {width: 352px !important;}
+article.tunnel-forms .proximis .infobullecontent {width: auto; padding: 5px;}
+article.tunnel-forms .proximis .prxhorraires {margin: 0;}
+article.tunnel-forms .proximis .prxhorraires table {border: none;}
+.alert-payment {text-align: center; padding: 40px;}
+article.tunnel-forms div.form-buttons button {display: block}
+article.tunnel-forms div.form-buttons button.is-loading {position: relative;padding-left: 15px;white-space: nowrap; background-color: #666; outline-color: #666;cursor: auto;}
+article.tunnel-forms div.form-buttons button.is-loading:after {content: "";display: block;position: absolute;top: 10px;left: 5px;background: url('https://www.optic2000.com/skin/frontend/default/o2v2/css/img/loading.gif') no-repeat 50% 50%;width: 16px;height: 16px;}
+/************************************************************** Success *********************************************************************/
+article.tunnel-content {padding-top: 60px;}
+article.tunnel-content header {margin: 0;}
+article.tunnel-content header h2 {font-family: "AvenirLTStd55Roman"; font-size: 24px; margin-bottom: 20px; color: #000; text-transform: none;}
+article.tunnel-content header h3 {font-family: "AvenirLTStd55Roman"; font-size: 16px; font-weight: bold; margin: 0; color: #000; text-transform: none;}
+article.tunnel-content p {margin: 20px 0;}
+article.tunnel-content div.notes {padding: 0;}
+article.tunnel-content div.notes p {margin: 0; font-size: 12px;}
+article.tunnel-content>div {padding: 20px;}
+article.tunnel-content a.visit_link {font-size: 14px; color: #9DA3D3; text-decoration: underline; margin-right: 20px;}
+article.tunnel-content a.visit_link:visited {color: #9DA3D3;}
+
+/************************************************************** Cart *********************************************************************/
+div.cart-product-description h3 {font-size: 13px; font-family: "AvenirLTStd55Heavy"; text-transform: uppercase; margin: 0; color: #000; font-weight: normal;}
+div.cart-product-description h4 {font-size: 12px; font-family: "AvenirLTStd55Roman"; text-transform: uppercase; margin: 0; color: #000; font-weight: normal;}
+div.cart-product-description ul {font-size: 14px; margin-top: 10px;}
+
+.payment-tunnel-main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    background-color: white;
+}
+.optic2000-checkout-multipage-login{
+    background-color: #f5f5f5;
+}
+
+.payment-tunnel-steps-name>li{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    vertical-align: text-bottom;
+}
+
+body.page-empty {
+    padding: 0;
+    margin: 0;
+}
+
+.login-page-content {
+    color: #000;
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #FFF;
+}
+.login-top-block {
+    width: 1024px;
+}
+
+.login-simple-cell {
+    display: table-cell;
+}
+.login-btn {
+    display: block;
+    background-color: #009764;
+    padding: 5px;
+    text-align: left;
+    font-size: x-large;
+    color: white;
+    font-weight: 500;
+    margin: 5px
+}
+.login-page-title{
+    font-weight: bold;
+    font-size: 1.333333333333333em;
+    width: 400px;
+    color: #000000
+}
+
+/*debut*/
+div.parcours-achat-horizontal {
+    border: solid 1px;
+    margin: 5px;
+    padding: 5px;
+}
+div.parcours-achat-horizontal>ol {
+    width: 1024px;
+    height: 200px;
+    padding: 0 2px;
+}
+div.parcours-achat-horizontal>ol>li::before {
+    content: counter(step);
+    margin-right: 10px;
+    vertical-align: middle;
+    background: #8183C2;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+div.parcours-achat-horizontal>ol>li {
+    counter-increment: step;
+    list-style-type: decimal;
+    display: inline-block;
+    width: 325px;
+    height: 200px;
+    vertical-align: top;
+    margin: 0 5px;
+}
+div.parcours-achat-horizontal>ol>li::marker {
+    color: white;
+    background-color: #8183C2;
+}
+div.parcours-achat-horizontal>ol>li::after {
+    content: '';
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 0 40px 20px;
+    border-color: transparent transparent transparent #8183C2;
+    position: relative;
+    top: -65px;
+    right: -325px;
+    font-size: 0;
+}
+div.parcours-achat-horizontal li:last-child::after {
+    content: none;
+    border: none;
+}
+div.parcours-achat-horizontal>ol>li>span{
+    font-weight: bold;
+    color :#8183C2;
+    width: 275px;
+    display: inline-block;
+    vertical-align: middle;
+}
+div.parcours-achat-horizontal>ol>li>p {
+    width: 220px;
+    margin: 0 auto 10px auto;
+    background-color: #FCC327;
+    color: #FFF;
+    text-align: center;
+    padding: 5px 10px;
+}
+div.parcours-achat-horizontal>ol>li>div.arrow-top {
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 10px solid #FCC327;
+}
+/**############################################## Section Panier ####################################################### **/
+section.cart {color: #000;}
+.cart-title>h1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+.cart-product {
+    border: solid 1px #8C8C8C;
+    padding: 10px;
+    margin: 10px 0;
+}
+.cart-product > div {
+    display: table;
+}
+.cart-product > span {text-transform: uppercase; font-size: 12px; text-align: right; display: block;}
+.cart-product > span > a{
+    color: #8C8C8C;
+}
+.cart-product-img {min-width: 500px; text-align: center;}
+.cart-product-description {width: 300px; vertical-align: top;}
+.cart-product-description>p:first-child{font-size: 0.8em;}
+.cart-product-description>p.bold{font-weight: bold;}
+.cart-product-price {width: 140px; padding-top: 60px; text-align: right;}
+
+.cart-product-price>span>p>span.price>span{
+    font-size: 0.8em;
+}
+
+.cart-product-price{font-size: 24px; font-family: "AvenirLTStd55Black";}
+.cart-product-price span.price>span{font-size: 16px;}
+
+.cart-product > div > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+.cart-nav-btn button {
+    display: inline;
+    margin-left: 10px;
+}
+.cart-product-sub-table {display: table; width: 200px; margin-top: 10px;}
+.cart-product-sub-table-cell {display: table-cell;}
+.small-ok{background-color: #f6821f; color: #fff; margin-left: 2px;}
+.small-ok.red{background-color: #D2232A;}
+.cart-nav-btn {
+    text-align: right;
+    clear: both;
+    margin-right: 10px
+}
+.cart-container{
+    margin: 10px;
+}
+.cart-nav-right > a {
+    display: table;
+    background-color: #f6821f;
+    color: white;
+    padding: 10px;
+}
+section div.contact-banner {
+}
+.block-container {
+    border: 1px solid #8C8C8C;
+    margin: 10px;
+    padding: 10px;
+}
+section div.services {margin: 0 auto; font-size: 11px; font-family: "AvenirLTStd55Roman"; padding: 10px;}
+section div.services>span  {text-transform: uppercase; text-align: right; font-weight: bold; font-size: 18px; display: inline-block; position: relative;left: 42px;}
+section div.services>ul {display: inline-block; vertical-align: middle; min-width: 325px;}
+section div.services>div {width: 500px; display: inline-block; text-align: center;}
+ul.messages {margin: 10px;}
+.tunnel-forms ul.messages {margin: 0;}
+ul.messages>li.success-msg, ul.messages>li.notice-msg {border: solid #7488BB 1px; padding: 10px 10px 10px 20px; color: #7488BB; font-weight: bold;}
+ul.messages>li.error-msg>ul{border: solid red 1px; padding: 10px; color: red; font-size: 14px;  font-weight: normal; text-align: left;}
+.coupon-rm-btn{
+    border-radius: 2px;
+    padding: 5px;
+    color: #fff;
+    background-color: #b5b6b8;
+}
+
+.table-cell-price-display{
+    text-align: right;
+    padding: 0 20px;
+}
+.cart-no-item{
+    padding-left: 20px;
+}
+/************************************************************* Coupon ***********************************************************************/
+.cart-coupon-form {height: 25px; margin: 10px 0; }
+.cart-coupon-form label {height: 23px; line-height: 23px;}
+.cart-coupon-form input {display: inline-block; border: solid 1px #8C8C8C;}
+.cart-coupon-form input#promo-code-input {display: inline-block; float: right; margin: 0px 10px; height: 20px;}
+.cart-coupon-form input#promo-code-button {display: inline-block; float: right;}
+
+/************************************************************* Totals *************************************************************************/
+.cart-final-price {text-align: left; float: right; width: 500px;}
+.cart-final-price>table {width: 90%;}
+.cart-final-price>table h5 {margin: 0; font-size: 16px; font-family: "AvenirLTStd55Roman";}
+.cart-final-price>table td span.price {font-size: 20px; font-family: "AvenirLTStd55Black";}
+.cart-final-price>table td span.price>span {font-size: 16px;}
+.cart-final-price>table td.final-price span.price {font-size: 36px; font-family: "AvenirLTStd55Heavy";}
+.cart-final-price>table td.final-price span.price>span {font-size: 24px;}
+.cart-final-price>table td {vertical-align: baseline;}
+.cart-final-price>table td:last-of-type {text-align: right;}

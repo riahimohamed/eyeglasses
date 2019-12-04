@@ -1,0 +1,615 @@
+ @Font-face
+   ========================================================================== */
+@font-face {
+    font-family: 'AvenirLTStd55Black';
+    font-weight: bold;
+    src: url('https://www.optic2000.com/media/font/AvenirLTStd-Black/AvenirLTStd-Black.eot');
+    src: url('https://www.optic2000.com/media/font/AvenirLTStd-Black/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'),
+    url('https://www.optic2000.com/media/font/AvenirLTStd-Black/AvenirLTStd-Black.woff') format('woff'),
+    url('https://www.optic2000.com/media/font/AvenirLTStd-Black/AvenirLTStd-Black.otf') format('opentype'),
+    url('https://www.optic2000.com/media/font/AvenirLTStd-Black/AvenirLTStd-Black.ttf') format('truetype'),
+    url('https://www.optic2000.com/media/font/AvenirLTStd-Black/AvenirLTStd-Black.svg#AvenirLTStd55Black') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirLTStd55Heavy';
+    src: url('https://www.optic2000.com/media/font/AvenirLTStd-Heavy/AvenirLTStd-Heavy.eot');
+    src: url('https://www.optic2000.com/media/font/AvenirLTStd-Heavy/AvenirLTStd-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('https://www.optic2000.com/media/font/AvenirLTStd-Heavy/AvenirLTStd-Heavy.woff') format('woff'),
+    url('https://www.optic2000.com/media/font/AvenirLTStd-Heavy/AvenirLTStd-Heavy.otf') format('opentype'),
+    url('https://www.optic2000.com/media/font/AvenirLTStd-Heavy/AvenirLTStd-Heavy.ttf') format('truetype'),
+    url('https://www.optic2000.com/media/font/AvenirLTStd-Heavy/AvenirLTStd-Heavy.svg#AvenirLTStd55Heavy') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirLTStd55Roman';
+    src: url('https://www.optic2000.com/media/font/AvenirLTStd-Roman/AvenirLTStd-Roman.eot');
+    src: url('https://www.optic2000.com/media/font/AvenirLTStd-Roman/AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+    url('https://www.optic2000.com/media/font/AvenirLTStd-Roman/AvenirLTStd-Roman.woff') format('woff'),
+    url('https://www.optic2000.com/media/font/AvenirLTStd-Roman/AvenirLTStd-Roman.otf') format('opentype'),
+    url('https://www.optic2000.com/media/font/AvenirLTStd-Roman/AvenirLTStd-Roman.ttf') format('truetype'),
+    url('https://www.optic2000.com/media/font/AvenirLTStd-Roman/AvenirLTStd-Roman.svg#AvenirLTStd55Roman') format('svg');
+}
+
+/* Regular */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('https://www.optic2000.com/media/font/OpenSans/Regular/OpenSans-Regular.ttf'),
+    url('https://www.optic2000.com/media/font/OpenSans/Regular/OpenSans-Regular.ttf') format('truetype');
+    src: url('https://www.optic2000.com/media/font/OpenSans/Regular/OpenSans-Regular.eot'),
+    url('https://www.optic2000.com/media/font/OpenSans/Regular/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('https://www.optic2000.com/media/font/OpenSans/Regular/OpenSans-Regular.woff') format('woff'),
+    url('https://www.optic2000.com/media/font/OpenSans/Regular/OpenSans-Regular.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('https://www.optic2000.com/media/font/Pacifico/Pacifico.ttf');
+    src: url('https://www.optic2000.com/media/font/Pacifico/Pacifico.ttf') format('truetype');
+}
+
+/* DivTable.com */
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+
+#moncercle{
+  background:#ffffff;
+  align: center;
+  valign: middle;
+  border-radius:50%;
+  width:275px;
+  height:275px;
+  border:2px solid #ffffff; 
+  margin-left:75px;
+}
+
+div#kl {
+    clear: both;
+    position: relative;
+    background-color: #FFFFFF;
+    color: #000000 !important;
+	font-family: "AvenirLTStd55Roman", Helvetica, Arial, Sans-Serif !important;
+    font-size: 16px !important;
+    font-weight: 400;
+    text-align: left !important;
+    word-wrap: break-word;
+    text-rendering: optimizeLegibility;
+}
+
+div#kl a {
+    text-decoration: none;
+	font-family: "AvenirLTStd55Roman", Helvetica, Arial, Sans-Serif !important;
+    font-size: 16px !important;
+}
+
+div#kl header {
+    background: url("https://www.optic2000.com/media/css_others/prudensee/O18132-CAMPAGNE PRUDENSEE-1920x520.png") transparent no-repeat center center;
+    background-size: cover;
+    min-width: 1140px;
+    height: 515px;
+    margin: 0;
+    padding: 0;
+}
+
+div#kl #nav {
+    width: 100%;
+	min-width: 1140px;
+    z-index: 100;
+    height: 50px;
+    background-color: #000000;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    float: none;
+    position: absolute;
+    top: 465px;
+    padding: 0;
+}
+
+div#kl #nav.scrolling {
+    position:fixed;
+    top:0px;
+}
+
+div#kl #nav ul {
+    height: 50px;
+    min-width: 1140px;
+	width : auto;
+    margin: 0 auto;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    flex-flow: nowrap;
+}
+
+div#kl #nav ul li {
+    border: none;
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    flex: 1;
+}
+
+div#kl #nav ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px !important;
+    font-weight: normal;
+    padding: 0;
+}
+
+div#kl #nav ul li a:hover {
+    background-color: #E3020B;
+    color: #FFFFFF;
+    border: none;
+}
+
+div#kl .container {
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+div#kl #intro h1 {
+    padding-top: 50px;
+	font-size: 55px;
+    font-weight: 300;
+    margin: 0;
+}
+
+div#kl #intro h2 {
+    font-size: 45px;
+    font-weight: 300;
+    margin: 0;
+}
+
+div#kl #intro #article {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+div#kl #collection {
+    padding-top: 50px;
+}
+
+div#kl #solaire {
+    padding-top: 50px;
+}
+div#kl #solaire h1 {
+    font-size: 55px;
+    font-weight: 300;
+    margin: 0;
+}
+
+div#kl #solaire h2 {
+    font-size: 45px;
+    font-weight: 300;
+    margin: 0;
+}
+
+div#kl #solaire h3 {
+    font-weight: normal;
+}
+
+div#kl #solaire #article {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+div#kl #optique {
+    padding-top: 50px;
+}
+div#kl #optique h1 {
+    font-size: 55px;
+    font-weight: 300;
+    margin: 0;
+}
+
+div#kl #optique h2 {
+    font-size: 45px;
+    font-weight: 300;
+    margin: 0;
+}
+
+div#kl #optique h3 {
+    font-weight: normal;
+}
+div#kl #optique #article {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+
+div#kl #comment {
+    padding-top: 50px;
+	width: 1140px;
+}
+div#kl #comment h1 {
+    font-size: 55px;
+    font-weight: 300;
+    margin: 0;
+}
+
+div#kl #comment h2 {
+    font-size: 38px;
+    font-weight: 100;
+    margin: 0;
+}
+
+div#kl #comment h3 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-left: 25px;
+	margin-right: 25px;
+	color: #000000;
+    text-transform: uppercase;
+	
+}
+
+div#kl #comment #article {
+	padding-top: 26px;
+	font-size: 18px;
+	margin: 25px;
+	font-weight: 300;
+	line-height: 180%;
+}
+
+div#kl #design {
+    padding-top: 50px;
+	width: 1140px;
+}
+div#kl #design h1 {
+    font-size: 55px;
+    font-weight: 300;
+    margin: 0;
+}
+
+div#kl #design h2 {
+    font-size: 38px;
+    font-weight: 100;
+    margin: 0;
+}
+
+div#kl #design #article {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 180%;	
+}
+
+div#kl #studio {
+    padding-top: 50px;
+	width: 1140px;
+}
+div#kl #studio h1 {
+    font-size: 55px;
+    font-weight: 300;
+    margin: 0;
+}
+
+div#kl #studio h2 {
+    font-size: 38px;
+    font-weight: 100;
+    margin: 0;
+}
+
+div#kl #studio #article {
+	padding-top: 25px;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 180%;	
+}
+
+div#kl .container p {
+    padding: 0px 0;
+}
+
+div#kl .kl-link {
+    height: 50px;
+    line-height: 50px;
+    color: #FFFFFF;
+    background-color: #121117;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+div#kl .kl-link:hover {
+    background-color: #E3020B;
+}
+
+.align-right {
+    text-align: right;
+}
+
+div#kl .product-list {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+div#kl .product-list li {
+    list-style: none;
+}
+
+div#kl .product-list .product {
+    color: #000000;
+    height: 280px;
+    text-align: center;
+    font-size: 12px;
+}
+
+div#kl .product-list .product h3 {
+    color: #000000;
+    margin: 0;
+    font-size: 16px;
+}
+
+div#kl .product-list .product .describe {
+    display: block;
+    text-align: center;
+	font-size: 14px;
+}
+
+div#kl .product-list .product .price {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+	font-size: 28px;
+}
+
+div#kl .product-list .product .kleuro {
+font-size : 28px;
+}
+
+
+
+div#kl #univers {
+    background: url("https://www.optic2000.com/media/css_others/corner-kl/fond-mozaik-KL.jpg") transparent no-repeat center 50px;
+    background-size: cover;
+    width: 100%;
+    height: 580px;
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+div#kl #univers .container {
+    height: 580px;
+}
+
+div#kl #gallery {
+    width: 560px;
+    margin: 5px auto;
+    padding: 0;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 120px;
+}
+
+div#kl #gallery li {
+    margin: 5px 0;
+    list-style: none;
+    background-color: #000;
+}
+
+div#kl #gallery li a:hover img {
+    opacity: 0.5;
+}
+
+div#kl .social {
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+}
+
+div#kl #social-pinterest {
+    background: transparent url("https://www.optic2000.com/media/css_others/corner-kl/logoPINTEREST-B.png") no-repeat center center;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+}
+
+div#kl #social-pinterest:hover {
+    background-image: url("https://www.optic2000.com/media/css_others/corner-kl/logoPINTEREST.png");
+}
+
+div#kl #social-facebook {
+    background: transparent url("https://www.optic2000.com/media/css_others/corner-kl/logoFB-B.png") no-repeat center center;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+}
+
+div#kl #social-facebook:hover {
+    background-image: url("https://www.optic2000.com/media/css_others/corner-kl/logoFB.png");
+}
+
+div#kl .social-pinterest-black {
+    background: transparent url("https://www.optic2000.com/media/css_others/corner-kl/logoPINTEREST.png") no-repeat center center;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div#kl .social-facebook-black {
+    background: transparent url("https://www.optic2000.com/media/css_others/corner-kl/logoFB.png") no-repeat center center;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#colorbox, #cboxWrapper, #cboxContent {
+    overflow: visible !important;
+}
+
+#cboxOverlay {
+    background: #686868 !important;
+}
+
+#cboxLoadedContent {
+    margin: 0 !important;
+    border: none !important;
+}
+
+#cboxNext {
+    background: transparent url("https://www.optic2000.com/media/css_others/corner-kl/next.png") center center no-repeat;
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    left: initial !important;
+    right: -80px !important;
+    top: 45%;
+}
+
+#cboxPrevious {
+    background: transparent url("https://www.optic2000.com/media/css_others/corner-kl/previous.png") center center no-repeat;
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    right: initial !important;
+    left: -80px !important;
+    top: 45%;
+}
+
+#cboxClose {
+    background: #000 url("https://www.optic2000.com/media/css_others/corner-kl/close.png") center center no-repeat  !important;
+    width: 65px !important;
+    height: 65px !important;
+    line-height: 65px !important;
+    display: inline-block;
+    position: absolute;
+    left: initial !important;
+    right: -80px !important;
+    top: 0;
+}
+
+div#kl #coullisses {
+    padding-top: 50px;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    flex-flow: nowrap;
+}
+
+div#kl #coullisses>div {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    flex-flow: column;
+}
+
+div#kl #coullisses #article {
+    width: 650px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+div#kl #coullisses #article h2 {
+    font-size: 55px;
+    font-weight: 300;
+    margin: 0;
+}
+
+div#kl #coullisses img {
+    display: block;
+    margin: 10px auto;
+}
+
+div#kl #footer {
+    padding: 40px 0;
+    font-size: 52px;
+    font-weight: 300;
+    text-align: center;
+}
+
+div#kl #footer span {
+    vertical-align: middle;
+}
+div#kl #footer span.brand {
+    font-family: 'OptimusPrincepsSemiBold';
+    vertical-align: initial;
+}

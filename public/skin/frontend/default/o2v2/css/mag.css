@@ -1,0 +1,99 @@
+.Mag{background-color:#fff;height:100%;}
+.MagHead{height:86px;}
+.MagHead h1{font-family:Georgia;font-size:56px;}
+.MagHead h2{font-family:Georgia;font-size:34px;color:#ff8111;}
+.MagHeadLeft{float:left;width:220px;padding: 10px 20px;}
+.MagHeadRight{float:right;width: 690px;padding-top: 30px;}
+.MagHeadRight1{float:left;width: 620px;}
+.MagHeadRight2{float:right;width: 70px;}
+.Mag1{height:320px;padding:0px 20px;padding-bottom: 20px;border-bottom:1px solid #000;}
+.MagCercle{background: url("../images/cercle_mag.png") no-repeat scroll 0 0 transparent;height: 262px;width: 263px;position:absolute;margin-top: 30px;right: 90px;}
+.MagCat1{background-color:#000;color:#fff;text-transform: uppercase;font-size:11px;padding: 5px 10px;float: left;margin-top: 16px;margin-left: 45px;}
+.Mag1 .Tilte h2{font-family: Georgia;font-size: 22px;width: 170px;margin-left: 47px;overflow: hidden;margin-top: 5px;height: 55px;}
+.Mag1 .Content{width: 170px;margin-left: 47px;height: 80px;overflow: hidden;margin-top: 5px;line-height: 16px;}
+.Mag1 .Suite{margin-top: 10px;margin-left:50px;}
+.Mag1 .Suite a{font-family: Georgia;font-size: 12px;}
+.Mag2{height:470px;padding:20px 20px;float:left;width:530px;border-bottom: 1px solid black;}
+.Mag2 .Tilte h2{font-family: Georgia;font-size: 22px;width: 530px;overflow: hidden;margin-top: 10px;height: 30px;}
+.Mag2 .Content{width: 530px;height: 50px;overflow: hidden;margin-top: 5px;line-height: 16px;}
+.Mag2 .Suite{margin-top: 40px;}
+.Mag2 .Suite a{font-family: Georgia;font-size: 12px;}
+.MagCat2{background-color:#000;color:#fff;text-transform: uppercase;font-size:11px;padding: 5px 10px;float: left;margin-top: 16px;margin-left: -20px;}
+.MagCenterRight{width:453px;height:1020px;background-color: white;float:left;}
+.MagCenterLeft{width:570px;height:1020px;background-color: white;float:left;border-right:1px solid #000;}
+.Mag3{height:300px;padding:20px 20px;width:413px;border-bottom: 1px solid black; }
+.Mag3 .Tilte h2{font-family: Georgia;font-size: 22px;width: 340px;overflow: hidden;margin-top: 10px;height: 30px;padding-bottom:5px;}
+.Mag3 p{width: 340px;height: 225px;overflow: hidden;line-height: 16px;}
+.Mag3Left{float:left;margin-right:10px;margin-bottom:10px;}
+.MagCat3{background-color:#000;color:#fff;text-transform: uppercase;font-size:11px;padding: 5px 5px 5px 20px;float: left;margin-left: -20px;}
+.Mag4{height:470px;padding:20px 20px;float:left;width:244px;border-right: 1px solid black;}
+.Mag4 .Tilte h2{font-family: Georgia;font-size: 22px;width: 244px;overflow: hidden;margin-top: 10px;height: 30px;}
+.Mag4 .Content{width: 244px;height: 50px;overflow: hidden;margin-top: 5px;line-height: 16px;}
+.Mag4 .Suite{margin-top: 40px;}
+.Mag4 .Suite a{font-family: Georgia;font-size: 12px;}
+.MagCat4{background-color:#000;color:#fff;text-transform: uppercase;font-size:11px;padding: 5px 6px 5px 20px;float: left;margin-top: 16px;margin-left: -20px;}
+.Mag5{height:470px;padding:20px 20px;float:right;width:245px;}
+.Mag5 .Tilte h2{font-family: Georgia;font-size: 22px;width: 245px;overflow: hidden;margin-top: 10px;height: 50px;}
+.Mag5 .Content{width: 245px;height: 50px;overflow: hidden;margin-top: 5px;line-height: 16px;}
+.Mag5 .Suite{margin-top: 20px;}
+.Mag5 .Suite a{font-family: Georgia;font-size: 12px;}
+.MagCat5{background-color:#000;color:#fff;text-transform: uppercase;font-size:11px;padding: 5px 6px 5px 20px;float: left;margin-top: 16px;margin-left: -20px;}
+.Mag6{height:639px;padding:20px 20px;width:413px;}
+.Mag6 .Tilte h2{font-family: Georgia;font-size: 22px;width: 340px;overflow: hidden;margin-top: 10px;height: 50px; }
+.Mag6 .Content{width: 340px;height: 90px;overflow: hidden;margin-top: 5px;line-height: 16px;}
+.Mag6 .Suite{margin-top: 30px;}
+.Mag6 .Suite a{font-family: Georgia;font-size: 12px;}
+.MagCat6{background-color:#000;color:#fff;text-transform: uppercase;font-size:11px;padding: 5px 6px 5px 20px;float: left;margin-top: 16px;margin-left: -20px;}
+.MagFooter{height:686px;background-color:#fff;border-top: 1px solid black;overflow: hidden ;width: 1024px;}
+.Mag7{height:686px;padding:20px 20px;width:340px;border-right: 1px solid black;float:left;}
+.Mag7 .Tilte h2{font-family: Georgia;font-size: 22px;width: 340px;overflow: hidden;margin-top: 10px;height: 50px;}
+.Mag7 .Content{width: 340px;height: 110px;overflow: hidden;margin-top: 5px;line-height: 16px;}
+.Mag7 .Suite{margin-top: 10px;}
+.Mag7 .Suite a{font-family: Georgia;font-size: 12px;}
+.MagCat7{background-color:#000;color:#fff;text-transform: uppercase;font-size:11px;padding: 5px 6px 5px 20px;float: left;margin-top: 16px;margin-left: -20px;}
+.Mag8{height:475px;padding:20px 20px;width:602px;border-bottom: 1px solid black;float:right;}
+.Mag8 .Tilte h2{font-family: Georgia;font-size: 22px;width: 528px;overflow: hidden;margin-top: 10px;height: 30px;}
+.Mag8 .Content{width: 528px;height: 70px;overflow: hidden;margin-top: 5px;line-height: 16px;}
+.Mag8 .Suite{margin-top: 20px;}
+.Mag8 .Suite a{font-family: Georgia;font-size: 12px;}
+.MagCat8{background-color:#000;color:#fff;text-transform: uppercase;font-size:11px;padding: 5px 5px 5px 20px;float: left;margin-top: 16px;margin-left: -21px;}
+.Magarticle{background-color:#fff;height:100%;overflow: hidden;}
+.articleMagLeft{width: 552px;float: left;overflow: hidden;height: 100%;background-color: white;padding: 0px 0px 0px 20px;border-right:1px solid;position: relative;}
+.articleMagRight{width:450px;float:right;}
+.magRetour{width: 55px;height: 15px;background-color:#e5e5e5;text-transform: uppercase;font-size:9px;padding:5px 20px;margin-left:-20px;}
+.magRetour span{font-size:11px;}
+.articleMagLeft  a{text-decoration:none;}
+.articleMagLeft h1{font-family: Georgia;font-size: 56px;}
+.articleMagLeft h1 span{color:#ff8111;}
+.imgArticle{padding-top: 10px;padding-bottom: 10px;}
+.MagCatArticle{background-color:#000;color:#fff;text-transform: uppercase;font-size:11px;padding: 5px 6px 5px 20px;float: left;margin-top: 16px;margin-left: -20px;}
+.articleMagLeft .TilteArticle h2{font-family: Georgia;font-size: 30px;width: 490px;overflow: hidden;padding-top: 30px;padding-bottom: 20px;padding-left: 20px;padding-right: 20px;}
+.ContentArticle{width: 490px;padding: 0px 20px;text-align: justify;line-height: 20px;}
+.ContentArticle .social > div {float: left;}
+.ContentArticle .social{margin-top: 10px;position: absolute;right: 30px;}
+.nbrComment{float: right;padding-top: 60px;padding-right: 25px;font-size:10px;font-weight:bold;}
+.formComment{margin-top: 10px;background-color: #E5E5E5;padding: 20px;width: 490px;height: 215px;}
+.nomArticle{width:200px;height:20px;float:left;margin-bottom: 20px;}
+.labelNom{float:left;background-color:#000;padding:5px;height:14px;color:#fff;font-size:10px;text-transform: uppercase;width: 25px;}
+.labelMail{float:left;background-color:#000;padding:5px;height:14px;color:#fff;font-size:10px;text-transform: uppercase;width: 35px;}
+.labelComment{float:left;background-color:#000;padding:5px;height:14px;color:#fff;font-size:10px;text-transform: uppercase;width: 50px;}
+.MagInput{width:150px;height:20px;}
+.mailArticle{width:275px;height:20px;float:right;}
+.nomArticle .input-box{float:right;width:165px;}
+.MagMailInput{width:223px;height:20px;}
+.messageArticle{padding-bottom: 5px;}
+.MagMessage.area{width:487px;height:113px;}
+.EnvoyerComment{margin-left: 400px; width: 92px;height: 26px;display: block;margin-top: 15px;padding-top: 5px;padding-left: 14px;cursor:pointer;}
+.commentUL{margin-top:20px;}
+.commentUL li{width:488px;border:1px solid #e3e3e3;padding:20px;margin-bottom:20px;}
+.commentUL li p{color:#ff8111;font-weight:bold;padding-bottom: 15px;}
+.commentUL li p span{text-transform: uppercase;}
+.commentUL li span{text-align: justify;line-height: 20px;}
+.articleMagRight .MagCatArticle{margin-top:58px;margin-left:-1px;}
+.articleMagRight li{padding: 20px 20px 0px 20px;}
+.articleMagRight li img{float:left;padding-right:20px;}
+.articleMagRight li .title h2{font-family: Georgia;font-size: 20px;width: 250px;overflow: hidden;height: 25px; margin-left: 75px; margin-top: -5px;}
+.articleMagRight li .content{width: 250px;height: 30px;overflow: hidden;line-height: 16px;}
+.articleMagRight li .Suite{font-family: Georgia;font-size: 12px;margin-left: 78px;margin-top: 10px;}
+.Mag a, .Mag a:visited, .Mag a:active, .Magarticle a, .Magarticle a:visited, .Magarticle a:active {color: #000}
+.MagHeadLeft h1, .MagHeadRight2 h2 { margin: 0; }

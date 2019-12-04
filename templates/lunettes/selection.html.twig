@@ -1,0 +1,147 @@
+{% extends 'base.html.twig' %}
+
+{% block title marque %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('media/css_others/corner-kl.css') }}"/>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('media/js_others/corner-kl.js') }}"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function(){jQuery(".wrapper-remove").removeClass();});
+    </script>
+{% endblock %}
+
+{% block body %}
+
+<div itemprop="mainContentOfPage" id="content">
+    <div class="std">
+        <!---- Début du Header ---->
+        <div id="kl">
+            <header>
+                <!---- Début navigation fixe ---->
+                <div id="nav" class="">
+                    <ul>
+                        <li><a title="La collection de lunettes de vue Femme Karl Lagerfeld" href="#solaire">Les optiques Femme</a></li>
+                        <li><a title="La collection de lunettes de vue Homme Karl Lagerfeld" href="#optique">Les optiques Homme</a></li>
+                        <li><a title="La maison selon Karl Lagerfeld" href="#monde">La maison selon KL</a></li>
+
+                    </ul>
+                </div>
+                <!---- Fin navigation fixe ---->
+            </header>
+            <!---- Fin du Header ---->
+            <!---- Début Section Collection ---->
+            <div id="intro" class="container">
+                <h1>Nouvelle collection de lunettes <br><strong>{{ marque|upper }}</strong></h1>
+                <div id="article" class="container">
+                    <p>Les lunettes <strong>{{ marque|upper }}</strong> allient chic, élégance et glamour. Ces montures au style intemporel, qui reprennent les éléments iconiques qui caractérisent le créateur, séduiront plus d'une fashionista.</p>
+                </div>
+            </div>
+            <div id="solaire" class="container">
+                <h2>Les lunettes de vue <strong>Femme</strong></h2>
+                <!---- Début bloc produit ---->
+
+                <ul class="product-list">
+
+                    {% if women %}
+                       
+                    {% for woman in women %}
+                    
+                    <li>
+                        <a title="Lunette de {{type}} {{marque}}" href="{{ path('lunettes_show', { id: woman.id, slug: woman.slug, ref: woman.ref }) }}">
+                            <div class="product">
+                      
+                                <img alt="Monture Femme {{marque}} - {{woman.ref}}" title="{{woman.name}}" 
+                                    src="{{ asset('media/catalog/lunettes/' ~ woman.image[0]) }}" width="340" height="177">
+                                <div>
+                                    <h3><strong>{{ marque|upper }} - {{woman.ref|upper}} - 
+                                        {% for color in woman.color %}
+                                            {{ color|upper }}
+                                        {% endfor %}
+                                    </strong></h3>
+                                    <span class="price"> 
+                                        {{ woman.prix }} 
+                                        <span class="kleuro">dt</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>                    
+                    {% endfor %}
+
+                    {% else %}
+                        <li>
+                            <div style="text-align: center;">
+                               <h3>Aucun résultat disponible pour cette lunette.</h3> 
+                            </div>
+                        </li>
+                    {% endif %}
+                    
+                </ul>
+                <!---- Fin bloc produit ---->
+            </div>
+            <!---- Fin Section Solaire---->
+            <div id="optique" class="container">
+                <h2>Les lunettes de vue <strong>Homme</strong></h2>
+                <!---- Début bloc produit ---->
+                <ul class="product-list">
+                    {% if men %}
+
+                    {% for man in men %}
+                        <li>
+                            <a title="Lunette de {{type}} {{marque}}" href="{{ path('lunettes_show', { id: man.id, slug: man.slug, ref: man.ref }) }}">
+                                <div class="product">
+                      
+                                <img alt="Monture Femme {{marque}} - {{man.ref}}" title="{{man.name}}" 
+                                    src="{{ asset('media/catalog/lunettes/' ~ man.image[0]) }}" width="340" height="177">
+                                    <div>
+                                        <h3><strong>{{ marque|upper }} - {{man.ref|upper}} - 
+                                            {% for color in man.color %}
+                                                {{ color|upper }}
+                                            {% endfor %}
+                                        </strong></h3>
+                                        <span class="price"> 
+                                            {{ man.prix }} 
+                                            <span class="kleuro">dt</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>             
+                    {% endfor %}
+
+                    {% else %}
+                        <div style="text-align: center;">
+                           <h3>Aucun résultat disponible pour cette lunette.</h3> 
+                        </div>
+                    {% endif %}
+                </ul>
+                <!---- Fin bloc produit ---->
+                
+            </div>
+            <!---- Fin Section Optique---->
+            <div id="monde" class="container">
+                <table style="width: 1140px;" border="0" cellspacing="0" cellpadding="10">
+                    <tbody>
+                        <tr>
+                            <td valign="top"><img src="{{ asset('media/wysiwyg/corner-kl/Le_Monde_KL.jpg') }}" alt="Le monde selon KARL LAGERFELD" width="500" height="700"></td>
+                            <td valign="top">
+                                <h2>La maison selon <br> <strong>KARL LAGERFELD</strong></h2>
+                                <div id="article">
+                                    <p>La maison <strong>KARL LAGERFELD</strong> adhère à l’esthétique et à la vision iconique de son fondateur éponyme, mêlées d’esprit contemporain et avant-gardiste. La marque célèbre l’immense héritage du créateur en insufflant sa passion, son intuition et son inépuisable créativité au cœur de son ADN.</p>
+                                    <p>L’esthétique emblématique de <strong>KARL LAGERFELD</strong> conjugue les classiques de la mode parisienne avec une attitude rock-chic et des coupes ajustées. La marque offre une diversité de collections lifestyle comprenant notamment des créations de prêt-à-porter pour hommes et femmes ainsi que des accessoires.</p>
+                                    <p>Le talent inépuisable de Karl Lagerfeld s’est exprimé bien au-delà du cadre de ses fonctions de directeur artistique des maisons <strong>KARL LAGERFELD</strong>, Chanel et Fendi. Il s’est distingué également dans le dessin, la photographie, le stylisme et l’édition. </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

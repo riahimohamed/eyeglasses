@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}-Optic : lunettes de vue, lunettes de soleil, lentilles de contact</title>
+
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1">
+		<meta name="description" content="Opticien Tarrouche Optic , Lunettes Homme, Lunettes Femme, Lentilles de Contact, Lunettes de Soleil, Lunettes Ray-Ban, Réservez gratuitement en ligne"/>
+		<meta name="keywords" content="Lunettes de vue, lunettes de soleil, lentilles de contact, monture lunettes de vue."/>
+		<meta name="robots" content="INDEX,FOLLOW"/>
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('skin/frontend/default/o2v2/favicon/apple-touch-icon.png') }}">
+		<link rel="icon" type="image/png" href="{{ asset('skin/frontend/default/o2v2/favicon/favicon-32x32.png') }}" sizes="32x32">
+		<link rel="icon" type="image/png" href="{{ asset('skin/frontend/default/o2v2/favicon/favicon-16x16.png') }}" sizes="16x16">
+		<link rel="manifest" href="{{ asset('skin/frontend/default/o2v2/favicon/manifest.json">
+		<link rel="mask-icon') }}" href="{{ asset('skin/frontend/default/o2v2/favicon/safari-pinned-tab.svg') }}" color="#000000">
+		<link rel="shortcut icon" href="{{ asset('skin/frontend/default/o2v2/favicon/favicon.ico') }}">
+		<meta name="apple-mobile-web-app-title" content="">
+		<meta name="application-name" content="">
+		<meta name="msapplication-config" content="{{ asset('kin/frontend/default/o2v2/favicon/browserconfig.xmls') }}">
+		<meta name="theme-color" content="#000">
+
+		<!--[if lt IE 7]>
+		<script type="text/javascript">
+		//<![CDATA[
+		    var BLANK_URL = 'https://www.optic2000.com/js/blank.html';
+		    var BLANK_IMG = 'https://www.optic2000.com/js/spacer.gif';
+		//]]>
+		</script>
+		<![endif]-->
+
+
+		<link rel="stylesheet" type="text/css" href="{{ asset('media/css_others/menuXXL.css') }}"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/IE.css') }}" media="all"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/IE_7.css') }}" media="all"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/jquery.mCustomScrollbar.css') }}" media="all"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/jquery.bxslider.css') }}" media="all"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/normalize.css') }}" media="all"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/main.css') }}" media="all"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/layout.css') }}" media="all"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/search.css') }}" media="all"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/colorbox.css') }}" media="all"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/pages-marque.css') }}" media="all"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/gomage/advanced-navigation.css') }}" media="all"/>
+
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/enquete.css') }}" media="all"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/optic2000/footer.css') }}" media="all"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/optic2000/header.css') }}" media="all"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/optic2000/homepage.css') }}" media="all"/>
+		<style type="text/css">.gan-loadinfo{border-color:#000!important;color:#000!important;background-color:#fff!important}#narrow-by-list .gan-slider-span{background:#1e90ff}#gan-left-nav-main-container .filter-note-content,#gan-right-nav-main-container .filter-note-content,#narrow-by-list .filter-note-content{background:#fff}#gan-left-nav-main-container .filter-note-handle,#gan-right-nav-main-container .filter-note-handle,#narrow-by-list .filter-note-handle{color:#1f5070}
+		</style>
+		
+        {% block stylesheets %}{% endblock %}
+
+        <script type="text/javascript" src="{{ asset('js/vendor/modernizr-2.6.2.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/jq/jquery-1.11.3.min.js') }}"></script>
+
+    </head>
+    <body class="cms-index-index cms-home">
+		
+		<!-- navbar -->
+		{{ render(controller(
+        	'App\\Controller\\HomeController::getOptions'
+        )) }}
+        <!-- /navbar -->
+		
+		<div class="wrapper wrapper-remove">
+        	{% block body %}{% endblock %}
+        </div>
+
+        {% include 'footer/footer.html.twig' %}
+
+		<script type="text/javascript" src="{{ asset('js/jq/jquery.tools.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/jq/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/prototype/prototype.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/lib/ccard.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/prototype/validation.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/scriptaculous/builder.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/scriptaculous/effects.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/scriptaculous/dragdrop.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/scriptaculous/controls.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/scriptaculous/slider.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/varien/js.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/varien/form.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/mage/translate.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/varien/countdown.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/jquery.colorbox-min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/gomage/category-navigation.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/gomage/advanced-navigation.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/jquery.bxslider.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/counter.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/microModal.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/opcheckout.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/script.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/optic2000/header.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/optic2000/homepage.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/jwplayer.js') }}"></script>
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

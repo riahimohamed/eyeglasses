@@ -1,0 +1,41 @@
+.personnalite-container{background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/personnalite/header.jpg') #fff no-repeat 0 0; padding-top: 189px; text-align: center;}
+.personnalite-header, .advisor-header {text-align: center; margin: 0 auto; width: 375px; position: relative;}
+.personnalite-header h1, .advisor-header h1 {font-size: 20px; font-family: "AvenirLTStd55Roman"; text-transform: uppercase;}
+.advisor-header {margin-bottom: 80px;}
+.personnalite-header:before, .advisor-header:before {content: ''; background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/personnalite/lunettes-gauche.jpg') no-repeat 0 0;
+    width: 120px; height: 120px; position: absolute; top: -10px; left: -120px;}
+.personnalite-header:after, .advisor-header:after {content: ''; background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/personnalite/lunettes-droit.jpg') no-repeat 0 0;
+    width: 120px; height: 120px; position: absolute; top: -10px; right: -120px;}
+.advisor-header:before {content: ''; background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/personnalite/visage-left.jpg');}
+.advisor-header:after {content: ''; background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/personnalite/visage-droit.jpg');}
+.personnalite-footer {background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/personnalite/footer.jpg') #fff no-repeat 0 0; height: 160px; padding-top: 1px; position: relative;}
+#advisor-container {margin: 40px 0;}
+#advisor-content-container {width: 400px; height: 407px; display: inline-block; overflow: hidden;}
+#advisor-products-container {width: 220px; height: 407px; display: inline-block; text-align: center; overflow: hidden; background-color: #fff;}
+div#products>div {cursor: pointer;}
+.bx-wrapper .bx-controls-direction a.bx-next{background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/personnalite/fleche-bas.png') transparent no-repeat 0 0;
+    height: 18px; width: 38px; top: 365px; left: 91px;}
+.bx-wrapper .bx-controls-direction a.bx-prev{background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/personnalite/fleche-haut.png') transparent no-repeat 0 0;
+    height: 18px; width: 38px; top: -10px; left: 91px;}
+div.bx-wrapper {margin: 0;}
+asside#advisor-products-container div.bx-viewport {margin: 33px 0;}
+div#liveCam-container, div#photo-container {height: 406px;}
+div#photo-container>div {margin: 0 auto;}
+.personnalite-big-text {font-size: 20px; font-family: "AvenirLTStd55Roman"; text-transform: uppercase; margin: 10px 0 30px;}
+
+.link {font-size: 16px; font-family: "AvenirLTStd55Roman"; color: #FFF; border: 1px solid #FFF; width: 200px; text-align: center;
+    display: inline-block; height: 38px; line-height: 38px; text-transform: uppercase; vertical-align: middle;}
+.link.orange {outline: 1px solid #F79428; background-color: #F79428;}
+.link.black {outline: 1px solid #000; background-color: #000;}
+.i-info {text-transform: none; border: 1px solid #fff; width: 17px; height: 17px; line-height: 17px;
+    margin: 0 2px; display: inline-block; border-radius: 17px; -moz-border-radius: 17px; -webkit-border-radius: 17px;}
+
+#link-help {position: absolute; left: 150px;}
+#link-advisor {position: absolute; right: 150px;}
+
+#personnalite-help article {background-color: #fff; text-align: center; width: 800px; padding: 40px;}
+#personnalite-help article header h1 {font-size: 20px; font-family: "AvenirLTStd55Roman"; text-transform: uppercase; margin: 20px 0;}
+#personnalite-help article p {margin: 10px 0;}
+#personnalite-help article div {margin-top: 20px;}
+
+.personnalite-intro {height: 798px;}

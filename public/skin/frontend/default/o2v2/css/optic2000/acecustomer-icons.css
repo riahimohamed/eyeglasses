@@ -1,0 +1,468 @@
+[class^="o2k-"], [class*=" o2k-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ace' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.o2k-illustration-garanties-casse .path1:before {
+  content: "\e96d";
+  color: rgb(102, 102, 102);
+}
+.o2k-illustration-garanties-casse .path2:before {
+  content: "\e96e";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-illustration-garanties-graranties-pret .path1:before {
+  content: "\e978";
+  color: rgb(116, 202, 194);
+}
+.o2k-illustration-garanties-graranties-pret .path2:before {
+  content: "\e979";
+  margin-left: -1em;
+  color: rgb(102, 102, 102);
+}
+.o2k-interface-fleche-petit-haut:before {
+  content: "\e902";
+}
+.o2k-interface-fleche-petit-gauche:before {
+  content: "\e903";
+}
+.o2k-interface-fleche-grand-gauche:before {
+  content: "\e904";
+}
+.o2k-interface-fleche-grand-bas:before {
+  content: "\e905";
+}
+.o2k-interface-fleche-petit-bas:before {
+  content: "\e906";
+}
+.o2k-interface-fleche-grand-haut:before {
+  content: "\e901";
+}
+.o2k-interface-burger:before {
+  content: "\e900";
+}
+.o2k-illustration-personnage-femme:before {
+  content: "\e97f";
+}
+.o2k-illustration-personnage-femme-couleur .path1:before {
+  content: "\e980";
+  color: rgb(102, 102, 102);
+}
+.o2k-illustration-personnage-femme-couleur .path2:before {
+  content: "\e981";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-illustration-personnage-femme-sanslunette .path1:before {
+  content: "\e982";
+  color: rgb(102, 102, 102);
+}
+.o2k-illustration-personnage-femme-sanslunette .path2:before {
+  content: "\e983";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-illustration-personnage-fille:before {
+  content: "\e984";
+}
+.o2k-illustration-personnage-fille-couleur .path1:before {
+  content: "\e985";
+  color: rgb(102, 102, 102);
+}
+.o2k-illustration-personnage-fille-couleur .path2:before {
+  content: "\e986";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-illustration-personnage-fille-sanslunette .path1:before {
+  content: "\e987";
+  color: rgb(102, 102, 102);
+}
+.o2k-illustration-personnage-fille-sanslunette .path2:before {
+  content: "\e988";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-illustration-personnage-garcon:before {
+  content: "\e989";
+}
+.o2k-illustration-personnage-garcon-couleur .path1:before {
+  content: "\e98a";
+  color: rgb(102, 102, 102);
+}
+.o2k-illustration-personnage-garcon-couleur .path2:before {
+  content: "\e98b";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-illustration-personnage-garcon-sanslunette .path1:before {
+  content: "\e98c";
+  color: rgb(116, 202, 194);
+}
+.o2k-illustration-personnage-garcon-sanslunette .path2:before {
+  content: "\e98d";
+  margin-left: -1em;
+  color: rgb(102, 102, 102);
+}
+.o2k-illustration-personnage-homme:before {
+  content: "\e98e";
+}
+.o2k-illustration-personnage-homme-couleur .path1:before {
+  content: "\e98f";
+  color: rgb(97, 97, 97);
+}
+.o2k-illustration-personnage-homme-couleur .path2:before {
+  content: "\e990";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-illustration-personnage-homme-sanslunette .path1:before {
+  content: "\e991";
+  color: rgb(116, 202, 194);
+}
+.o2k-illustration-personnage-homme-sanslunette .path2:before {
+  content: "\e992";
+  margin-left: -1em;
+  color: rgb(97, 97, 97);
+}
+.o2k-interface-afficher-code:before {
+  content: "\e993";
+}
+.o2k-interface-agrandir:before {
+  content: "\e994";
+}
+.o2k-interface-bas:before {
+  content: "\e995";
+}
+.o2k-interface-calendrier:before {
+  content: "\e996";
+}
+.o2k-interface-close:before {
+  content: "\e997";
+}
+.o2k-interface-droite:before {
+  content: "\e998";
+}
+.o2k-interface-email:before {
+  content: "\e999";
+}
+.o2k-interface-facebook:before {
+  content: "\e99a";
+}
+.o2k-interface-fleche-grand:before {
+  content: "\e99b";
+}
+.o2k-interface-fleche-petit:before {
+  content: "\e99c";
+}
+.o2k-interface-gauche:before {
+  content: "\e99d";
+}
+.o2k-interface-geoloc:before {
+  content: "\e99e";
+}
+.o2k-interface-haut:before {
+  content: "\e99f";
+}
+.o2k-interface-imprimante:before {
+  content: "\e9a0";
+}
+.o2k-interface-internet:before {
+  content: "\e9a1";
+}
+.o2k-interface-interrogation:before {
+  content: "\e9a2";
+}
+.o2k-interface-lentille:before {
+  content: "\e9a3";
+}
+.o2k-interface-lunette:before {
+  content: "\e9a4";
+}
+.o2k-interface-masquercode:before {
+  content: "\e9a5";
+}
+.o2k-interface-modifier:before {
+  content: "\e9a7";
+}
+.o2k-interface-phone:before {
+  content: "\e9a8";
+}
+.o2k-interface-telecharger:before {
+  content: "\e9a9";
+}
+.o2k-picto-accueil:before {
+  content: "\e9aa";
+}
+.o2k-picto-accueil-couleur .path1:before {
+  content: "\e9ab";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-accueil-couleur .path2:before {
+  content: "\e9ac";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-article:before {
+  content: "\e9ad";
+}
+.o2k-picto-article-couleur .path1:before {
+  content: "\e9ae";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-article-couleur .path2:before {
+  content: "\e9af";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-boutique:before {
+  content: "\e9b0";
+}
+.o2k-picto-boutique-couleur .path1:before {
+  content: "\e9b1";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-boutique-couleur .path2:before {
+  content: "\e9b2";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-calendrier:before {
+  content: "\e9b3";
+}
+.o2k-picto-calendrier-couleur .path1:before {
+  content: "\e9b4";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-calendrier-couleur .path2:before {
+  content: "\e9b5";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-conseil:before {
+  content: "\e9b6";
+}
+.o2k-picto-conseil-couleur .path1:before {
+  content: "\e9b7";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-conseil-couleur .path2:before {
+  content: "\e9b8";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-ereservation:before {
+  content: "\e9b9";
+}
+.o2k-picto-ereservation-couleur .path1:before {
+  content: "\e9ba";
+  color: rgb(104, 104, 110);
+}
+.o2k-picto-ereservation-couleur .path2:before {
+  content: "\e9bb";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-info:before {
+  content: "\e9bc";
+}
+.o2k-picto-info-couleur .path1:before {
+  content: "\e9bd";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-info-couleur .path2:before {
+  content: "\e9be";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-itineraire:before {
+  content: "\e9bf";
+}
+.o2k-picto-itineraire-couleur .path1:before {
+  content: "\e9c0";
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-itineraire-couleur .path2:before {
+  content: "\e9c1";
+  margin-left: -1em;
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-livret:before {
+  content: "\e9c2";
+}
+.o2k-picto-livret-couleur .path1:before {
+  content: "\e9c3";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-livret-couleur .path2:before {
+  content: "\e9c4";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-lunette:before {
+  content: "\e9c5";
+}
+.o2k-picto-lunette-couleur .path1:before {
+  content: "\e9c6";
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-lunette-couleur .path2:before {
+  content: "\e9c7";
+  margin-left: -1em;
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-medecin:before {
+  content: "\e9c8";
+}
+.o2k-picto-medecin-couleur .path1:before {
+  content: "\e9c9";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-medecin-couleur .path2:before {
+  content: "\e9ca";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-medecin-general:before {
+  content: "\e9cb";
+}
+.o2k-picto-medecin-general-couleur .path1:before {
+  content: "\e9cc";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-medecin-general-couleur .path2:before {
+  content: "\e9cd";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-mesgarantie:before {
+  content: "\e9ce";
+}
+.o2k-picto-mesgarantie-couleur .path1:before {
+  content: "\e9cf";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-mesgarantie-couleur .path2:before {
+  content: "\e9d0";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-monopticien:before {
+  content: "\e9d1";
+}
+.o2k-picto-monopticien-couleur .path1:before {
+  content: "\e9d2";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-monopticien-couleur .path2:before {
+  content: "\e9d3";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-montre:before {
+  content: "\e9d4";
+}
+.o2k-picto-montre-couleur .path1:before {
+  content: "\e9d5";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-montre-couleur .path2:before {
+  content: "\e9d6";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-mutuelle:before {
+  content: "\e9d7";
+}
+.o2k-picto-mutuelle-couleur .path1:before {
+  content: "\e9d8";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-mutuelle-couleur .path2:before {
+  content: "\e9d9";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-oeil:before {
+  content: "\e9da";
+}
+.o2k-picto-oeil-couleur .path1:before {
+  content: "\e9db";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-oeil-couleur .path2:before {
+  content: "\e9dc";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-ordonnances:before {
+  content: "\e9dd";
+}
+.o2k-picto-ordonnances-couleur .path1:before {
+  content: "\e9de";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-ordonnances-couleur .path2:before {
+  content: "\e9df";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-perso:before {
+  content: "\e9e0";
+}
+.o2k-picto-perso-couleur .path1:before {
+  content: "\e9e1";
+  color: rgb(104, 104, 110);
+}
+.o2k-picto-perso-couleur .path2:before {
+  content: "\e9e2";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-samu:before {
+  content: "\e9e3";
+}
+.o2k-picto-samu-couleur .path1:before {
+  content: "\e9e4";
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-samu-couleur .path2:before {
+  content: "\e9e5";
+  margin-left: -1em;
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-sav:before {
+  content: "\e9e6";
+}
+.o2k-picto-sav-couleur .path1:before {
+  content: "\e9e7";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-sav-couleur .path2:before {
+  content: "\e9e8";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}
+.o2k-picto-telephone:before {
+  content: "\e9e9";
+}
+.o2k-picto-telephone-couleur .path1:before {
+  content: "\e9ea";
+  color: rgb(102, 102, 102);
+}
+.o2k-picto-telephone-couleur .path2:before {
+  content: "\e9eb";
+  margin-left: -1em;
+  color: rgb(116, 202, 194);
+}

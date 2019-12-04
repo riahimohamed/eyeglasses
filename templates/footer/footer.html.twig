@@ -1,0 +1,114 @@
+<footer class="footer-container">
+    <div class="top-container">
+        <div class="top">
+            <div class="mag">
+                Venez découvrir les tendances dans<br/>
+                <img src="{{ asset('skin/frontend/default/o2v2/img/tendances-footer.png') }}" alt="Tendances"/>
+            </div>
+            <div class="newsletter">
+                <span class="visible-xs">Inscrivez-vous à notre newsletter</span>
+                <form method="post">
+                    <input type="text" name="email" id="newsletter" placeholder="Entrez votre email pour recevoir notre Newsletter" class="input-text required-entry validate-email"/><!--
+                --><button class="newsletterBtn button" type="submit" name="newsletterBtn" value="OK" maxlength="255">OK
+            </button>
+        </form>
+    </div>
+    <ul class="social">
+                <li>
+                    <a href="https://www.instagram.com/explore/locations/562942040/" target="_blank">
+                        <img src="{{ asset('skin/frontend/default/o2v2/img/picto-instagram.png') }}" alt="Instagram"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/OpticTarrouche/" target="_blank">
+                        <img src="{{ asset('skin/frontend/default/o2v2/img/picto-facebook.png') }}" alt="Facebook"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="{{ asset('skin/frontend/default/o2v2/img/picto-twitter.png') }}" alt="Twitter"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="middle-container">
+        <div class="middle">
+            <ul class="navigation">
+                <li class="hidden-mobile">
+                    <h4><a title="Lunettes de vue" href="{{ path('lunettes', { type: 'vue' }) }}">Lunettes</a></h4>
+                    <ul>
+                        <li>
+                            <a title="Lunettes de vue Homme" href="{{ path('lunettes_genre', { 'genre': 'homme' }) }}">
+                                Lunettes de vue Homme
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Lunettes de vue Femme" href="{{ path('lunettes_genre', { 'genre': 'femme' }) }}">
+                                Lunettes de vue Femme
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Lunettes de vue Enfant" href="{{ path('lunettes_genre', { 'genre': 'enfant' }) }}">
+                                Lunettes de vue Enfant
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Lunettes de vue Ray-Ban" href="{{ path('lunettes_marque', { 'marque': 'rayban' }) }}">
+                                Lunettes de vue Ray Ban
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hidden-mobile">
+                    <h4><a title="Lunettes de soleil" href="{{ path('lunettes', { type: 'soleil' }) }}">Solaires</a></h4>
+                    <ul>
+                        <li>
+                            <a title="Lunettes de soleil Homme" href="{{ path('lunettes_genre', { 'genre': 'homme' }) }}">
+                                Lunettes de soleil Homme
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Lunettes de soleil Femme" href="{{ path('lunettes_genre', { 'genre': 'femme' }) }}">
+                                Lunettes de soleil Femme
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Lunettes de soleil Enfant" href="{{ path('lunettes_genre', { 'genre': 'enfant' }) }}">
+                                Lunettes de soleil Enfant
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Lunettes de soleil Ray-Ban" href="{{ path('lunettes_marque', { 'marque': 'rayban' }) }}">
+                                Lunettes de soleil Ray-Ban
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hidden-mobile">
+                    <h4>
+                        <a title="Lentilles de contact" href="{{ path('lunettes', { type: 'contact' }) }}">
+                            Lentilles
+                        </a>
+                    </h4>
+                    <ul>
+                        <li><a title="Lentilles journali&egrave;res" href="#">Lentilles journali&egrave;res</a></li>
+                        <li><a title="Lentilles bi-mensuelles" href="#">Lentilles bi-mensuelles</a></li>
+                        <li><a title="Lentilles mensuelles" href="#">Lentilles mensuelles</a></li>
+                        <li><a title="Lentilles de couleur" href="#">Lentilles de couleurs</a></li>
+                        <li><a title="Produits d'entretien" href="#">Produits d'entretien</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4><a title="Tarrouche Optic">Optic</a></h4>
+                    <ul>
+                        <li><a title="Contactez-nous" href="{{ path('home_contact') }}" >Contactez-nous</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <p>&nbsp;</p>            
+        </div>
+    </div>
+    
+</footer>

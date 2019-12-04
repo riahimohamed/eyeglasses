@@ -1,0 +1,171 @@
+{% extends 'base.html.twig' %}
+
+{% block title  %}
+	Lunettes de {{ type }} 
+	{% if genre is defined  %}
+		{{ genre }}
+	{% else %}
+		{{ marque is defined }}    	
+	{% endif %}
+
+{% endblock %}
+
+{% block body %}
+
+<div class="page">
+	<div class="main main-container col2-left-layout">
+        <div class="middle-container">
+
+			<div id="content-header">    
+				<div class="ProductContainer">
+	        		<h1 class="ResultsList clear">
+
+	        			<span class="typeArticleSelect">{{ lunettes|length }}</span>
+
+	        			{% if genre is defined  %}
+	            		Lunettes de {{ type }} {{ genre }} : 
+	            		tous nos modèles de lunettes pour {{ genre }}
+
+	            		{% elseif val is defined and val != 'all' and title is defined %}
+	            		LUNETTES PAS CHER : TOUS NOS MODÈLES DE {{ title }} À {{ val }}dt
+
+	            		{% elseif cat is defined %}
+	            		LUNETTES {{ cat }} : TOUS NOS MODÈLES
+
+						{% elseif marque is defined %}
+	            		LUNETTES {{ marque }} : TOUS NOS MODÈLES
+	            		{% endif %}
+
+	        		</h1>
+			    </div>
+			</div>
+
+			<div itemprop="mainContentOfPage" class="ProductContainer col_by_3">
+
+			    <div class="mainContent marieLouise">
+			        <div class="cataloglayred">
+
+			            <div class="ProductContainer col_by_3">
+			                <div class="category-products">
+			                    <div class="ligne">
+
+			                    	{% if genre is defined and genre == 'enfant' %}
+			                    		
+			                    	<div class="category-description clear">
+			                        <div>
+			                        	<img src="{{ asset('media/wysiwyg/banniere_kids.jpg') }}" alt="Toutes nos lunettes de vue pour enfant et junior">
+			                        </div>
+									<div style="text-align: left; top: 25px; right: 20px; left: 340px; height: 200px; position: absolute;">
+									<h2 style="font-size: 16px; line-height: normal; text-transform: uppercase; color: #ffffff;">
+										<strong>Lunettes de vue pour enfant et junior</strong>
+									</h2>
+									<p style="font-size: 12px; color: #ffffff;">
+										Découvrez notre collection de l
+										<strong>unettes adaptées</strong>&nbsp;<strong>aux bébés</strong> avec la collection <strong>Wahoo Bébé</strong>, aux <strong>bambins</strong>&nbsp; ou aux&nbsp;<strong>juniors</strong> avec des marques emblématiques comme <strong>Ray-Ban Junior</strong>, <strong>Little Paul &amp; Joe</strong> ou <strong>Façonnable pour les Garçons</strong> ! <br>Inspirées de certaines collections adultes, nos lunettes pour enfants sont branchées, dans l’air du temps, classiques ou colorées, mais elles sont surtout pensées pour eux.
+									</p>
+									</div>                    
+									</div>										
+
+									{% endif %}
+
+			                        <div class="Ordering">
+			                            Trier par :
+			                            <label>Afficher :</label>
+			                            <select onchange="setNavigationUrl(this.value)">
+			                                <option value="" selected="selected">25 </option>
+			                                <option value="">50 </option>
+			                                <option value="">75 </option>
+			                                <option value="">100 </option>
+			                                <option value="">Tous </option>
+			                            </select>
+			                        </div>
+
+			                    </div>
+			                    <ul class="productsItems lunettes" id="productsList">
+			                    	{% if lunettes %}
+			                    		
+			                    	{% for lunette in lunettes %}
+									   
+			                        <li class="productItem">
+
+			                            <article class="ArticleSelect">
+			                            	{% if lunette.new == 1 %}
+			                            	<div class="product-sticker">
+						                      <img src="https://www.optic2000.com/media/stickers/sticker-ecom-nouveaute.png">
+						                    </div>
+			                            	{% endif %}
+			                                
+
+			                                <figure class="imgProduit">
+			                                    <a href="{{ path('lunettes_show', { id: lunette.id, slug: lunette.slug, ref: lunette.ref }) }}">
+			                                        <img alt="{{ lunette.name }}" title="{{ lunette.name }}" src="{{ asset('media/catalog/lunettes/' ~ lunette.image[0]) | imagine_filter('small') }}">
+			                                    </a>
+			                                </figure>
+
+			                                <header class="sliderSelectDescription">
+			                                    <h2>{{ lunette.name }}</h2>
+			                                </header>
+			                                <footer class="sliderSelectDescription">
+			                                    <p>
+			                                        {{ lunette.ref|upper }} - 
+												{% for color in lunette.color %}
+												    {{ color }}
+												{% endfor %}
+			                                         
+			                                    </p>
+
+			                                    <p class="p-partir">
+			                                        Monture et verres à partir de </p>
+			                                    <p class="Price special-price">
+			                                        <span class="price">{{ lunette.prix }}<span>,00dt</span></span>
+			                                    </p>
+
+			                                </footer>
+			                            </article>
+			                        </li>
+
+			                        {% endfor %}
+			                        {% else %}
+			                        <div class="resultatVide" style="text-align: center;">
+			                           <h3>Aucun résultat disponible pour cette lunette.</h3> 
+			                        </div>
+			                        {% endif %}
+			                    </ul>
+
+			                    <div class="pagination">
+			                        <nav>
+			                            <!--<ul>
+			                                <li class="current">1</li>
+
+			                                <li class="suivant">
+			                                    <a href=""><img alt="Page suivante" src="https://www.optic2000.com/skin/frontend/default/o2v2/img/pagination_suivant.png"></a>
+			                                </li>
+			                            </ul>-->
+			                           
+			                            {{ knp_pagination_render(pagination) }}
+			                        </nav>
+			                    </div>
+
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+
+			    <script type="text/javascript">
+			        jQuery(document).ready(function() {
+			            var htmlStr = jQuery('#mostviewed').html();
+			            jQuery('#most_viewed').html(htmlStr);
+			            jQuery('#mostviewed').remove();
+			            jQuery('#breadcrumbs').remove();
+			        });
+			    </script>
+			</div>
+
+			<!-- Filter menu -->
+			{% include 'header/filter.html.twig' %}
+
+		</div>
+	</div>
+</div>
+									
+{% endblock %}

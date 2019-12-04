@@ -1,0 +1,396 @@
+<header id="mainheader" class="branding" role="banner">
+    <header>
+        <div class="middle">
+            <div class="container-wide">
+                <a class="logo" href="{{ path('home') }}" title="Tarrouche Optic Une nouvelle vision de la vie" onclick="">
+                    <img src="{{ asset('skin/frontend/default/o2v2/images/logo.png') }}" alt="Tarrouche Optic Une nouvelle vision de la vie" />
+                </a>
+
+                <div class="menu-middle">
+                    <ul class="menu-middle">
+                        
+                        <li class="home">
+                            <a href="javascript: void(0);" onclick="showTooltip(this, '.toolTip1Bottom', 'header div.middle div.menu-middle ul li');
+                            return false;">
+
+                                <img src="{{ asset('skin/frontend/default/o2v2/img/picto-account.png') }}" alt="Mon compte" width="26" height="26" />
+                                <br/>
+                                <span class="hidden-md hidden-sm hidden-xs">Mon compte </span>
+                            </a>
+
+                            <div class="toolTip1Bottom" id="compte" rel="popup" style="display: none;">
+                                <div class="toolTip1Body">
+                                    <div class="triangle">&nbsp;</div>
+
+                                    {% if not app.user %}
+                                    <strong class="toolTipHeader">Vous avez un compte</strong>
+                                    <div class="tooltipForm">
+
+                                        <form action="{{ path('security_login') }}" method="POST">
+                                            <div class="toolTipRow">
+                                                <input type="text" name="_username" class="inputStyle02 mailInput" placeholder="Votre email" /> 
+                                            </div>
+
+                                            <div class="toolTipRow">
+                                                <input type="password" name="_password" class="inputStyle02 passwordInput" placeholder="Votre mot de passe" />
+                                            </div>
+
+                                            <div class="toolTipRow">
+                                                <input type="submit" value="connexion" class="popin-connexion-btn" />
+                                            </div>
+
+                                            <div class="toolTipRow">
+                                                <a class="forgoten-pass" href="customer/account/forgotpassword/index.html">
+                                                Mot de passeoublié</a>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="login-menu-separator">
+                                        <hr/>
+                                        <div>OU</div>
+                                        <hr/>
+                                    </div>
+
+                                    <div class="newAccount">
+                                        <a class="menuTopLink create-account" href="{{ path('security_registration') }}">
+                                         Créer Un Compte                                    
+                                        </a>
+                                    </div>
+
+                                    {% else %}
+                                        {% include 'accounts/account.html.twig' %}
+                                    
+                                    {% endif %}
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- SearchBar -->
+                <div class="search">
+                    <!--<form id="search_mini_form" autocomplete="off">
+                        <input id="search" type="text" placeholder="je recherche une marque, une référence..">
+                        <button type="submit" title="Search" class="button" id="searchButton">
+                        </button>
+                    </form>-->
+
+                    {{ render(controller(
+                        'App\\Controller\\HomeController::searchBar'
+                    )) }}
+
+                    
+                </div>
+
+
+            </div>
+        </div>
+        <div class="menu-container">
+            <div class="menu">
+                <nav>
+                    <ul class="links">
+                        <li>
+                            <a itemprop="url" href="{{ path('lunettes', { 'type': 'vue' }) }}" id="menulink-id-1" onclick="" target="_self" onMouseOver="this.style.background='rgb(240, 239, 237)'" onMouseOut="this.style.background='rgb(207, 202, 196)'" data-show-sub-menu="navigation-sub-menu-1" data-color="rgb(240, 239, 237)">LUNETTES DE VUE
+                            </a>
+                        </li>
+                        <li>
+                            <a itemprop="url" href="{{ path('lunettes', { 'type': 'soleil' }) }}" id="menulink-id-2" onclick="" target="_self" onMouseOver="this.style.background='rgb(240, 239, 237)'" onMouseOut="this.style.background='rgb(207, 202, 196)'" data-show-sub-menu="navigation-sub-menu-2" data-color="rgb(240, 239, 237)">
+                            LUNETTES DE SOLEIL
+                            </a>
+                        </li>
+                        <li>
+                            <a itemprop="url" href="{{ path('lunettes', { 'type': 'contact' }) }}" id="menulink-id-3" onclick="" target="_self" onMouseOver="this.style.background='rgb(255, 255, 255)'" onMouseOut="this.style.background='rgb(207, 202, 196)'" data-show-sub-menu="navigation-sub-menu-3" data-color="rgb(255, 255, 255)">
+                               LENTILLES DE CONTACT                                                            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('home_contact') }}">
+                                <img src="{{ asset('media/homepage/menu/picto_position_20170328134517.png') }}" alt="menu picto" /> Je trouve mon magasin
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navigation-sub-menu">
+                <div id="navigation-sub-menu-1" style="background-color: rgb(240, 239, 237);" onMouseOver="document.getElementById('menulink-id-1').style.background='rgb(240, 239, 237)'" onMouseOut="document.getElementById('menulink-id-1').style.background='rgb(207, 202, 196)'">
+                    <ul>
+                        <li><span>GENRES</span>
+                            <ul>
+                                <li>
+                                    <span style="font-size: small;">
+                                        <a href="{{ path('lunettes_genre', { 'genre':'femme'}) }}">Lunettes femme</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span style="font-size: small;">
+                                        <a href="{{ path('lunettes_genre', { 'genre': 'homme' }) }}">Lunettes homme</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span style="font-size: small;">
+                                        <a href="{{ path('lunettes_genre', { 'genre':'enfant'}) }}">Lunettes enfant</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span>MARQUES</span>
+                            <ul>
+                                {% for option in options %}
+
+                                  <li><span style="font-size: small;">
+                                    <a href="{{ path('lunettes_marque', { 'marque': option.slug }) }}">
+                                        {{ option.name }}
+                                    </a></span>
+                                </li>  
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li><span>S&Eacute;LECTIONS</span>
+                            <ul>
+                                <li><span style="font-size: small;">
+                                    <a href="{{ path('lunettes_selection', {'cat': 'new', 'val': 1, 'title': 'nouveautes'}) }}">Les nouveaut&eacute;s</a>
+                                </span>
+                                </li>
+                                <li>
+                                    <span style="font-size: small;">
+                                        <a href="{{ path('lunettes_selection', {'cat': 'prix', 'val': 50, 'title': 'petits-prix'}) }}">
+                                            Petits prix &agrave; 50dt
+                                        </a>
+                                    </span>
+                                </li>
+                                <li><span style="font-size: small;">
+                                    <a href="{{ path('lunettes_selection', {'cat': 'all', 'title': 'marques-passion', 'val': 'all'}) }}">
+                                        Nos collections<br/>
+                                    </a></span>
+                                </li>
+                                <li><span style="font-size: small;">
+                                    <a href="{{ path('lunettes_genre', { 'genre':'enfant'}) }}">
+                                        S&eacute;lection Enfant<br/>
+                                    </a>
+                                </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="inline no-border" style="width: 187px;"><span>MOD&Egrave;LES</span>
+                            <ul>
+                            {% for modele in modeles %}                        
+                                <li>
+                                    <a href="{{ path('lunettes_modele', { 'forme':modele.slug }) }}">
+                                        <img src="{{ asset('media/wysiwyg/pictos/' ~ modele.slug ~ '.png') }}" alt="lunettes de vue {{ modele.name }}" />
+                                        <br/><span style="font-size: small;">{{ modele.name|upper }}</span>
+                                    </a>
+                                </li>
+                            {% endfor %}
+
+                            </ul>
+                        </li>
+                        <li class="no-border promobox">NOTRE S&Eacute;LECTION
+                            <a href="{{ path('lunettes_marque', { 'marque': 'karl-lagerfeld', 'special': 'special' }) }}">
+                                <img title="Découvrez le Corner Karl Lagerfeld" src="{{ asset('media/wysiwyg/Menu_XXL/Selection_Karl_Lagerfeld.png') }}" alt="Notre sélection Karl Lagerfeld" />
+                            </a>
+                            <a href="{{ path('lunettes_marque', { 'marque': 'rayban', 'special': 'special' }) }}">
+                                <img title="Lunettes de vue Ray-Ban" src="{{ asset('media/wysiwyg/color_box_xxl_Ray-Ban_optique.png') }}" alt="D&eacute;couvrez notre boutique Ray-Ban" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="navigation-sub-menu-2" style="background-color: rgb(240, 239, 237);" onMouseOver="document.getElementById('menulink-id-2').style.background='rgb(240, 239, 237)'" onMouseOut="document.getElementById('menulink-id-2').style.background='rgb(207, 202, 196)'">
+                    <ul>
+                        <li><span>GENRES</span>
+                            <ul>
+                                <li><span style="font-size: small;">
+                                    <a href="{{ path('lunettes_genre', { 'type':'soleil', 'genre':'femme'}) }}">
+                                        Lunettes de soleil femme
+                                    </a></span>
+                                </li>
+                                <li><span style="font-size: small;">
+                                    <a href="{{ path('lunettes_genre', { 'type':'soleil', 'genre':'homme'}) }}">
+                                        Lunettes de soleil homme
+                                    </a>
+                                </span></li>
+                                <li><span style="font-size: small;">
+                                    <a href="{{ path('lunettes_genre', { 'type':'soleil', 'genre':'enfant'}) }}">
+                                        Lunettes de soleil enfant
+                                    </a></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span>MARQUES</span>
+                            <ul>
+                                {% for option in options %}
+                                  <li><span style="font-size: small;">
+                                    <a href="{{ path('lunettes_marque', {'type':'soleil', 'marque': option.slug }) }}">
+                                        {{ option.name }}
+                                    </a></span>
+                                </li>  
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li><span>S&Eacute;LECTIONS</span>
+                            <ul>
+                                <li><span style="font-size: small;">
+                                    <a href="{{ path('lunettes_selection', {'type':'soleil','cat': 'new', 'val': 1, 'title': 'nouveautes'}) }}">Les nouveaut&eacute;s</a>
+                                </span>
+                                </li>
+                                <li>
+                                    <span style="font-size: small;">
+                                        <a href="{{ path('lunettes_selection', {'type':'soleil','cat': 'prix', 'val': 90, 'title': 'petits-prix'}) }}">
+                                            Petits prix
+                                        </a>
+                                    </span>
+                                </li>
+                                <li><span style="font-size: small;">
+                                    <a href="{{ path('lunettes_selection', {'type':'soleil','cat': 'all', 'title': 'marques-passion', 'val': 'all'}) }}">
+                                        Nos collections<br/>
+                                    </a></span>
+                                </li>
+                                <li><span style="font-size: small;">
+                                    <a href="{{ path('lunettes_genre', {'type':'soleil','genre':'enfant'}) }}">
+                                        S&eacute;lection Enfant<br/>
+                                    </a>
+                                </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="inline no-border" style="width: 195px;"><span>MOD&Egrave;LES</span>
+                            <ul>
+                            {% for modele in modeles %}                        
+                                <li>
+                                    <a href="{{ path('lunettes_modele', {'type':'soleil', 'forme':modele.slug }) }}">
+                                        <img src="{{ asset('media/wysiwyg/pictos/' ~ modele.slug ~ '.png') }}" alt="lunettes de vue {{ modele.name }}" />
+                                        <br/><span style="font-size: small;">
+                                        {{ modele.name|upper }}
+                                        </span>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                            </ul>
+                        </li>
+                        <li class="no-border promobox">NOTRE S&Eacute;LECTION
+                            <a href="{{ path('lunettes_marque', {'type':'soleil', 'marque': 'medley', 'special': 'special' }) }}">
+                                <img title="Découvrez notre sélection" src="{{ asset('media/wysiwyg/Menu_XXL/1555602232.png') }}" alt="Découvrez notre sélection" />
+                            </a>
+                            <a href="{{ path('lunettes_marque', {'type':'soleil','marque': 'rayban', 'special': 'special' }) }}">
+                                <img title="Lunettes de vue Ray-Ban" src="{{ asset('media/wysiwyg/box_Ray-Ban_240x120.png') }}" alt="D&eacute;couvrez notre boutique Ray-Ban" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <div id="navigation-sub-menu-3" style="background-color: rgb(255, 255,255);"
+             onMouseOver="document.getElementById('menulink-id-3').style.background='rgb(255,255,255)'"
+             onMouseOut="document.getElementById('menulink-id-3').style.background='rgb(207,202, 196)'">
+                <ul>
+                    <li class="columnContacto1" style="width: 70px; min-width:70px;">
+                        <span>Marques</span>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="{{ asset('media/wysiwyg/pictos/picto_dailies.png') }}" alt="Lentilles de contact Daillies" /></a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                    <img src="{{ asset('media/wysiwyg/pictos/picto_acuvue.png') }}" alt="Lentilles de contactAcuvue" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                    <img src="{{ asset('media/wysiwyg/pictos/picto_air-optix.png') }}" alt="Lentilles de contact Air optix" />
+                                </a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="{{ asset('media/wysiwyg/pictos/picto_biofinity.png') }}" alt="Lentilles de contact Biofinity" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" title="Lentilles de couleurs Freshlook">
+                                        <img src="{{ asset('media/wysiwyg/pictos/picto_freshlook.png') }}" alt="Lentilles de contact Freshlook" /></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="columnContacto3" style="width: 122px; min-width: 122px;">
+                            <span>MENSUELLE ET BIMENSUELLE</span>
+                            <ul>
+                                <li><span style="font-size: small;">
+                                    <a href="#">
+                                        Acuvue advance
+                                    </a></span>
+                                </li>
+                                <li><span style="font-size: small;">
+                                    <a href="#">
+                                        Purevision 2 hd
+                                    </a></span>
+                                </li>
+                                <li><span style="font-size: small;">
+                                    <a href="#">
+                                        Acuvue oasys
+                                    </a></span>
+                                </li>
+                                <li><span style="font-size: small;">
+                                    <a href="#" title="Lentilles Air Optix Aqua mensuelles">
+                                        Air optix Aqua
+                                    </a></span>
+                                </li>
+                                <li><span style="font-size: small;">
+                                    <a href="#" title="Lentilles Biofinity">
+                                        Biofinity
+                                    </a></span>
+                                </li>
+                                <li><span style="font-size: small;">
+                                    <a href="#"><em>
+                                        Toutes les marques</em>
+                                    </a></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="columnContacto4" style="width: 108px; min-width: 108px;"><span>COULEUR</span>
+                            <ul>
+                                <li><span style="font-size: small;">
+                                    <a href="#">
+                                        Air Optix Colors
+                                    </a></span>
+                                </li>
+                                <li><span style="font-size: small;">
+                                    <a href="#">
+                                        Freshlook colorblends
+                                    </a></span>
+                                </li>
+                                <li><span style="font-size: small;">
+                                    <a href="#">
+                                        Freshlook colors
+                                    </a></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="columnContacto5" style="width: 159px; min-width: 159px;"><span>PRODUITS D'ENTRETIEN</span>
+                            <ul>
+                                <li><span style="font-size: small;">
+                                    <a href="#">
+                                        Opti-FreePure Moist
+                                    </a></span>
+                                </li>
+                                <li><span style="font-size: small;">
+                                    <a href="#">
+                                        Boston Simplus
+                                    </a></span>
+                                </li>
+                                <li><span style="font-size: small;">
+                                    <a href="#">
+                                        Menicare Soft
+                                    </a></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="no-border promobox"><span>NOTRE OFFRE
+                            <a href="#">
+                                <img title="lentilles de contact" src="{{ asset('media/wysiwyg/240x240-lentilles_1_.jpg') }}" alt="Toutes nos lentilles journalières"/>
+                            </a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+</header>

@@ -1,0 +1,61 @@
+<div class="two columns">
+    <div class="customer-left-nav">
+        <div class="block-nav">
+            <div class="title-nav">
+                <span class="small-icon title-icon-nav font-color-purple fa fa-bars">
+                </span>
+                <span class="font-color-purple font-size-small">Menu</span>
+            </div>
+            <ul class="list-nav">
+                {% if is_granted('ROLE_ADMIN') %}
+                <li class="item-nav {% if mail is defined %} {{mail}} {% endif %}">
+                    <a href="{{ path('security_mail') }}">
+                        <div class="item-content-nav">
+                            <span class="medium-icon icon-nav fa fa-envelope"></span>
+                            <span class="link-nav font-size-small">Mail</span>
+                        </div>
+                        <div class="underline-nav"></div>
+                    </a>
+                </li>
+                {% endif %}
+                <li class="item-nav {% if conseil is defined %} {{conseil}} {% endif %}">
+                    <a href="{{ path('security_conseil') }}">
+                        <div class="item-content-nav">
+                            <span class="medium-icon icon-nav fa fa-comment-o"></span>
+                            <span class="link-nav font-size-small">Mes conseils vision</span>
+                        </div>
+                        <div class="underline-nav"></div>
+                    </a>
+                </li>
+                <li class="item-nav {% if account is defined %} {{account}} {% endif %}">
+                    <a href="{{ path('security_account') }}">
+                        <div class="item-content-nav">
+                            <span class="medium-icon icon-nav fa fa-user-secret">
+                            </span>
+                            <span class="link-nav font-size-small">Mes informations personnelles</span>
+                        </div>
+                        <div class="underline-nav"></div>
+                    </a>
+                </li>
+                <li class="opticien-nav item-nav" style="margin-top: 20px;">
+                    <a href="{{ path('home_contact') }}">
+                        <div class="item-content-nav">
+                            <span class="link-nav font-size-small font-small-bold" style="width:100%;text-align:center">
+                                Mon opticien
+                            </span>
+                        </div>
+                    </a>
+                    <div class="item-opticien-nav">
+                        <p>Choisissez votre opticien et accédez à sa fiche détaillée.</p>
+                        <div class="item-opticien-link">
+                            <a href="{{ path('home_contact') }}">
+                                <span class="small-icon font-color-purple fa fa-long-arrow-right">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </li>                                    
+            </ul>
+        </div>
+    </div>
+</div>

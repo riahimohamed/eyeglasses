@@ -1,0 +1,9 @@
+/*Menu criteria*/
+.FilteringColumn h2 .ArrowsCriterias{margin-top: -20px;}
+/*custom scroll*/
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{margin: 0px;}
+.mCSB_scrollTools .mCSB_draggerRail {height:120px;}
+
+.Delivery#tab td.CheckChoice{padding-left: 0px;}
+#tab.Delivery td.Designation{ width: auto}
+.DeliveryOrdonnanceLens .LigneForm .ChoiceYesOrNo .radio{margin: 5px 10px 0px 0px;}

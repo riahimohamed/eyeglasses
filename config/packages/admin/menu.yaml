@@ -1,0 +1,13 @@
+easy_admin:
+    design:
+      menu:
+          - { label: 'Accueil', url: 'http://localhost:8000/', icon: 'home' }
+          - { entity: 'Lunettes', default: true, icon: 'glasses' }
+          - { label: 'Les categories' }
+          - { entity: 'Marque', icon: 'signature' }
+          - { label: 'Les options' }
+          - { entity: 'Forme', icon: 'circle-notch' }
+          - { entity: 'Style', icon: 'splotch' }
+          - { entity: 'Color', icon: 'fill-drip' }
+          - { label: 'Profile' }
+          - { entity: 'User', label: 'Utilisateur', icon: 'user-o' }

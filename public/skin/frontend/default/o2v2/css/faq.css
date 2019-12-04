@@ -1,0 +1,1101 @@
+.faq {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.faq h1 {
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: -2px;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 29px
+}
+
+.faq h1 span {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 0;
+    text-transform: none;
+
+}
+
+.faq_Q {
+    width: 100%;
+    height: auto;
+}
+
+#faq.faq_Q {
+    /*background-color: #FFF;*/
+}
+
+.faq_Q h1 {
+    font-size: 32px;
+    font-weight: normal;
+    padding-left: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin: 0;
+}
+
+.faq_Q h1 span {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 0;
+    text-transform: none;
+
+}
+
+.leftFaq_Q {
+    width: 190;
+    height: 170px;
+    float: left;
+    background-color: #FFFFFF;
+}
+
+.rightFaq_Q {
+    height: 170px;
+    float: right;
+    background-color: #FFFFFF;
+    width: 834px;
+}
+
+.faqBar {
+    height: 40px;
+    background-image: url(https://www.optic2000.com/skin/frontend/default/o2v2/images/header-sep-bar.png);
+    background-position: 0 -5px;
+    background-repeat: repeat-x;
+    background-color: #b5b6da;
+}
+
+.faqBar ul li {
+    float: left;
+    height: 30px;
+    border: 0;
+    border-left: 0px !important;
+    padding-top: 10px;
+}
+
+.faqBar ul li a {
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+    text-transform: uppercase;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: -4px 20px 10px 20px;
+}
+
+.faqBar ul li.active {
+    background-image: url(https://www.optic2000.com/skin/frontend/default/o2v2/images/header-sep-bar.png);
+    background-position: 0 -5px;
+    background-repeat: repeat-x;
+    background-color: #FFFFFF;
+    /*width:190px;*/
+}
+
+.faqBar ul li.active a {
+    color: #8283b1;
+}
+
+.faqBar ul li.last {
+    border-right: none;
+}
+
+.leftFaq {
+    width: 189px;
+    height: 217px;
+    float: left;
+    background-color: #FFFFFF;
+}
+
+.rightFaq {
+    height: 875px;
+    float: right;
+    background-color: #FFFFFF;
+    width: 760px;
+}
+
+.FaqQuestion {
+    height: 129px;
+    padding-top: 0px;
+}
+
+.FaqQuestion h1 {
+    font-size: 22px;
+    color: #9092ca;
+    padding-bottom: 0px;
+    padding-top: 40px;
+    font-weight: normal;
+    color: #FF8111;
+}
+
+.FaqQuestion h2 {
+    font-size: 16px;
+    color: #ff8111;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
+.FaqQuestion h3 {
+    font-size: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    color: black;
+}
+
+.FaqQuestion ul {
+    margin-top: 13px;
+}
+
+.FaqQuestion ul li {
+    height: 30px;
+    border-top: 1px solid #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+    padding-top: 20px;
+}
+
+.FaqQuestion2 {
+    height: 100%;
+    float: right;
+    width: 832px;
+    margin-top: -13px;
+    border-left: 1px solid #D4D4D4;
+    border-right: 1px solid #D4D4D4;
+    overflow: hidden;
+}
+
+.FaqQuestion2 h1 {
+    font-size: 22px;
+    color: #9092ca;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+
+.FaqQuestion2 h2 {
+    font-size: 16px;
+    color: #ff8111;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.FaqQuestion2 h3 {
+    font-size: 15px;
+    padding-left: 20px;
+    padding-bottom: 19px;
+}
+
+.FaqQuestion2 ul {
+    margin-top: 13px;
+}
+
+.FaqQuestion2 ul li {
+    height: 100%;
+    border-top: 1px solid #D4D4D4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.FaqRubrique {
+    height: 90px;
+    border-top: 1px solid #d4d4d4;
+}
+
+.FaqImage {
+    height: 170px;
+    width: 762px;
+    margin: 0 auto;
+    letter-spacing: -4px;
+}
+
+.FaqImage img {
+    width: 190px;
+}
+
+.FaqLiens {
+    margin-top: -2px;
+    margin-left: -1px;
+    margin: 0 auto;
+    width: 760px;
+}
+
+.FaqLiens td {
+    height: 225px;
+    width: 180px;
+    vertical-align: top;
+    padding: 0px 0px 0px 10px;
+}
+
+.FaqLiens td.first {
+    border-left: 0px solid #d4d4d4;
+}
+
+.FaqRubrique span {
+    margin-left: 15px;
+}
+
+.FaqRubrique h2 {
+    margin-top: 15px;
+}
+
+.FaqQuestion ul li span {
+    font-size: 13px;
+    color: #686ab7;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.FaqQuestion2 ul li span {
+    font-size: 13px;
+    color: #686ab7;
+    margin-left: 15px;
+    margin-top: -4px;
+}
+
+.FaqLiens h2 {
+    font-size: 11px;
+    color: #9092ca;
+    font-wight: bold;
+    padding: 30px 15px 20px 4px;
+}
+
+.FaqLiens h2 a {
+    color: #9092ca;
+}
+
+.FaqLiens p a {
+    text-decoration: none;
+}
+
+.FaqLiens p {
+    padding-bottom: 5px;
+}
+
+.FaqLiens p a span {
+    margin-left: 14px;
+}
+
+.FaqLiens a {
+    text-decoration: none;
+}
+
+.FaqQuestion ul li img {
+    position: absolute;
+    margin-right: 20px;
+    margin-top: -2px;
+    right: 0;
+}
+
+.FaqQuestion2 ul li img {
+    position: absolute;
+    margin-right: 20px;
+    margin-top: -2px;
+    right: 0;
+}
+
+.Question {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.leftQuestion {
+    width: 380px;
+    float: left;
+    background-color: #FFFFFF;
+}
+
+.rightQuestion {
+    min-height: 240px;
+    height: 100%;
+    background-color: #EFEFEF;
+    width: 530px;
+    padding: 20px;
+    margin-top: -19px !important;
+    margin-left: -20px;
+    overflow: hidden
+}
+
+.leftQuestion ul li {
+    height: 45px;
+    border-bottom: 1px solid #D4D4D4;
+    padding: 20px;
+    position: relative;
+}
+
+.leftQuestion ul li p {
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+
+.leftQuestion ul li span {
+    font-size: 12px;
+}
+
+.leftQuestion ul li.active {
+    background-color: #efefef;
+}
+
+.rightQuestion h2 {
+    font-size: 18px;
+    color: #8283b1;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.rightQuestion span {
+    color: #8283b1;
+}
+
+.rightQuestion select {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.civilite_Q {
+    margin-top: 20px;
+}
+
+.QInput {
+    border: 1px solid #c7c7c7;
+    height: 24px;
+}
+
+.nom_Q_left {
+    float: left;
+    width: 250px;
+}
+
+.prenom_Q {
+    float: right;
+    width: 250px;
+}
+
+.QnomInput {
+    width: 250px;
+}
+
+.QInput.nom {
+    width: 250px;
+}
+
+.QInput.prenom {
+    width: 250px;
+}
+
+.nom_Q {
+    margin-top: 30px;
+}
+
+.commande_Q {
+    margin-top: 30px;
+}
+
+.rightQuestion I {
+    font-size: 10px;
+    color: #656565;
+}
+
+.club_Q {
+    margin-top: 30px;
+}
+
+.message_Q {
+    margin-top: 30px;
+}
+
+.QInput.area {
+    width: 450px;
+    height: 150px;
+}
+
+.actionQ_left {
+    float: left;
+    width: 250px;
+    color: #868686;
+    margin-top: 20px;
+}
+
+.actionQ_left span {
+    font-size: 16px;
+    color: #8485b5;
+}
+
+.actionQ_right {
+    float: right;
+    width: 250px;
+}
+
+.EnvoyerD {
+    float: right;
+    background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/envoyerD.png") no-repeat;
+    width: 167px;
+    height: 31px;
+    display: block;
+    margin-top: 15px;
+}
+
+.Qmail.active {
+    float: left;
+    background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-at.png") no-repeat;
+    width: 30px;
+    height: 32px;
+    display: block;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.faq-next.active {
+    float: right;
+    background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-active-next.png") no-repeat;
+    width: 30px;
+    height: 26px;
+    display: block;
+}
+
+.faq-next {
+    float: right;
+    background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-next.png") no-repeat;
+    width: 31px !important;
+    height: 30px;
+    display: block !important;
+}
+
+.faq-tel {
+    float: left;
+    background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-tel.png") no-repeat;
+    width: 27px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+}
+
+.faq-courrier {
+    float: left;
+    background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-courreir.png") no-repeat;
+    width: 39px;
+    height: 40px;
+    display: block;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.LiLeftRight {
+    width: 300px;
+    line-height: 2.5
+}
+
+.LiLeftLeft {
+    float: left;
+    width: 50px;
+}
+
+.LiLeft {
+    float: left;
+    width: 343px;
+}
+
+.LiRight {
+    width: 50px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+.LiLeftRight p {
+    font-size: 16px;
+    color: #8283b1;
+}
+
+.LiLeftRight p.active {
+    color: #000;
+}
+
+.Faqfleche {
+    float: left;
+    clear: both;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: -3px;
+}
+
+.FaqTexteL {
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.FaqExpend a div.FaqTexteL {
+    font-size: 9px;
+}
+
+.FaqTexteL.active {
+    text-decoration: underline;
+}
+
+.leftFaq2 {
+    width: 190px;
+    height: 100%;
+    float: left;
+    background-color: #FFFFFF;
+}
+
+.rightFaq2 {
+    height: 646px;
+    float: right;
+    background-color: #FFFFFF;
+    width: 760px;
+}
+
+.Question2 {
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.rightQuestion2Left {
+    float: left;
+    width: 350px;
+}
+
+.rightQuestion2Right {
+    float: right;
+    width: 350px;
+    margin-top: 178px;
+}
+
+.leftQuestion2 {
+    width: 189px;
+    height: 1027px;
+    float: left;
+    background-color: #FFFFFF;
+    border-right: 1px solid #c7c7c7;
+}
+
+.rightQuestion2 {
+    height: 725px;
+    float: right;
+    background-color: #fff;
+    width: 719px;
+    padding: 20px;
+    border-top: 1px solid #c7c7c7;
+}
+
+.leftQuestion2 ul {
+    margin-top: -8px;
+}
+
+.leftQuestion2 ul li {
+    height: 120px;
+    border-top: 1px solid #c7c7c7;
+    padding: 20px;
+    background: #ededed;
+    line-height: 15px;
+}
+
+.leftQuestion2 ul li p {
+    font-size: 16px;
+    padding-bottom: 10px;
+    color: #686ab7;
+}
+
+.leftQuestion2 ul li span {
+    font-size: 12px;
+}
+
+.leftQuestion2 ul li span span {
+    font-size: 10px;
+    color: #656565;
+}
+
+.rightQuestion2 h2 {
+    font-size: 16px;
+    color: #8283b1;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.rightQuestion2 h2 span {
+    font-size: 20px;
+    color: #8283b1;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: tahoma;
+}
+
+.rightQuestion2 span {
+    color: #8283b1;
+}
+
+.rightQuestion2 select {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.civilite_Q {
+    margin-top: 20px;
+}
+
+.QInput {
+    border: 1px solid #c7c7c7;
+    height: 24px;
+}
+
+.nom_Q2 {
+    margin-top: 20px;
+}
+
+.prenom_Q2 {
+    margin-top: 20px;
+}
+
+.QnomInput {
+    width: 250px;
+}
+
+.QInput.nom2 {
+    width: 300px;
+}
+
+.QInput.prenom2 {
+    width: 300px;
+}
+
+.nom_Q {
+    margin-top: 20px;
+}
+
+.commande_Q {
+    margin-top: 20px;
+}
+
+.rightQuestion2 I {
+    font-size: 10px;
+    color: #656565;
+}
+
+.club_Q {
+    margin-top: 20px;
+}
+
+.message_Q {
+    margin-top: 5px;
+}
+
+.QInput.area2 {
+    width: 350px;
+    height: 417px;
+}
+
+.actionQ_left {
+    float: left;
+    width: 250px;
+    color: #868686;
+}
+
+.actionQ_left span {
+    font-size: 16px;
+    color: #8485b5;
+}
+
+.actionQ_right {
+    float: right;
+    width: 250px;
+}
+
+.EnvoyerD {
+    float: right;
+    background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/envoyerD.png") no-repeat;
+    width: 167px;
+    height: 31px;
+    display: block;
+    margin-top: 15px;
+    padding-top: 3px;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.EnvoyerD span {
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.EnvoyerD2 {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.Q2gsm {
+    float: left;
+    background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/Q2gsm.png") no-repeat;
+    width: 14px;
+    height: 24px;
+    display: block;
+    margin-right: 10px;
+    margin-top: -2px;
+}
+
+.Q2courrier {
+    float: left;
+    background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/Q2courrier.png") no-repeat;
+    width: 26px;
+    height: 18px;
+    display: block;
+    margin-right: 6px;
+    margin-top: -1px;
+}
+
+.btn-faq {
+    background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/btn-faq.png") no-repeat;
+    width: 65px;
+    height: 24px;
+    position: absolute;
+    margin-right: 20px;
+    margin-top: -2px;
+    right: 0px;
+}
+
+.btn-faqf {
+    background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq_fermer.png") no-repeat;
+    width: 30px;
+    height: 29px;
+    position: absolute;
+    right: 10px;
+}
+
+.FaqLast {
+    height: 120px;
+    border-top: 1px solid #c7c7c7;
+    border-left: 1px solid #D4D4D4;
+}
+
+.leftFaq2 ul li {
+    height: 26px;
+    border-top: 1px solid #fff;
+    background: #9e9fcf;
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.leftFaq2 ul {
+    margin-top: -2px;
+}
+
+.leftFaq2 ul li p {
+    margin-top: 2px;
+    width: 137px;
+    line-height: 10px !important;
+}
+
+.leftFaq2 ul li p, .leftFaq2 ul li p a, .leftFaq2 ul li a {
+    text-decoration: none;
+    font-family: Verdana;
+}
+
+.faq_Moin {
+    background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-moin.png") no-repeat;
+    width: 21px;
+    height: 23px;
+    bottom: 6px;
+    right: 7px;
+    position: absolute;
+}
+
+.faq_Plus {
+    background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-plus.png") no-repeat;
+    width: 21px;
+    height: 22px;
+    bottom: 6px;
+    right: 7px;
+    position: absolute;
+}
+
+.leftFaq2 ul li.FaqExpend {
+    height: 100%;
+    background-color: #e5e5e5;
+    font-size: 9px;
+    font-weight: bold;
+    color: #000;
+}
+
+.leftFaq2 ul li.FaqExpend p {
+    margin-bottom: 15px;
+}
+
+.leftFaq2 ul li.FaqExpend span {
+    margin-left: 9px;
+}
+
+.Qpanes {
+    float: right !important;
+    width: 950px !important;
+    padding: 0 !important;
+    height: 1027px !important;
+    background-color: #fff !important;
+}
+
+.Qpanes2 {
+    float: right !important;
+    width: 950px !important;
+    padding: 0 !important;
+    height: 875px !important;
+    background-color: #fff !important;
+    line-height: 16px !important;
+}
+
+.Qpanes3 {
+    float: right !important;
+    width: 950px !important;
+    padding: 0 !important;
+    height: 100% !important;
+    background-color: #fff !important;
+    line-height: 13px !important;
+}
+
+.Qpanesf {
+    height: 100% !important;
+    background-color: #EFEFEF !important;
+    padding-bottom: 0px !important;
+    width: 621px;
+    float: right;
+}
+
+.imgtag {
+    height: 195px;
+    border-right: 1px solid #d4d4d4;
+    padding: 30px 20px 30px 20px;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 1px solid #D4D4D4;
+}
+
+.imgtag a {
+    text-decoration: none !important;
+}
+
+span.big {
+    font-size: 22px;
+    font-weight: bold;
+    color: #686ab7 !important;
+    text-decoration: none !important;
+    padding-right: 10px;
+}
+
+span.large {
+    font-size: 13px;
+    font-weight: bold;
+    color: #b3b4db !important;
+    text-decoration: none !important;
+    padding-right: 10px;
+}
+
+span.medium {
+    font-size: 13px;
+    font-weight: bold;
+    color: #8688c5 !important;
+    text-decoration: none !important;
+    padding-right: 10px;
+}
+
+span.medium2 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #b3b4db !important;
+    text-decoration: none !important;
+    padding-right: 10px;
+}
+
+span.small {
+    font-size: 11px;
+    font-weight: bold;
+    color: #686ab7 !important;
+    text-decoration: none !important;
+    padding-right: 10px;
+}
+
+span.smallest {
+    font-size: 11px;
+    color: #686ab7 !important;
+    text-decoration: none !important;
+    padding-right: 10px;
+}
+
+#themes div.selector {
+    overflow: visible !important;
+    width: 300px !important;
+    height: 30px;
+}
+
+#themes div.selector span {
+    width: 272px !important;
+}
+
+#themes div.selector select {
+    min-width: 300px !important;
+}
+
+#civi div.selector {
+    width: 75px !important;
+    height: 30px;
+}
+
+#civi div.selector span {
+    width: 50px !important;
+}
+
+#civi div.selector select {
+    min-width: 80px !important;
+}
+
+.leftFaq2 ul li.FaqExpend a {
+    text-decoration: none;
+    color: #000;
+}
+
+.leftFaq2 ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.FaqArticles {
+    padding: 0px 0px 0px 15px;
+    width: 600px;
+    font-size: 12px;
+}
+
+.Question2 a, .Question2 a:valid, .Question2 a:active {
+    color: #000
+}
+
+.FaqQuestion2 a, .FaqQuestion2 a:valid, .FaqQuestion2 a:active {
+    color: #000;
+    text-decoration: underline;
+}
+
+.BreadcomFAQ {
+    height: 15px;
+    color: #9092CA;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 9px;
+    display: none;
+}
+
+.BreadcomFAQ span {
+    color: #7e7e7e;
+    padding: 0px 5px;
+    font-size: 13px;
+}
+
+.BreadcomFAQ a {
+    color: #7e7e7e;
+}
+
+#contactForm label {
+    font-size: 12px;
+}
+
+.text-highlighted .highlight {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.faq-search-form-wrapper {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+}
+
+.input-group {
+    display: flex;
+    position: relative;
+}
+
+.input-group input[type="text"] {
+    border: 1px solid #CCC;
+    padding: 2px 3px;
+    box-sizing: border-box;
+}
+
+.input-group input[type="text"]::placeholder {
+    color: #CCC;
+    opacity: 1; /* Firefox */
+}
+
+.input-group * {
+    display: flex;
+    height: auto;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.form-button {
+    border: 1px solid #F79428;
+    background-color: #F79428;
+    color: #FFF;
+    padding: 5px 13px;
+}
+
+._autocomplete-area {
+    display: block;
+    background: #FFF;
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+}
+
+._autocomplete-area ._auto-complete-item {
+    white-space: nowrap;
+    padding: 1px 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-bottom: 1px solid #efefef;
+}
+
+._autocomplete-area ._auto-complete-item.selected,
+._autocomplete-area ._auto-complete-item:hover {
+    background: #F79428;
+    color: #FFF;
+}
+
+._autocomplete-area ._auto-complete-item:last-child {
+    border-bottom: 0;
+}
+
+.selected-item{
+    display: block;
+    position: relative;
+    float: right;
+    width: 50%;
+    font-size: 0.6rem;
+}
+
+.confirm-popin {
+    text-align: center;
+}
+
+.confirm-popin .btn-close-block {
+    margin: 40px auto;
+}
+
+.confirm-popin .btn-close-block button {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #bbb;
+}

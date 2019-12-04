@@ -1,0 +1,118 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/optic2000/account.css') }}" media="all"/>
+	<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/optic2000/checkout.css') }}" media="all"/>
+
+    <style type="text/css">
+        ul li{
+            color: red;
+            font-size: 12px;
+        }   
+    </style>
+
+{% endblock %}
+
+{% block title 'Inscription' %}
+
+{% block body %}
+    
+<div id="content" class="customer-register">
+
+    <h1>Créez votre compte</h1>
+
+    <article class="tunnel-forms">
+        {{ form_start(registerForm, {'attr': {'id': 'register-customer-form', 'class':'customer-register-form'} }) }}
+
+            <table border="0" cellspasing="10" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            <ul class="messages">
+                                <li class="error-msg">
+                                </li>
+                            </ul>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            {{ form_row(registerForm.civility, {'label': 'Civilité'}) }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-field="firstname" class="optic-form-group">
+                                {{ form_row(registerForm.firstname, {'label': 'Prénom'}) }}
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-field="lastname" class="optic-form-group">
+                                 {{ form_row(registerForm.lastname, {'label': 'Nom'}) }}
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-field="dob" class="optic-form-group">
+                                <div class="form-row">
+                                    <div class="form-col date-of-birth">
+                                         {{ form_row(registerForm.birth_day, {'label': 'Date de naissance'}) }}
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-field="telephone_portable" class="optic-form-group">
+                                 {{ form_row(registerForm.tel, {'label': 'Téléphone'}) }}
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div data-field="email" class="optic-form-group">
+                                {{ form_row(registerForm.email, {'label': 'E-mail'}) }}
+                                
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-field="password" class="optic-form-group">
+                                {{ form_row(registerForm.password.first) }}
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div data-field="password_confirmation" class="optic-form-group">
+                                {{ form_row(registerForm.password.second) }}
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="note">
+                                Tous les champs sont obligatoires. Un numéro de téléphone est nécessaire pour assurer un meilleur traitement de votre commande. 
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                    	<button type="submit" id="register-customer-submit" class="validate-form orange">valider &gt;</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        {{ form_end(registerForm) }}
+
+    </article>
+</div>
+
+{% endblock %}

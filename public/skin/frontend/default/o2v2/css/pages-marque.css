@@ -1,0 +1,6 @@
+.brand-banner::before {clear: both;}
+.brand-banner {font-size: 0.8em; min-height: 0px; position: relative;}
+.brand-banner {display: block; vertical-align: middle;}
+.brand-banner>p {background-color: rgba(0, 0, 0, 0.7); color: #DDD; height: 120px; position: absolute; bottom: 0; padding: 5px;}
+.brand-banner>p>span {font-size: 1.143em; text-transform: uppercase; display: block;}
+.brand-banner>img.logo {display: block; position: absolute; bottom: 150px; left: 50px;}

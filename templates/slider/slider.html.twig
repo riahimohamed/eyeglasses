@@ -1,0 +1,54 @@
+<div class="Slider">
+   <ul class="bxslider">
+      {% if type is defined and type == 'soleil' %}
+         <li>
+            <a href="{{ path('lunettes_marque', {'type':'soleil', 'marque': 'medley', 'special': 'special' }) }}" target="_parent">
+               <img src="{{ asset('media/sliders/1555602232.png') }}"/></a>
+            <div class="SliderDescription">
+               <h2></h2>
+               <h1></h1>
+               <p class="purple">
+                  <a href="{{ path('lunettes_marque', {'type':'soleil', 'marque': 'medley', 'special': 'special' }) }}">Je découvre</a><br/>
+               </p>
+            </div>
+         </li>
+      {% elseif type is defined and type == 'contact' %}
+         <li>
+            <a href="" target="_parent">
+               <img src="{{ asset('media/sliders/1454435190.jpg') }}"/></a>
+            <div class="SliderDescription">
+               <h2></h2>
+               <h1></h1>
+               <p class="purple">
+               </p>
+            </div>
+         </li>
+      {% else %}
+         <li>
+            <a href="{{ path('lunettes_marque', {'type':'soleil', 'marque': 'karl-lagerfeld', 'special': 'special' }) }}" target="_parent">
+               <img src="{{ asset('media/sliders/1567067485.jpg') }}"/>
+            </a>
+            <div class="SliderDescription">
+               <h2></h2>
+               <h1></h1>
+               <p class="purple">
+                  <a href="{{ path('lunettes_marque', {'type':'soleil', 'marque': 'karl-lagerfeld', 'special': 'special' }) }}" target="_parent">Je découvre
+                  </a><br/>
+               </p>
+            </div>
+         </li>
+         <li>
+            <a href="{{ path('lunettes_marque', {'marque': 'rayban', 'special': 'special' }) }}" >
+               <img src="{{ asset('media/sliders/1554886111.png') }}"/></a>
+            <div class="SliderDescription">
+               <h2></h2>
+               <h1></h1>
+               <p class="purple">
+                  <a href="{{ path('lunettes_marque', {'marque': 'rayban', 'special': 'special' }) }}" >Dispo en magasin
+                  </a><br/>
+               </p>
+            </div>
+         </li>
+      {% endif %}
+   </ul>
+</div>

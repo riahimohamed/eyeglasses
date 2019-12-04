@@ -1,0 +1,26 @@
+<div class="toolTip1Body">
+    <div class="logged">
+        <ul class="loggedMenu">
+            <li>
+                <a href="{{ path('security_account') }}" title="Mes informations personnelles">
+                    Profile
+                </a>
+            </li>
+            {% if is_granted('ROLE_ADMIN') %}
+            <li>
+                <a href="{{ path('easyadmin') }}" title="Admin">Admin</a>
+            </li>
+            
+            <li>
+                <a href="{{ path('security_mail')}}" title="Mail">Mail</a>
+            </li>
+            {% endif %}
+            <li>
+                <a href="{{ path('security_conseil') }}" title="Mes conseils vision">
+                    Mes conseils vision
+                </a>
+            </li>
+        </ul>
+        <a href="{{ path('security_logout') }}" class="disconnect">Se deconnecter</a>
+    </div>
+</div>

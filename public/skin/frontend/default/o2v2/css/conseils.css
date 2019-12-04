@@ -1,0 +1,219 @@
+.Conseil{background-color:#fff;height:100%;overflow:hidden;}
+.BreadcomConseil{height:15px;color:#686ab7;padding:5px 20px;text-transform: uppercase;font-size:9px;}
+.BreadcomConseil span{color:#7e7e7e;padding:0px 10px;font-size:13px;}
+.BreadcomConseil a{color:#7e7e7e;}
+.headConseil{padding:25px 20px;font-size:13px;}
+.headConseil h1{font-size:32px;text-transform: uppercase;font-weight: normal;margin-left: -2px;}
+.ConseilEnavant{display: flex;margin: 0 37px;}
+.ConseilEnavantLeft{/* float:left; */width:570px;}
+.ConseilEnavantRight{/* float:right; */width:400px;padding:20px;line-height: 20px;}
+.ConseilEnavantRight h1 {font-size:20px;color:#686ab7;font-weight: normal;width: 200px;padding-bottom: 10px;}
+.ConseilEnavantRight h2 {font-size:15px;font-weight: bold;}
+#Conseil-sep-bar {height:8px;width:100%;background:url(https://www.optic2000.com/skin/frontend/default/o2v2/images/header-sep-bar.png) repeat-x 0 bottom; position: absolute; top:0px; z-index: 120;}
+.Dossier{text-decoration:none;position: absolute;bottom: 10px;right: 0px;background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/envoyerD.png") no-repeat;width: 167px;height: 31px;display: block;padding-top: 4px;padding-left: 16px;cursor:pointer;}
+.Dossier span{font-size:10px;color:#fff;text-transform: uppercase;cursor:pointer;}
+.ContentEnavant{height:180px;overflow:hidden;}
+.CatConseil {margin: 0 37px;display: flex;}
+ul.CatConseil li{/* height:170px; *//* width:190px; *//* float:left; */}
+ul#cat.CatConseil li{padding: 10px 0 0 10px;width: 179px;border-left:1px solid #dbdbdb;}
+ul#cat.CatConseil li h2{font-size: 11px;font-weight: bold;color: #686AB7;text-transform: uppercase;width: 140px;padding-bottom: 10px;}
+#cat.FaqTexteL{margin-left: 15px; width: 150px; line-height: 20px;text-decoration:none;}
+#cat.FaqTexteL a{text-decoration:none; font-size: 11px; color: black}
+#cat.Faqfleche{float: left; background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/arrowavis.png") no-repeat scroll left center transparent; display: block; height: 8px; line-height: 20px; margin-top: 7px; width: 6px;}
+#conseil.leftFaq2 ul li p{margin-top: 4px;width:160px;}
+#conseil.faq_Moin{position: absolute;bottom: 3px;right: 3px;background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-moin.png") no-repeat;width:21px;height:23px;display: block;}
+#conseil.faq_Plus{position: absolute;bottom: 3px;right: 3px;background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-plus.png") no-repeat;width:21px;height:22px;display: block;}
+#conseil.leftFaq2 ul li{position:relative;}
+#conseil.Question{position:relative;}
+.ConseilArticle{float:right;width:834px;}
+.ConseilArticleLeft{float:left;width:600px;padding:20px;}
+.ConseilArticleRight{float:right;width:190px;}
+.ConseilArticleLeft h1{font-size:20px;color:#686ab7;font-weight:normal;width: 450px;padding-bottom: 20px;}
+.cart h1 span a {color: #8485b5;text-decoration: none;}
+.editionBtns{margin-top: 20px;}
+
+.Question{width:100%;height:100%;background-color:#fff;overflow:hidden;}
+.leftQuestion{width:380px;float:left;background-color:#FFFFFF;}
+.rightQuestion{min-height: 240px;height: 100%;background-color: #EFEFEF;width: 530px;padding: 20px;margin-top: -19px !important;margin-left: -20px;overflow:hidden}
+.leftQuestion ul li{height: 45px;border-bottom: 1px solid #D4D4D4;padding: 20px;position: relative;}
+.leftQuestion ul li p{font-size:16px;padding-bottom: 4px;}
+.leftQuestion ul li span{font-size:12px;}
+.leftQuestion ul li.active{background-color:#efefef;}
+.rightQuestion h2{font-size:15px;color:#8283b1;padding-bottom:55px;padding-top:10px;}
+.rightQuestion span{color:#8283b1;}
+.rightQuestion select{margin-top:5px;margin-bottom:5px;}
+.civilite_Q{margin-top:20px;}
+.QInput{
+    border: 1px solid #c7c7c7;
+    height: 24px;
+}
+.nom_Q_left{float:left;width:250px;}
+.prenom_Q{float:right;width:250px;}
+.QnomInput{width:250px;}
+.QInput.nom{width:250px;}
+.QInput.prenom{width:250px;}
+.nom_Q{margin-top: 30px;}
+.commande_Q{margin-top: 30px;}
+.rightQuestion I{font-size:10px;color:#656565;}
+.club_Q{margin-top: 30px;}
+.message_Q{margin-top: 30px;}
+.QInput.area{width:450px;height:150px;}
+.actionQ_left{float:left;width:250px;color:#868686;margin-top:20px;}
+.actionQ_left span{font-size:16px;color:#8485b5;}
+.actionQ_right{float:right;width:250px;}
+.EnvoyerD{float: right;background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/envoyerD.png") no-repeat;width: 167px;height: 31px;display: block;margin-top: 15px;}
+
+.Qmail.active{float: left;background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-at.png") no-repeat;width: 30px;height: 32px;display: block;padding-left: 20px;margin-top: 5px;}
+.faq-next.active{float: right;background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-active-next.png") no-repeat;width: 30px;height: 26px;display: block;}
+.faq-next{float: right;background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-next.png") no-repeat;width: 31px !important;height: 30px;display: block !important;}
+.faq-tel{float: left;background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-tel.png") no-repeat;width: 27px;height: 45px;display: block;padding-left: 20px;}
+.faq-courrier{float: left;background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-courreir.png") no-repeat;width: 39px;height: 40px;display: block;padding-left: 20px;margin-top: 10px;}
+.LiLeftRight{width:300px;}
+.LiLeftLeft{float: left;width:50px;}
+.LiLeft{float: left;width:343px;}
+.LiRight{width: 50px;position: absolute;right: 20px;top: 30px;}
+.LiLeftRight p{font-size:16px;color:#8283b1;}
+.LiLeftRight p.active{color:#000;}
+.Faqfleche{float:left;}
+.FaqTexteL{margin-left: 15px;}
+.FaqTexteL.active {text-decoration: underline;}
+.leftFaq2{width:190px;height:100%;float:left;    background-color:#FFFFFF;}
+.rightFaq2{height:646px;float:right;    background-color:#FFFFFF;width: 760px;}
+.Question2{width:950px;height:100%;background-color:#fff;overflow:hidden;}
+.rightQuestion2Left{float: left;width:350px;}
+.rightQuestion2Right{float: right;width:350px;margin-top: 178px;}
+.leftQuestion2{width:189px;height:1027px;float:left;background-color:#FFFFFF;border-right: 1px solid #c7c7c7;}
+.rightQuestion2{height:725px;float:right;background-color:#fff;width: 719px;padding:20px;border-top: 1px solid #c7c7c7;}
+.leftQuestion2 ul{margin-top:-8px;}
+.leftQuestion2 ul li{height: 120px;border-top: 1px solid #c7c7c7;padding: 20px;background:#ededed;line-height: 15px;}
+.leftQuestion2 ul li p{font-size:16px;padding-bottom: 10px;color:#686ab7;}
+.leftQuestion2 ul li span{font-size:12px;}
+.leftQuestion2 ul li span span{font-size:10px;color:#656565;}
+.rightQuestion2 h2{font-size:16px;color:#8283b1;padding-bottom:20px;padding-top:10px;}
+.rightQuestion2 h2 span{font-size:20px;color:#8283b1;padding-bottom:20px;padding-top:10px;font-weight:bold;font-family:tahoma;}
+.rightQuestion2 span{color:#8283b1;}
+.rightQuestion2 select{margin-top:5px;margin-bottom:5px;}
+.civilite_Q{margin-top:20px;}
+.QInput{
+    border: 1px solid #c7c7c7;
+    height: 24px;
+}
+.nom_Q2{margin-top: 20px;}
+.prenom_Q2{margin-top: 20px;}
+.QnomInput{width:250px;}
+.QInput.nom2{width:300px;}
+.QInput.prenom2{width:300px;}
+.nom_Q{margin-top: 20px;}
+.commande_Q{margin-top: 20px;}
+.rightQuestion2 I{font-size:10px;color:#656565;}
+.club_Q{margin-top: 20px;}
+.message_Q{margin-top: 5px;}
+.QInput.area2{width:350px;height:417px;}
+.actionQ_left{float:left;width:250px;color:#868686;}
+.actionQ_left span{font-size:16px;color:#8485b5;}
+.actionQ_right{float:right;width:250px;}
+.EnvoyerD{float: right;background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/envoyerD.png") no-repeat;width: 167px;height: 31px;display: block;margin-top: 15px;padding-top: 3px;padding-left: 12px;cursor:pointer;}
+.EnvoyerD span{font-size:10px;color:#fff;text-transform: uppercase;text-decoration:none;cursor:pointer;}
+.EnvoyerD2 {background:transparent;border:0;cursor:pointer;margin-top: 1px;}
+.Q2gsm{float: left;background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/Q2gsm.png") no-repeat;width: 14px;height: 24px;display: block;margin-right: 10px;margin-top: -2px;}
+.Q2courrier{float: left;background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/Q2courrier.png") no-repeat;width: 26px;height: 18px;display: block;margin-right: 6px;margin-top: -1px;}
+.btn-faq{background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/btn-faq.png") no-repeat;width:65px;height:24px;position: absolute;margin-right: 20px;margin-top: -2px;right: 0;}
+.btn-faqf{background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq_fermer.png") no-repeat;width:30px;height:29px;position: absolute;margin-right: 20px;margin-top: 45px !important;right: 0;}
+.FaqLast{height: 120px;border-top: 1px solid #c7c7c7;border-left: 1px solid #D4D4D4;}
+.leftFaq2 ul li{height: 26px;border-top: 1px solid #fff;background:#9e9fcf;padding-left:10px;color:#fff;font-size:10px;text-transform: uppercase;padding-top: 4px;padding-right:10px;position:relative;}
+.leftFaq2 ul {margin-top: -2px;}
+.leftFaq2 ul li p{margin-top: 2px;width:137px;line-height: 10px !important;}
+.leftFaq2 ul li p a{text-decoration:none;}
+.faq_Moin{background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-moin.png") no-repeat;width:21px;height:23px;bottom: 3px;right: 7px;position: absolute;}
+.faq_Plus{background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/faq-plus.png") no-repeat;width:21px;height:22px;bottom: 4px;right: 7px;position: absolute;}
+.leftFaq2 ul li.FaqExpend{height:100%;background-color:#e5e5e5;font-size:9px;color:#000;}
+.leftFaq2 ul li.FaqExpend p{margin-bottom:15px;}
+.leftFaq2 ul li.FaqExpend span{margin-left:9px;}
+.Qpanes{float: right !important;width: 950px !important;padding: 0 !important;height:1027px !important;background-color:#fff !important;}
+.Qpanes2{float: right !important;width: 950px !important;padding: 0 !important;height:875px !important;background-color:#fff !important;line-height: 16px !important;}
+.Qpanes3{float: right !important;width: 950px !important;padding: 0 !important;height:100% !important;background-color:#fff !important;line-height: 13px !important;}
+.Qpanesf{height:100% !important;background-color:#EFEFEF !important;padding-bottom: 0px !important;width: 550px;float: right;}
+
+.productsItems{ list-style:none; /* margin:0 -80px 0 0; */ margin:0 auto;}
+.productsItems > li{float:left; width:190px; height:170px;position:relative;}
+.productsItems > li.sizeW2H2{width:380px; height:340px;}
+.productsItems > li.sizeW2H4{width:380px; height:680px;}
+.productsItems > li.sizeW1H2{width:190px; height:340px;}
+.productsItems > li.sizeW2H3{width:380px; height:500px;}
+.productsItems > li.sizeW3H2{width:570px; height:340px;}
+.productsItems > li.sizeW3H3{width:570px; height:500px;}
+.productsItems > li.sizeW4H3{width:760px; height:500px;position:relative;}
+.productsItems > li.orange{background:#ff8111;}
+.productsItems > li.purple{background:#8183c2;}
+.productsItems > li.black{background:#000;}
+.productsItems > li.white{background: none repeat scroll 0 0 #FFFFFF;border-bottom: 1px solid #DBDBDB;border-left: 1px solid #DBDBDB;height:169px;width: 189px;}
+.productsItems > li.gris{background:#dbdbdb;}
+
+.productsItems li a{display: inline-block;}
+.productsItems li a img{}
+.productsItems li .itemContent{padding:16px 19px 2px; color:#FFF;} 
+.productsItems li.white .itemContent{padding:16px 20px 10px; color:#000;} 
+.productsItems li .itemContent strong, .productsItems li .itemContent strong a{font-size:22px; font-family: Verdana;font-weight:normal; display:block; margin:0 0 6px;line-height: 22px; letter-spacing: -1px;color:#FFF;}
+.productsItems li .itemContent strong a{text-decoration:none;}
+.productsItems li .itemContent strong a:hover{text-decoration:underline;}
+.productsItems li .itemContent strong.big, .productsItems li .itemContent .big{font-size:26px;}
+
+.productsItems li .itemContent strong span{font-size:15px;}
+.productsItems li .itemContent p{font-family: Verdana; font-size:11px; padding:0 0 6px;margin-top: 5px;}
+.productsItems li .itemContent .p16{font-family: Verdana; font-size:16px; color:#000;}
+
+.productsItems li .itemContent p a {color:#fff}
+
+.productsItems li .itemFooter{padding:16px 0px 2px; color:#FFF;} 
+.productsItems li.white .itemFooter{padding:16px 0px 10px; color:#000;} 
+.productsItems li .itemFooter strong, .productsItems li .itemFooter strong a{font-size:22px; font-family: Verdana;font-weight:normal; display:block; margin:0 0 6px;line-height: 22px; letter-spacing: -1px;color:#FFF;}
+.productsItems li .itemFooter strong a{text-decoration:none;}
+.productsItems li .itemFooter strong a:hover{text-decoration:underline;}
+.productsItems li .itemFooter strong.big, .productsItems li .itemFooter .big{font-size:26px;}
+
+.productsItems li .itemFooter strong span{font-size:15px;}
+.productsItems li .itemFooter p{font-family: Verdana; font-size:11px; padding:0 0 6px;margin-top: 5px;}
+.productsItems li .itemFooter .p16{font-family: Verdana; font-size:16px; color:#000;}
+
+.productsItems li .itemFooter p a {color:#fff}
+.productsItems li .itemContent strong.topTitle{font-family:verdana; margin:0 0 2px; font-size:19px;line-height: 20px;}
+.productsItems li .itemFooter strong.topTitle{font-family:verdana; margin:0 0 2px; font-size:19px;line-height: 20px;}
+
+ul.productsItems.footerItems div.itemContent ul.catgItems {}
+ul.productsItems.footerItems div.itemFooter ul.catgItems {}
+ul.productsItems.footerItems div.itemContent ul.catgItems li {
+    color:#fff;
+    background-image: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/arrow12.png") ;
+}
+ul.productsItems.footerItems div.itemFooter ul.catgItems li {
+    color:#fff;
+    background-image: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/arrow12.png") ;
+}
+ul.productsItems.footerItems div.itemContent ul.catgItems li a {
+    color:#fff;
+}
+ul.productsItems.footerItems div.itemFooter ul.catgItems li a {
+    color:#fff;
+}
+.productsItems .photoElement {
+    position:relative;
+}
+.productsItems .photoElement .WhiteLinkAndArrow {
+    left: 10px;
+    position: absolute;
+    top: 120px;
+}
+.productsItems .itemContent .WhiteLinkAndArrow {
+    left: 20px;
+    position: absolute;
+    top: 120px;
+}
+
+.WhiteLinkAndArrow, .headerRight ul.menu li .toolTip1Body .WhiteLinkAndArrow { background:url(https://www.optic2000.com/skin/frontend/default/o2v2/images/right-input-btn.png) no-repeat right top; text-decoration:none; padding-right:24px;font-family: Verdana; font-size:10px; text-transform:uppercase; color:#000; display:inline-block;margin-bottom: 4px;margin-top: 8px;line-height: 12px;}
+.WhiteLinkAndArrow span, .headerRight ul.menu li .toolTip1Body .WhiteLinkAndArrow span{ background:url(https://www.optic2000.com/skin/frontend/default/o2v2/images/white.png) no-repeat left top; padding:5px 3px 5px 7px; display:inline-block; }
+
+.Conseil a:visited, .Conseil a:active, .Question a, .Question a:visited, .Question a:active {color: #686AB7;font-size: 9px;}
+.leftFaq2 a:visited { color: white; } 
+.leftFaq2 a, .leftFaq2 a:active {color: white}
+.Conseil h1, .Conseil h2 { margin: 0; }
+.CouleurTitre{color: #7e7e7e;}

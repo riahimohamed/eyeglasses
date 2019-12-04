@@ -1,0 +1,3550 @@
+/* Color palette */
+:root {
+    --black: #000000;
+    --dark-grey: #666666;
+    --darker-grey: #777777;
+    --red: #e12f5c;
+    --green: #74cac2;
+    --light-grey: #cfcbc3;
+    --light-blue: #929dcf;
+    --purple: #654d91;
+    --orange: #f3b944;
+    --mustard: #c3a238;
+    --light-pink-grey: #f0edf4;
+    --light-white: #f8f8f8;
+    --light-light-grey: #e1e1e1;
+    --grey: #d5d3d3;
+    --grey-secondary: #d8d8d8;
+    --white: #ffffff;
+}
+
+/* DEV */
+.debug-border-red {
+    -webkit-box-shadow: inset 0 0 0 1px #f00;
+    box-shadow: inset 0 0 0 1px #f00;
+}
+
+/* Fonts 
+@font-face {
+    font-family: "Avenir Black";
+    src: url('../fonts/Avenir/Avenir-Black.ttf') format('truetype');
+    font-style: normal;
+    font-stretch: normal;
+} */
+
+@font-face {
+    font-family: "Avenir Book";
+    src: url('../fonts/Avenir/Avenir-Book.ttf') format('truetype');
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "Avenir Heavy";
+    src: url('../fonts/Avenir/Avenir-Heavy.ttf') format('truetype');
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "Avenir Light";
+    src: url('../fonts/Avenir/Avenir-Light.ttf') format('truetype');
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "Avenir Medium";
+    src: url('../fonts/Avenir/Avenir-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "Avenir Roman";
+    src: url('../fonts/Avenir/Avenir-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.acecustomer-full-page h1, h2, h3, h4 {
+    font-family: "Avenir Black", AvenirLTStd55Black;
+    text-transform: none;
+    color: #666666;
+    color: var(--dark-grey);
+}
+
+.acecustomer-full-page h1 {
+    font-size: 40px;
+    letter-spacing: -1.4px;
+    margin: 0;
+}
+
+.acecustomer-full-page h2 {
+    font-size: 32px;
+    letter-spacing: -0.2px;
+    margin: 0;
+}
+
+.acecustomer-full-page h3 {
+    font-size: 24px;
+    letter-spacing: -0.2px;
+    margin: 0;
+}
+
+.acecustomer-full-page h4 {
+    font-size: 18px;
+    letter-spacing: -0.1px;
+    margin: 0;
+}
+
+.acecustomer-full-page p {
+    font-family: "Open Sans";
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+.acecustomer-full-page a {
+    text-decoration: none !important;
+    font-family: "Open Sans";
+    /*font-size: 16px;*/
+    letter-spacing: 0;
+    color: #666666;
+    color: var(--dark-grey);
+}
+
+.acecustomer-full-page .v-align-middle {
+    vertical-align: middle;
+}
+
+.acecustomer-full-page .v-align-baseline {
+    vertical-align: baseline;
+}
+
+.acecustomer-full-page .v-align-top {
+    vertical-align: top;
+}
+
+.acecustomer-full-page .v-align-bottom {
+    vertical-align: bottom;
+}
+
+.bt-style1,
+.ace-bt-style1,
+.acecustomer-full-page .bt-style1 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #bd9a36;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.bt-style2,
+.ace-bt-style2,
+.acecustomer-full-page .ace-bt-style2 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #654d91;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.bt-style1.bt-large,
+.ace-bt-style1.bt-large,
+.acecustomer-full-page .bt-style1.bt-large,
+.bt-style2.bt-large,
+.ace-bt-style2.bt-large,
+.acecustomer-full-page .ace-bt-style2.bt-large,
+.bt-large {
+    display: block;
+    width: 100%;
+}
+
+.acecustomer-full-page p.no-margin {
+    margin: 0 !important;
+}
+
+.acecustomer-full-page .font-size-big {
+    font-family: "Avenir Roman", AvenirLTStd55Roman;
+    font-size: 70px;
+    letter-spacing: -0.5px;
+}
+
+.acecustomer-full-page .font-size-open-h1 {
+    font-family: "Open Sans";
+    font-size: 46px;
+    letter-spacing: 0;
+}
+
+.acecustomer-full-page .font-size-open-h2 {
+    font-family: "Open Sans";
+    font-size: 36px;
+    letter-spacing: 0;
+}
+
+.acecustomer-full-page .font-size-open-h3 {
+    font-family: "Open Sans";
+    font-size: 24px;
+    letter-spacing: 0;
+    color: #666666;
+    color: var(--dark-grey);
+}
+
+.acecustomer-full-page .font-size-open-h4 {
+    font-family: "Open Sans";
+    font-size: 18px;
+    letter-spacing: -0.1px;
+}
+
+.acecustomer-full-page .font-size-p-minus {
+    font-family: "Open Sans";
+    font-size: 14px;
+    letter-spacing: -0.1px;
+}
+
+.acecustomer-full-page .font-size-small-plus {
+    font-family: "Open Sans";
+    font-size: 13px;
+    letter-spacing: -0.1px;
+}
+
+.acecustomer-full-page .font-size-small {
+    font-family: "Open Sans";
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+.acecustomer-full-page .font-size-smaller {
+    font-family: "Open Sans";
+    font-size: 11px;
+    letter-spacing: -0.1px;
+}
+
+.acecustomer-full-page .font-big-bold {
+    font-family: "Avenir Heavy", AvenirLTStd55Heavy;
+    font-weight: 900;
+}
+
+.acecustomer-full-page .font-weight-normal {
+    font-weight: 200;
+}
+
+.acecustomer-full-page .font-small-bold {
+    font-weight: 700;
+}
+
+.acecustomer-full-page .font-title-bold {
+    font-weight: 900;
+}
+
+.acecustomer-full-page .font-color-purple {
+    color: #654d91;
+    color: var(--purple);
+}
+
+.acecustomer-full-page .smaller-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    min-width: 20px;
+}
+
+.acecustomer-full-page .small-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+    min-width: 20px;
+}
+
+.acecustomer-full-page .medium-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 25px;
+    min-width: 32px;
+}
+
+.acecustomer-full-page .medium-plus-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 34px;
+    min-width: 34px;
+}
+
+.acecustomer-full-page .medium-plus-plus-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    min-width: 50px;
+}
+
+.acecustomer-full-page .big-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    min-width: 50px;
+}
+
+.acecustomer-full-page .flex-text-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.acecustomer-full-page .text-center {
+    text-align: center;
+}
+
+/* Fixed non-responsive columns */
+.acecustomer-full-page {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.acecustomer-full-page div {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.acecustomer-container {
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.acecustomer-container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 7px;
+}
+
+.acecustomer-container .row .column, .columns {
+    margin-left: 15px;
+}
+
+.acecustomer-container .row .column:first-child, .columns:first-child {
+    margin-left: 0;
+}
+
+.acecustomer-container .customer-content .row {
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+.acecustomer-container .customer-content .row:last-child {
+    margin-bottom: 0;
+}
+
+.acecustomer-container .customer-content .row.row-title {
+    margin-bottom: 10px;
+}
+
+.acecustomer-container .row.row-without-margin {
+    margin-bottom: 0;
+}
+
+.acecustomer-container .row .one.column, .one.columns {
+    width: 70px;
+}
+
+.acecustomer-container .row .two.columns {
+    width: 155px;
+}
+
+.acecustomer-container .row .three.columns {
+    width: 240px;
+}
+
+.acecustomer-container .row .four.columns {
+    width: 325px;
+}
+
+.acecustomer-container .row .five.columns {
+    width: 411px;
+}
+
+.acecustomer-container .row .six.columns {
+    width: 496px;
+}
+
+.acecustomer-container .row .seven.columns {
+    width: 581px;
+}
+
+.acecustomer-container .row .eight.columns {
+    width: 666px;
+}
+
+.acecustomer-container .row .nine.columns {
+    width: 751px;
+}
+
+.acecustomer-container .row .ten.columns {
+    width: 835px;
+}
+
+.acecustomer-container .row .eleven.columns {
+    width: 920px;
+}
+
+.acecustomer-container .row .twelve.columns {
+    width: 1005px;
+}
+
+.acecustomer-full-page .customer-content-wrapper {
+    position: relative;
+}
+
+.acecustomer-flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+/* General Layout css */
+.acecustomer-full-page {
+    color: #666666;
+    color: var(--dark-grey);
+    background-color: #f0edf4;
+    background-color: var(--light-pink-grey);
+}
+
+.acecustomer-full-page img.ace-img-force-cover {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.mail-img{
+    position: relative;
+    width: 18%;
+    background-color: #654d91;
+    color: #fff;
+    text-align: center;
+}
+.mail-icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.mail-icon span{
+    font-size: 40px;
+}
+
+.acecustomer-full-page .text-justify {
+    text-align: justify;
+}
+
+.acecustomer-full-page .text-uppercase {
+    text-transform: uppercase;
+}
+
+.acecustomer-full-page .text-lowercase {
+    text-transform: lowercase;
+}
+
+.acecustomer-full-page .text-capitalize {
+    text-transform: capitalize;
+}
+
+.acecustomer-full-page .color-black {
+    color: var(--black);
+    color: #000000;
+}
+
+.acecustomer-full-page .color-dark-grey {
+    color: var(--dark-grey);
+    color: #666666;
+}
+
+.acecustomer-full-page .color-darker-grey {
+    color: var(--darker-grey);
+    color: #777777;
+}
+
+.acecustomer-full-page .color-red {
+    color: var(--red);
+    color: #e12f5c;
+}
+
+.acecustomer-full-page .color-green {
+    color: var(--green);
+    color: #74cac2;
+}
+
+.acecustomer-full-page .color-light-grey {
+    color: var(--light-grey);
+    color: #cfcbc3;
+}
+
+.acecustomer-full-page .color-light-blue {
+    color: var(--light-blue);
+    color: #929dcf;
+}
+
+.acecustomer-full-page .color-purple {
+    color: var(--purple);
+    color: #654d91;
+}
+
+.acecustomer-full-page .color-orange {
+    color: var(--orange);
+    color: #f3b944;
+}
+
+.acecustomer-full-page .color-mustard {
+    color: var(--mustard);
+    color: #c3a238;
+}
+
+.acecustomer-full-page .color-light-pink-grey {
+    color: var(--light-pink-grey);
+    color: #f0edf4;
+}
+
+.acecustomer-full-page .color-light-white {
+    color: var(--light-white);
+    color: #f8f8f8;
+}
+
+.acecustomer-full-page .color-light-light-grey {
+    color: var(--light-light-grey);
+    color: #e1e1e1;
+}
+
+.acecustomer-full-page .color-grey {
+    color: var(--grey);
+    color: #d5d3d3;
+}
+
+.acecustomer-full-page .color-grey-secondary {
+    color: var(--grey-secondary);
+    color: #d8d8d8;
+}
+
+.acecustomer-full-page .color-white {
+    color: var(--white);
+    color: #ffffff;
+}
+
+.acecustomer-full-page .br-plus {
+    padding-bottom: 5px;
+}
+
+.acecustomer-full-page .padding-v05 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.acecustomer-full-page .padding-v10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.acecustomer-full-page .padding-v15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.acecustomer-full-page .padding-t05 {
+    padding-top: 5px;
+}
+
+.acecustomer-full-page .padding-t10 {
+    padding-top: 10px;
+}
+
+.acecustomer-full-page .padding-t15 {
+    padding-top: 15px;
+}
+
+.acecustomer-full-page .padding-b05 {
+    padding-bottom: 5px;
+}
+
+.acecustomer-full-page .padding-b10 {
+    padding-bottom: 10px;
+}
+
+.acecustomer-full-page .padding-b15 {
+    padding-bottom: 15px;
+}
+
+.acecustomer-full-page .ace-img-wrapper {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.acecustomer-full-page .ace-img-wrapper img {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.acecustomer-full-page .force-hidden {
+    display: none !important;
+    visibility: hidden!important;
+}
+
+/******************************************************************************************************************/
+/* *****************************  Menu ************************************************************************** */
+/******************************************************************************************************************/
+.acecustomer-full-page .customer-left-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+}
+
+.acecustomer-full-page .customer-left-nav a {
+    color: #666666;
+    color: var(--dark-grey);
+}
+
+/* Menu : titre */
+.acecustomer-full-page .customer-left-nav .title-icon-nav {
+    margin: 0 7px 0 9px;
+}
+
+.acecustomer-full-page .customer-left-nav .title-nav {
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+    margin-bottom: 1px;
+}
+
+/* Menu : elements génériques */
+.acecustomer-full-page .customer-left-nav .list-nav .item-nav {
+    height: 60px;
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+}
+
+.acecustomer-full-page .customer-left-nav .list-nav .item-nav .item-content-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 58px;
+    opacity: 0.5;
+}
+
+.acecustomer-full-page .customer-left-nav .list-nav .item-nav .underline-nav {
+    width: 35px;
+    height: 2px;
+    background-color: #f0edf4;
+    background-color: var(--light-pink-grey);
+}
+
+.acecustomer-full-page .customer-left-nav .list-nav .item-nav .item-content-nav .icon-nav {
+    margin: 0 5px 0 3px;
+}
+
+/* Menu : opticien */
+.acecustomer-full-page .customer-left-nav .list-nav .opticien-nav {
+    min-height: 251px;
+    background-color: #654d91;
+    background-color: var(--purple);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.acecustomer-full-page .customer-left-nav .list-nav .opticien-nav .item-content-nav {
+    height: 40px;
+    color: #ffffff;
+    color: var(--white);
+    opacity: 1;
+}
+
+.acecustomer-full-page .customer-left-nav .list-nav .opticien-nav .item-content-nav .icon-nav {
+    margin: 0 6px 0 0;
+}
+
+.acecustomer-full-page .customer-left-nav .list-nav .opticien-nav .item-content-nav .link-nav {
+    opacity: 1;
+}
+
+.acecustomer-full-page .customer-left-nav .list-nav .opticien-nav .item-opticien-nav {
+    min-height: 206px;
+    margin: 0 5px 5px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 8px 9px 10px 10px;
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+}
+
+.acecustomer-full-page .customer-left-nav .list-nav .opticien-nav .item-opticien-nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 9px;
+}
+
+.acecustomer-full-page .customer-left-nav .list-nav .opticien-nav .item-opticien-nav .item-opticien-icon {
+    margin-right: 5px;
+    border-right: 1px solid #666666;
+    border-right: 1px solid var(--dark-grey);
+    padding-right: 5px;
+}
+
+.acecustomer-full-page .customer-left-nav .list-nav .opticien-nav .item-opticien-nav .item-opticien-link {
+    height: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+/* Menu : hover and current page animations */
+.acecustomer-full-page .customer-left-nav .list-nav .item-nav:hover .item-content-nav,
+.acecustomer-full-page .customer-left-nav .list-nav .item-nav.current .item-content-nav {
+    color: #654d91;
+    color: var(--purple);
+    opacity: 1;
+}
+
+.acecustomer-full-page .customer-left-nav .list-nav .opticien-nav.item-nav:hover .item-content-nav {
+    color: #ffffff;
+    color: var(--white);
+}
+
+.acecustomer-full-page .customer-left-nav .list-nav .item-nav:hover .item-content-nav .link-nav,
+.acecustomer-full-page .customer-left-nav .list-nav .item-nav.current .item-content-nav .link-nav {
+    font-weight: 700;
+}
+
+.acecustomer-full-page .customer-left-nav .list-nav .item-nav:hover .underline-nav,
+.acecustomer-full-page .customer-left-nav .list-nav .item-nav.current .underline-nav {
+    width: 70px;
+    background-color: #654d91;
+    background-color: var(--purple);
+}
+
+/******************************************************************************************************************/
+/* ******************************************** Footer ********************************************************** */
+/******************************************************************************************************************/
+.acecustomer-full-page .customer-footer a {
+    color: #666666;
+    color: var(--dark-grey);
+}
+
+/* Footer : Scroller */
+.acecustomer-full-page .acecustomer-footer-scrolltop {
+    height: 64px;
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.acecustomer-full-page .acecustomer-footer-scrolltop-link {
+    margin-left: 8px;
+}
+
+/* Footer : Blocs */
+.acecustomer-full-page .acecustomer-footer-container {
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+}
+
+.acecustomer-full-page .acecustomer-footer-blocs {
+    margin: 0 auto;
+    width: 1024px;
+    height: 274px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.acecustomer-full-page .acecustomer-footer-blocs div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 212px;
+    width: 240px;
+    margin: 31px 8px 31px 0;
+    padding-left: 7px;
+    border-left: 1px solid #e1e1e1;
+    border-left: 1px solid var(--light-light-grey);
+}
+
+.acecustomer-full-page .acecustomer-footer-blocs a:first-child div {
+    border-left: 0;
+    margin-left: 7px;
+}
+
+.acecustomer-full-page .acecustomer-footer-blocs .acecustomer-footer-bloc-title {
+    color: #654d91;
+    color: var(--purple);
+    margin-top: 27px;
+    margin-bottom: 13px;
+}
+
+.acecustomer-full-page .acecustomer-footer-blocs .acecustomer-footer-bloc-text {
+    text-align: center;
+    max-width: 100%;
+}
+
+/******************************************************************************************************************/
+/* ******************************************** Breadcrumbs ***************************************************** */
+/******************************************************************************************************************/
+.acecustomer-full-page .customer-breadcrumbs {
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
+.acecustomer-full-page .customer-breadcrumbs a {
+    text-decoration: none !important;
+    color: #654d91;
+    color: var(--purple);
+}
+
+.acecustomer-full-page .customer-breadcrumbs .list-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/******************************************************************************************************************/
+/* ******************************************** Blocks génériques *********************************************** */
+/******************************************************************************************************************/
+
+/* Block : infopicto */
+.acecustomer-full-page .ace-infopicto {
+    position: relative;
+    height: 367px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+}
+
+.acecustomer-full-page .ace-infopicto.ace-infopicto-big {
+    height: 280px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.acecustomer-full-page .ace-infopicto .ace-infopicto-picture {
+    height: 200px;
+}
+
+.acecustomer-full-page .ace-infopicto.ace-infopicto-big .ace-infopicto-picture {
+    height: auto;
+    width: 412px;
+}
+
+.acecustomer-full-page .ace-infopicto .ace-infopicto-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.acecustomer-full-page .ace-infopicto.ace-infopicto-big .ace-infopicto-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 410px;
+}
+
+.acecustomer-full-page .ace-infopicto .ace-infopicto-header .ace-infopicto-picto {
+    height: 70px;
+    width: 70px;
+    padding: 12px 10px 8px 10px;
+}
+
+.acecustomer-full-page .ace-infopicto.ace-infopicto-big .ace-infopicto-header .ace-infopicto-title {
+    font-size: 15px;
+    margin-left: 15px;
+    color: #ffffff;
+    color: var(--white);
+}
+
+.acecustomer-full-page .ace-infopicto .ace-infopicto-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 167px;
+    padding: 27px 10px 10px 12px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.acecustomer-full-page .ace-infopicto.ace-infopicto-medium .ace-infopicto-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 20px;
+}
+
+.acecustomer-full-page .ace-infopicto.ace-infopicto-big .ace-infopicto-content {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: auto;
+    width: 426px;
+    padding: 50px 10px 10px 15px;
+}
+
+.acecustomer-full-page .ace-infopicto .ace-infopicto-text span:first-child {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.acecustomer-full-page .ace-infopicto.ace-infopicto-big .ace-infopicto-text span {
+    margin-bottom: 10px;
+}
+
+.acecustomer-full-page .ace-infopicto .ace-infopicto-discover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+}
+
+.acecustomer-full-page .ace-infopicto.ace-infopicto-big .ace-infopicto-discover {
+    min-width: 97px;
+}
+
+.acecustomer-full-page .ace-infopicto.ace-infopicto-medium .ace-infopicto-discover {
+    min-width: 52px;
+}
+
+.acecustomer-full-page .lk-medium {
+    min-width: 52px !important;
+}
+
+.acecustomer-full-page .ace-infopicto.ace-infopicto-purple .ace-infopicto-picto {
+    background-color: #654d91;
+    background-color: var(--purple);
+    color: #74cac2;
+    color: var(--green);
+}
+
+.acecustomer-full-page .ace-infopicto.ace-infopicto-cyan .ace-infopicto-picto {
+    background-color: #74cac2;
+    background-color: var(--green);
+    color: #654d91;
+    color: var(--purple);
+}
+
+/* Block : on en parle */
+.acecustomer-full-page .ace-onenparle {
+    height: 367px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #000000;
+    background-color: var(--black);
+    color: #ffffff;
+    color: var(--white);
+}
+
+.acecustomer-full-page .ace-onenparle h4 {
+    color: #ffffff;
+    color: var(--white);
+}
+
+.acecustomer-full-page .ace-onenparle .ace-onenparle-picture {
+    height: 200px;
+}
+
+.acecustomer-full-page .ace-onenparle .ace-onenparle-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 167px;
+    padding: 27px 10px 10px 20px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.acecustomer-full-page .ace-onenparle.ace-onenparle-medium .ace-onenparle-content {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.acecustomer-full-page .ace-onenparle .ace-onenparle-text span:first-child {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.acecustomer-full-page .ace-onenparle .ace-onenparle-discover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    color: #ffffff;
+    color: var(--white);
+}
+
+.acecustomer-full-page .ace-onenparle.ace-onenparle-medium .ace-onenparle-discover {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    min-width: 52px;
+}
+
+/******************************************************************************************************************/
+/* ********************************** Blocks spécifiques : Page Accueil ***************************************** */
+/******************************************************************************************************************/
+/* Block : Header */
+.acecustomer-full-page .ace-accueil-block-header {
+    height: 328px;
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* Sous-Block : Bonjour */
+.acecustomer-full-page .ace-accueil-block-header .ace-accueil-block-bonjour {
+    min-width: 241px;
+    max-width: 241px;
+    padding: 15px 15px 14px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.acecustomer-full-page .ace-accueil-block-header .ace-accueil-block-bonjour-icon {
+    display: inline-block;
+    margin-bottom: 9px;
+}
+
+/* Sous-Block : o2k & moi */
+.acecustomer-full-page .ace-accueil-block-o2ketmoi {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /*background: url('../../images/acecustomer/o2ketmoi-banner.jpg');*/
+}
+
+.acecustomer-full-page .ace-accueil-block-o2ketmoi .ace-img-wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.acecustomer-full-page .ace-accueil-block-o2ketmoi-content {
+    height: 284px;
+    width: 363px;
+    margin: 20px 0 23px 15px;
+    padding: 18px 10px 13px 14px;
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+    position: relative;
+}
+
+.acecustomer-full-page .ace-accueil-block-o2ketmoi-discover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+}
+
+/* Block : Mes réservations */
+.acecustomer-full-page .ace-accueil-block-reservation {
+    height: 367px;
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-title {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 4px 0 3px 0;
+    background-color: #74cac2;
+    background-color: var(--green);
+    color: #654d91;
+    color: var(--purple);
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-title span {
+    margin-right: 10px;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-content {
+    height: 310px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 25px 10px 10px 15px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-discover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: right;
+    color: #654d91;
+    color: var(--purple);
+}
+
+/* Sous-block : Slider */
+.acecustomer-full-page .ace-accueil-block-reservation-slider {
+    height: 100%;
+    margin-bottom: 12px;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-slider-slides {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 196px;
+    margin-bottom: 12px;
+    color: #654d91;
+    color: var(--purple);
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-slider-slides span {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-slider-slides span.slick-arrow:first-child {
+    margin: 22px 15px 0 0;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-slider-slides span.slick-arrow:last-child {
+    margin: 22px 5px 0 15px;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-slider-slide {
+    height: 196px;
+    width: 219px;
+    background-color: #ffffff;
+    background-color: var(--white);
+    border: solid 1px rgba(102, 102, 102, 0.14);
+    padding: 0 21px 19px 21px;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-slider-slide-picture {
+    height: 70px;
+    margin: auto;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-slider-slide hr {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(33%, #d8d8d8), color-stop(0%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(left, #d8d8d8 33%, rgba(255, 255, 255, 0) 0%);
+    background-image: -o-linear-gradient(left, #d8d8d8 33%, rgba(255, 255, 255, 0) 0%);
+    background-image: linear-gradient(to right, #d8d8d8 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 6px 1px;
+    background-repeat: repeat-x;
+    border: none;
+    margin: 0 0 9px 0;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-slider-slide-content span {
+    display: block;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-slider-slide-content-number {
+    margin-bottom: 7px;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-slider-slide-content-livraison {
+    position: absolute;
+    bottom: 19px;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-slider-pagination ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-slider-pagination ul li {
+    line-height: 20px;
+    height: 20px;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-slider-pagination-dot {
+    display: block;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    margin: 0 7px 0 7px;
+    border: 1px solid #666666;
+    border: 1px solid var(--dark-grey);
+    border-radius: 10px;
+}
+
+.acecustomer-full-page .ace-accueil-block-reservation-slider-pagination-dot-inner {
+    display: block;
+    height: 10px;
+    width: 10px;
+    margin: 4px;
+    background-color: #74cac2;
+    background-color: var(--green);
+    border-radius: 10px;
+}
+
+/******************************************************************************************************************/
+/* ********************************** Blocks spécifiques : Page Optic2000 et moi ******************************** */
+/******************************************************************************************************************/
+.acecustomer-full-page .ace-optic2000etmoi-picto {
+    margin-right: 10px;
+}
+
+/* Block bannière/header */
+.acecustomer-full-page .ace-optic2000etmoi-header {
+    height: 280px;
+    position: relative;
+    /*background: url('../../images/acecustomer/o2ketmoi-banner-full.jpg');*/
+}
+
+/* Block bannière/header */
+.acecustomer-full-page .ace-optic2000etmoi-header .ace-img-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.acecustomer-full-page .ace-optic2000etmoi-header-content {
+    width: 481px;
+    height: 240px;
+    position: absolute;
+    margin: 20px 0 20px 15px;
+    padding: 20px 20px 47px 20px;
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+}
+
+/* Block presentation */
+.acecustomer-full-page .ace-optic2000etmoi-block-presentation-title {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.acecustomer-full-page .ace-optic2000etmoi-block-presentation-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+}
+
+.acecustomer-full-page .ace-optic2000etmoi-block-presentation-picture {
+    width: 326px;
+}
+
+.acecustomer-full-page .ace-optic2000etmoi-block-presentation-text {
+    width: 512px;
+    padding: 50px 24px 30px 22px;
+}
+
+.acecustomer-full-page .ace-optic2000etmoi-block-presentation-text h2,
+.acecustomer-full-page .ace-optic2000etmoi-block-presentation-text p {
+    margin-bottom: 30px;
+}
+
+.acecustomer-full-page .ace-optic2000etmoi-block-presentation-text ul li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    list-style-position: outside;
+    margin-bottom: 10px;
+}
+
+.acecustomer-full-page .ace-optic2000etmoi-block-presentation-text ul li:last-child {
+    margin-bottom: 0;
+}
+
+.acecustomer-full-page .ace-optic2000etmoi-block-presentation-text ul li span {
+    margin-right: 8px;
+    color: #654d91;
+    color: var(--purple);
+}
+
+/* Blocks Mentions Légales */
+.acecustomer-full-page .ace-optic2000etmoi-block-mentions-legales {
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.acecustomer-full-page .ace-optic2000etmoi-block-mentions-collapseable {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.acecustomer-full-page .ace-optic2000etmoi-block-mentions-content {
+    display: none;
+}
+
+/******************************************************************************************************************/
+/* ********************************** Blocks spécifiques : Page Mon opticien ************************************ */
+/******************************************************************************************************************/
+/* Block : header */
+.acecustomer-full-page .ace-monopticien-block-header {
+    height: 280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+}
+
+.acecustomer-full-page .ace-monopticien-block-header-picture {
+    width: 410px;
+    background: url("../img/loading.gif") center center no-repeat;
+}
+
+.acecustomer-full-page .ace-monopticien-block-header-content {
+    padding: 24px 29px 24px 26px;
+    position: relative;
+    width: 425px;
+}
+
+.acecustomer-full-page .ace-monopticien-block-header-discover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Block : infos magasin (général) */
+.acecustomer-full-page .ace-monopticien-block-storeinfo {
+    height: 380px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+    position: relative;
+}
+
+.acecustomer-full-page .ace-monopticien-block-storeinfo-title {
+    min-height: 57px;
+    max-height: 57px;
+    padding: 4px 0 3px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #74cac2;
+    background-color: var(--green);
+    color: var(--purple);
+}
+
+.acecustomer-full-page .ace-monopticien-block-storeinfo-title span:first-child {
+    margin-right: 10px;
+}
+
+.acecustomer-full-page .ace-monopticien-block-storeinfo-content {
+    min-height: 323px;
+    max-height: 323px;
+    padding: 19px 20px 24px 20px;
+}
+
+.acecustomer-full-page .ace-monopticien-block-storeinfo-content.with-closing-period {
+    padding-top: 5px;
+    padding-bottom: 13px;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.acecustomer-full-page .ace-monopticien-block-storeinfo-content > *:first-child {
+    height: 280px;
+    border: solid 1px rgba(102, 102, 102, 0.14);
+}
+
+/* Block : infos magasin (opticien) */
+.storeinfo-magasin {
+    padding: 9px 18px 44px 22px;
+    max-height: 323px;
+}
+
+.storeinfo-magasin-content {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 270px;
+    max-height: 270px;
+    padding: 10px 10px 20px 10px;
+    border: solid 1px rgba(102, 102, 102, 0.14);
+    background-color: #ffffff;
+    background-color: var(--white);
+}
+
+.storeinfo-magasin-content-text {
+    height: 185px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.storeinfo-magasin-content-text .storeinfo-magasin-phone-desktop {
+    align-self: center;
+}
+
+.storeinfo-magasin-content-text li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.storeinfo-magasin-content-text li:last-child {
+    margin-bottom: 0;
+}
+
+.storeinfo-magasin-content-text li:first-child > p {
+    line-height: 1.15;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+.storeinfo-magasin-content-text li > span:first-child {
+    padding-right: 7px;
+    border-right: 1px solid #666666;
+    border-right: 1px solid var(--dark-grey);
+    margin-right: 6px;
+}
+
+.storeinfo-magasin-content-text li:first-child > span:first-child {
+    padding: 7px 7px 6px 0;
+}
+
+.storeinfo-magasin-discover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 11px;
+}
+
+.storeinfo-magasin-discover span:first-child {
+    margin-left: 5px;
+}
+
+/* Block : infos magasin (horaires) */
+.acecustomer-full-page .storeinfo-content-horaire li {
+    height: 39px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0.5;
+    background-color: #ffffff;
+    background-color: var(--white);
+    border-bottom: 1px solid #cfcbc3;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.acecustomer-full-page .storeinfo-content-horaire li:last-child {
+    border-bottom: 0;
+}
+
+.acecustomer-full-page .storeinfo-content-horaire li > span:first-child {
+    display: inline-block;
+    min-width: 24px;
+    min-height: 24px;
+    padding: 5px 5px 5px 5px;
+    margin-right: 10px;
+    border-right: 1px solid #cfcbc3;
+    border-right: 1px solid var(--light-grey);
+}
+
+.acecustomer-full-page .storeinfo-content-horaire li.active {
+    opacity: 1;
+    border-bottom: 1px solid #cfcbc3;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.acecustomer-full-page .storeinfo-day-horaire {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.acecustomer-full-page .storeinfo-horaire-default {
+    margin-top: 45px;
+    height: 175px !important;
+    background-color: white;
+    background-color: var(--white);
+    padding: 10px;
+}
+
+.acecustomer-full-page .storeinfo-closingperiod {
+    font-size: 12px;
+    letter-spacing: -0.1px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+/* Block : Les services */
+.ace-monopticien-block-services {
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+}
+
+.ace-monopticien-block-services-title {
+    height: 57px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #654d91;
+    background-color: var(--purple);
+    color: #74cac2;
+    color: var(--green);
+}
+
+.ace-monopticien-block-services-title > span:first-child {
+    margin-right: 10px;
+}
+
+.ace-monopticien-block-services-content {
+    padding: 34px 15px 21px 15px;
+}
+
+.ace-monopticien-block-services-content > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.ace-monopticien-block-services-content > div:last-child {
+    margin-bottom: 0;
+}
+
+.ace-monopticien-block-services-content-text {
+    text-align: center;
+}
+
+.ace-monopticien-block-services-content-text > p {
+    margin-bottom: 42px;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.ace-monopticien-button {
+    width: 520px;
+    height: 44px;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: -0.1px;
+    background-color: #654d91;
+    background-color: var(--purple);
+    color: #ffffff;
+    color: var(--white);
+}
+
+.ace-monopticien-block-services-content-mutuals,
+.ace-monopticien-block-services-content-partners {
+    text-align: center;
+    padding: 40px 85px 30px 86px;
+    background-color: #ffffff;
+    background-color: var(--white);
+    border: solid 1px rgba(102, 102, 102, 0.14);
+}
+
+:root .ace-monopticien-block-services-content-mutuals > p,
+:root .ace-monopticien-block-services-content-partners > p {
+    /*width: 100% \0/ IE11; !* \0\ *!*/
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.ace-monopticien-block-services-content-mutuals > p {
+    margin-bottom: 15px;
+    display: block;
+    position: relative;
+}
+
+.ace-monopticien-block-services-content-mutuals > p:last-child {
+    margin-bottom: 0;
+}
+
+.ace-monopticien-block-services-content-partners > p {
+    margin-bottom: 29px;
+    display: block;
+    position: relative;
+}
+
+.ace-monopticien-block-services-content-partners > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.ace-img-service {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 19px;
+}
+
+.ace-img-network {
+    width: auto;
+    height: 80px;
+    margin: 10px;
+}
+
+/******************************************************************************************************************/
+/* ********************************** Blocks spécifiques : Mes conseils vision ********************************** */
+/******************************************************************************************************************/
+.acecustomer-full-page .font-color-cyan {
+    color: #654d91;
+    color: var(--green);
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-block-header {
+    color: #666666;
+    color: var(--dark-grey);
+    display: flex;
+    justify-content: space-between;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-block-header-picture {
+    width: 374px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-block-header-title {
+    margin-bottom: 10px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-block-header-text {
+    width: 427px;
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+    padding: 48px 8px 41px 16px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-block-header-text ul li {
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-sm-block-text {
+    position: relative;
+    padding: 19px 34px 24px 15px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-sm-block-text .link-lg-block {
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+}
+
+h4.title-category.font-size-open-h4.font-color-purple {
+    margin-bottom: 6px;
+}
+
+.acecustomer-full-page .row .sm-block {
+    margin-bottom: 15px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-sm-block-text .o2k-interface-fleche-petit-bas {
+    display: block;
+    font-size: 24px;
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    color: var(--purple);
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-sm-block, .acecustomer-full-page .ace-mesconseilsvisions-lg-block {
+    display: flex;
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+    height: 200px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-infopicto-purple {
+    background-color: #654d91;
+    background-color: var(--purple);
+    color: #74cac2;
+    color: var(--green);
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-infopicto-cyan {
+    background-color: #74cac2;
+    background-color: var(--green);
+    color: #654d91;
+    color: var(--purple);
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-lg-block-content {
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+    display: flex;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-category-title {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    padding-left: 16px;
+    margin-bottom: 0;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-category-title span.o2k-picto-article-couleur {
+    margin-right: 8px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-lg-block-text {
+    position: relative;
+    padding: 53px 20px 102px 20px;
+    width: 509px;
+    text-align: justify;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-lg-block-text h2 {
+    margin-bottom: 10px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-lg-block-text-link, .ace-reservation-lg-block-text-link {
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-lg-block-text-link .o2k-interface-fleche-petit, .ace-reservation-lg-block-text-link .o2k-interface-fleche-petit {
+    font-size: 24px;
+    vertical-align: sub;
+    margin-left: 3px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-lg-block-text ol li {
+    display: inline-flex;
+    counter-increment: onlyNumbers;
+    font-family: "Open Sans";
+    margin-left: 20px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-lg-block-text ol li::before {
+    list-style-type: decimal;
+    content: counter(onlyNumbers) "-";
+    margin-right: 8px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-lg-block-text ul li {
+    font-family: "Open Sans";
+    list-style-position: outside;
+    margin-right: 5px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-lg-block-text ul li:before {
+    list-style-type: initial;
+    content: "-";
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-lg-block-text-interface-haut {
+    font-size: 44px;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-category-linses {
+    position: relative;
+    height: 105px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-category-linses-picture {
+    padding-left: 6px;
+    padding-right: 20px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-category-linses-interface-bas {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 16px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-infopicto-purple span.path1:before, .acecustomer-full-page .ace-mesconseilsvisions-infopicto-purple span.path2:before {
+    color: #74cac2;
+    color: var(--green);
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-infopicto-cyan span.path1:before, .acecustomer-full-page .ace-mesconseilsvisions-infopicto-cyan span.path2:before {
+    color: #654d91;
+    color: var(--purple);
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-category-calendar {
+    position: relative;
+    min-height: 268px;
+    max-height: 268px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-calendar {
+    background-color: #fff;
+    height: 432px;
+}
+
+.acecustomer-full-page .ace-mesconseilsvisions-calendar-steps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #f8f8f8;
+}
+
+.ace-mesconseilsvisions-calendar .calendar-detail {
+    height: 54px;
+    line-height: 54px;
+}
+
+.ace-mesconseilsvisions-calendar .timeline {
+    position: relative;
+    padding-top: 25px;
+}
+
+.ace-mesconseilsvisions-calendar .timeline .steps {
+    position: relative;
+    height: 289px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ace-mesconseilsvisions-calendar .timeline .steps::before {
+    content: '';
+    height: 20px;
+    width: 0;
+    border: 1px dashed #666666;
+    border: 1px dashed var(--dark-grey);
+    position: absolute;
+    top: -17px;
+    left: 258px;
+}
+
+.ace-mesconseilsvisions-calendar .timeline .steps::after {
+    content: '';
+    height: 280px;
+    width: 2px;
+    background-color: #666666;
+    background-color: var(--dark-grey);
+    position: absolute;
+    top: 5px;
+    left: 258px;
+}
+
+.ace-mesconseilsvisions-calendar .timeline .steps .step {
+    display: flex;
+}
+
+.ace-mesconseilsvisions-calendar .timeline .steps .step::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+    border: solid 1px #666666;
+    border: solid 1px var(--dark-grey);
+    border-radius: 50%;
+    left: 253px;
+    background-color: #ffffff;
+    background-color: var(--white);
+    z-index: 100;
+    cursor: pointer;
+
+}
+
+.ace-mesconseilsvisions-calendar .timeline .steps .step.active::before {
+    background: url("../img/picto-slider.png") no-repeat center center;
+    left: 246px;
+    width: 24px;
+    height: 20px;
+    box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.ace-mesconseilsvisions-calendar .timeline .steps .step .step-center {
+    font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
+    font-size: 12px;
+    line-height: 15px;
+    width: 80px;
+    margin-left: 274px;
+}
+
+.ace-mesconseilsvisions-calendar .timeline .steps .step .step-left {
+    width: 252px;
+    height: 300px;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: -7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ace-mesconseilsvisions-calendar .timeline .steps .step .step-left img {
+    position: absolute;
+    bottom: 120px;
+    right: 60px;
+    display: block;
+}
+
+.ace-mesconseilsvisions-calendar .timeline .steps .step .step-right {
+    width: 453px;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    margin-right: 28px;
+}
+
+.ace-mesconseilsvisions-calendar .timeline .steps .step .step-right p {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+}
+
+.ace-mesconseilsvisions-calendar .timeline .steps .step.active .step-left,
+.ace-mesconseilsvisions-calendar .timeline .steps .step.active .step-right {
+    visibility: visible;
+}
+
+.ace-mesconseilsvisions-calendar .step-left button {
+    position: absolute;
+    bottom: 13px;
+    right: 60px;
+    display: block;
+
+    background-color: #74cac2;
+    background-color: var(--green);
+    width: 120px;
+    height: 38px;
+    border-radius: 19px;
+    color: #ffffff;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.ace-mesconseilsvisions-calendar .timeline .customer-age {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border: 2px solid #616161;
+    border-radius: 50%;
+    left: 203px;
+}
+
+.ace-mesconseilsvisions-calendar .timeline .customer-age::after {
+    content: '';
+    position: absolute;
+    right: -15px;
+    bottom: calc(50% - 1px);
+    display: inline-block;
+    border-top: 1px solid #666;
+    width: 15px;
+    height: 1px;
+}
+
+.ace-mesconseilsvisions-calendar .timeline .vous {
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -20px;
+}
+
+/*Page Information account costumer*/
+.acecustomer-full-page .mt-10 {
+    margin-top: 10px;
+}
+
+.acecustomer-full-page .mt-40 {
+    margin-top: 40px;
+}
+
+.acecustomer-full-page .mt-20 {
+    margin-top: 20px;
+}
+
+.acecustomer-full-page .mt-30 {
+    margin-top: 30px;
+}
+
+.acecustomer-full-page .mb-16 {
+    margin-bottom: 16px;
+}
+
+.acecustomer-full-page .password {
+    font-family: Avenir;
+    font-size: 30px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+}
+
+.acecustomer-full-page .ace-btn {
+    width: 156px;
+    height: 44px;
+    text-transform: uppercase;
+    border: solid 1px #d5d5d5;
+    color: #d5d5d5;
+    background-color: transparent;
+    font-family: "Open Sans";
+}
+
+.acecustomer-full-page .ace-btn-pickup {
+    width: 205px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    padding: 1px 6px;
+}
+
+.acecustomer-full-page .ace-btn-contact {
+    width: 156px;
+    height: 32px;
+}
+
+.ace-block-information .container-info, .block-reservation .container-info {
+    background-color: #f8f8f8;
+    background-color: var(--light-white);
+    min-height: 200px;
+    padding: 34px 31px 27px;
+}
+
+.ace-block-information .container-info .is-checked:after {
+    content: "\2714";
+    width: 13px;
+    height: 10px;
+    color: #74cac2;
+    font-weight: bold;
+
+}
+
+.ace-block-information .row-title {
+    margin-bottom: 20px !important;
+}
+
+.ace-block-information .ace-panel {
+    font-family: "Open Sans";
+    margin-bottom: 60px;
+}
+
+.ace-block-information .ace-panel:last-child {
+    margin-bottom: 0;
+}
+
+.ace-block-information .ace-panel .panel-box {
+    display: flex;
+    padding: 10px 16px 10px 0;
+    background: #fff;
+    min-height: 90px;
+    position: relative;
+}
+
+.ace-block-information .ace-panel .panel-box .filet {
+    width: 1px;
+    height: 77px;
+    background-color: #d8d8d8;
+    position: absolute;
+    left: 59px;
+    bottom: 8px;
+}
+
+.ace-block-information .ace-panel .box-picto {
+    width: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ace-block-information .ace-panel .box-picto .o2k-picto-medecin {
+    font-size: 29px;
+}
+
+.ace-block-information .ace-panel .panel-box .box-content {
+    width: 414px;
+    padding-left: 15px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ace-block-information .ace-panel .panel-box .box-action {
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+}
+
+.ace-block-information .ace-panel .panel-box .box-content .name {
+    font-size: 14px;
+    color: #666666;
+    text-transform: uppercase;
+}
+
+.ace-block-information .ace-panel .panel-box .box-content .address {
+    opacity: 0.57;
+    font-size: 11px;
+}
+
+.ace-block-information .ace-panel .panel-box .box-content .tel {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ace-block-information .ace-panel .panel-box .box-content span {
+    display: block;
+}
+
+.ace-block-information .ace-panel h2, h3 {
+    font-family: "Open Sans";
+}
+
+.ace-block-information .ace-panel h2 {
+    margin-bottom: 38px;
+}
+
+.ace-block-information .ace-panel h3 {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+}
+
+.ace-block-information .ace-panel .panel-content .panel-text {
+    width: 500px;
+    height: 103px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 26px;
+    letter-spacing: 0;
+}
+
+/*FORMULAIRE*/
+.acecustomer-full-page .ace-form-group {
+    margin-bottom: 16px;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-icon span {
+    position: absolute;
+    right: 8px;
+    bottom: 9px;
+    font-size: 24px;
+}
+
+.acecustomer-full-page .ace-form .row {
+    margin-bottom: 0 !important;
+}
+
+.acecustomer-full-page .ace-form .ace-btn-submit {
+    width: 156px;
+    height: 44px;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #654d91;
+    background-color: var(--purple);
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+
+.acecustomer-full-page .ace-form-row {
+    display: flex;
+}
+
+.acecustomer-full-page .ace-form-group.error-input {
+    color: #e12f5c !important;
+    color: var(--red) !important;
+}
+
+.acecustomer-full-page .ace-form-group.error-input label, legend {
+    font-weight: bold;
+}
+
+.acecustomer-full-page .ace-form-group.error-input .ace-form-control {
+    border: solid 2px #e12f5c !important;
+    border: solid 2px var(--red) !important;
+    font-style: italic;
+}
+
+.acecustomer-full-page .ace-form-group.error-input input[type="radio"] {
+    border: solid 1px #e12f5c !important;
+    border: solid 1px var(--red) !important;
+}
+
+.acecustomer-full-page .ace-form-row .ace-form-control {
+    width: 100%;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-row .ace-form-control {
+    width: 100%;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-row .date-of-birth > .ace-form-control {
+    width: 50px;
+    margin-right: 30px;
+    padding: 0 5px 0 5px;
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-row .date-of-birth > .ace-form-control[type=number]::-webkit-inner-spin-button, .ace-form-control[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-row .date-of-birth:last-child > .ace-form-control {
+    width: 110px;
+    margin-right: 0;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-row .gender-selection {
+    margin-right: 16px;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-row .gender-selection:last-child {
+    margin-right: 0;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-row .gender-selection label {
+    margin-left: 5px
+}
+
+.acecustomer-full-page .ace-form-group.contact-selection label {
+    margin-left: 5px
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-control {
+    width: 380px;
+    height: 44px;
+    border-radius: 2px;
+    border: solid 1px #666666;
+    border: solid 1px var(--dark-grey);
+    background-color: #ffffff;
+    padding: 0 40px 0 10px;
+    margin-top: 7px;
+    box-sizing: border-box;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-control[type="radio"] {
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    background: #fff;
+    border: 1px solid #666666;
+    border: 1px solid var(--dark-grey);
+    border-radius: 50%;
+    vertical-align: bottom;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-control[type="radio"]:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    left: 4px;
+    top: 4px;
+    background: #74cac2;
+    background: var(--green);
+    display: none;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-control[type="radio"]:checked:before {
+    display: block;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-control[type="password"] {
+    font-size: 24px;
+    letter-spacing: 7px;
+}
+
+.acecustomer-full-page .ace-form-group label .o2k-interface-interrogation {
+    margin-left: 10px;
+}
+
+.acecustomer-full-page .ace-form-group legend .o2k-interface-interrogation {
+    margin-left: 10px;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-control[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border: 1px solid #666666;
+    border: 1px solid var(--dark-grey);
+    vertical-align: bottom;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-control[type="checkbox"]:checked {
+    position: relative;
+}
+
+.acecustomer-full-page .ace-form-group .ace-form-control[type="checkbox"]:checked:before {
+    content: '';
+    border: solid var(--green);
+    border: solid #74cac2;
+    width: 5px;
+    height: 10px;
+    left: 5px;
+    top: 1px;
+    display: block;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-width: 0 3px 3px 0;
+}
+
+/*TOOLTIP*/
+.acecustomer-full-page .tooltip, .activation-code-popup .tooltip {
+    position: relative;
+    color: var(--dark-grey);
+    margin-left: 10px;
+}
+
+.acecustomer-full-page .tooltip-text, .activation-code-popup .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    padding: 1rem;
+    z-index: 10000;
+    bottom: 220%;
+    left: -80%;
+    min-width: 300px;
+    min-height: 94px;
+    background-color: #ffffff;
+    border: solid 1px rgba(102, 102, 102, 0.14);
+    box-sizing: border-box;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0;
+}
+
+.acecustomer-full-page .tooltip-text::after, .activation-code-popup .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    margin-left: -6px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.acecustomer-full-page .tooltip:hover > .tooltip-text {
+    visibility: visible;
+}
+
+.activation-code-popup .tooltip:hover > .tooltip-text {
+    visibility: visible;
+}
+
+/******************************************************************************************************************/
+/* ********************************** Blocks spécifiques : Page Mon Livret Optic ******************************** */
+/******************************************************************************************************************/
+
+/* Livret Optic */
+.acecustomer-full-page .b-livret {
+    display: flex;
+}
+
+.acecustomer-full-page .b-livret .b-image {
+    display: block;
+    min-width: 326px;
+    max-width: 326px;
+}
+
+.acecustomer-full-page .b-livret .b-image img {
+    object-fit: cover;
+}
+
+.acecustomer-full-page .b-livret .b-content {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+}
+
+.acecustomer-full-page .b-livret .b-content .b-c-top {
+    width: 100%;
+    padding: 42px 20px 10px 20px;
+    background-color: #000000;
+}
+
+.acecustomer-full-page .b-livret .b-content .b-c-top .b-title {
+    font-family: Avenir, AvenirLTStd55Roman, Sans-Serif;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    color: #b99635;
+}
+
+.acecustomer-full-page .b-livret .b-content .b-c-top .b-desc {
+    padding: 10px 0;
+    color: #fff;
+}
+
+.acecustomer-full-page .b-livret .b-content .b-c-bottom {
+    width: 100%;
+    padding: 20px 20px 34px 20px;
+    background-color: #FFFFFF;
+    color: #666666;
+}
+
+.acecustomer-full-page .b-livret .b-content .b-c-bottom .b-desc {
+    padding: 0 0 20px 0;
+}
+
+.acecustomer-full-page .b-livret .b-content .b-c-bottom .b-desc .bt-style1 {
+    color: #fff;
+}
+
+.acecustomer-full-page .b-livret .l-full {
+    min-height: 337px;
+}
+
+.acecustomer-full-page .b-opticien .ace-infopicto.ace-infopicto-big {
+    height: auto;
+}
+
+.acecustomer-full-page .b-opticien .ace-infopicto .ace-infopicto-picture {
+    min-height: 360px;
+}
+
+.acecustomer-full-page .b-check {
+    display: block;
+    position: relative;
+    padding: 22px 28px;
+    background-color: #000;
+}
+
+.acecustomer-full-page .b-check .b-wrapper {
+    display: flex;
+    position: relative;
+    padding: 30px 57px;
+    background-color: #FFF;
+}
+
+.acecustomer-full-page .b-check .b-info {
+    display: block;
+    position: relative;
+    width: 427px;
+    height: 217px;
+    padding: 66px 6px 8px 6px;
+    z-index: 1;
+}
+
+.acecustomer-full-page .b-check .b-print {
+    width: 238px;
+    margin: 13px 0;
+    padding: 29px 40px;
+    background-color: #000;
+}
+
+.acecustomer-full-page .b-check .b-info .visual-check-wrapper,
+.acecustomer-full-page .b-check .b-info .visual-check {
+    display: block;
+    position: relative;
+    width: 427px;
+}
+
+.acecustomer-full-page .b-check .b-info .visual-check-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.b-check .b-info .check-info {
+    position: relative;
+    z-index: 1;
+}
+
+.acecustomer-full-page .b-check .b-info .check-title {
+    display: block;
+    position: relative;
+    padding: 30px 10px 0 10px;
+    line-height: 12px;
+    text-align: center;
+}
+
+.acecustomer-full-page .b-check .b-info .check-title * {
+    font-family: "Open Sans", Sans-Serif;
+    font-weight: 200;
+}
+
+.acecustomer-full-page .b-check .b-info .check-subtitle {
+    display: block;
+    position: relative;
+    padding: 0;
+    text-align: center;
+}
+
+.acecustomer-full-page .b-check .b-info .check-subtitle * {
+    font-family: "Open Sans", Sans-Serif;
+    font-weight: 200;
+    font-size: 8px;
+    color: #666;
+}
+
+.acecustomer-full-page .b-check .b-info .check-data-wrapper {
+    display: flex;
+    margin-top: 15px;
+}
+
+.acecustomer-full-page .b-check .b-info .check-data-wrapper .c-data-list {
+    display: block;
+    font-size: 10px;
+}
+
+.acecustomer-full-page .b-check .b-info .check-data-wrapper .c-left {
+    display: block;
+    align-self: flex-start;
+    width: 40%;
+}
+
+.acecustomer-full-page .b-check .b-info .check-data-wrapper .c-right {
+    display: block;
+    align-self: flex-end;
+    width: 70%;
+}
+
+.acecustomer-full-page .b-check .b-info .check-data-wrapper .c-name-label {
+    display: block;
+    font-size: 10px;
+    text-align: end;
+}
+
+.acecustomer-full-page .b-check .b-info .check-data-wrapper .c-name-value {
+    display: block;
+    font-size: 13px;
+    text-align: end;
+    color: var(--mustard);
+    color: #c3a238;
+    text-transform: uppercase;
+}
+
+.acecustomer-full-page .b-check .b-print {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.acecustomer-full-page .b-check .b-print .i-printer {
+    display: block;
+    height: 74px;
+    width: 74px;
+    background: url("../img/icon-printer-blanc.png") no-repeat 50% 50%;
+    margin-bottom: 15px;
+}
+
+.acecustomer-full-page .b-check .b-print .b-buttons .bt-style1 {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.acecustomer-full-page .b-check-notice {
+    display: block;
+    margin: 20px 0 30px 0;
+}
+
+.acecustomer-full-page .b-check-notice p {
+    font-family: "Open Sans";
+    font-size: 12px;
+    letter-spacing: 0;
+    text-align: justify;
+}
+
+.acecustomer-full-page .b-checks-list .b-check-notice:last-child {
+    margin-bottom: 0;
+}
+
+.acecustomer-full-page .b-check-activation {
+    display: block;
+    position: relative;
+    padding: 22px 28px;
+    background-color: #000;
+}
+
+.acecustomer-full-page .b-check-activation .b-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 30px 70px;
+    background-color: #FFF;
+}
+
+.acecustomer-full-page .b-check-activation .b-desc {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.acecustomer-full-page .b-check-activation .b-desc .b-text {
+    display: block;
+    padding: 0 75px;
+}
+
+.acecustomer-full-page .b-check-activation .b-desc .b-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.acecustomer-full-page .b-check-activation .b-buttons {
+    width: 100%;
+    padding: 0 75px;
+}
+
+.acecustomer-full-page .b-check-activation .b-buttons .bt-style1 {
+    display: block;
+    text-transform: uppercase;
+}
+
+.acecustomer-full-page .b-check.check-flagged .b-wrapper {
+    align-items: center;
+    justify-content: center;
+}
+
+.acecustomer-full-page .b-check.check-flagged .b-info .visual-check-wrapper,
+.acecustomer-full-page .b-check.check-flagged .b-info .visual-check,
+.acecustomer-full-page .b-check.check-flagged .b-info {
+    width: 485px;
+}
+
+.acecustomer-full-page .b-check.check-flagged .b-info {
+    position: relative;
+    padding: 70px 6px 8px 6px;
+    overflow: hidden;
+}
+
+.acecustomer-full-page .b-check.check-flagged .b-info:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #9c9c9c;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.acecustomer-full-page .b-check.check-flagged .b-info .visual-check {
+    margin-top: -15px;
+}
+
+.acecustomer-full-page .b-check.check-flagged .b-info .check-status-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 87px;
+    width: 100%;
+    z-index: 2;
+}
+
+.acecustomer-full-page .b-check.check-flagged .b-info .check-status {
+    display: block;
+    position: relative;
+    padding: 5px 32px;
+    background-color: #f8f8f8;
+    font-family: "Avenir Black", AvenirLTStd55Black, Sans-Serif;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+}
+
+.popup-wrapper {
+    position: relative;
+    width: 839px;
+    min-height: 600px;
+    padding: 126px 127px;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+.popup-wrapper .modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background: url('../img/icon-modal-close.svg') no-repeat 50% 50%;
+}
+
+.ace-infobull {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.ace-infobull .infobull-icon {
+    display: block;
+    position: relative;
+    bottom: -2px;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    background: url("../img/icon-interrogation.svg") no-repeat 50% 50%;
+}
+
+.ace-infobull .infobull-content {
+    display: none;
+    position: absolute;
+    bottom: 200%;
+    left: -3px;
+    background: #FFF;
+    padding: 15px;
+    z-index: 1;
+    width: 300px;
+    border: solid 1px rgba(102, 102, 102, 0.14);
+    box-shadow: 0 0 15px #9e9e9e;
+}
+
+.ace-infobull .infobull-content:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    background: #FFF;
+    bottom: -12px;
+    left: 3px;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    box-shadow: 0 0 15px #6e6e6e;
+}
+
+.ace-infobull .infobull-content .infobull-title {
+    display: block;
+    font-family: "Open Sans", Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ace-infobull .infobull-content .infobull-desc {
+    display: block;
+    font-family: "Open Sans", Sans-Serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.activation-code-popup .form-caption,
+.activation-code-popup .form-caption * {
+    font-family: "Avenir Black", AvenirLTStd55Black, Sans-Serif;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: #666666;
+}
+
+.activation-code-popup .form-wrapper {
+    display: block;
+    position: relative;
+    margin: 37px 130px 0 130px;
+}
+
+.activation-code-popup .form-wrapper input[type="text"],
+.activation-code-popup .form-wrapper label {
+    color: #666;
+}
+
+.activation-code-popup .form-wrapper .form-row {
+    display: block;
+    position: relative;
+    margin-bottom: 37px;
+}
+
+.activation-code-popup .form-wrapper .form-row:last-child {
+    margin-bottom: 0;
+}
+
+.activation-code-popup .form-wrapper .form-field {
+    display: block;
+    position: relative;
+}
+
+.activation-code-popup .form-wrapper .form-field.col2,
+.activation-code-popup .form-wrapper .form-field.col3 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.activation-code-popup .form-wrapper .form-field.col2 > *[class^="col"] {
+    width: 140px;
+}
+
+.activation-code-popup .form-wrapper .form-field .form-input {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 44px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: solid 1px #666666;
+    background-color: #FFF;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.activation-code-popup .form-wrapper .form-input::placeholder,
+.activation-code-popup .form-wrapper .form-input::-webkit-input-placeholder,
+.activation-code-popup .form-wrapper .form-input::-moz-placeholder,
+.activation-code-popup .form-wrapper .form-input:-ms-input-placeholder,
+.activation-code-popup .form-wrapper .form-input:-moz-placeholder {
+    color: #EF3333;
+}
+
+.activation-code-popup .form-wrapper .form-field.col2 .form-input {
+    width: 140px;
+}
+
+.activation-code-popup .form-wrapper .form-field.col3 > *[class^="col"] {
+    margin: 0 15px;
+}
+
+.activation-code-popup .form-wrapper .form-field.col3 > *[class^="col"]:first-child {
+    margin-left: 0;
+}
+
+.activation-code-popup .form-wrapper .form-field.col3 > *[class^="col"]:last-child {
+    margin-right: 0;
+}
+
+.activation-code-popup .form-wrapper .form-field.col3 .form-input {
+    width: 100%;
+}
+
+.activation-code-popup .form-wrapper .date-year,
+.activation-code-popup .form-wrapper .form-field.col3 .form-input.date-year {
+    width: 118px;
+}
+
+.activation-code-popup .form-wrapper .form-field.date-field .form-input {
+    text-align: center;
+}
+
+.activation-code-popup .form-wrapper .error {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.activation-code-popup .form-wrapper .area-message {
+    position: absolute;
+    display: block;
+    margin: 5px 0;
+    font-family: "Open Sans", Sans-Serif, serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0;
+    top: -45px;
+}
+
+.activation-code-popup .form-wrapper .area-message.error {
+    color: #e12f5c;
+    color: var(--red);
+}
+
+.activation-code-popup .form-wrapper .area-message.success {
+    top: -35px;
+    font-size: 16px;
+    color: #74cac2;
+    color: var(--green);
+}
+
+.activation-code-popup .form-wrapper [data-message-field].error * {
+    border-color: #e12f5c;
+    color: #e12f5c;
+    color: var(--red);
+}
+
+.activation-code-popup .form-wrapper [data-message-field] .area-message {
+    top: auto;
+}
+
+.activation-code-popup .form-wrapper [data-message-field].error .form-input::placeholder,
+.activation-code-popup .form-wrapper [data-message-field].error .form-input::-webkit-input-placeholder,
+.activation-code-popup .form-wrapper [data-message-field].error .form-input::-moz-placeholder,
+.activation-code-popup .form-wrapper [data-message-field].error .form-input:-ms-input-placeholder,
+.activation-code-popup .form-wrapper [data-message-field].error .form-input:-moz-placeholder { /* Firefox 18- */
+    color: #e12f5c !important;
+    color: var(--red);
+}
+
+.acecustomer-full-page .block-messages {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.acecustomer-full-page .block-messages .block-close-btn {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin-top: -14px;
+    margin-right: -14px;
+}
+
+.acecustomer-full-page .block-messages .block-close-btn:after {
+    content: "X";
+    display: block;
+    background-color: #f8f8f8;
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 2px 2px 6px #ccc;
+    border: 1px solid #ccc;
+    padding: 3px;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.acecustomer-full-page .block-messages .block-close-btn:hover:after {
+    margin: -1px -1px -1px -1px;
+}
+
+.acecustomer-full-page .block-messages-inner {
+    display: block;
+    position: relative;
+    background-color: #f8f8f8;
+    padding: 15px 30px;
+    z-index: 99;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+.acecustomer-full-page .block-messages .messages .error-msg {
+    display: block;
+    color: #ff001f;
+    border: 1px solid #ff001f;
+    padding: 8px 15px;
+}
+
+.acecustomer-full-page .block-messages .messages .success-msg {
+    display: block;
+    color: #1e941c;
+    border: 1px solid #1e941c;
+    padding: 8px 15px;
+    margin: 10px 0;
+}
+
+#stores-map {
+    background-color: #fff;
+}
+
+.pac-container, .pac-container.pac-logo {
+    z-index: 10000 !important;
+}
+
+/**********************************************************************************************************************/
+/* Responsive *********************************************************************************************************/
+@media screen and (max-width: 920px) {
+    .popup-wrapper {
+        width: 569px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0 5px;
+    }
+}
+
+.account-contact .o2k-interface-close {
+    vertical-align: middle;
+    color: var(--red);
+}
+
+/**********************************************************************************************************************/
+/***********************                            Page e-reservations                          ***********************/
+/**********************************************************************************************************************/
+.block-reservation .container-info {
+    min-height: 172px;
+    position: relative;
+}
+
+.block-reservation .header-command h2, h3 {
+    font-family: "Open Sans";
+}
+
+.block-reservation .header-command h2 {
+    padding-bottom: 31px;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.block-reservation .header-command h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.block-reservation .header-command .command-resume {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Open Sans";
+    border-top: 1px solid #d5d3d3;
+    margin-top: 40px;
+    height: 80px;
+}
+
+.block-reservation .header-command h2 + .command-resume {
+    margin-top: 0;
+}
+
+.block-reservation .header-command .command-date,
+.block-reservation .header-command .shipping-notice {
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 29px;
+    display: block;
+}
+
+.block-reservation .header-command h3 .o2k-interface-fleche-grand {
+    font-size: 24px;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+.block-reservation .ace-panel .top-glass {
+    text-align: center;
+    font-family: "Open Sans";
+    height: 463px;
+}
+
+.block-reservation .ace-panel .top-glass h3 {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.block-reservation .ace-panel .top-glass p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.block-reservation .ace-panel .top-glass .products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.block-reservation .ace-panel .top-glass .products .card-product {
+    width: 255px;
+    height: 333px;
+    background-color: #ffffff;
+}
+
+.block-reservation .ace-panel .top-glass .products .card-product {
+    margin-right: 15px;
+}
+
+.block-reservation .ace-panel .top-glass .products .card-product:last-child {
+    margin-right: 0;
+}
+
+/*** Pagination ***/
+.pagination-border {
+    border-top: 1px solid #d5d3d3;
+    border-bottom: 1px solid #d5d3d3;
+    padding: 9px 0;
+}
+
+.ereservations-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 446px;
+    margin: auto;
+}
+
+.ereservations-pagination > div:first-child, .ereservations-pagination > div:last-child {
+    display: flex;
+    justify-content: space-evenly;
+    width: 84px;
+    font-size: 20px;
+}
+
+.ereservations-pagination .pagination-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ereservations-pagination .page-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    margin: 0 8px;
+    position: relative;
+    height: 40px;
+}
+
+.ereservations-pagination .pagination-arrow {
+    display: flex;
+}
+
+.ereservations-pagination .pagination-arrow span:first-child {
+    margin-left: 0;
+}
+
+.ereservations-pagination .pagination-arrow span {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    margin-left: -15px;
+}
+
+.ereservations-pagination .pagination-sarrow {
+    display: flex;
+}
+
+.ereservations-pagination .pagination-sarrow a {
+    line-height: 0;
+}
+
+.ereservations-pagination .pagination-sarrow span {
+    font-size: 24px;
+}
+
+.ereservations-pagination .page-item::after {
+    content: "-";
+    position: absolute;
+    right: -10px;
+    font-weight: normal;
+    color: var(--dark-grey);
+    font-size: 16px;
+    width: 6px;
+    height: 22px;
+}
+
+.ereservations-pagination .page-item:last-child::after {
+    content: " ";
+}
+
+.ereservations-pagination .active-page {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    color: var(--white) !important;
+    font-weight: bold;
+    background-color: var(--purple) !important;
+}
+
+.ereservations-pagination .active-page a {
+    color: var(--white);
+}
+
+.ereservations-pagination .pagination-spacing {
+    margin: 0 8px;
+}
+
+/*** Bloc "Mon opticien" ***/
+.block-reservation .ace-infopicto.e-reservations .ace-infopicto-header .ace-infopicto-picto {
+    background-color: var(--green);
+    background-color: #74cac2;
+}
+
+.block-reservation .ace-infopicto-header .ace-infopicto-picto > .o2k-picto-monopticien {
+    color: var(--purple);
+    color: #654d91;
+}
+
+.block-reservation .ace-infopicto.ace-infopicto-big .ace-infopicto-discover {
+    min-width: initial;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+/*A voir si utilisé ailleur (retirer .block-reservation .ace-panel .top-glass) */
+.block-reservation .ace-panel .top-glass .products .card-product .card-img img {
+    width: 100%;
+    height: 146px;
+}
+
+.block-reservation .ace-panel .top-glass .products .card-product .card-body {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.block-reservation .ace-panel .top-glass .products .card-product .card-body .brand {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.block-reservation .ace-panel .top-glass .products .card-product .card-body .model {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.block-reservation .ace-panel .top-glass .products .card-product .card-footer .price {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.block-reservation .ace-panel .top-glass .products .card-product .card-footer .ace-btn {
+    width: 156px;
+    height: 32px;
+}
+
+.block-reservation .ace-panel .panel-box {
+    display: flex;
+    padding: 10px 16px 10px 0;
+    background: #fff;
+    min-height: 120px;
+    position: relative;
+    margin-bottom: 10px;
+    font-family: "Open Sans";
+}
+
+.block-reservation .ace-panel .panel-box .command-information {
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block-reservation .ace-panel .panel-box .command-price {
+    width: 116px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.block-reservation .ace-panel .panel-box .command-price .price {
+    margin-top: 15px;
+}
+
+.block-reservation .ace-panel .panel-box .command-price .price > span {
+    font-size: 18px;
+}
+
+.block-reservation .ace-panel .panel-box .command-information .product-category {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.block-reservation .ace-panel .panel-box .command-information .product-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.block-reservation .ace-panel .panel-box .command-information .product-sku {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.block-reservation .ace-panel .panel-box .command-information .product-quantity {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.block-reservation .ace-panel .panel-box .command-information .command-detail {
+    text-transform: uppercase;
+}
+
+.block-reservation .ace-panel .panel-box .command-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-reservation .ace-panel .panel-box > div:first-child {
+    width: 170px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.block-reservation .ace-panel .panel-box .illustration {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    border: solid 1px #f1f1f1;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.block-reservation .ace-panel .panel-content {
+    position: relative;
+}
+
+.block-reservation .ace-panel .panel-content .renewal {
+    width: 247px;
+    height: 24px;
+    border: solid 1px var(--light-grey);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.1px;
+    text-align: center;
+    color: var(--light-grey);
+    position: absolute;
+    right: 19px;
+    bottom: 11px;
+    text-transform: uppercase;
+}
+
+.block-reservation .header-command .command-resume.command-history {
+    padding-left: 29px;
+    padding-right: 32px;
+    height: 90px;
+    background-color: white;
+    border: solid 1px #f1f1f1;
+    margin-top: 0;
+}
+
+.block-reservation .header-command .command-resume.command-history .command-date,
+.block-reservation .header-command .command-resume.command-history .shipping-notice {
+    margin-left: 0;
+}
+
+.block-reservation .header-command .command-resume.command-history .status {
+    color: var(--purple);
+    text-transform: none
+}

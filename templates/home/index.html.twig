@@ -1,0 +1,365 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+<script type="text/javascript">
+    jQuery(document).ready(function(){jQuery(".wrapper-remove").removeClass();});
+</script>
+
+<div itemprop="mainContentOfPage" id="content">
+    <div class="std"><p><div class="hp-block-wrapper ">
+		<div class="sliders-container">
+            <ul class="sliders hp-slider">
+                <li>
+            <div class="slider-visual ">
+                <img src="media/homepage/slider/Karl_Lagerfeld_2019_20190904150208.png" alt="Découvrez la nouvelle collection optique Karl Lagerfeld" class="slider-responsive "/>
+                <div class="wrapper buttons-wrapper">
+                    <ul class="slider-buttons  slider-right">
+                    <li class="flex-right">
+                    <a class="slider-button" href="{{ path('lunettes_marque', { 'marque': 'karl-lagerfeld', 'special': 'special' }) }}" 
+                        style="background-color:rgb(0, 0, 0); color:rgb(255,255,255); border-color:rgb(255, 255, 255)" 
+                        onMouseOver="this.style.backgroundColor='rgb(255, 255, 255)';this.style.color='rgb(0, 0, 0)';this.style.borderColor='rgb(0, 0, 0)';"
+
+                        onMouseOut="this.style.backgroundColor='rgb(0, 0, 0)';this.style.color='rgb(255,255,255)';this.style.borderColor='rgb(255, 255, 255)';">
+                        Je découvre !   
+                    </a>
+                    </li>                            
+                </ul>
+                </div>
+                            
+                </div>
+                </li>
+                <li>
+            <div class="slider-visual ">
+                <img src="media/homepage/slider/O19275-SUMMER_MOOD_OPTICIEN_1920X500_PX-VHD-min_20190802131003.jpg" alt="Vivez un été haut en couleur" class="slider-responsive "/>
+
+                    <div class="wrapper buttons-wrapper">
+                    <ul class="slider-buttons  slider-right">
+                        <li class="flex-right">
+                            <a class="slider-button" href="{{ path('lunettes', { type: 'soleil' }) }}"   style="background-color:rgb(73, 152, 130); color:rgb(250, 246, 234); border-color:rgb(0, 0, 0)" 
+                              onMouseOver="this.style.backgroundColor='rgb(250, 246, 234)';this.style.color='rgb(73, 152, 130)';this.style.borderColor='rgb(73, 152, 130)';" 
+                              onMouseOut="this.style.backgroundColor='rgb(73, 152, 130)';this.style.color='rgb(250, 246, 234)';this.style.borderColor='rgb(0, 0, 0)';">
+                                Je vis l'été             
+                            </a>
+                        </li>            
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="slider-visual ">
+                <img src="media/homepage/slider/Le_grand_retour_de_la_tendance_metal_20190814095428.jpg" alt="Le grand retour de la tendance métal" class="slider-responsive "/>
+                <div class="wrapper buttons-wrapper">
+                    <ul class="slider-buttons  slider-right">
+                        <li class="flex-right">
+                            <a class="slider-button" href="{{ path('lunettes', { type: 'vue' }) }}" style="background-color:rgb(181, 8, 62); color:rgb(216, 219, 228); border-color:rgb(0, 0, 0)" 
+                            onMouseOver="this.style.backgroundColor='rgb(216, 219, 228)';this.style.color='rgb(181, 8, 62)';this.style.borderColor='rgb(0, 0, 0)';" 
+                            onMouseOut="this.style.backgroundColor='rgb(181, 8, 62)';this.style.color='rgb(216, 219, 228)';this.style.borderColor='rgb(0, 0, 0)';">
+                                Je découvre !                            
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+                            
+    </ul>
+</div>
+<div class="wrapper">
+    <h1 class="hp-title">
+        Tarrouche Optic, l'opticien en ligne spécialiste de votre santé visuelle 
+    </h1>
+</div>
+        
+<div class="wrapper top-products ">
+    <p class="title products-title">Nos belles lunettes</p>
+    <div class="top-title">
+        <p data-top-id="top-product-103">Top lunettes de vue</p>
+        <p data-top-id="top-product-104">Top lunettes de soleil</p>
+        <p data-top-id="top-product-20">Top lentilles de contact</p>
+    </div>
+    
+    <div class="top-product" id="top-product-103">
+        <ul class="">
+            {% for vue in vues %}
+            <li>
+                <a href="{{ path('lunettes_show', { id: vue.id, slug: vue.slug, ref: vue.ref }) }}">
+                    <div class="picto">
+                        <img src="{{ asset('media/catalog/lunettes/' ~ vue.image[0]) }}" alt="{{vue.name}} - {{vue.ref}}"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-name">
+                            {{ vue.name|capitalize }} - {{vue.ref|upper}} - {{vue.color[0]}}
+                        </span>
+                        <span class="price">{{vue.prix}}<span>,00dt</span></span>                           
+                    </div>
+                </a>
+                <a class="homepage-button product-link" href="{{ path('lunettes_show', { id: vue.id, slug: vue.slug, ref: vue.ref }) }}">
+                    Je découvre
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="top-product" id="top-product-104">
+        <ul class="">
+            {% for soleil in soleils %}
+            <li>
+                <a href="{{ path('lunettes_show', { id: soleil.id, slug: soleil.slug, ref: soleil.ref }) }}">
+                    <div class="picto">
+                        <img src="{{ asset('media/catalog/lunettes/' ~ soleil.image[0]) }}" alt="{{soleil.name}} - {{soleil.ref}}"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-name">
+                            {{ soleil.name|capitalize }} - {{soleil.ref|upper}} - {{soleil.color[0]}}
+                        </span>
+                        <span class="price">{{soleil.prix}}<span>,00dt</span></span>                           
+                    </div>
+                </a>
+                <a class="homepage-button product-link" href="{{ path('lunettes_show', { id: soleil.id, slug: soleil.slug, ref: soleil.ref }) }}">
+                    Je découvre
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="top-product" id="top-product-20">
+        <ul class="" id="navigation-sub-menu-3">
+            <li>
+                <a href="#">
+                    <div class="picto">
+                        <img src="media/catalog/product/cache/1/small_image/315x180/9df78eab33525d08d6e5fb8d27136e95/d/i/dia_1j_confort.jpg" alt="Dia 1 jour Comfort Plus 30"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-name">Dia 1 jour Comfort Plus 30</span>
+                            <span class="price">15<span>,00dt</span></span>             
+                    </div>
+                </a>
+                <a class="homepage-button product-link" href="">
+                    Je réserve !
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="picto">
+                        <img src="media/catalog/product/cache/1/small_image/315x180/9df78eab33525d08d6e5fb8d27136e95/a/c/acuvue-acuvue_oasys-bi-mensuelles_4.jpg" alt="Acuvue Oasys"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-name">Acuvue Oasys</span>
+                        <span class="price">21<span>,90dt</span></span>
+                    </div>
+                </a>
+                <a class="homepage-button product-link" href="">
+                    Je réserve !
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="picto">
+                        <img src="media/catalog/product/cache/1/small_image/315x180/9df78eab33525d08d6e5fb8d27136e95/b/i/biofinity-biofinity-mensuelles_4.jpg" alt="Biofinity"/>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-name">Biofinity</span>
+                        <span class="price">25<span>,90dt</span></span>
+                    </div>
+                </a>
+                <a class="homepage-button product-link" href="">
+                    Je réserve !
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    
+    <!-- brand -->
+    {% include 'slider/sliderbrand.html.twig' %}
+    <!-- /brand -->
+
+    <div class="bl-corpos-container">
+        <div class="wrapper">
+        <h2 class="corpos-title">Actualités produits et tendances</h2>
+        <ul class="corpos">
+            <li>
+                <div class="picto">
+                    <a href="{{ path('home_mag') }}">
+                        <span class="img-wrapper">
+                        <img src="media/homepage/corpo/Tendances_optic_Septembre_2019_20190829131746.jpg" alt="Le Magazine Tarrouche Optic" class="img-responsive"/>
+                        </span>
+                        <div class="title-container"><span class="title">Tendances optic</span></div>
+                    </a>
+                </div>
+                <p class="description">
+                    Retrouvez tous les mois les dernières <strong>tendances mode</strong> et design <strong>lunettes, optiques et solaires</strong>, dans Tendances Optic !
+                </p>
+                <a class="homepage-button" href="{{ path('home_mag') }}">
+                    Je m'inspire !
+                </a>
+            </li>
+            <li>
+                <div class="picto">
+                    <a href="{{ path('lunettes_marque', { 'marque': 'karl-lagerfeld', 'special': 'special' }) }}">
+                        <span class="img-wrapper">
+                        <img src="media/homepage/corpo/ACTUALITES_20190829133343.jpg" alt="Nouvelle collection Karl Lagerfeld" class="img-responsive"/>
+                        </span>
+                        <div class="title-container"><span class="title">Nouveauté</span></div>
+                    </a>
+                </div>
+                <p class="description">
+                    En exclusivité chez <strong>Tarrouche Optic</strong>, les lunettes 
+                    <strong>KARL LAGERFELD</strong> 
+                    allient chic, élégance et glamour.<br>
+                    Découvrez la collection optique 2019 !
+                </p>
+                <a class="homepage-button" href="{{ path('lunettes_marque', { 'marque': 'karl-lagerfeld', 'special': 'special' }) }}">
+                    Je découvre !
+                </a>
+            </li>
+            <li>
+                <div class="picto">
+                    <a href="{{ path('lunettes', { type: 'soleil' }) }}">
+                        <span class="img-wrapper">
+                        <img src="media/homepage/corpo/O19275-SUMMER_MOOD_OPTICIEN_318X320_PX-VHD_20190805150232.jpg" alt="Osez et vivez un été haut en couleur" class="img-responsive"/>
+                        </span>
+                        <div class="title-container"><span class="title">
+                            Sélection solaires</span>
+                        </div>
+                    </a>
+                </div>
+                <p class="description">
+                    Pour cet été, osez et vivez un été haut en couleur pour rayonner pendant vos vacances !
+                </p>
+                <a class="homepage-button" href="{{ path('lunettes', { type: 'soleil' }) }}">
+                    Je shoppe
+                </a>
+            </li>
+            </ul>
+            <ul class="corpos">            
+            </ul>
+        </div>
+    </div>
+    <br> 
+    <div class="bl-product-family-container bl-bg-gray">
+        <div class="wrapper">
+            <p class="title product-family-title">Tous nos articles</p>
+            <ul class="product-family-block">
+                <li class="child-item">
+                    <a class="item-url" href="{{ path('lunettes_genre', {'genre':'femme'}) }}">
+                        <span class="image-container">
+                            <img src="media/homepage/product_family/01-optique-femme_20180803085918.png" alt="Lunettes de vue pour femme"/>
+                        </span>
+                        <h2 class="title pos-1">Lunettes de vue femme</h2>
+                    </a>
+                </li>
+                <li class="child-item">
+                    <a class="item-url" href="{{ path('lunettes_genre', { 'genre': 'homme' }) }}">
+                        <span class="image-container">
+                            <img src="media/homepage/product_family/02-optique-homme_20180803091241.png" alt="Lunettes de vue homme"/>
+                        </span>
+                        <h2 class="title pos-1">Lunettes de vue homme</h2>
+                    </a>
+                </li>
+                <li class="child-item">
+                    <a class="item-url" href="{{ path('lunettes_genre', { 'genre': 'enfant' }) }}">
+                        <span class="image-container">
+                            <img src="media/homepage/product_family/03-optique-enfant_20180803091350.png" alt="Lunettes de vue enfant"/>
+                        </span>
+                        <h2 class="title pos-1">Lunettes de vue enfant</h2>
+                    </a>
+                </li>
+                </ul>
+            <ul class="product-family-block">
+                <li class="child-item">
+                    <a class="item-url" href="{{ path('lunettes_genre', { 'type':'soleil','genre':'femme'}) }}">
+                        <span class="image-container">
+                            <img src="media/homepage/product_family/04-solaire-femme_20180803091436.png" alt="Lunettes de soleil femme"/>
+                        </span>
+                        <h2 class="title pos-3">Lunettes de soleil femme</h2>
+                    </a>
+                </li>
+                <li class="child-item">
+                    <a class="item-url" href="{{ path('lunettes_genre', {'type':'soleil','genre':'homme'}) }}">
+                        <span class="image-container">
+                            <img src="media/homepage/product_family/05-solaire-homme_20180803091551.png" alt="Lunettes de soleil homme"/>
+                        </span>
+                        <h2 class="title pos-3">Lunettes de soleil homme</h2>
+                    </a>
+                </li>
+                <li class="child-item">
+                    <a class="item-url" href="{{ path('lunettes_genre', {'type':'soleil','genre':'enfant'}) }}">
+                        <span class="image-container">
+                            <img src="media/homepage/product_family/06-solaire-enfant_20180803091633.png" alt="Lunettes de soleil enfant"/>
+                        </span>
+                        <h2 class="title pos-3">Lunettes de soleil enfant</h2>
+                    </a>
+                </li>
+                </ul>
+            <ul class="product-family-block" >                                        
+                <li class="child-item">
+                    <a class="item-url" href="">
+                        <span class="image-container">
+                            <img src="media/homepage/product_family/07-lentilles-correctrices_20180803091756.png" alt="Lentilles correctrices"/>
+                        </span>
+                        <h2 class="title pos-1">Lentilles correctrices</h2>
+                    </a>
+                </li>
+                <li class="child-item">
+                    <a class="item-url" href="">
+                        <span class="image-container">
+                            <img src="media/homepage/product_family/08-lentilles-couleur_20180803091927.png" alt="Lentilles de couleurs"/>
+                        </span>
+                        <h2 class="title pos-1">Lentilles de couleurs</h2>
+                    </a>
+                </li>
+                <li class="child-item">
+                    <a class="item-url" href="">
+                        <span class="image-container">
+                            <img src="media/homepage/product_family/09-entretien-lentilles_20180803092022.png" alt="Produits d'entretien"/>
+                        </span>
+                        <h2 class="title pos-1">Produits d'entretien</h2>
+                    </a>
+                </li>
+                </ul>
+            <ul class="product-family-block"></ul>
+        </div>
+    </div>
+    <div class="bl-reinsurances-container ">
+        <div class="wrapper">
+            <ul class="reinsurances ">
+                 <li>
+                    <div>
+                        <strong><span class="title">Conseil personnalisé d'opticiens diplomés</span></strong>
+                        <p class="description">
+                            Nos <strong>opticiens diplômés</strong> sont à votre écoute en magasin pour vous guider dans votre choix et vous offrir un <strong>conseil personnalisé</strong>.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong><span class="title">1er réseau français d'optique</span></strong>
+                        <p class="description">
+                            Nos <strong>1200 opticiens</strong> constituent le 1er réseau Français d'optique et vous garantissent proximité et accompagnement au quotidien
+                        </p>
+                    </div>
+                </li>
+                 <li>
+                    <div>
+                        <strong><span class="title">Retrait en 24h* Gratuit <br/>dans nos 1200 magasins</span></strong>
+                        <p class="description">
+                            <strong>Réservez gratuitement avant 16h</strong> et retirez votre commande en 24h* dans le magasin de votre choix. (*délai valable sur les produits en stock, hors commandes passées le samedi ou dimanche et hors Vente Flash)
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<script>(function($){$(function(){$('.truncate-for-mobile').each(function(){var $blockWysiwyg=$(this);var $blockWysiwygTxt=$blockWysiwyg.find('.full-text');var $blockWysiwygBtn=$blockWysiwyg.find('.show-more');if(Number.parseInt($blockWysiwygTxt.height())<70){$(".btn-block").hide();return;}
+$blockWysiwygTxt.data('max-height',$blockWysiwygTxt.height());$blockWysiwygTxt.data('min-height',65);$blockWysiwygTxt.animate({'height':$blockWysiwygTxt.data('min-height')});$blockWysiwygBtn.click(function(){var $btn=$(this);$blockWysiwyg.toggleClass('truncated');if($blockWysiwyg.hasClass('truncated')){$btn.addClass('icon-arrow-bottom').removeClass('icon-arrow-top');$blockWysiwygTxt.animate({'height':$blockWysiwygTxt.data('min-height')});}else{$btn.addClass('icon-arrow-top').removeClass('icon-arrow-bottom');$blockWysiwygTxt.animate({'height':$blockWysiwygTxt.data('max-height')});}});});});})(jQuery);
+</script>
+       </div>
+    </div>        
+</div>
+
+{% endblock %}

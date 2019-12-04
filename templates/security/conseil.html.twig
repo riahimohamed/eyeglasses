@@ -1,0 +1,394 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'conseils' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/optic2000/acecustomer.css') }}" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/jquery-ui.min.css') }}" media="all"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/base/default/CapAdresse/style.css') }}" media="all"/>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('js/jq/jquery-ui.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/optic2000/enhancedcustomer.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/optic2000/acecustomer.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+
+<div itemprop="mainContentOfPage" id="content">
+    <div class="acecustomer-full-page">
+        <div class="acecustomer-container">
+
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="customer-breadcrumbs">
+                        <ul class="list-nav">
+                            <li class="item-nav">
+                                <a class="link-nav" href="{{ path('home') }}">Accueil</a>
+                            </li>&nbsp;
+                            <li class="item-nav font-small-bold">
+                                <a class="link-nav" href="">&gt; {{ menuTitle }}</a>
+                            </li>&nbsp;
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                
+    <!-- Menu -->
+        {% include 'header/submenu.html.twig' %}
+    <!-- /Menu -->
+
+    <div class="ten columns">
+        <div class="customer-content-wrapper">
+            <div class="customer-content">
+                <div class="acecustomer-flex-container block-conseil">
+                    <!--  Block titre  -->
+                    <div class="row row-title">
+                        <h1 class="font-title-bold">Mes {{ menuTitle }}</h1>
+                    </div>
+
+                    <!--  Block conseil header  -->
+                    <div class="row">
+                        <div class="ten columns">
+                            <!-- cms_ace_mesconseilsvisions_conseils_pratiques -->
+                            <div class="ace-mesconseilsvisions-block-header">
+                                <img class="ace-img-force-cover ace-mesconseilsvisions-block-header-picture" src="{{ asset('media/wysiwyg/conseil/jeune-femme-casque.png') }}" alt="">
+                                <div class="ace-mesconseilsvisions-block-header-text">
+                                    <h3 class="ace-mesconseilsvisions-block-header-title font-size-open-h3 font-title-bold">Des conseils pratiques et un éventail de tendances à suivre</h3>
+                                    <ul>
+                                        <li>
+                                            <span class="small-icon fa fa-long-arrow-right font-color-purple ace-optic2000etmoi-picto">
+                                            </span> Accédez à des conseils adaptés pour prendre soin de vos yeux et de vos équipements au quotidien.
+                                            </li>
+                                        <li><span class="small-icon fa fa-long-arrow-right font-color-purple ace-optic2000etmoi-picto"><span class="force-hidden">&nbsp;</span></span> Mode et design lunettes : restez à l’affut des dernières tendances.</li>
+                                        <li><span class="small-icon fa fa-long-arrow-right font-color-purple ace-optic2000etmoi-picto"><span class="force-hidden">&nbsp;</span></span> Au travers d’actualités, d’études et d’informations-clés, apprenez-en plus sur le futur de la vue.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blocks liens -->
+                    <div class="row">
+                        <div class="five columns">
+                            <!-- cms_ace_mesconseilsvisions_tendance_western -->
+                            <a href="#tendance" data-scroll="smooth">
+                                <div class="ace-mesconseilsvisions-sm-block"><img class="ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/tendance-western.png') }}" alt="">
+                                    <div class="ace-mesconseilsvisions-sm-block-text">
+                                        <h4 class="title-category font-size-open-h4 font-color-purple">TENDANCE<br> WESTERN CHIC</h4>
+                                        <p><strong>Mode</strong></p>
+                                        <p class="font-size-small">Des matières brutes, des tons chauds, l'allure Western Chic affirme une sophistication naturelle.</p>
+                                        <span class="fa fa-arrow-down font-color-purple link-lg-block"><span class="force-hidden">&nbsp;</span></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="five columns">
+                            <!-- cms_ace_mesconseilsvisions_detente_oculaire -->
+                            <a href="#detente" data-scroll="smooth">
+                                <div class="ace-mesconseilsvisions-sm-block">
+                                    <img class="ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/detente-oculaire.png') }}" alt="">
+                                    <div class="ace-mesconseilsvisions-sm-block-text">
+                                        <h4 class="title-category font-size-open-h4 font-color-purple">LA DETENTE OCULAIRE</h4>
+                                        <p><strong>Prévention</strong></p>
+                                        <p class="font-size-small">
+                                            Le saviez-vous, vos yeux ont besoin de se détendre !
+                                            <br> Pour les apaiser, découvrez l’exercice du « cocon ».
+                                        </p>
+                                        <span class="font-color-purple fa fa-arrow-down link-lg-block "><span class="force-hidden">&nbsp;</span></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="five columns">
+                            <!-- cms_ace_mesconseilsvisions_nettoyer_lunettes -->
+                            <a href="#quotidien" data-scroll="smooth">
+                                <div class="ace-mesconseilsvisions-sm-block"><img class="ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/nettoyer-lunettes.png') }}" alt="">
+                                    <div class="ace-mesconseilsvisions-sm-block-text">
+                                        <h4 class="title-category font-size-open-h4 font-color-purple">ENTRETENIR VOS LUNETTES ET VOS LENTILLES</h4>
+                                        <p><strong>Au quotidien</strong></p>
+                                        <p class="font-size-small">Tous nos conseils pour prendre soin de vos équipements.</p>
+                                        <span class="font-color-purple fa fa-arrow-down link-lg-block"><span class="force-hidden">&nbsp;</span></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="five columns">
+                            <!-- cms_ace_mesconseilsvisions_voiture_demain -->
+                            <a href="#innovation" data-scroll="smooth">
+                                <div class="ace-mesconseilsvisions-sm-block">
+                                    <img class="ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/voiture-demain.png') }}" alt="">
+                                    <div class="ace-mesconseilsvisions-sm-block-text">
+                                        <h4 class="title-category font-size-open-h4 font-color-purple">VOIR ET CONDUIRE DEMAIN</h4>
+                                        <p><strong>Innovation</strong></p>
+                                        <p class="font-size-small">
+                                            Technologies embarquées : quel impact sur la vision au volant ?
+                                        </p>
+                                        <span class="font-color-purple fa fa-arrow-down link-lg-block"><span class="force-hidden">&nbsp;</span></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--  Block infodisplay custom (calendrier)  -->
+                    <div class="row">
+                        <!--            bloc 10w infodisplay custom (calendrier)-->
+                        <div class="ten columns">
+                            <div>
+                                <div class="ace-mesconseilsvisions-category-title ace-mesconseilsvisions-infopicto-purple">
+                                    <span class="medium-plus-plus-icon o2k-picto-article-couleur"><span class="path1"></span><span class="path2"></span></span>
+                                    <p class="font-color-cyan font-small-bold"><strong>LE CALENDRIER DE MA VUE</strong></p>
+                                </div>
+                            </div>
+                            <div class="ace-mesconseilsvisions-calendar-steps">
+                                <h2>Toutes les étapes de ma vue</h2>
+                            </div>
+                            <div class="ace-mesconseilsvisions-calendar">
+                                <p class="calendar-detail text-center">
+                                    Pour plus de détails, <span class="font-color-cyan"><strong>naviguez sur les âges.</strong></span>
+                                </p>
+                                <div class="timeline">
+                                    <div class="customer-age" style="bottom: 193px">
+                                        <span class="medium-icon fa fa-user">
+                                        </span>
+                                        <p class="vous">Vous</p>
+                                    </div>
+                                    <ul class="steps">
+
+                                        <li class="step ">
+                                            <div class="step-left">
+                                                <img class="ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/personnage-60.png') }}">
+                                                <button class="button">60 ans</button>
+                                            </div>
+                                            <div class="step-center">
+                                                60 ans
+                                            </div>
+                                            <div class="step-right">
+                                                <p>
+                                                    <strong>À partir de 60 ans,</strong> plusieurs pathologies occulaires liées au vieillissement peuvent apparaître comme la cataracte, le glaucome ou la dégénérescence maculaire liée à l'âge (DMLA).
+                                                    <br>
+                                                    <br> Des aides visuelles permettent de mieux vivre avec.
+                                                </p>
+                                            </div>
+                                        </li>
+
+                                        <li class="step ">
+                                            <div class="step-left">
+                                                <img class="ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/personnage-40.png') }}">
+                                                <button class="button">40 ans</button>
+                                            </div>
+                                            <div class="step-center">
+                                                40 ans
+                                            </div>
+                                            <div class="step-right">
+                                                <p>
+                                                    <strong>À partir de 40 ans,</strong> la presbytie, phénomène naturel lié au vieillissement de l'œil, apparaît. Elle est évolutive et se stabilise en général vers 60 ans.
+                                                    <br>
+                                                    <br> Des verres progressifs permettent de la corriger.
+                                                </p>
+                                            </div>
+                                        </li>
+
+                                        <li class="step active">
+                                            <div class="step-left">
+                                                <img class="ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/personnage-15.png') }}">
+                                                <button class="button">15 ans</button>
+                                            </div>
+                                            <div class="step-center">
+                                                15 ans
+                                            </div>
+                                            <div class="step-right">
+                                                <p>
+                                                    <strong>Entre 15 et 40 ans,</strong> on note une baisse progressive de l'accomodation, c'est-à-dire de la mise au point en fonction de la distance.
+                                                    <br>
+                                                    <br> Un contrôle régulier de la vue permet de s’assurer que l’équipement optique est toujours adapté.
+                                                </p>
+                                            </div>
+                                        </li>
+
+                                        <li class="step ">
+                                            <div class="step-left">
+                                                <img class="ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/personnage-4-ans.png') }}">
+                                                <button class="button">4 ans</button>
+                                            </div>
+                                            <div class="step-center">
+                                                4 ans
+                                            </div>
+                                            <div class="step-right">
+                                                <p>
+                                                    <strong>Entre 4 et 20 ans,</strong> des défauts visuels peuvent se développer comme la myopie, l'hypermétropie ou l'astigmatisme.
+                                                    <br>
+                                                    <br> Il est important de faire contrôler régulièrement sa vue chez l'ophtalmologiste, qui prescrira un équipement optique adapté si besoin.
+                                                </p>
+                                            </div>
+                                        </li>
+
+                                        <li class="step ">
+                                            <div class="step-left">
+                                                <img class="ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/personnage-0.png') }}">
+                                                <button class="button">Naissance</button>
+                                            </div>
+                                            <div class="step-center">
+                                                Naissance
+                                            </div>
+                                            <div class="step-right">
+                                                <p>
+                                                    <strong>Un nouveau-né voit</strong> seulement en noir et blanc et uniquement de tout près. En effet, ses capacités visuelles se développent progressivement jusqu'à ses 6 ans.
+                                                    <br>
+                                                    <br> Chez l'enfant de 0 à 4 ans, les principales anomalies rencontrées sont l'amblyopie unilatérale et le strabisme. Trois visites de dépistage sont obligatoires chez le pédiatre : à 8 jours, 9 mois et 2 ans.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  Block infodisplay (mode)  -->
+                    <div class="row">
+                        <div class="ten columns">
+                            <!-- cms_ace_mesconseilsvisions_tendance_western_big -->
+                            <div id="tendance">
+                                <div class="ace-mesconseilsvisions-category-title ace-mesconseilsvisions-infopicto-cyan"><span class="medium-plus-plus-icon o2k-picto-article-couleur"><span class="path1 font-color-purple"><span class="force-hidden">&nbsp;</span></span><span class="path2 font-color-purple"><span class="force-hidden">&nbsp;</span></span>
+                                    </span>
+                                    <h4 class="font-color-purple"><strong>MODE</strong></h4>
+                                </div>
+                                <div class="ace-mesconseilsvisions-lg-block-content"><img class="ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/tendance-western-big.png') }}" alt="">
+                                    <div class="ace-mesconseilsvisions-lg-block-text">
+                                        <h2>Tendance Western Chic</h2>
+                                        <p>Un air de western flotte sur les tendances de cet automne-hiver. Évadez-vous dans l’univers du Far West et réveillez le cowboy ou la Calamity Jane qui sommeille en vous ! Les créateurs se sont inspirés du dress code des films de Sergio Leone en créant leurs propres collections western nouvelle génération.</p>
+                                        <br>
+                                        <p>Pour adopter un look Western Chic, comme souvent dans la mode, tout est une question de dosage. On mixe une pièce forte authentique avec le reste de la tenue casual. En pratique, associez chemise en jean ou à carreaux, veste en cuir, chapeau ou encore Santiags, avec un jean noir très sobre ou un t-shirt uni.</p>
+                                        <br>
+                                        <p>Votre paire de lunettes vient apporter la touche moderne à votre tenue. Double pont, combinaison de matières, montures rétro revisitées, le choix des formes ultra tendances est large, pour tous les visages !</p>
+                                        <br>
+                                        <p>Pour la couleur, le noir, le marron ou le métal gris s’associent à merveille avec le look Western Chic.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  Blocks on en parle sur o2k)  -->
+                    
+
+                    <!--  Block infodisplay (prévention)  -->
+                    <div class="row">
+                        <!--            bloc 10w infodisplay sans lien (prévention)-->
+                        <div class="ten columns">
+                            <!-- cms_ace_mesconseilsvisions_detente_oculaire_big -->
+                            <div id="detente">
+                                <div class="ace-mesconseilsvisions-category-title ace-mesconseilsvisions-infopicto-purple"><span class="medium-plus-plus-icon fa fa-bookmark-o"><span class="path1"><span class="force-hidden">&nbsp;</span></span><span class="path2"><span class="force-hidden">&nbsp;</span></span>
+                                    </span>
+                                    <h4 class="font-color-purple font-small-bold font-color-cyan"><strong>PREVENTION</strong></h4>
+                                </div>
+                                <div class="ace-mesconseilsvisions-lg-block-content"><img class="ace-onenparle-picture ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/detente-oculaire-big.png') }}" alt="">
+                                    <div class="ace-mesconseilsvisions-lg-block-text">
+                                        <h2>La détente oculaire :<br> l'exercice du cocon</h2>
+                                        <p>Le saviez-vous ? Vos yeux sont entourés de muscles et ont parfois besoin de se détendre.</p>
+                                        <br>
+                                        <p>Il existe pour cela des exercices très faciles à réaliser chez soi ou au bureau. À tout moment de la journée, faites par exemple l’exercice du « cocon », un véritable bain de chaleur pour apaiser vos yeux.</p>
+                                        <ol>
+                                            <li>Frottez vos mains l’une contre l’autre pour les réchauffer</li>
+                                            <li>Ouvrez vos mains puis creusez les paumes en forme de coques</li>
+                                            <li>Positionnez-les délicatement devant vos yeux</li>
+                                            <li>Yeux fermés, paupières closes mais souples : restez ainsi 2 min en respirant tranquillement</li>
+                                            <li>Retirez vos mains et ouvrez doucement les yeux.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  Block infodisplay avec accordéon (au quotidien)  -->
+                    <div class="row">
+                        <div class="ten columns">
+                            <!-- cms_ace_mesconseilsvisions_au_quotidien -->
+                            <div class="au-quotidien">
+                                <!--            bloc 10w infodisplay avec accordéon (au quotidien)-->
+                                <div id="quotidien" class="ace-mesconseilsvisions-category-title ace-mesconseilsvisions-infopicto-cyan"><span class="medium-plus-plus-icon fa fa-bookmark-o"><span class="path1"><span class="force-hidden">&nbsp;</span></span><span class="path2"><span class="force-hidden">&nbsp;</span></span>
+                                    </span>
+                                    <h4 class="font-color-purple font-small-bold"><strong>AU QUOTIDIEN</strong></h4>
+                                </div>
+                                <div class="ace-mesconseilsvisions-category-linses toggle-interface" data-target="#conseils-lunettes"><img class="ace-mesconseilsvisions-category-linses-picture ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/Lunettes.png') }}" alt="">
+                                    <h3 class="font-small-bold">Tous les conseils pour prendre soin de vos lunettes</h3>
+                                    <span class="ace-mesconseilsvisions-category-linses-interface-bas fa fa-chevron-down"><span class="force-hidden">&nbsp;</span></span>
+                                </div>
+                                <div id="conseils-lunettes" class="collapseable-content ace-mesconseilsvisions-lg-block-content" style="display: none;" data-open="false"><img class="ace-onenparle-picture ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/nettoyer-lunettes-big.png') }}" alt="">
+                                    <div class="ace-mesconseilsvisions-lg-block-text">
+                                        <h2>Tous les conseils pour prendre soin de vos lunettes</h2>
+                                        <p>Une attention particulière est nécessaire pour profiter pleinement de vos lunettes le plus longtemps possible, adoptez dès maintenant de bons réflexes d’entretien.</p>
+                                        <br>
+                                        <p>Votre monture vous veut du bien, rendez lui la pareille. Pour soulager les branches, retirez-les toujours à l’aide de vos deux mains. Vos lunettes ne sont pas équilibristes, le haut de votre crâne est à éviter pour ne pas les déformer.</p>
+                                        <br>
+                                        <p>Un étui bien choisi est indispensable pour protéger vos verres des rayures et chocs de la vie. Une monture préservée de l’agitation extérieure vivra plus longtemps. Posées confortablement sur leurs deux branches repliées, vos lunettes peuvent alors se reposer tranquillement sans risquer la rayure côté verres. Un essuie-verres microfibre et un spray optique seront vos meilleurs alliés pour nettoyer vos verres. Méfiez-vous des mouchoirs, essuie-tout, produits ménagers qui accélèrent l’usure de la monture et peuvent endommager les traitements des verres.</p>
+                                        <br>
+                                        <p>Pensez-y : votre opticien est à votre disposition pour un nettoyage complet de votre équipement quand vous le souhaitez.</p>
+                                    </div>
+                                </div>
+                                <div class="ace-mesconseilsvisions-category-linses toggle-interface" data-target="#conseils-lentilles"><img class="ace-mesconseilsvisions-category-linses-picture ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/conseils_lentilles.png') }}" alt="">
+                                    <h3 class="font-small-bold"><strong>Tous les conseils pour prendre soin de vos lentilles</strong></h3>
+                                    <span class="ace-mesconseilsvisions-category-linses-interface-bas fa fa-chevron-down"><span class="force-hidden">&nbsp;</span></span>
+                                </div>
+                                <div id="conseils-lentilles" class="collapseable-content ace-mesconseilsvisions-lg-block-content" style="display: none;" data-open="false"><img class="ace-onenparle-picture ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/Lentilles.png') }}" alt="">
+                                    <div class="ace-mesconseilsvisions-lg-block-text">
+                                        <h2>Tous les conseils pour prendre soin de vos lentilles</h2>
+                                        <p>Pour adopter les bonnes attitudes et garantir un nettoyage optimal de vos lentilles, voici quelques conseils à appliquer. À chaque famille un usage propre, et à chaque utilisation un nettoyage adapté est préconisé.</p>
+                                        <br>
+                                        <p>Vous portez des lentilles mensuelles ou bimensuelles ? En tout premier lieu, lavez-vous toujours les mains avant de retirer vos lentilles. Massez-les délicatement entre vos doigts, puis rincez-les avec la solution d’entretien prescrite par votre ophtalmologiste. Faites-les ensuite tremper toute la nuit dans un étui propre rempli de solution, vos lentilles adorent ce long bain ! Au réveil, après avoir lavé vos mains, massez-les à nouveau entre vos doigts avec délicatesse. Nettoyez ensuite votre étui avec la solution d’entretien et laissez-le sécher à l’air libre. Renouvelez votre étui chaque mois.</p>
+                                        <br>
+                                        <p>Vous portez des lentilles journalières ? Avec ce type de lentilles, à mettre le matin et à jeter le soir, c’est facile : aucun entretien particulier ! Gardez toutefois avec vous un petit flacon de solution de rinçage dans le cas où vous devriez manipuler vos lentilles dans la journée.</p>
+                                        <br>
+                                        <p>Dans tous les cas, pensez à vérifier la date de péremption de vos solutions d’entretien.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  Block infodisplay (innovation)  -->
+                    <div class="row">
+                        <div class="ten columns">
+                            <!-- cms_ace_mesconseilsvisions_innovation -->
+                            <div id="innovation">
+                                <div class="ace-mesconseilsvisions-category-title ace-mesconseilsvisions-infopicto-purple"><span class="medium-plus-plus-icon fa fa-book"><span class="path1"><span class="force-hidden">&nbsp;</span></span><span class="path2"><span class="force-hidden">&nbsp;</span></span>
+                                    </span>
+                                    <h4 class="font-color-purple font-small-bold font-color-cyan"><strong>INNOVATION</strong></h4>
+                                </div>
+                                <div class="ace-mesconseilsvisions-lg-block-content">
+                                    <!--            bloc 10w infodisplay avec lien (innovation)--><img class="ace-onenparle-picture ace-img-force-cover" src="{{ asset('media/wysiwyg/conseil/voiture-demain-big.png') }}" alt="">
+                                    <div class="ace-mesconseilsvisions-lg-block-text">
+                                        <h2>La voiture de demain : quel impact sur la vision ?</h2>
+                                        <p>La vision est essentielle pour mener à bien l’activité de conduite. Elle est aujourd’hui largement aidée par la technologie automobile avec l’émergence des assistances à la conduite : radar de recul, avertisseur d’angle mort, caméra thermique, aide au stationnement. Ces innovations sont développées en réponse aux nombreuses sources d’angoisses pour les conducteurs. Parmi celles qui suscitent encore le plus d’appréhension, il y a la conduite par temps de brouillard, l’éblouissement ou bien la conduite de nuit.</p>
+                                        <br>
+                                        <p>Pour contrer ces inquiétudes, la voiture du futur se profile déjà et promet d’augmenter voire même de remplacer vos performances sensorielles grâce à des systèmes d’analyse et de détection de plus en plus précis. Une mutation rapide est à prévoir, puisqu’en 2035, près de 10% des véhicules en circulation devraient être complètement autonomes. Mais où s’arrêtera cette course à l’innovation ? Dans un monde où la machine tend à venir remplacer l’action de l’homme, seuls 3 automobilistes sur 10 se disent prêts à adopter une conduite&nbsp; « eyeless » (sans les yeux), pas fou !</p>
+                                        <br>
+                                        <p>Pour aller plus loin avec la voiture de demain et en savoir plus sur son impact sur la vision, découvrez toute l’étude de l’Observatoire de la santé visuelle et auditive.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'footer/subfooter.html.twig' %}
+
+</div>
+    </div>
+</div>
+    
+{% endblock %}

@@ -1,0 +1,4228 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show Links for images, or javascript/internal Links
+     */
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* ==========================================================================
+   @Font-face
+   ========================================================================== */
+@font-face {
+    font-family: 'AvenirLTStd55Black';
+    font-weight: bold;
+    src: url('../font/AvenirLTStd-Black/AvenirLTStd-Black.eot');
+    src: url('../font/AvenirLTStd-Black/AvenirLTStd-Blackd41d.eot?#iefix') format('embedded-opentype'),
+    url('../font/AvenirLTStd-Black/AvenirLTStd-Black.woff') format('woff'),
+    url('../font/AvenirLTStd-Black/AvenirLTStd-Black.html') format('opentype'),
+    url('../font/AvenirLTStd-Black/AvenirLTStd-Black-2.html') format('truetype'),
+    url('../font/AvenirLTStd-Black/AvenirLTStd-Black.svg#AvenirLTStd55Black') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirLTStd55Heavy';
+    src: url('../font/AvenirLTStd-Heavy/AvenirLTStd-Heavy.eot');
+    src: url('../font/AvenirLTStd-Heavy/AvenirLTStd-Heavyd41d.eot?#iefix') format('embedded-opentype'),
+    url('../font/AvenirLTStd-Heavy/AvenirLTStd-Heavy.woff') format('woff'),
+    url('../font/AvenirLTStd-Heavy/AvenirLTStd-Heavy.html') format('opentype'),
+    url('../font/AvenirLTStd-Heavy/AvenirLTStd-Heavy-2.html') format('truetype'),
+    url('../font/AvenirLTStd-Heavy/AvenirLTStd-Heavy.svg#AvenirLTStd55Heavy') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirLTStd55Roman';
+    src: url('../font/AvenirLTStd-Roman/AvenirLTStd-Roman.eot');
+    src: url('../font/AvenirLTStd-Roman/AvenirLTStd-Romand41d.eot?#iefix') format('embedded-opentype'),
+    url('../font/AvenirLTStd-Roman/AvenirLTStd-Roman.woff') format('woff'),
+    url('../font/AvenirLTStd-Roman/AvenirLTStd-Roman.html') format('opentype'),
+    url('../font/AvenirLTStd-Roman/AvenirLTStd-Roman-2.html') format('truetype'),
+    url('../font/AvenirLTStd-Roman/AvenirLTStd-Roman.svg#AvenirLTStd55Roman') format('svg');
+}
+
+/* Regular */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font/OpenSans/Regular/OpenSans-Regular.html'),
+    url('../font/OpenSans/Regular/OpenSans-Regular.html') format('truetype');
+    src: url('../font/OpenSans/Regular/OpenSans-Regular.eot'),
+    url('../font/OpenSans/Regular/OpenSans-Regulard41d.eot?#iefix') format('embedded-opentype'),
+    url('../font/OpenSans/Regular/OpenSans-Regular.woff') format('woff'),
+    url('../font/OpenSans/Regular/OpenSans-Regular.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../font/Pacifico/Pacifico.html');
+    src: url('../font/Pacifico/Pacifico.html') format('truetype');
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+textarea {
+    resize: none;
+}
+
+/*Reset Chrome*/
+textarea, select, input:hover, input:focus, input {
+    outline-style: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    font-family: "AvenirLTStd55Roman", Helvetica, Arial, Sans-Serif;
+}
+
+a {
+    font-family: "AvenirLTStd55Roman", Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+
+}
+
+a:focus {
+    outline: none;
+}
+
+input, button {
+    border: none;
+}
+
+.form-subscribe input {
+    border: solid lightgray 1px;
+    color: lightgray;
+}
+
+menu, ol, ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrapper {
+
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin: 0px auto;
+    width: 1024px;
+    top: 0;
+}
+
+/*Background top*/
+.BackgroundLineTop {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 134px;
+    background-color: #000;
+    width: 100%;
+    z-index: 0;
+}
+
+.LineTop {
+    height: 46px;
+    background-color: #191919;
+    width: 100%;
+    z-index: 0;
+}
+
+/*Header*/
+
+#mainheader {
+    height: 182px;
+    width: 100%;
+    top: 0;
+}
+
+#HeaderTop {
+    height: 46px;
+    width: 100%;
+    background-color: #191919;
+}
+
+/*Menu top Links and arial*/
+.links .breadcrumbs {
+    padding: 10px 0;
+    overflow: visible;
+    width: auto;
+}
+
+.Links {
+    padding-top: 16px;
+    width: 245px;
+    overflow: hidden;
+    float: left;
+
+}
+
+.Links li {
+    border-right: 1px solid #8b8c8f;
+    float: left;
+    list-style-type: none;
+
+}
+
+.Links li.last, nav li.last {
+    border: none;
+}
+
+.Links a {
+    font-size: 11px;
+    display: block;
+    color: #8b8c8f;
+    padding: 0px 6px;
+}
+
+.HeaderTopRight {
+    background-color: #1e1e22;
+    width: 630px;
+    height: 46px;
+    float: right;
+}
+
+.HeaderTopRight a.personnalite-link {
+    margin-left: 80px;
+    padding: 0;
+    width: 128px;
+    height: 46px;
+    line-height: 46px;
+}
+
+.HeaderTopRight a.swissLink {
+    background: url("../img/upsuisse.png") no-repeat center right;
+    color: #a9a9aa;
+    display: block;
+    float: left;
+    font-family: Verdana;
+    font-size: 10px;
+    height: 16px;
+    padding: 2px 10px 1px 10px;
+    margin-top: 13px;
+    text-align: left;
+    text-decoration: none;
+    width: 66px;
+}
+
+.HeaderTopRight a.swissLink:hover {
+    color: #FFF;
+}
+
+/*quick-access*/
+.HeaderTopRight ul {
+    list-style: none;
+    float: right;
+
+}
+
+.HeaderTopRight ul li {
+    float: left;
+    padding: 0;
+    line-height: 12px;
+    position: relative;
+    z-index: 222;
+    list-style-type: none;
+
+}
+
+/*Account*/
+.HeaderTopRight a {
+    font-family: "AvenirLTStd55Roman", Helvetica, Arial, Sans-Serif;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFF;
+    display: inline-block;
+    font-style: normal;
+    height: 20px;
+    padding: 16px 10px 10px 10px;
+}
+
+.HeaderTopRight a.create-account {
+    font-family: "AvenirLTStd55Roman", Helvetica, Arial, Sans-Serif;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFF;
+    display: block;
+    font-style: normal;
+    height: 20px;
+    padding: 12px 28px 6px 28px;
+    border: solid #000 1px;
+}
+
+.HeaderTopRight a.create-account:hover {
+    border: solid #fff 1px;
+}
+
+.HeaderTopRight ul li a span {
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+.HeaderTopRight ul li a:hover, .HeaderTopRight ul li.current a, .SocialNetwork li:hover {
+    background-color: #2d2e39;
+}
+
+.HeaderTopRight ul li.home, .HeaderTopRight ul li.ShoppingCart {
+    border-left: 1px solid #191919;
+}
+
+.HeaderTopRight ul li em {
+
+    font-style: normal;
+}
+
+.HeaderTopRight ul li a em.icon {
+    background: transparent url(../img/Account.png) no-repeat left top;
+    display: block;
+    padding-right: 10px;
+    font-style: normal;
+    border-right: 1px solid #8b8c8f;
+    height: 12px;
+    width: 13px;
+    float: left;
+}
+
+.HeaderTopRight ul li a em.icon.ShoppingCartImg {
+    background: transparent url(../img/ShoppingCart.png) no-repeat left top;
+}
+
+.HeaderTopRight ul li:hover a em.icon, .HeaderTopRight ul li.current a em.icon {
+    background-position: left -12px;
+}
+
+.LinkToTwitter:hover {
+    background-color: #2d2e39;
+}
+
+/*Logged*/
+.HeaderTopRight .LoggedMenu {
+    border-bottom: 1px solid #505055;
+    padding: 20px 0px;
+    display: table;
+}
+
+.HeaderTopRight ul.LoggedMenu, .HeaderTopRight ul.LoggedMenu li {
+    float: none;
+    display: block;
+}
+
+.HeaderTopRight ul.LoggedMenu li a {
+    height: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.HeaderTopRight .Logged .Disconnect {
+    color: #68686e;
+    font-size: 11px;
+    text-align: right;
+    text-transform: none;
+    display: block;
+}
+
+/*tooltip*/
+.HeaderTopRight ul li .toolTip1Bottom {
+    background-color: #2d2e39;
+    width: 256px;
+    position: absolute;
+    top: 46px;
+    right: 0;
+    z-index: 500;
+    display: none;
+}
+
+.HeaderTopRight ul li.panier .toolTip1Bottom {
+    width: 330px;
+}
+
+.HeaderTopRight ul li .TooltipForm a {
+    color: #68686e;
+    font-size: 12px;
+    text-align: center;
+    text-transform: none;
+}
+
+.ToolTip1Body .ToolTipHeader {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    display: block;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.ToolTip1Body .ToolTipHeader span {
+    color: #000
+}
+
+.TooltipForm {
+    padding: 0px 20px;
+}
+
+.ToolTipRow {
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.ToolTipRow > a.forgoten-pass {
+    color: #68686e;
+    font-size: 12px;
+    text-align: center;
+    text-transform: none;
+}
+
+.ToolTipRow > a.forgoten-pass:hover {
+    color: #fff;
+}
+
+.TooltipForm label {
+    margin: 0 0 14px;
+    display: block;
+}
+
+.InputStyle02 {
+    font-size: 11px; /*9px*/
+    height: 25px;
+    padding: 5px;
+    width: 204px;
+    border: 1px solid #bbbbbb;
+    background-color: transparent;
+    color: #FFF;
+}
+
+.login-menu-separator {
+    display: table;
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+}
+
+.login-menu-separator > div {
+    display: table-cell;
+    color: #68686e;
+    line-height: 3px;
+}
+
+.login-menu-separator > hr {
+    border: 0;
+    border-top: 1px solid #68686e;
+    width: 45%;
+    display: table-cell;
+    color: #68686e;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.NewAccount .ToolTipHeader {
+    border-top: 1px solid #68686e;
+}
+
+.HeaderTopRight .NewAccount .MenuTopLink, .HeaderTopRight .ShoppingCart .MenuTopLink, .HeaderTopRight .Logged .MenuTopLink {
+    background-color: #8183c2;
+    color: #FFF;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+}
+
+div.NewAccount {
+    padding: 0 20px 20px 20px;
+}
+
+/*Panier*/
+.HeaderTopRight .ShoppingCart .disabled .MenuTopLink {
+    background-color: #7a7a7a;
+    color: #a5a5a5;
+    cursor: default;
+}
+
+.HeaderTopRight .ShoppingCartEmpty {
+    color: #FFF;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 40px 30px;
+}
+
+/*Item panier*/
+.HeaderTopRight .ShoppingCartItems {
+    clear: both;
+}
+
+.HeaderTopRight .ShoppingCartItems li {
+    overflow: hidden;
+    float: none;
+    border-top: 1px solid #505055;
+    padding: 20px;
+    width: 216px;
+}
+
+.HeaderTopRight .ShoppingCartItems li:first-child {
+    border-top: none;
+}
+
+.HeaderTopRight .ShoppingCartItems li .ItemImg {
+    float: left;
+    width: 50px;
+    height: 48px;
+    margin-right: 8px;
+    background-color: #FFF;
+}
+
+.HeaderTopRight .ShoppingCartItems li .ItemDetails {
+    float: left;
+    width: 116px;
+}
+
+.HeaderTopRight .ShoppingCartItems li .ItemDetails h3 {
+    font-size: 11px;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.HeaderTopRight .ShoppingCartItems li .ItemDetails a {
+    font-size: 11px;
+
+}
+
+.HeaderTopRight .ShoppingCartItems li .ItemDetails .CartItemRemove {
+    font-size: 11px;
+    padding: 0px;
+    color: #a9aaab;
+    text-transform: none;
+    font-weight: normal;
+
+}
+
+.HeaderTopRight .ShoppingCartItems li .ItemPrice, .HeaderTopRight .ShoppingCartItems li .DiscountPrice {
+    float: right;
+    font-size: 14px;
+    letter-spacing: -1px;
+    line-height: 24px;
+    width: 42px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: right;
+
+}
+
+.HeaderTopRight .ShoppingCartItems li .ItemPrice em, .HeaderTopRight .ShoppingCartItems li .DiscountPrice em {
+    font-style: normal;
+    font-size: 10px;
+    text-align: right;
+
+}
+
+.HeaderTopRight .ShoppingCartItems li .DiscountPrice {
+
+    font-size: 12px;
+    color: #ff9231;
+    line-height: 14px;
+    text-decoration: line-through;
+
+}
+
+.HeaderTopRight .ShoppingCartItems li .DiscountPrice em {
+    font-size: 9px;
+}
+
+/*exposant*/
+sup {
+    vertical-align: super;
+    font-size: 110%;
+}
+
+/*panier total*/
+.ShoppingCartTotal {
+    clear: both;
+    padding: 20px;
+    width: 216px;
+    color: #FFF;
+    font-weight: 900;
+    border-top: 1px solid #505055;
+}
+
+.ShoppingCartTotal .TitleSumPriceItems {
+    float: left;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.ShoppingCartTotal .TitleSumPriceItems em {
+    text-transform: none;
+    font-size: 11px;
+}
+
+.ShoppingCartTotal .SumPriceItems {
+    float: right;
+
+}
+
+.ShoppingCartTotal .SumPriceItems {
+    font-size: 18px;
+
+}
+
+.ShoppingCartTotal .SumPriceItems em {
+    font-size: 12px;
+}
+
+/*logo*/
+.Logo, .Logo img {
+    float: left;
+    width: 249px;
+    height: 88px;
+}
+
+/*SocialNetwork Menu*/
+.SocialNetwork {
+    float: right;
+    width: 130px;
+}
+
+.SocialNetwork li {
+    background: #1e1e22;
+    display: block;
+    width: 64px;
+    height: 46px;
+    border-left: 1px solid #191919;
+    float: right;
+}
+
+.LinkToFB, .LinkToTwitter {
+    background: transparent url("../img/FacebookBtn.png") no-repeat top center;
+    display: block;
+    width: 64px;
+    height: 46px;
+
+}
+
+.LinkToTwitter {
+    background: transparent url("../img/TwitterBtn.png") no-repeat top center;
+}
+
+.SocialNetwork li:hover .LinkToFB, .SocialNetwork li:hover .LinkToTwitter {
+    background-position: center -31px;;
+
+}
+
+/*Main Menu */
+nav {
+    width: 775px;
+    height: 88px;
+    float: left;
+}
+
+nav li {
+    border-right: 1px solid #8b8c8f;
+    float: left;
+    margin-top: 36px;
+    padding: 0px 20px;
+    list-style-type: none;
+    position: relative;
+}
+
+nav li:first-child {
+    padding-left: 0px;
+}
+
+nav li a {
+    font-family: "AvenirLTStd55Roman", Helvetica, Arial, Sans-Serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #FFF;
+    display: inline-block;
+}
+
+nav li a:hover {
+    border-bottom: 1px solid #8183c2;
+}
+
+/*Sous menu*/
+.NavSubMenu {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 52px;
+    width: auto;
+    z-index: 9999;
+}
+
+#HeaderBottom {
+    width: 100%;
+}
+
+.FormSearch {
+    float: right;
+    background-color: #868686;
+    height: 48px;
+    width: 348px;
+    position: relative;
+    z-index: 201;
+}
+
+.FormSearch button[type="submit"] {
+    background: #7a7a7a url('../img/SearchMagnify.gif') no-repeat center center;
+    height: 48px;
+    width: 64px;
+    float: right;
+}
+
+.FormSearch input[type="text"] {
+    background-color: transparent;
+    width: 265px;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 18px;
+    float: left;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.FormSearch input[type="text"]:focus #SearchAutocomplete {
+    display: block;
+}
+
+/*SearchAutocomplete*/
+#SearchAutocomplete {
+    background-color: #FFF;
+    border: 1px solid #929292;
+    position: absolute;
+    display: table;
+    width: 345px;
+    top: 48px;
+    left: 0;
+    /*display: block;*/
+    z-index: 9999;
+    display: none;
+}
+
+#SearchAutocomplete h3 {
+    background-color: #8183C2;
+    color: #FFF;
+    padding: 10px 10px;
+    margin: 0px;
+    font-size: 12px;
+}
+
+/*SearchItems*/
+.SearchItems li {
+    list-style-type: none;
+    padding: 10px 10px;
+    display: table;
+}
+
+.SearchItems li h5, .SearchItems li img {
+    float: left;
+    margin-right: 17px;
+}
+
+#SearchAutocomplete h5 {
+    color: #000;
+    margin: 0px 17px 0px 0px;
+    padding-top: 20px;
+    font-size: 11px;
+    width: 190px;
+}
+
+.SearchItems li span {
+    color: #ff9231;
+}
+
+.SearchItems .SearchItemsNumber {
+    color: #868686;
+    float: right;
+    padding-top: 20px;
+    font-size: 11px;
+}
+
+/**/
+#HeaderBottom {
+    width: 100%;
+    clear: both;
+}
+
+/*file d'ariane*/
+#Breadcrumb {
+    width: 677px;
+}
+
+#Breadcrumb.Links li {
+    border: none;
+}
+
+/*Middle*/
+.middle-container {
+    color: #FFF;
+    background-color: #FFF;
+    display: table;
+    width: 1024px;
+}
+
+/*the reassurance bar */
+.bloc_reassurance {
+    background-color: #fff;
+    display: table;
+    width: 1024px;
+    text-align: center;
+}
+
+.bloc_reassurance > div.bloc {
+    display: table-cell;
+    width: 204px;
+    vertical-align: middle;
+}
+
+.bloc_reassurance > img.border {
+    background-color: #ddd;
+    display: block;
+    height: 80px;
+    margin: 60px 0 60px 0;
+    width: 1px;
+}
+
+.bloc_reassurance > div:last-child {
+    border-right: hidden 1px;
+}
+
+.bloc_reassurance > div > div.hidden {
+    display: none;
+}
+
+.bloc_reassurance > div > div.picto-comment {
+    padding: 10px;
+    cursor: default;
+    color: #888;
+    font-size: 0.75em;
+    text-align: center;
+    font-family: 'AvenirLTStd55Roman', Helvetica, Arial, Sans-Serif;
+    display: inline-block;
+}
+
+.FooterServicesMenuContainer, .FooterDiversMenuContainer, .FooterMenuContainer, .footerBottom, .sectionMenuContainer {
+    float: left;
+    width: 100%;
+}
+
+.sectionMenuContainer a {
+    font-size: 11px;
+}
+
+.DiversOffresContainer {
+    float: left;
+    width: 100%;
+}
+
+.FooterServicesMenuContainer {
+    background-color: #FFFFFF;
+}
+
+.FooterServicesMenuContainer figure {
+    float: left;
+}
+
+.DiversOffresContainer {
+    margin-top: 2px;
+}
+
+.FooterServicesMenuContainer, .FooterDiversMenuContainer {
+    margin-bottom: 2px;
+}
+
+.newsletter {
+    float: left;
+    width: 255px;
+    height: 260px;
+    color: #000;
+    background-color: #fff;
+}
+
+.newsletter div.recevez {
+    margin: 65px 10px 0 20px;
+}
+
+.newsletter div.recevez span.AvantPremiere {
+    color: #A9A9AA;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.newsletter div.recevez span.Inscrivez {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: block;
+}
+
+form#formulaireNewsletter {
+    margin-top: 40px;
+}
+
+form#formulaireNewsletter input {
+    color: #191919;
+    font-size: 11px;
+    padding: 3px 10px;
+    height: 15px;
+    width: 165px;
+}
+
+form#formulaireNewsletter input[type=submit] {
+    margin: 0;
+    width: 25px;
+    padding: 3px 5px;
+    height: 21px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #191919;
+    font-size: 11px;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #191919;
+    font-size: 11px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #191919;
+    font-size: 11px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #191919;
+    font-size: 11px;
+}
+
+.popin-connexion-btn {
+    background-color: #8183c2;
+    color: #FFF;
+    font-size: 13px;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    letter-spacing: 2px;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    width: 215px;
+    border: solid #000 1px;
+}
+
+.popin-connexion-btn:hover {
+    background-color: #8183c2;
+    color: #FFF;
+    font-size: 13px;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    letter-spacing: 2px;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    width: 215px;
+    border: solid #fff 1px;
+}
+
+.ColorBoxType1 {
+    float: left;
+    width: 320px;
+    height: 320px;
+    margin-right: 2px;
+    position: relative;
+}
+
+.ColorBoxType1 .ColorBoxType1TrouverMagasin {
+    background: url('../img/Colorbox1.jpg') no-repeat;
+    width: 320px;
+    height: 320px;
+}
+
+.ColorBoxType1 .ColorBoxType1TrouverMagasin span.BtnTrouverMagasin {
+    width: 173px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    bottom: 31px;
+    left: 70px;
+}
+
+.ColorBoxType2 {
+    float: left;
+    width: 382px;
+    height: 260px;
+    margin-left: 2px;
+    position: relative;
+}
+
+.ColorBoxType2 .ColorBoxType2TrouverMagasin {
+    background: url('../img/Colorbox2_1.png') no-repeat;
+    width: 382px;
+    height: 260px;
+}
+
+.ColorBoxType2 .ColorBoxType2TrouverMagasin span.BtnTrouverMagasin {
+    width: 173px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    bottom: 28px;
+    left: 103px;
+}
+
+.ColorBoxType2 .ColorBoxType2NouvelleCollection {
+    background: url('../img/Colorbox2_2.jpg') no-repeat;
+    width: 382px;
+    height: 260px;
+}
+
+.ColorBoxType2 .ColorBoxType2NouvelleCollection span.BtnDecouvrirNouvelleCollection {
+    width: 116px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    bottom: 28px;
+    left: 233px;
+}
+
+.ColorBoxType3 {
+    float: left;
+    width: 700px;
+    height: 320px;
+    margin-left: 2px;
+    position: relative;
+}
+
+.ColorBoxType3 .ColorBoxType3PromotionPremierAchat {
+    background: url('../img/Colorbox3.jpg') no-repeat;
+    width: 700px;
+    height: 320px;
+}
+
+.ColorBoxType3 .ColorBoxType3PromotionPremierAchat span.BtnProfiter {
+    width: 104px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    bottom: 31px;
+    left: 27px;
+}
+
+.sectionMenuContainer .FooterMenuContent {
+    float: left;
+    width: 204px;
+    height: 174px;
+    background-color: #fff;
+}
+
+.sectionMenuContainer .Last {
+    margin-right: 0;
+}
+
+.sectionMenuContainer h2 {
+    font-size: 12px;
+    color: #7F84C4;
+    text-transform: uppercase;
+    margin: 20px 0 14px 20px;
+}
+
+.sectionMenuContainer ul.FooterMenu {
+    list-style-type: none;
+    font-size: 11px;
+    color: #000;
+}
+
+.sectionMenuContainer ul.FooterMenu li {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.sectionMenuContainer ul.FooterMenu a {
+    color: #000;
+}
+
+.footerBottom {
+    float: left;
+    width: 1024px;
+    background-color: #191919;
+    font-size: 12px;
+    padding: 9px 0px;
+    color: #7F84C4;
+}
+
+.footerBottom .FacebookLike {
+    float: left;
+    width: 805px;
+    padding: 9px 0 0 15px;
+}
+
+.footerBottom .FacebookLike img.LogoJAimeOptic2000SurFb {
+    margin-left: 5px;
+}
+
+.footerBottom .BaselineRight {
+    float: left;
+    width: 204px;
+    font-size: 11px;
+}
+
+.footerBottom .BaselineRight .Baseline {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.footerBottom .BaselineRight .BaselineNumber {
+    color: #7F84C4;
+    margin-left: 20px;
+}
+
+.sectionMenuContainer > table.footerBottomLigne {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+}
+
+.sectionMenuContainer > table.footerBottomLigne > tbody > tr > td {
+    width: 35%;
+    border-right: solid #000 1px;
+    padding-left: 10px;
+}
+
+.sectionMenuContainer > table.footerBottomLigne > tbody > tr > td.last {
+    border-right: hidden #000 1px !important;
+}
+
+.sectionMenuContainer > table.footerBottomLigne > tbody > tr > td a {
+    color: #000;
+}
+
+.FooterDiversMenuContainer > div.newsletter {
+    border: solid #000 1px;
+}
+
+.FooterDiversMenuContainer > div.InfoPicto {
+    height: 260px;
+    width: 761px;
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+    margin: 0 0 0 5px;
+    border: solid #000 1px;
+}
+
+.FooterDiversMenuContainer > div.InfoPicto > div {
+    height: 260px;
+}
+
+.SliderProductContainer {
+    float: left;
+    width: 1024px;
+    background-color: #FFFFFF;
+}
+
+.SliderProductContainer .ArticleSelect {
+    float: left;
+    background-color: #FFFFFF;
+    border: 1px solid #F4F4F4;
+    width: 338px;
+    height: 340px;
+}
+
+.SliderProductContainer .first {
+    border-left: none;
+}
+
+.SliderProductContainer .last {
+    border-right: none;
+}
+
+.SliderProductContainer .ArticleSelect h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+}
+
+.SliderProductContainer .ArticleSelect h1 span.typeArticleSelect {
+    color: #8183C2;
+}
+
+.SliderProductContainer .ArticleSelect .sliderSelect {
+    position: relative;
+    width: 340px;
+    height: 140px;
+}
+
+.SliderProductContainer .ArticleSelect .sliderSelect .sliderSelectDescription
+.FooterServicesMenuContainer, .FooterDiversMenuContainer, .FooterMenuContainer, .footerBottom, .sectionMenuContainer {
+    float: left;
+    width: 100%;
+}
+
+.DiversOffresContainer {
+    float: left;
+    width: 100%;
+}
+
+.FooterServicesMenuContainer {
+    background-color: #FFFFFF;
+}
+
+.FooterServicesMenuContainer figure {
+    float: left;
+}
+
+.DiversOffresContainer {
+    margin-top: 2px;
+}
+
+.FooterServicesMenuContainer {
+    margin-bottom: 2px;
+    background-color: #fff
+}
+
+.FooterDiversMenuContainer {
+    background-color: #fff
+}
+
+.newsletter {
+    float: left;
+    width: 254px;
+    height: 260px;
+    background-color: #fff;
+    color: #000;
+}
+
+.newsletter div.recevez {
+    margin: 65px 10px 0 20px;
+}
+
+.newsletter div.recevez span.AvantPremiere {
+    color: #A9A9AA;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.newsletter div.recevez span.Inscrivez {
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: block;
+}
+
+form#formulaireNewsletter {
+    margin-top: 40px;
+}
+
+form#formulaireNewsletter input {
+    color: #191919;
+    font-size: 11px;
+    padding: 3px 10px;
+    height: 15px;
+    width: 165px;
+}
+
+form#formulaireNewsletter input[type=submit] {
+    margin: 0;
+    width: 25px;
+    padding: 3px 5px;
+    height: 21px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #191919;
+    font-size: 11px;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #191919;
+    font-size: 11px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #191919;
+    font-size: 11px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #191919;
+    font-size: 11px;
+}
+
+.ColorBoxType1 {
+    float: left;
+    width: 320px;
+    height: 320px;
+    margin-right: 2px;
+    position: relative;
+}
+
+.ColorBoxType1 .ColorBoxType1TrouverMagasin {
+    background: url('../img/Colorbox1.jpg') no-repeat;
+    width: 320px;
+    height: 320px;
+}
+
+.ColorBoxType1 .ColorBoxType1TrouverMagasin span.BtnTrouverMagasin {
+    width: 173px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    bottom: 31px;
+    left: 70px;
+}
+
+.ColorBoxType2 {
+    float: left;
+    width: 382px;
+    height: 260px;
+    margin-left: 2px;
+    position: relative;
+}
+
+.ColorBoxType2 .ColorBoxType2TrouverMagasin {
+    background: url('../img/Colorbox2_1.png') no-repeat;
+    width: 382px;
+    height: 260px;
+}
+
+.ColorBoxType2 .ColorBoxType2TrouverMagasin span.BtnTrouverMagasin {
+    width: 173px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    bottom: 28px;
+    left: 103px;
+}
+
+.ColorBoxType2 .ColorBoxType2NouvelleCollection {
+    background: url('../img/Colorbox2_2.jpg') no-repeat;
+    width: 382px;
+    height: 260px;
+}
+
+.ColorBoxType2 .ColorBoxType2NouvelleCollection span.BtnDecouvrirNouvelleCollection {
+    width: 116px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    bottom: 28px;
+    left: 233px;
+}
+
+.ColorBoxType3 {
+    float: left;
+    width: 700px;
+    height: 320px;
+    margin-left: 2px;
+    position: relative;
+}
+
+.ColorBoxType3 .ColorBoxType3PromotionPremierAchat {
+    background: url('../img/Colorbox3.jpg') no-repeat;
+    width: 700px;
+    height: 320px;
+}
+
+.ColorBoxType3 .ColorBoxType3PromotionPremierAchat span.BtnProfiter {
+    width: 104px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    bottom: 31px;
+    left: 27px;
+}
+
+.sectionMenuContainer .FooterMenuContent {
+    float: left;
+    width: 204px;
+    height: 174px;
+    background-color: #fff;
+    border-right: solid #ddd 1px;
+}
+
+.sectionMenuContainer .Last {
+    border-right: none;
+}
+
+.sectionMenuContainer h2 {
+    font-size: 12px;
+    color: #7F84C4;
+    text-transform: uppercase;
+    margin: 20px 0 14px 20px;
+}
+
+.sectionMenuContainer ul.FooterMenu {
+    list-style-type: none;
+    font-size: 11px;
+    color: #000;
+}
+
+.sectionMenuContainer ul.FooterMenu li {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.sectionMenuContainer ul.FooterMenu a {
+    color: #000;
+}
+
+.footerBottom {
+    float: left;
+    width: 1024px;
+    background-color: #191919;
+    font-size: 12px;
+    padding: 9px 0px;
+    color: #7F84C4;
+}
+
+.footerBottom .FacebookLike {
+    float: left;
+    width: 805px;
+    padding: 5px 0 0 15px;
+}
+
+.footerBottom .FacebookLike img.LogoJAimeOptic2000SurFb {
+    margin-left: 5px;
+}
+
+.footerBottom .BaselineRight {
+    float: left;
+    width: 204px;
+}
+
+.footerBottom .BaselineRight .Baseline {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.footerBottom .BaselineRight .BaselineNumber {
+    color: #7F84C4;
+    margin-left: 20px;
+}
+
+.SliderProductContainer {
+    float: left;
+    width: 1024px;
+    background-color: #FFFFFF;
+}
+
+.SliderProductContainer .ArticleSelect {
+    float: left;
+    background-color: #FFFFFF;
+    border: thin solid #F4F4F4;
+    width: 340px;
+    height: 340px;
+    position: relative;
+}
+
+.SliderProductContainer .first {
+    border-left: none;
+}
+
+.SliderProductContainer .last {
+    border-right: none;
+}
+
+.SliderProductContainer .ArticleSelect h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+}
+
+.SliderProductContainer .ArticleSelect h1 span.typeArticleSelect {
+    color: #8183C2;
+}
+
+.SliderProductContainer .ArticleSelect .sliderSelect {
+    position: relative;
+    width: 340px;
+    height: 140px;
+}
+
+.SliderProductContainer .ArticleSelect .sliderSelect span.sliderSelectContenu {
+    display: block;
+    width: 210px;
+    height: 140px;
+    position: absolute;
+    left: 65px;
+}
+
+.SliderProductContainer .ArticleSelect .sliderSelect span.sliderSelectFlecheLeft {
+    display: block;
+    background: url('../img/home_fleche_left.png') no-repeat;
+    width: 19px;
+    height: 28px;
+    position: absolute;
+    left: 18px;
+    top: 60px;
+    cursor: pointer;
+}
+
+.SliderProductContainer .ArticleSelect .sliderSelect span.sliderSelectFlecheRight {
+    display: block;
+    background: url('../img/home_fleche_right.png') no-repeat;
+    width: 19px;
+    height: 28px;
+    position: absolute;
+    right: 18px;
+    top: 60px;
+    cursor: pointer;
+}
+
+.ArticleSelect header.sliderSelectDescription {
+    height: auto;
+}
+
+.ArticleSelect .sliderSelectDescription {
+    margin-left: 20px;
+}
+
+.RightGlassCustom .configVerreResume {
+    margin-left: 0px;
+}
+
+.Description p, .TechnicalFeacture p {
+    font-size: 13px;
+}
+
+.RightGlassCustom .ArticleSelect .sliderSelectDescription {
+    margin-left: 0px !important;
+}
+
+.corrections ul li ul li {
+    margin-right: 4px;
+}
+
+.ArticleSelect .sliderSelectDescription h2 {
+    color: #383838;
+    margin: 0;
+    font-size: 12px;
+}
+
+.ArticleSelect .sliderSelectDescription p {
+    color: #515151;
+    margin: 0;
+    font-size: 11px;
+}
+
+/*Price base*/
+.ArticleSelect .sliderSelectDescription p.Price, .ProductView p.Price {
+    color: #8183C2;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ArticleSelect .sliderSelectDescription p.Price em, .ProductView p.Price em {
+    font-size: 75%;
+    font-style: normal;
+}
+
+.ArticleSelect .sliderSelectDescription p.Price sup, .ProductView p.Price sup {
+    vertical-align: baseline;
+    font-size: 55%;
+}
+
+/*Price discount base*/
+.ArticleSelect .sliderSelectDescription p.DiscountPrice, .ProductView p.DiscountPrice, td span.DiscountPrice {
+    color: #ff9231;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.ArticleSelect .sliderSelectDescription p.DiscountPrice em, .ProductView p.DiscountPrice em {
+    font-size: 75%;
+    font-style: normal;
+}
+
+.ArticleSelect .sliderSelectDescription p.DiscountPrice sup, .ProductView p.DiscountPrice sup {
+    vertical-align: baseline;
+    font-size: 55%;
+}
+
+.ArticleSelect p.Price {
+    float: left;
+}
+
+td span.DiscountPrice {
+    margin-right: 10px;
+}
+
+.ArticleSelect .sliderSelectDescription p.DiscountPrice {
+    float: left;
+    line-height: 22px;
+    margin-right: 5px;
+}
+
+.ArticleSelect a.sliderSelectVoirTout {
+    background-color: #898BC6;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 5px 0;
+    margin: 21px 90px;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+/*Product list*/
+/*Promo*/
+.PromoStickers {
+    background-color: #FFF;
+    padding: 5px 10px;
+    color: #ff9231;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid #ff9231;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+/*Nouveau*/
+.NewStickers {
+    background-color: #FFF;
+    color: #8183c2;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 11px;
+    border: 1px solid #8183c2;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+
+.OfferStickres {
+    background: #FFF url('../img/IconOffreSpecial.png') no-repeat left top;
+    color: #000;
+    width: auto;
+    font-weight: 900;
+    font-size: 8px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    font-family: Arial;
+}
+
+.ProductContainer {
+    float: left;
+    width: 1024px;
+    background-color: #FFFFFF;
+}
+
+/*Menu filtre list*/
+.FilteringColumn {
+    float: left;
+    width: 255px;
+    background-color: #FDFDFD;
+    color: #000000;
+    font-size: 11px;
+}
+
+.FilteringColumn h1 {
+    color: #4B4B4B;
+    margin: 20px 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.FilteringColumn .block-subtitle {
+    color: #4B4B4B;
+    margin: 20px 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.FilteringColumn h2 {
+    color: #FFFFFF;
+    padding: 5px 20px;
+    padding-right: 0;
+}
+
+.FilteringColumn h2.criterias {
+    background-color: #8183C2;
+}
+
+.FilteringColumn h2.filteringChoices, .gan-attribute .filter-name {
+    background-color: #000000;
+}
+
+.block-content {
+    width: 255px;
+}
+
+.block-content li {
+    list-style: none;
+    color: #BBBBBB;
+    font-family: Verdana, Arial, sans-serif;
+    height: 25px;
+    text-align: left;
+}
+
+.block-content a {
+    background: url('../img/checkBox.png') no-repeat left top;
+    background-position: left 13px;
+    text-align: left;
+    padding-left: 25px;
+    color: #787878;
+}
+
+.block-content a.clear {
+    clear: both;
+    background: none;
+    display: inline-block;
+    background-position: left 13px;
+    text-align: left;
+    padding-left: 25px;
+    margin-bottom: 5px;
+    line-height: 12px;
+    color: #787878;
+}
+
+#advancednavigation-filter-content-origine_france a.checked {
+    background: url('../img/checkBox.png') no-repeat left top;
+    background-position: left -25px;
+    text-align: left;
+    color: #787878;
+}
+
+#advancednavigation-filter-content-origine_france a {
+    background: url('../img/checkBox.png') no-repeat left top;
+    background-position: left 13px;
+}
+
+#advancednavigation-filter-content-forme_monture img {
+    margin-right: 10px;
+}
+
+.gan-attribute .filter-name {
+    display: inline-block;
+    color: #fff;
+    padding: 5px 0 5px 20px;
+    width: 100%;
+    font-size: 1.5em;
+    background: transparent url('../img/ArrowsFiltering.png') no-repeat 226px top;
+    background-color: #000;
+    margin: 0.83em 0;
+    font-family: "AvenirLTStd55Roman", Helvetica, Arial, Sans-Serif;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+dt.Close .filter-name {
+    display: inline-block;
+    color: #fff;
+    width: 100%;
+    background: transparent url('../img/ArrowsFiltering.png') no-repeat 226px bottom;
+    background-color: #000;
+    font-family: "AvenirLTStd55Roman", Helvetica, Arial, Sans-Serif;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+dt.Close .purple {
+    background-color: #8183C2;
+}
+
+.FilteringColumn dl, .gan-attribute .filter-name {
+    margin: 0;
+    width: 236px;
+}
+
+.FilteringColumn dd {
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+.FilteringColumn .purple {
+    background-color: #8183C2;
+    color: #FFFFFF;
+}
+
+/*#advancednavigation-filter-content-forme_monture{
+	max-height:123px;
+	height:100%;
+	overflow: hidden;
+}*/
+.FilteringColumn h2 .ArrowsCriterias {
+    background: transparent url('../img/ArrowsFilteringColumn.png') no-repeat right top;
+    height: 10px;
+    width: 18px;
+    display: block;
+    float: right;
+    margin: 6px 10px 0px 0px;
+    border-left: 1px solid #bbbbbb;
+    cursor: pointer;
+}
+
+.FilteringColumn a:hover {
+    color: #8183C2;
+}
+
+.FilteringColumn li a:hover {
+    color: #787878;
+}
+
+.FilteringColumn ul {
+    list-style-type: none;
+    margin-left: 20px;
+    max-height: 123px;
+}
+
+.FilteringColumn ul li {
+    height: 25px;
+    color: #787878;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.FilteringColumn a {
+    padding: 10px;
+    font-size: 11px;
+    color: #787878;
+    font-family: Verdana, Arial, sans-serif;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+.FilteringColumn ul li label {
+    padding-left: 10px;
+    font-size: 11px;
+    color: #787878;
+}
+
+.FilteringColumn ul li input[type="checkbox"]:hover + label, .FilteringColumn ul li .checker:hover + label {
+    color: #8183c2;
+}
+
+.FilteringColumn ul li input[type="checkbox"] {
+    padding-top: 3px;
+}
+
+.ShapeGlassCount {
+    padding-left: 3px;
+    color: #BBB
+}
+
+.col_by_1 {
+    width: 255px;
+}
+
+.col_by_3 {
+    width: 767px;
+}
+
+.ProductContainer .ArticleSelect {
+    float: left;
+    background-color: #FFFFFF;
+    border: thin solid #F4F4F4;
+    border-left: none;
+    width: 255px;
+    height: 255px;
+    position: relative;
+}
+
+.ProductContainer .FondViolet {
+    background-color: #8183C2;
+    color: #FFFFFF;
+}
+
+.ProductContainer .FondOrange {
+    background-color: #FF8111;
+    color: #FFFFFF;
+}
+
+.ProductContainer .ArticleSelectReservezVosLunettes h4 {
+    margin: 20px 20px 0 20px;
+}
+
+.ProductContainer .ArticleSelectReservezVosLunettes h3 {
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+.ProductContainer .ArticleSelectReservezVosLunettes p {
+    font-size: 11px;
+    margin: 0 20px;
+}
+
+.ProductContainer .ArticleSelectReservezVosLunettes span.profiter {
+    display: block;
+    text-transform: uppercase;
+    margin: 20px;
+    padding: 5px;
+    background-color: #FFFFFF;
+    width: 85px;
+    font-size: 12px;
+}
+
+.ProductContainer .FondViolet span.profiter {
+    color: #8183C2;
+}
+
+.ProductContainer .FondOrange span.profiter {
+    color: #FF8111;
+}
+
+.ProductContainer ul {
+    list-style: none;
+}
+
+.ProductContainer ul li {
+    float: left;
+}
+
+.ProductContainer .first {
+    border-left: none;
+}
+
+.ProductContainer .last {
+    border-right: none;
+}
+
+.ProductContainer h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+}
+
+.ProductContainer h1 span.typeArticleSelect {
+    color: #8183C2;
+}
+
+.ProductContainer h1.ResultsList {
+    color: #191919;
+    font-size: 21px;
+    width: 100%;
+    text-align: justify;
+    float: none;
+    margin: 0;
+    padding: 5px 10px 10px 0;
+    box-sizing: border-box;
+}
+
+.ProductContainer h1.ResultsList hr{
+    display: block;
+    margin: 5px 0;
+}
+
+.ProductContainer .category-image{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    text-align: center;
+    max-height: 250px;
+    overflow: hidden;
+}
+.ProductContainer .category-image img{
+    position: relative;
+    max-width: 100%;
+}
+
+.ProductContainer .category-description{
+    display: block;
+    position: relative;
+    color: #232323;
+    padding: 10px 10px;
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+.RightGlassCustom .ProductContact h2 {
+    margin-top: 0px !important;
+}
+
+.ProductContainer div.Ordering {
+    color: #787878;
+    font-size: 10px;
+    width: 48%;
+    float: right;
+    text-align: right;
+    padding-right: 1%;
+    padding-top: 20px;
+    height: 37px;
+}
+
+.ProductContainer .ArticleSelect .imgProduit {
+    width: 210px;
+    height: 140px;
+    margin: 25px auto 25px auto;
+}
+
+.SubNavMostViewed {
+    background-color: #8183C2;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+}
+
+.SubNavMostViewed ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.SubNavMostViewed ul li {
+    display: inline;
+    text-align: center;
+    width: 511px;
+    margin: 0;
+    padding: 16px 0;
+    border-right: 1px solid #A1A3D2;
+}
+
+.SubNavMostViewed ul li.last {
+    border: none;
+}
+
+/*EyeGlassesUnivers*/
+.EyeGlassesUnivers .SubNavMostViewed li {
+    width: 340px;
+}
+
+.pagination {
+    float: left;
+    width: 767px;
+    color: #838383;
+    font-size: 12px;
+}
+
+.pagination ul {
+    list-style: none;
+    margin: 0px auto;
+    display: table;
+}
+
+.pagination ul li {
+    float: left;
+    height: 15px;
+    padding: 4px 10px;
+    border: 1px solid #E5E5E5;
+    margin: 30px 0 0 5px;
+    background-color: #FFFFFF;
+}
+
+.pagination ul li a {
+    color: #838383;
+    text-decoration: none;
+}
+
+.pagination ul li.precedent {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.pagination ul li.suivant {
+    padding-left: 7px;
+    padding-right: 5px;
+}
+
+.pagination ul li.current {
+    color: #9192C9;
+    background-color: #E6E6F3;
+    font-weight: bold;
+}
+
+.ligne {
+    float: left;
+    width: 100%;
+}
+
+/*Product détail*/
+
+/*contact lens*/
+.ProductView {
+    background-color: #FFFFFF;
+    padding-top: 10px;
+}
+
+.ProductViewHeader {
+    text-transform: uppercase;
+    float: left;
+    width: 1004px;
+    padding: 10px;
+}
+
+.ProductViewHeader .designation {
+    float: left;
+    width: 75%;
+}
+
+.ProductViewHeader h2 {
+    font-size: 18px;
+    color: #8183C2;
+    margin: 0;
+    font-weight: normal;
+}
+
+.ProductViewHeader h1 {
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+    margin: 0;
+}
+
+.ProductViewHeader h1 span.conditionnement {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.ProductView .ProductViewHeader .social {
+    float: right;
+    width: 25%;
+    margin-top: 20px;
+}
+
+.ProductView figure.visuels {
+    float: left;
+    width: 610px;
+}
+
+.ProductView figure.visuels header {
+    /*height:60px;*/
+    height: auto;
+}
+
+.ProductView figure.visuels header img.logo {
+    margin-right: 20px;
+}
+
+.ProductView figure.visuels header a {
+    text-transform: none;
+    font-size: 12px;
+    color: #787878;
+    text-decoration: underline;
+    float: left;
+}
+
+.ProductView figure.visuels .VisuelsContainer {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.ProductView footer {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #F4F4F4;
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.ProductView footer h1, .ProductView footer h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.ProductView footer h1 {
+    font-size: 13px;
+    color: #8183C2;
+    text-transform: uppercase;
+}
+
+.ProductView footer h2 {
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.ProductView footer {
+    font-size: 11px;
+    color: #191919;
+}
+
+.ProductView footer .Description {
+    float: left;
+    width: 224px;
+    border-right: 1px solid #F4F4F4;
+    padding: 15px;
+}
+
+.ProductView footer .TechnicalFeacture {
+    position: relative;
+    float: left;
+    width: 483px;
+    padding: 15px;
+}
+
+.ProductView footer aside.ProductContact {
+    float: left;
+    width: 226px;
+    background-color: #8183C2;
+    padding: 20px 15px;
+    color: #FFFFFF;
+}
+
+.ProductView footer aside.ProductContact p {
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+aside.CoupDeCoeur .ProductContainer h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.Slider {
+    position: relative;
+}
+
+.Slider .SliderDescription {
+    position: absolute;
+    top: 25px;
+    left: 29px;
+    text-transform: uppercase;
+}
+
+.Slider .SliderDescription h2 {
+    font-size: 16px;
+    color: #8183C2;
+    font-weight: normal;
+    margin: 0;
+}
+
+.Slider .SliderDescription h1 {
+    font-size: 27px;
+    color: #000000;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+.Slider .SliderDescription p {
+    margin: 0;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.Slider .SliderDescription p a {
+    padding: 6px 7px;
+    line-height: 38px
+}
+
+.Slider .SliderDescription p.white a {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.Slider .SliderDescription p.purple a {
+    background-color: #8183C2;
+    color: #FFFFFF;
+}
+
+.Slider .SliderPuces {
+    position: absolute;
+    bottom: 26px;
+    right: 21px;
+}
+
+.Slider .SliderPuces .SliderPuce {
+    background: url('../img/puces_slider.png') -23px 0 no-repeat;
+    cursor: pointer;
+    height: 19px;
+    width: 23px;
+    float: left;
+}
+
+.Slider .SliderPuces .current {
+    background-position: 0 0;
+}
+
+/*form choice and price*/
+.ProductView aside.ProductChoice {
+    float: right;
+    width: 354px;
+    background-color: #FFF;
+    padding: 14px 39px 19px 19px;
+}
+
+/*ProductPrice*/
+.ProductView .ProductChoice.Lens header {
+    padding-left: 133px;
+    display: table;
+
+}
+
+.ProductView p.ProductLabel {
+    min-width: 120px;
+    color: #383838;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0px;
+
+}
+
+.ProductView p.Price {
+    font-size: 25px;
+    float: left;
+
+}
+
+.ProductView p.DiscountPrice {
+    font-size: 16px;
+    float: left;
+    line-height: 40px;
+    margin-right: 5px;
+}
+
+/*Form*/
+.LigneForm {
+    height: 30px;
+    width: auto;
+    margin-bottom: 10px;
+    display: table;
+
+}
+
+#product_addtocart_form .TitleCel {
+
+}
+
+#product_addtocart_form .LigneForm {
+    width: 382px;
+}
+
+.LigneForm div, .LigneForm label, .LigneForm input {
+    float: left;
+    font-size: 11px;
+    color: #787878;
+}
+
+#product_addtocart_form .TitleCel {
+    float: right;
+    font-size: 11px;
+    width: 99px;
+    height: 30px;
+    margin: 0px 15px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #383838;
+}
+
+.LigneForm label {
+    width: 100px;
+    line-height: 30px;
+}
+
+.LigneForm .FormInfo, table.GlassCorrection .FormInfo, .FormInfo.InfoType2 {
+    position: relative;
+    background: #FFF url(../img/BtnFormInformation.jpg) no-repeat left top;
+    width: 18px;
+    height: 18px;
+    margin-top: 6px;
+    display: block;
+    cursor: pointer;
+}
+
+.FormInfo.InfoType2 {
+    height: 19px;
+    background: transparent url(../img/BtnFormInformationBlack.png) no-repeat left top;
+}
+
+.FormInfo div {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: -243px;
+    width: 243px;
+    height: auto;
+    padding-right: 15px;
+    z-index: 10;
+}
+
+.FormInfo span {
+    height: 31px;
+    background: transparent url(../img/ArrowsToolType.png) no-repeat left center;
+    width: 15px;
+    display: table;
+    position: absolute;
+    z-index: 10;
+    top: 25px;
+    right: 16px;
+
+}
+
+.FormInfo p {
+    background-color: #FFF;
+    border: 1px solid #bbbbbb;
+    padding: 10px;
+    padding-right: 20px;
+    margin: 0px;
+    width: 206px;
+    -webkit-box-shadow: #ccc -5px 5px 0px;
+    -moz-box-shadow: #ccc -5px 5px 0px;
+    box-shadow: #ccc -5px 5px 0px;
+}
+
+.FormInfo:hover div {
+    display: block;
+}
+
+.LigneForm input[type=text], .LigneForm select {
+    width: 92px;
+    height: 26px;
+    border: 1px solid #c2c2c2;
+    margin: 0px 15px;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.LigneForm input.Disable {
+    background-color: #efefef;
+
+}
+
+.LigneForm input.Large {
+    width: 151px;
+
+}
+
+.LigneForm select {
+    width: 99px;
+    height: 30px;
+
+}
+
+.LigneForm input[type="submit"] {
+    color: #FFF;
+    width: auto;
+    display: table;
+}
+
+#product_addtocart_form .LigneForm input[type="submit"] {
+    width: auto;
+    margin-right: 56px;
+    border: none;
+    float: right;
+}
+
+/*produit d'entretien'*/
+.Entretien header {
+    text-align: right;
+    width: 145px;
+    float: right;
+    margin-right: 15px;
+}
+
+.ProductView .ProductChoice.Entretien {
+    margin-top: 170px;
+}
+
+.Entretien #product_addtocart_form .LigneForm {
+    width: 227px;
+    display: block;
+    float: right;
+}
+
+.Entretien .LigneForm label {
+    width: auto;
+}
+
+.Entretien #product_addtocart_form .LigneForm input[type="submit"] {
+    float: right;
+    margin: 15px 15px 0px 0px;
+}
+
+/*Etape 1*/
+/**/
+.PurpleColor {
+    color: #8183c2;
+    font-size: 11px;
+}
+
+.PurpleTitle {
+    color: #8183c2;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.OrangeUpper {
+    color: #ff9231;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*Paiement etape 1*/
+nav.PaiementEntete {
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    height: 15px;
+    background-color: #f8f8f8;
+}
+
+nav.PaiementEntete ul {
+    list-style: none;
+}
+
+nav.PaiementEntete ul li {
+    margin: 0;
+    padding: 0;
+    border: none;
+    float: left;
+    text-transform: uppercase;
+    display: inline;
+    width: 25%;
+    text-align: center;
+    color: #A9A9A9;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+nav.PaiementEntete ul li.current {
+    color: #8183C2;
+}
+
+table#tab {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 12px;
+    width: 100%;
+    float: left;
+}
+
+table#tab thead th {
+    text-transform: uppercase;
+    color: #8182C2;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 11px;
+}
+
+table#tab tbody td.ImgProduit {
+    text-align: center;
+}
+
+table#tab thead th.OddCol, table#tab tbody td.OddCol {
+    background-color: #F1F1F1;
+}
+
+table#tab thead th.EvenCol, table#tab tbody td.EvenCol {
+    background-color: #F1F1F1;
+}
+
+table#tab tbody td.Designation {
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+table#tab tbody td span.changeQtyMinus, table#tab tbody td span.changeQtyPlus {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+table#tab tbody td input.changeQty {
+    width: 20px;
+    border: 1px solid #CCCCCC;
+    text-align: center;
+}
+
+table#tab tbody td input.CodeReduction {
+    border: 1px solid #CCCCCC;
+    height: 24px;
+    width: 80px;
+}
+
+table#tab tbody td form#FormCodeReduction input[type=submit] {
+    width: 30px;
+    height: 28px;
+    border: 1px solid #CCCCCC;
+    font-size: 12px;
+}
+
+table#tab tbody td.center {
+    text-align: center;
+}
+
+table#tab tbody td.right {
+    text-align: right;
+    padding-right: 20px;
+}
+
+table#tab tbody td.LigneSousTotaux {
+    vertical-align: top;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+table#tab tbody td.SousTotaux {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+table#tab tbody td.Totaux {
+    padding-left: 15px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+table#tab tbody td.ChiffresTotaux {
+    font-weight: bold;
+    color: #8183C2;
+    font-size: 16px;
+}
+
+table#tab tbody tr.LigneContinuer {
+    height: 50px;
+}
+
+table#tab tbody td a.LienContinuerAchats {
+    color: #8183C2;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+table#tab tbody td a.validerEtape {
+    background-color: #8183C2;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    font-weight: bold;
+}
+
+/*Paiement Etape2*/
+.etapePanier {
+    float: left;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.etapePanier h1 {
+    font-size: 14px;
+    color: #8183c2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.OwnedAccount {
+    float: left;
+    width: 306px;
+    color: #000;
+    padding-left: 75px;
+    padding-top: 25px;
+}
+
+.HaveToCreateAccount {
+    float: left;
+    width: 531px;
+    color: #000;
+    border-left: 1px solid #D9DAED;
+    padding: 0 50px;
+    padding-top: 25px;
+}
+
+.etapePanier form.formulaireEtape2 label {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    padding-left: 5px;
+    font-size: 11px;
+    margin: 15px 0 2px 0;
+}
+
+.etapePanier form.formulaireEtape2 label.labelForCheckbox {
+    text-transform: none;
+    font-weight: normal;
+    padding-left: 5px;
+    font-size: 11px;
+    margin: 0;
+    display: inline;
+    letter-spacing: 0px;
+
+}
+
+.EtapePanierContent td span.DiscountPrice {
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.etapePanier form.formulaireEtape2 input[type=checkbox] {
+    margin-top: 7px;
+    display: block;
+    width: 13px;
+    float: left;
+}
+
+.etapePanier form.formulaireEtape2 div.checker span input[type=checkbox] {
+    margin-top: 0px;
+}
+
+.etapePanier form.formulaireEtape2 div.checker {
+    margin-top: -5px;
+}
+
+.etapePanier form.formulaireEtape2 input[type=text],
+.etapePanier form.formulaireEtape2 input[type=password],
+.etapePanier form.formulaireEtape2 input[type=email],
+.etapePanier form.formulaireEtape2 input[type=tel] {
+    border: 1px solid #BBBBBB;
+    height: 11px;
+    width: 240px;
+    font-size: 11px;
+    padding: 8px 5px 9px 5px;
+}
+
+/*without Uniform*/
+/*.etapePanier form.formulaireEtape2 select { font-size:11px; height: 28px; border:1px solid #BBBBBB; }*/
+
+.etapePanier form.formulaireEtape2 input.ReductedInput {
+    width: 108px;
+}
+
+.etapePanier form.formulaireEtape2 input[type=submit] {
+    background-color: #8183C2;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+    height: 27px;
+    margin-top: 25px;
+}
+
+.etapePanier form.formulaireEtape2 input:focus {
+    border: 1px solid #8183c2;
+}
+
+.etapePanier form.formulaireEtape2 em {
+    font-size: 10px;
+    float: right;
+    margin-right: 15px;
+    padding-top: 7px;
+}
+
+div.center {
+    text-align: center;
+    margin: 25px 0;
+}
+
+div.FullSize {
+    float: left;
+    width: 100%;
+}
+
+div.HalfSize {
+    float: left;
+    width: 49%;
+}
+
+div.DecalageTop {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/*Livraison etape3*/
+.DeliveryTitle {
+    background-color: #FFF;
+    float: left;
+    width: 1006px;
+    padding-left: 18px;
+}
+
+.DeliveryTitle span {
+    color: #515151;
+    font-size: 11px;
+    margin-top: 40px;
+}
+
+.DeliveryTitle strong {
+    padding: 30px 0px;
+    display: block
+}
+
+#tab tr.BorderGrey {
+    border-top: 1px solid #e6e6f3;
+}
+
+#tab.Delivery tr.Designation {
+    text-transform: uppercase;
+}
+
+#tab.Delivery td.Designation {
+    width: 185px
+}
+
+#tab.Delivery tr.Space {
+    height: 15px;
+}
+
+#tab.Delivery td.Title {
+    font-weight: normal;
+    text-transform: none;
+    color: #787878;
+    text-align: left;
+    padding: 15px 0px;
+    padding-left: 15px;
+}
+
+#tab.Delivery .Title.BorderGrey {
+    border-left: 1px solid #e6e6f3;
+}
+
+td.BorderGrey {
+    border-left: 1px solid #e6e6f3;
+}
+
+#tab.Delivery td.TopBorderGrey {
+    border-top: 1px solid #e6e6f3;
+}
+
+#tab.Delivery td.CheckChoice {
+    padding-left: 25px;
+}
+
+#tab.Delivery td.Horaires span {
+    margin-left: 15px;
+    float: left;
+}
+
+#tab.Delivery td.Adress {
+    border-left: 1px solid #e6e6f3;
+    padding-left: 15px
+}
+
+#tab.Delivery td.Adress a {
+    margin: 10px 0px;
+    color: #7F84C4;
+    display: block;
+}
+
+#tab.Delivery td.Adress strong {
+    font-family: "AvenirLTStd55Heavy";
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#tab.Delivery td .HeavyFont {
+    font-family: "AvenirLTStd55Heavy";
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#tab.Delivery .Orange {
+    color: #ff9231;
+    padding-right: 15px;
+}
+
+#tab.Delivery .TextGrey {
+    color: #787878;
+}
+
+#tab.Delivery tbody tr.LineValidateContinue {
+    height: 100px;
+}
+
+/*geolocalisation*/
+#tab.Delivery .Geolocalisation td {
+    padding: 15px
+}
+
+.Geolocalisation input, .Geolocalisation strong, .Geolocalisation a, .Geolocalisation span {
+    float: left;
+    margin-left: 15px;
+
+}
+
+.Geolocalisation strong {
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.Geolocalisation input[type="text"] {
+    width: 422px;
+    padding: 0px 15px;
+    height: 26px;
+    border-left: 1px solid #c2c2c2;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    margin: 0px 0px 0px 15px;
+    font-weight: bold;
+
+}
+
+.Geolocalisation .validerGeo {
+    border-right: 1px solid #c2c2c2;
+    border-top: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    height: 26px;
+    width: auto;
+    margin: 0px;
+
+}
+
+.Geolocalisation .validerGeo a {
+    border-left: 1px solid #c2c2c2;
+    margin-top: 5px;
+    padding: 0px 5px;
+    color: #787878;
+}
+
+.GoogleMap {
+    width: 960px;
+    height: 558px;
+    overflow-y: auto;
+    margin-top: 10px;
+    float: left;
+
+}
+
+/*AdressNew Delivery*/
+.AdressNew {
+    width: 616px;
+}
+
+.DeliveryAdressNew {
+    float: left;
+    width: 450px;
+    padding-left: 15px;
+}
+
+.DeliveryAdressNew div, .DeliveryAdressNew input {
+    float: left;
+}
+
+/*without Uniform*/
+/*.DeliveryAdressNew select{
+font-size: 11px;
+height: 28px;
+border: 1px solid #BBBBBB;
+float: left;
+margin: 5px 10px 5px 0px;
+}*/
+
+.DeliveryAdressNew input[type=text], .DeliveryAdressNew input[type=tel], .DeliveryOrdonnanceLens input[type=text] {
+    border: 1px solid #BBBBBB;
+    height: 11px;
+    min-width: 130px;
+    font-size: 11px;
+    padding: 8px 5px 9px 5px;
+    margin: 5px 10px 5px 0px;
+}
+
+.DeliveryAdressNew #ville, .DeliveryAdressNew #rue, .DeliveryAdressNew #telephone {
+    width: 231px;
+}
+
+.DeliveryAdressNew a.ValiderAdressNew {
+    margin: 5px 10px 5px 0px;
+    float: left;
+    width: 122px;
+    text-align: center;
+}
+
+/*Ordonnance lentilles*/
+.DeliveryOrdonnanceLens {
+    float: left;
+    padding-left: 15px;
+
+}
+
+.DeliveryOrdonnanceLens div, .DeliveryOrdonnanceLens input, .DeliveryOrdonnanceLens label {
+    float: left;
+}
+
+.DeliveryOrdonnanceLens strong.PurpleTitle {
+    margin: 15px 0px;
+    display: block;
+}
+
+.Clear {
+    clear: both;
+    width: 100%;
+}
+
+.Avertissement {
+    clear: both;
+    width: 540px;
+    color: #787878;
+    padding-left: 15px;
+    display: block;
+    font-size: 11px;
+    margin-top: 15px;
+}
+
+.DeliveryOrdonnanceLens .LigneForm {
+    width: 280px;
+    margin-right: 30px;
+    display: table;
+    height: auto
+}
+
+.DeliveryOrdonnanceLens .LigneForm.FullSize, .DeliveryOrdonnanceLens .LigneForm .LabelFullSize, .DeliveryOrdonnanceLens .LigneForm label.FullSize {
+    width: 400px;
+}
+
+.DeliveryOrdonnanceLens .LigneForm .FormInfo {
+    margin-top: 10px;
+    display: block;
+}
+
+.DeliveryOrdonnanceLens .LigneForm label {
+    width: 260px;
+    color: #000;
+    padding: 10px 0px 0px 10px;
+}
+
+.DeliveryOrdonnanceLens .LigneForm input[type="text"] {
+    width: 237px;
+}
+
+/*without Uniform*/
+/*.DeliveryOrdonnanceLens .LigneForm select{width: 71px; margin:5px 10px 5px 0px}*/
+.DeliveryOrdonnanceLens .LigneForm .ChoiceYesOrNo {
+    margin-top: 5px; /*clear: both;*/
+}
+
+.DeliveryOrdonnanceLens .LigneForm .ChoiceYesOrNo input {
+    margin: 2px 10px 0px 0px;
+}
+
+.DeliveryOrdonnanceLens .LigneForm .ChoiceYesOrNo .radio {
+    margin: 7px 10px 0px 0px;
+}
+
+.DeliveryOrdonnanceLens .LigneForm .ChoiceYesOrNo .radio span {
+    margin: 0px;
+    float: none;
+}
+
+.DeliveryOrdonnanceLens .LigneForm .ChoiceYesOrNo .radio span input {
+    margin: 0px;
+    float: none;
+}
+
+.DeliveryOrdonnanceLens .LigneForm .ChoiceYesOrNo span {
+    float: left;
+    margin: 3px 20px 0px 0px
+}
+
+.DeliveryOrdonnanceLens .LigneForm .Question {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/*Paiement Etape 4*/
+
+div.tiers {
+    float: left;
+    width: 30%;
+    padding: 0 1.8% 0 10px;
+    text-align: left;
+}
+
+div.tiers_middle {
+    border-left: 1px solid #D9DAED;
+    border-right: 1px solid #D9DAED;
+}
+
+div.tiers h1 {
+    font-size: 11px;
+    color: #8183c2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+div.tiers p strong {
+    letter-spacing: 1px;
+}
+
+tr.LigneTerminerPaiement {
+    border-top: 1px solid #D9DAED;
+    height: 60px;
+    font-size: 11px;
+}
+
+tr.LigneTerminerPaiement td.TexteValiderCGV {
+    padding-left: 10px;
+    font-size: 12px
+}
+
+tr.LigneTerminerPaiement td.TexteValiderCGV .checker {
+    width: 10px;
+    float: left;
+    margin-top: 10px
+}
+
+tr.LigneTerminerPaiement td.TexteValiderCGV a {
+    text-decoration: underline;
+    color: #8183c2;
+    font-size: 11px;
+}
+
+tr.LigneTerminerPaiement td.TexteValiderCGV span.PayerMaCommande {
+    color: #8183C2;
+}
+
+tr.LigneTerminerPaiement td.btnPasserCommande {
+    padding-left: 18px;
+}
+
+table.subTab {
+    width: 100%;
+}
+
+table.subTab tbody td.Totaux {
+    padding-left: 0 !important;
+}
+
+table.subTab tbody td.right {
+    padding-right: 0 !important;
+}
+
+/* Paiement confirmation */
+.PageConfirmation {
+    padding: 80px 0 20px 70px;
+    background-color: #FFFFFF;
+}
+
+.catalog-category-view .main {
+    padding-top: 25px;
+}
+
+.PageConfirmation h1 {
+    text-transform: uppercase;
+    font-size: 19px;
+    color: #8183C2;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.PageConfirmation h1 span.merci {
+    font-weight: bold;
+}
+
+.PageConfirmation h2 {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #8183C2;
+    margin: 0;
+}
+
+.PageConfirmation .NumeroCommande {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #000000;
+    margin: 0;
+}
+
+.PageConfirmation .DetailsConfirmation {
+    text-transform: none;
+    font-size: 11px;
+    color: #000000;
+}
+
+.PageConfirmation .DetailsConfirmation a {
+    text-decoration: underline;
+    font-size: 10px;
+    color: #8183C2;
+}
+
+.PageConfirmation .BoutonImprimer {
+    margin: 30px 0;
+}
+
+a.BoutonAction {
+    background-color: #8183C2;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/*GlassChoice*/
+
+.CustomGlass {
+    background-color: #FFF;
+}
+
+.CustomGlass, .ProductViewHeader {
+    display: table;
+    clear: both;
+}
+
+.CustomGlass .LeftGlassCustom {
+    float: left;
+    width: 767px;
+    background-color: #FFF;
+    border-right: 1px solid #e6e6f3
+}
+
+.CustomGlass .RightGlassCustom {
+    float: right;
+    width: 256px;
+    background-color: #FFF
+}
+
+.CustomGlassContent .ProductContact h2 {
+    margin: 0px;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.CustomGlass h2.criterias {
+    position: relative;
+    margin: 0px;
+    padding: 10px 15px;
+    background-color: #e6e6f3;
+    color: #383838;
+    clear: both;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.CustomGlass h2.criterias.selected {
+    background-color: #000;
+    color: #FFF
+}
+
+.CustomGlass h2.criterias .ArrowsCriterias {
+    background: transparent url('../img/ArrowsFilteringColumn.png') no-repeat right -9px;
+    height: 10px;
+    width: 18px;
+    display: block;
+    float: right;
+    margin: 6px 10px 0px 0px;
+    border-left: 1px solid #bbbbbb;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+}
+
+.CustomGlass aside.ProductContact {
+    font-size: 11px;
+}
+
+.CustomGlass aside.ProductContact span a {
+    color: white;
+}
+
+aside.ProductContact {
+    font-family: Verdana, Arial, sans-serif;
+    float: left;
+    width: 226px;
+    background-color: #8183C2;
+    padding: 20px 15px;
+    color: #FFFFFF;
+}
+
+aside.ProductContact p {
+    margin: 0;
+}
+
+/*GlassCorrection*/
+.CustomGlass .SubTitle {
+    display: table;
+    font-size: 12px;
+}
+
+.CustomGlass .SubTitle strong, .CustomGlass .SubTitle .FormInfo {
+    color: #383838;
+    float: left;
+    margin: 12px 0px;
+    letter-spacing: 1px;
+}
+
+.CustomGlass .SubTitle strong {
+    text-transform: uppercase;
+    margin: 15px;
+}
+
+table.GlassCorrection {
+    color: #383838;
+}
+
+table.GlassCorrection select, table.GlassCorrection .selector {
+    float: left;
+}
+
+table.GlassCorrection th, table.GlassCorrection td {
+    padding: 8px
+}
+
+table.GlassCorrection th strong {
+    color: #383838;
+    float: left;
+    margin: 1px 0px 0px 0px;
+    font-size: 11px;
+    text-transform: none
+}
+
+table.GlassCorrection td.TitleCel {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table.GlassCorrection .FormInfo {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #383838;
+    text-transform: none;
+    font-weight: normal;
+
+}
+
+table.GlassCorrection th .FormInfo {
+    margin-top: 0px
+}
+
+/*GlassSelect*/
+.Height70 {
+    height: 70px;
+}
+
+.FormuleGlassContent {
+    vertical-align: bottom;
+    margin: 10px;
+    height: 219px;
+    display: table;
+}
+
+.FormuleGlassPlaceContent {
+    float: left;
+    position: relative;
+    height: 219px;
+    width: 128px;
+    margin: 0px 6px
+}
+
+table#tab.GlassSelect thead th {
+    color: #383838;
+    letter-spacing: 1px;
+}
+
+.FormuleGlass {
+    position: absolute;
+    bottom: 0;
+    float: left;
+    text-align: center;
+    width: 126px;
+    border: 1px solid #c2c2c2;
+    color: #383838;
+}
+
+.FormuleGlass .TitleCel {
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #9e9fcf;
+    padding: 10px 0px;
+}
+
+.FormuleGlass .GlassOption {
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #383838;
+    background-color: #f1f1f1;
+    padding: 10px 0px;
+}
+
+.FormuleGlass .GlassSelectOption {
+    color: #7a7a7a;
+    padding: 10px 0px;
+}
+
+.FormuleGlass .GlassSelectOption input {
+    margin: 0px 5px 0px 0px;
+}
+
+/*Glass Progressif Option*/
+.GlassOptionContent {
+    color: #383838;
+    clear: both;
+    font-size: 11px;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.GlassOptionContent .GlassOption {
+    padding: 5px 15px;
+    display: table;
+}
+
+.GlassOptionContent input {
+    margin-right: 5px;
+    padding-top: 5px;
+}
+
+.GlassOptionContent span, .GlassOptionContent img {
+    margin-right: 10px;
+}
+
+.GlassOptionContent span.uppercase {
+    text-transform: uppercase;
+}
+
+.GlassOptionContent .Price {
+    color: #8183c2;
+}
+
+.ValidateGlassOption {
+    width: 768px;
+    margin-top: 15px;
+    text-align: center;
+    padding: 30px 0px;
+    border-top: 1px solid #e6e6f3;
+}
+
+.ValidateGlassOption a.validerEtape {
+    background-color: #8183C2;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/*Glass Tinted Select*/
+.GlassTintedSelect {
+    margin: 10px 0px;
+}
+
+.GlassTintedSelect td {
+    padding: 10px 8px;
+    font-size: 11px;
+}
+
+.GlassTintedSelect td.Minsize70 {
+    width: 75px;
+}
+
+.GlassTintedSelect td.Minsize45 {
+    width: 50px;
+}
+
+.GlassTintedSelect span, .GlassTintedSelect input, .GlassTintedSelect .radio {
+    float: left;
+    margin: 0px 2px;
+}
+
+/*Articles glass custom right*/
+.CustomGlass .ArticleSelect {
+    padding-left: 13px;
+    padding-top: 15px;
+    float: left;
+    width: 243px;
+}
+
+.CustomGlass .ArticleSelect span {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 16px;
+    color: #8183C2;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.CustomGlass .ArticleSelect p.Price {
+    font-size: 25px;
+}
+
+.CustomGlass .ArticleSelect a {
+    margin: 5px auto;
+    width: 210px;
+    display: block;
+}
+
+/* Description - lunettes */
+.Glasses figure.visuels {
+    float: left;
+    width: 513px;
+    border: 1px solid #F1F1F4;
+    border-left: none;
+    border-bottom: none;
+    height: 307px;
+}
+
+.Glasses .ProductViewHeader .social {
+    margin-top: 0;
+}
+
+.ProductView .ProductViewHeader .print {
+    float: right;
+    width: 25%;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.ProductView .ProductViewHeader .print a {
+    font-size: 10px;
+    text-transform: none;
+    letter-spacing: 1px;
+    color: #8183c2;
+}
+
+.ProductView figure.visuels .VisuelsContainer {
+    height: 243px;
+    width: 513px;
+    margin: 0;
+}
+
+.ProductView figure.visuels .VisuelsContainer img.Activated {
+    margin: 2px auto;
+}
+
+.ProductView figure.visuels .VisuelsContainer .miniatures {
+    float: left;
+    height: 61px;
+    width: 127px;
+    border: 1px solid #F1F1F4;
+    border-right: none;
+    border-bottom: none;
+}
+
+.ProductView figure.visuels .VisuelsContainer .miniatures:hover {
+    border: 1px solid #9899CD;
+    cursor: pointer;
+}
+
+.ProductView .ChoixTypeMontureEtVerres {
+    float: left;
+    width: 238px;
+    height: 292px;
+    border-top: 1px solid #F1F1F4;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.ProductView .ChoixTypeMontureEtVerres div {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.ProductView .ChoixTypeMontureEtVerres div label {
+    display: block;
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.ProductView .ChoixTypeMontureEtVerres div input[type=radio] {
+    float: left;
+    display: block;
+    margin: 14px 4px 14px 4px;
+}
+
+.ProductView .ChoixTypeMontureEtVerres div label span.Price {
+    color: #8183C2;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ProductView .ChoixTypeMontureEtVerres div label span.Price em {
+    font-size: 75%;
+    font-style: normal;
+}
+
+.ProductView .ChoixTypeMontureEtVerres .radio {
+    float: left;
+    width: 10px;
+    margin: 14px 4px 14px 4px;
+}
+
+.ProductView .ChoixTypeMontureEtVerres .radio input[type=radio] {
+    margin: 0px;
+}
+
+.ProductView .ChoixTypeMontureEtVerres div label span.Price sup {
+    vertical-align: baseline;
+    font-size: 55%;
+}
+
+.ProductView .OutilPresentation {
+    float: left;
+    width: 253px;
+    height: 307px;
+    border: 1px solid #F1F1F4;
+    border-bottom: none;
+}
+
+button.BoutonAction {
+    text-align: left;
+    background-color: #8183C2;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 45px;
+    margin-left: 5px;
+}
+
+span.WeightBold {
+    font-weight: bold;
+}
+
+span.WeightNormal {
+    font-weight: normal;
+}
+
+footer .TechnicalFeacture div.garantie_origine_france {
+    background: url('../img/picto_garantie_origine_france.jpg') no-repeat;
+    width: 80px;
+    height: 55px;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+}
+
+.ProductView footer aside.ProductContact a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/*Reservation boutique*/
+/* Glasses - Etape 4 Paiement */
+.MiseEnAvant {
+    text-transform: uppercase;
+    color: #8183c2;
+}
+
+/* Glasses - Etape 4 Réservation ET Paiement */
+.SousPartie {
+    text-transform: uppercase;
+    color: #8183c2;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+.SousPartieInfoBouton {
+    text-transform: uppercase;
+    color: #8183c2;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+.SousPartieInfoBoutonInactif {
+    padding: 29px;
+}
+
+tr.LigneSousPartieInfoBouton {
+    border-top: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+span.BoutonActionInactif {
+    background-color: #EBEBEB;
+    color: #868686;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.TexteValiderCGV input, .TexteValiderCGV label {
+    float: left;
+}
+
+.TexteValiderCGV input {
+    margin-top: 9px;
+}
+
+.TexteValiderCGV label {
+    margin-left: 10px;
+}
+
+.TexteValiderCGV div {
+    margin-left: 100px;
+}
+
+/*Vente Flash*/
+.FlashBan {
+    width: 984px;
+    height: 38px;
+    margin: 0px auto;
+    padding: 5px 20px;
+    background-color: #b91313;
+    text-transform: uppercase;
+    color: #FFF;
+    clear: both;
+}
+
+.FlashStickers, .FlashStickersWithRI {
+    background: transparent url('../img/VenteFlashRed.png') no-repeat left center;
+    padding: 5px 10px 5px 25px;
+    color: #b91313;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0px;
+}
+
+.ProductView .FlashStickers {
+    margin: 10px 15px;
+    position: inherit;
+    width: 96px;
+}
+
+.FlashStickersWithRI {
+    line-height: 12px;
+}
+
+.FlashStickers span, .FlashStickersWithRI span {
+    font-weight: normal;
+    padding-left: 5px;
+}
+
+td .FlashStickersWithRI {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: -50px;
+    left: 15px;
+    text-align: left;
+}
+
+.FlashStickersWithRI span.UnderTitle {
+    font-size: 8px;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #000;
+    font-family: arial;
+    padding-left: 0px;
+}
+
+.FlashStickers.BigFlashSticks {
+    background: transparent url('../img/VenteFlashBan.png') no-repeat left center;
+    padding: 5px 10px 5px 30px;
+    color: #FFF;
+    font-size: 20px;
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 0px;
+    float: left;
+}
+
+.FlashStickers.BigFlashSticks span {
+    padding-left: 10px;
+}
+
+.FlashBan h4 {
+    margin: 0 0;
+    float: left;
+    font-weight: normal;
+    padding: 10px 2px 0px 2px;
+    line-height: 18px;
+    font-size: 18px;
+    background: none;
+}
+
+.FlashBan h4.btn_profite {
+    margin: 0;
+    float: right;
+}
+
+.FlashBan img {
+    margin: 0px 8px;
+    float: left
+}
+
+.FlashBan a {
+    line-height: 20px;
+    font-weight: bold;
+    margin: 4px 5px;
+    float: right;
+    padding: 5px 7px;
+    text-transform: uppercase;
+    background-color: #FFF;
+    color: #b91313
+}
+
+.Addfavoris {
+    background: transparent url('../img/IconFavoris.png') no-repeat left center;
+    padding-left: 10px;
+    font-size: 11px;
+    font-family: verdana;
+    color: #787878;
+    margin-left: 4px;
+}
+
+.FlashDiscount {
+    font-size: 11px;
+    font-family: verdana;
+    color: #787878;
+    font-weight: normal;
+}
+
+.FlashDiscount span {
+    margin-left: 4px;
+    color: #b91313;
+    font-weight: normal;
+}
+
+.ProductView .ChoixTypeMontureEtVerres div label span.Price.FlashDiscountPrice {
+    color: #b91313;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.ProductView .ChoixTypeMontureEtVerres div label span.Price.OldPriceFlash {
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+/*Product Detail Flash*/
+.ProductView .ChoixTypeMontureEtVerres div.ProductDetailFlash {
+    margin-top: 0px;
+}
+
+.ProductDetailFlash h2 {
+    color: #b91313;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0px;
+    font-family: Arial;
+    font-weight: bolder;
+}
+
+.ProductDetailFlash .Period {
+    color: #b91313;
+    font-size: 11px;
+    font-family: Arial;
+    font-weight: bolder;
+}
+
+.ProductDetailFlash button.BoutonAction {
+    margin-top: 15px;
+}
+
+/**/
+.TitleCountdownFlash {
+    font-size: 16px;
+    color: #b91313;
+    font-weight: bold
+}
+
+.ProductDetailFlash .TitleCountdownFlash {
+    color: #787878;
+    font-size: 11px;
+    font-weight: normal
+}
+
+.countdownHolder {
+    margin-bottom: 10px;
+}
+
+.countdownHolder span {
+    float: left;
+    margin-right: 2px;
+}
+
+.countdownHolder span.countContainer {
+    font-weight: bolder;
+    background-color: #FFF;
+    color: #b91313;
+    padding: 2px;
+    border: solid 1px #787878;
+}
+
+.countdownHolder span.countDiv {
+    padding: 4px 2px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+/*slider count*/
+.Slider .countdownContent {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+/*mscrollCustom*/
+/*rail*/
+.mCSB_scrollTools .mCSB_draggerRail {
+    width: 3px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background: #dadada;
+
+}
+
+/*sroller*/
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #8183C2;
+    filter: "alpha(opacity=90)";
+    -ms-filter: "alpha(opacity=90)"; /* old ie */
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #8183C2;
+    width: 3px
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #8183C2;
+}
+
+#tabPhotochromique {
+    width: 735px;
+}
+
+#tabTypeTeinte {
+    width: 735px;
+}
+
+section.sectionMenuContainer a {
+    padding: 0;
+}
+
+/* the cookie popin */
+body .cookie-popin {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+body .cookie-popin p::before {
+    content: "i";
+    border: solid 4px #fff;
+    border-radius: 48px;
+    height: 48px;
+    display: inline-block;
+    width: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 40px;
+    vertical-align: middle;
+    float: left;
+    margin-right: 60px;
+}
+
+body .cookie-popin p {
+    font-size: 14px;
+    width: 60%;
+    margin: 5px auto 0 auto;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 60px;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+}
+
+body .cookie-popin a {
+    color: #9DA4D2;
+    text-decoration: underline;
+}
+
+body .cookie-popin a:visited {
+    color: #9DA4D2;
+}
+
+body .cookie-popin a:hover {
+    color: #FAB802;
+}
+
+body .cookie-popin #close {
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    border-radius: 14px;
+    border: solid 2px #fff;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    color: #fff;
+    font-weight: bold;
+    background-color: #000;
+    text-align: center;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+body .cookie-popin #close:hover {
+    border-color: #FAB802;
+}
+
+.header-page {
+    width: 100%;
+    height: 500px;
+}
+.header-page .background-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.container-map .store_locator_map {
+    width: 100% !important;
+}
+.container-map .infowindow .vignettes {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-page {
+    margin: 1rem auto;
+    line-height: 2.5rem;
+}

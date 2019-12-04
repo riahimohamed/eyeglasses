@@ -1,0 +1,26 @@
+/*body { visibility:hidden;}*/
+.breadcrumbs Links {visibility:hidden;}
+#breadcrumbs {visibility:hidden;}
+#HeaderTop {visibility:hidden;}
+nav ul, nav ol {visibility:hidden;}
+.FormSearch {visibility:hidden;}
+.home {visibility:hidden;}
+.category8 {visibility:hidden;}
+.category10 {visibility:hidden;}
+.branding {visibility:hidden;}
+.back a {visibility:hidden;}
+.BackgroundLineTop {visibility:hidden;}
+.FooterDiversMenuContainer {visibility:hidden;}
+.footerBottom {visibility:hidden;}
+.sectionMenuContainer {visibility:hidden;}
+.print {visibility:hidden;}
+.social {display: none;}
+.BoutonAction {visibility:hidden;}
+.ProductView footer .Description {height: auto}
+.ProductView footer .TechnicalFeacture {height: auto}
+
+.ProductView ProductViewPrice {visibility:visible;} 
+
+@media print {
+    .buttons-set {visibility:hidden;}
+}

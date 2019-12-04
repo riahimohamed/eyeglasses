@@ -1,0 +1,137 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Recherche' %}
+
+{% block body %}
+
+<div class="page">
+
+    <div class="main main-container col2-left-layout">
+        <div class="middle-container">
+            <div id="breadcrumbs" class="links marieLouise">
+                <ul class="breadcrumbs Links">
+                    <li class="home">
+                        <a href="{{ path('home') }}" title="Aller à la page d'accueil">Accueil</a>
+                    </li>
+                    <li class="search">
+                    </li>
+                </ul>
+                <div class="clr"></div>
+            </div>
+            <div style="margin-top: -1px;">
+            </div>
+
+            <div id="content-header"></div>
+
+            <div itemprop="mainContentOfPage" class="ProductContainer col_by_3">
+                <div class="page-title searchPageHeader">
+                <h1>votre recherche</h1>
+                    <span class="searchPageLabel">{{ query|upper }}</span>
+                </div>
+
+                <div id="panes" class="panes">
+                    <div class="clear_both"></div>
+                    <div id="pane_1" style="display:block" class="serachPanes">
+
+                        <div class="ProductContainer col_by_3">
+                            <div class="category-products">
+                                <div class="ligne">
+                                    <h1 class="ResultsList">
+                                        <span class="typeArticleSelect">
+                                            {{ resultats|length }} 
+                                        </span> 
+
+                                        Résultats
+                                    </h1>
+
+                                </div>
+
+                                <ul class="productsItems lunettes" id="productsList">
+                                    {% if resultats %}
+                                        
+                                    {% for resultat in resultats %}
+                                    <li class="productItem">
+                                        <article class="ArticleSelect" id="lunetteItem10809">
+                                            <div class="product-sticker">
+                                            </div>
+                                            <figure class="imgProduit">
+                                                <a href="{{ path('lunettes_show', { id: resultat.id, slug: resultat.slug, ref: resultat.ref }) }}">
+
+                                                    {% for img in resultat.image|slice(0,1) %}
+                                                    <img alt="{{resultat.name|upper}}" title="{{ resultat.name }}" 
+                                                         src="{{ asset('media/catalog/lunettes/' ~ img) | imagine_filter('small') }}">
+                                                    {% endfor %}
+                                                </a>
+                                            </figure>
+
+                                            <header class="sliderSelectDescription">
+                                                <h2>{{resultat.name|upper}}</h2>
+                                            </header>
+                                            <footer class="sliderSelectDescription">
+                                                <p> {{ resultat.ref }} - 
+                                                    {% for color in resultat.color %}
+                                                        {{color.name|upper}}
+                                                    {% endfor %}
+                                                </p>
+
+                                                <p class="p-partir">
+                                                </p>
+                                                <p id="product-price-10809" class="Price special-price">
+
+                                                    <span class="price">{{resultat.prix}}<span>,00dt</span></span>
+                                                </p>
+
+                                            </footer>
+                                        </article>
+                                    </li>
+                                    {% endfor %}
+
+                                    {% else %}
+
+                                        <div class="page-title searchPageHeader">
+                                            <span class="searchPageLabel">votre recherche</span>
+                                            {{ query }}
+                                        </div>
+                                        <div class="resultatVide">
+                                           <h3>Aucun résultat disponible pour votre recherche.</h3> 
+                                        </div>
+                                        
+
+                                    {% endif %}
+
+                                </ul>
+
+                                <div class="pagination">
+                                    <nav>
+                                        
+                                    </nav>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" FilteringColumn col_by_1 ">
+                <div class="block block-layered-nav gomage-navigation-slider-type-cone gomage-navigation-icons-1F5070">
+                    <div class="block-title">
+                        <strong>
+            <span>Filtrer par</span>
+                    </strong>
+                    </div>
+                    <div class="block-content" id="gan-block-content">
+                        <p class="block-subtitle">
+                            <span>Affiner la recherche</span>
+
+                        </p>
+                        <div id="narrow-by-list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

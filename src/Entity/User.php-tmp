@@ -1,0 +1,165 @@
+<?php
+
+namespace App\Entity;
+
+use Symfony\Component\Security\Core\User\UserInterface;
+
+/**
+ * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
+ * @UniqueEntity(
+ *  fields={"email"},
+ *  message="L'emeil qui vous avez indiqué est déja utilisé !"
+ * )
+ */
+
+class User implements UserInterface {
+	/**
+	 * @ORM\Id()
+	 * @ORM\GeneratedValue()
+	 * @ORM\Column(type="integer")
+	 */
+	private $id;
+
+	/**
+	 * @ORM\Column(type="string", length=191, unique=true)
+	 */
+	private $username;
+
+	/**
+	 * @ORM\Column(type="string", length=255)
+	 * @Assert\Length(min="5", minMessage="Votre mot de passe doit faire minimum 5 caractéres")
+	 * @Assert\EqualTo(propertyPath="confirm_password")
+	 */
+	private $password;
+
+	/**
+	 * @Assert\EqualTo(propertyPath="password")
+	 */
+	public $confirm_password;
+
+	/**
+	 * @ORM\Column(type="string", length=5)
+	 */
+	private $genre;
+
+	/**
+	 * @ORM\Column(type="string", length=255)
+	 */
+	private $firstname;
+
+	/**
+	 * @ORM\Column(type="string", length=255)
+	 */
+	private $lastname;
+
+	/**
+	 * @ORM\Column(type="date_immutable")
+	 */
+	private $birth_day;
+
+	/**
+	 * @ORM\Column(type="string", length=191)
+	 * @Assert\Email
+	 */
+	private $email;
+
+	/**
+	 * @ORM\Column(type="string", length=20)
+	 */
+	private $tel;
+
+	public function getId():?int {
+		return $this->id;
+	}
+
+	public function getUsername():?string {
+		return $this->username;
+	}
+
+	public function setUsername(string $username):self {
+		$this->username = $username;
+
+		return $this;
+	}
+
+	public function getPassword():?string {
+		return $this->password;
+	}
+
+	public function setPassword(string $password):self {
+		$this->password = $password;
+
+		return $this;
+	}
+
+	public function getSalt() {
+		return null;
+	}
+
+	public function getRoles() {
+		return array('ROLE_ADMIN');
+	}
+
+	public function eraseCredentials() {
+	}
+
+	public function getGenre():?string {
+		return $this->genre;
+	}
+
+	public function setGenre(string $genre):self {
+		$this->genre = $genre;
+
+		return $this;
+	}
+
+	public function getFirstname():?string {
+		return $this->firstname;
+	}
+
+	public function setFirstname(string $firstname):self {
+		$this->firstname = $firstname;
+
+		return $this;
+	}
+
+	public function getLastname():?string {
+		return $this->lastname;
+	}
+
+	public function setLastname(string $lastname):self {
+		$this->lastname = $lastname;
+
+		return $this;
+	}
+
+	public function getBirthDay():?\DateTimeImmutable {
+		return $this->birth_day;
+	}
+
+	public function setBirthDay(\DateTimeImmutable $birth_day):self {
+		$this->birth_day = $birth_day;
+
+		return $this;
+	}
+
+	public function getEmail():?string {
+		return $this->email;
+	}
+
+	public function setEmail(string $email):self {
+		$this->email = $email;
+
+		return $this;
+	}
+
+	public function getTel():?string {
+		return $this->tel;
+	}
+
+	public function setTel(string $tel):self {
+		$this->tel = $tel;
+
+		return $this;
+	}
+}

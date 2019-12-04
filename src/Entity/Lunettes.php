@@ -1,0 +1,342 @@
+<?php
+
+namespace App\Entity;
+
+use Symfony\Component\Validator\Constraints as Assert;
+
+use App\Entity\Image;
+
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\ORM\Mapping as ORM;
+
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+
+/**
+ * @ORM\Entity(repositoryClass="App\Repository\LunettesRepository")
+ * @UniqueEntity(
+ *  fields={"ref"},
+ *  message="La ref qui vous avez indiqué est déja utilisé !"
+ * )
+ */
+class Lunettes
+{
+    /**
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
+     * @ORM\Column(type="integer")
+     */
+    private $id;
+
+    /**
+     * @ORM\Column(type="boolean", options={"default":0})
+     */
+    private $new;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $name;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     * @Assert\Regex(pattern="/^[a-z0-9\-]+$/")
+     */
+    private $slug;
+
+    /**
+     * @ORM\Column(type="string", length=50)
+     */
+    private $ref;
+
+    /**
+     * @ORM\Column(type="string", length=50)
+     */
+    private $type;
+
+    /**
+     * @ORM\Column(type="string", length=2)
+     */
+    private $genre;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $matiere;
+
+    /**
+     *@ORM\Column(type="float")
+     */
+    private $prix;
+
+    /**
+     * @ORM\Column(type="string", length=2)
+     */
+    private $taille;
+
+    /**
+     * @Assert\Type(type="App\Entity\Marque")
+     */
+    private $marque;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Image", mappedBy="lunettes", cascade={"persist"})
+     */
+    private $image;
+
+    /**
+     * @Assert\NotBlank
+     * @var File
+     */
+    private $files;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Forme", inversedBy="lunettes")
+     * @Assert\NotBlank
+     */
+    private $forme;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\Color", inversedBy="lunettes")
+     * @Assert\NotBlank
+     */
+    private $color;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Style", inversedBy="lunettes")
+     * @Assert\NotBlank
+     */
+    private $style;
+
+    public function __construct()
+    {
+        $this->image = new ArrayCollection();
+        $this->color = new ArrayCollection();
+    }
+
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getNew(): ?bool
+    {
+        return $this->new;
+    }
+
+    public function setNew(?bool $new): self
+    {
+        $this->new = $new;
+
+        return $this;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): self
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    public function getRef(): ?string
+    {
+        return strtoupper($this->ref);
+    }
+
+    public function setRef(string $ref): self
+    {
+        $this->ref = strtoupper($ref);
+
+        return $this;
+    }
+
+    public function getType(): ?string
+    {
+        return $this->type;
+    }
+
+    public function setType(string $type): self
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    public function getGenre(): ?string
+    {
+        return $this->genre;
+    }
+
+    public function setGenre(string $genre): self
+    {
+        $this->genre = $genre;
+
+        return $this;
+    }
+
+    public function getMatiere(): ?string
+    {
+        return $this->matiere;
+    }
+
+    public function setMatiere(string $matiere): self
+    {
+        $this->matiere = $matiere;
+
+        return $this;
+    }
+
+    public function getTaille(): ?string
+    {
+        return $this->taille;
+    }
+
+    public function setTaille(string $taille): self
+    {
+        $this->taille = $taille;
+
+        return $this;
+    }
+
+    public function getMarque()
+    {
+        return $this->marque;
+    }
+
+    public function setMarque(Marque $marque)
+    {
+        $this->marque = $marque;
+    }
+
+    public function getPrix(): ?float
+    {
+        return $this->prix;
+    }
+
+    public function setPrix(float $prix): self
+    {
+        $this->prix = $prix;
+
+        return $this;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(string $slug): self
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Image[]
+     */
+    public function getImage(): Collection
+    {
+        return $this->image;
+    }
+
+    public function addImage(Image $image): self
+    {
+        if (!$this->image->contains($image)) {
+            $this->image[] = $image;
+            $image->setLunettes($this);
+        }
+
+        return $this;
+    }
+
+    public function removeImage(Image $image): self
+    {
+        if ($this->image->contains($image)) {
+            $this->image->removeElement($image);
+            // set the owning side to null (unless already changed)
+            if ($image->getLunettes() === $this) {
+                $image->setLunettes(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function getFiles(): ?array
+    {
+        return $this->files;
+    }
+
+    public function setFiles(array $files): self
+    {
+        $this->files = $files;
+
+        return $this;
+    }
+
+    public function getForme(): ?Forme
+    {
+        return $this->forme;
+    }
+
+    public function setForme(?Forme $forme): self
+    {
+        $this->forme = $forme;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Color[]
+     */
+    public function getColor(): Collection
+    {
+        return $this->color;
+    }
+
+    public function addColor(Color $color): self
+    {
+        if (!$this->color->contains($color)) {
+            $this->color[] = $color;
+        }
+
+        return $this;
+    }
+
+    public function removeColor(Color $color): self
+    {
+        if ($this->color->contains($color)) {
+            $this->color->removeElement($color);
+
+            if ($image->getLunettes() === $this) {
+                $image->setLunettes(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function getStyle(): ?Style
+    {
+        return $this->style;
+    }
+
+    public function setStyle(?Style $style): self
+    {
+        $this->style = $style;
+
+        return $this;
+    }
+
+    public function __toString(){
+        
+        return $this->name;
+    }
+
+}

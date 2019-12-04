@@ -1,0 +1,226 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{{ asset('skin/frontend/default/o2v2/css/optic2000/catalog.css') }}" media="all"/>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/optic2000/product.media.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('skin/frontend/default/o2v2/js/optic2000/product.js') }}"></script>
+{% endblock %}
+
+{% block title %}{{ lunette.name  }} - {{ lunette.ref }}{% endblock %}
+
+{% block body %}
+
+    {% if lunette.genre == 'h' %}
+        {% set genre = 'homme' %}
+    {% elseif lunette.genre == 'f' %}
+        {% set genre = 'femme' %}
+    {% else %}
+        {% set genre = 'enfant' %}
+    {% endif %}
+
+    <div id="breadcrumbs" class="links marieLouise">
+        <ul class="breadcrumbs Links">
+            <li class="home">
+                <a href="{{path('home')}}" title="Aller à la page d'accueil">Accueil</a>
+            </li>
+            <li class="category4">
+                <a href="{{ path('lunettes', { 'type': lunette.type }) }}" title="">
+                    Lunettes de {{ lunette.type }}
+                </a>
+            </li>
+            <li class="category6">
+                <a href="{{ path('lunettes_marque', { 'marque': lunette.slug }) }}">
+                    {{lunette.name|capitalize}}
+                </a>
+            </li>
+        </ul>
+        <div class="clr"></div>
+    </div>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery("#selector ul.menu").hide();
+        });
+    </script>
+    <div itemprop="mainContentOfPage" id="content" class="col1-layout">
+
+        <div id="content-header"></div>
+
+        <section class="product-view">
+            <article>
+
+                <header>
+                    <hgroup>
+                        <h3>Lunettes de {{lunette.type}} {{genre}}</h3>
+                        <h1>
+                    <span>{{lunette.name|upper}}</span>
+                     - {{lunette.ref|upper}} - 
+                     {% for color in lunette.color %}
+                        {{ color }}
+                     {% endfor %}
+                    </h1>
+                    </hgroup>
+                </header>
+
+                <div id="product-media">
+                    <figure class="media">
+
+                        {% if lunette.new == 1 %}
+                            <div class="product-sticker">
+                              <img src="https://www.optic2000.com/media/stickers/sticker-ecom-nouveaute.png">
+                            </div>
+                        {% endif %}
+
+                        <div id="view-image">
+                            <div id="viewImageProduct" class="viewImageProduct">
+                                <a href="javascript:void(0)" data-zoom="{{ asset('media/catalog/lunettes/' ~ lunette.image[0]) | imagine_filter('big') }}" title="Magnified Image">
+                                    <img id="image" src="{{ asset('media/catalog/lunettes/' ~ lunette.image[0]) | imagine_filter('big') }}" alt="Baila - OFM1604 - Rose - Face" title="Baila - OFM1604 - Rose - Face"> </a>
+                            </div>
+                            <div id="viewImageFitBox" class="viewImageFitBox"></div>
+                        </div>
+
+                        <figcaption>
+                            <ul id="more-views">
+
+                            {% set select = true %}
+
+                            {% for img in lunette.image %}
+                                <li class=" {% if select %} selected {% endif %}">
+                                    <a href="javascript:void(0);" data-big="{{ asset('media/catalog/lunettes/' ~ img) | imagine_filter('big') }}" data-small="{{ asset('media/catalog/lunettes/' ~ img) | imagine_filter('big') }}" title="{{lunette.name }} - {{ lunette.ref|upper }}">
+                                        <img src="{{ asset('media/catalog/lunettes/' ~ img) | imagine_filter('small') }}" width="60" height="30" alt="{{lunette.name }} - {{ lunette.ref|upper }}">
+                                    </a>
+                                </li>
+
+                               {% set select = false %} 
+                            {% endfor %}
+                            
+                            </ul>
+
+                            <div id="fitphotoContainer">
+                                <div id="product-fitphoto"></div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    <aside>
+                        <div class="product-recap">
+
+                            <ul class="product-price-container">
+                                <li id="type_verre_0">
+                                    <span class="product-price">
+                                        <span class="price">{{lunette.prix}}<span>,00dt</span>
+                                    </span>
+                                    </span>
+                                    <label>avec verres simples (unifocaux)</label>
+                                </li>
+                            </ul>
+
+                            <p>
+                                Les montures {{lunette.name|capitalize}} sont proposées uniquement dans le cadre de packs "monture + verres" à prix très compétitifs... 
+                                <a class="link" href="#product-description">en savoir plus</a>
+                            </p>
+
+                            <div class="otherColor">
+                                <span>Couleur monture :</span>
+                                <a href="javascript:void(0);" title="{{lunette.name|upper}} - {{lunette.ref}}">
+                                    {% for color in lunette.color %}
+                                    <div class="selected" 
+                                          style="background-color: {{color.color}}; width:20px; height:20px;">
+                                        
+                                    </div>
+                                    {% endfor %}
+                                </a>
+                            </div>
+
+                            <div class="services">
+                                <ul>
+                                    <li>Paiement en magasin</li>
+                                    <li>Garantie 2 ans "Casse Monture &amp; Verres"</li>
+                                    <li>Garantie 3 mois "Adaptation tous types de verres"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+                <div class="product-description-container">
+                    <article id="product-description" class="product-description block-container ">
+                        <header>
+                            <h2><span>Description</span> Produit</h2>
+                        </header>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p id="product-description-detail">Les montures <strong>Baila</strong> sont proposées uniquement dans le cadre de packs "monture + verres" à prix très compétitifs : à partir de {{lunette.prix}}dt* avec des verres unifocaux, et de {{lunette.prix}}dt avec des verres progressifs. Le style de cette collection est riche et varié pour satisfaire tous les goûts, à tout âge. </p>
+                                        <p>&nbsp;</p>
+                                        <p><span class="asterisque">* </span>Forfait unifocal à {{lunette.prix}}dt : monture équipée de 2 verres unifocaux standard blancs (non antireflet et non amincis) (± 5 cyl.2 ; Sphère +Cyl ≤ 5). Existe en verres progressifs à 139dt (Add de 0.50 à 3.00 D).</p>
+                                        <br>
+                                        <br>La référence des lunettes de {{lunette.type}} {{genre}} de forme
+                                        <strong> {{lunette.forme}}</strong> de marque 
+                                        <strong>{{lunette.name}}</strong> modèle <strong>
+                                        OFM1604 Rose</strong> et 
+                                        <strong>{{lunette.ref}}</strong>.
+                                        <br>
+                                        
+                                        <p></p>
+                                    </td>
+                                    <td>
+                                        <ul id="product-description-dimension">
+                                            <li>
+                                                <span>largeur</span>
+                                                <img src="https://www.optic2000.com/skin/frontend/default/o2v2/images/tunnel/largeur.png">
+                                                <span>137 mm</span>
+                                            </li>
+                                            <li>
+                                                <span>longueur branches</span>
+                                                <img src="https://www.optic2000.com/skin/frontend/default/o2v2/images/tunnel/branches.png">
+                                                <span>140 mm</span>
+                                            </li>
+                                            <li>
+                                                <span>haut/larg verres</span>
+                                                <img src="https://www.optic2000.com/skin/frontend/default/o2v2/images/tunnel/verres.png">
+                                                <span>33 mm / 53 mm</span>
+                                            </li>
+                                            <li>
+                                                <span>pont</span>
+                                                <img src="https://www.optic2000.com/skin/frontend/default/o2v2/images/tunnel/pont.png">
+                                                <span>18 mm</span>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+
+                </div>
+                <div class="contact-banner block-container">
+                    <ul>
+                        <li>
+                        </li>
+                        <li>
+                            <img src="https://www.optic2000.com/media/wysiwyg/contact/bloc-contact-phone.png" alt=""><span style="font-size: 120%;"><strong>Tél. : 20.200.200</strong><br><br><span style="font-size: 90%;">(prix d'un appel local)</span></span>
+                        </li>
+                        <li><img src="https://www.optic2000.com/media/wysiwyg/contact/bloc-contact-mail.png" alt=""><span style="font-size: 120%;">Par e-mail <a href="{{ path('home_contact') }}" target="_blanc">en cliquant ici !</a></span></li>
+                    </ul>
+                </div>
+
+            </article>
+        </section>
+    </div>
+
+    <div id="voile"></div>
+    <script type="text/javascript" charset="utf-8">
+        jQuery(function() {
+            jQuery(".filter_select").change(function() {
+                if (jQuery(this).val() != "") window.location = jQuery(this).val();
+            });
+            jQuery(".searchRight div:first-child #search").remove();
+        });
+    </script>
+
+
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Lunette de vue' %}
+
+{% block body %}
+
+  <div id="breadcrumbs" class="links marieLouise">
+      <ul class="breadcrumbs Links">
+         <li class="home">
+            <a href="index.html" title="Aller à la page d'accueil">Accueil</a>
+         </li>
+         <li class="category4">
+         </li>
+      </ul>
+      <div class="clr"></div>
+   </div>
+   <script type="text/javascript">jQuery(document).ready(function(){jQuery("#selector ul.menu").hide();});
+   </script>
+               
+   <div itemprop="mainContentOfPage" id="content" class="col1-layout">
+      
+      <div id="content-header"></div>
+      <div class="mainContent marieLouise">
+         
+        {% include 'slider/slider.html.twig' %}
+
+         <nav class="SubNavMostViewed">
+          {% if type is defined and type != 'contact' %}
+            
+            <ul class="EyeGlassesUnivers">
+               <li>
+                  <a href="{{ path('lunettes_genre', {'genre': 'femme'}) }}">
+                  Lunettes femmes
+                  </a>
+               </li>
+               <li>
+                  <a href="{{ path('lunettes_genre', {'genre': 'homme'}) }}">
+                  Lunettes hommes
+                  </a>
+               </li>
+               <li>
+                  <a href="{{ path('lunettes_genre', {'genre': 'enfant'}) }}">
+                  Lunettes enfant
+                  </a>
+               </li>
+            </ul>
+            {% else %}
+            <ul>
+              <li>
+                  <a href="">
+                      Lentilles
+                  </a>
+              </li>
+              <li>
+                  <a href="">
+                      Produits d'entretien
+                  </a>
+              </li>
+          </ul>
+          {% endif %}
+         </nav>
+         <div class="ProductContainer">
+            <h1>
+               Les lunettes <span class="typeArticleSelect">les plus consultées</span>
+            </h1>
+            <ul id="productsList">
+
+            	{% for lunette in lunettes %}
+            	    
+            	<li>
+                <article class="ArticleSelect" id="lunetteItem6792">
+
+                  {% if lunette.new == 1 %}
+                    <div class="product-sticker">
+                      <img src="https://www.optic2000.com/media/stickers/sticker-ecom-nouveaute.png">
+                    </div>
+                  {% endif %}
+
+                   <figure class="imgProduit">
+                      <a href="{{ path('lunettes_show', { 'id': lunette.id, 'slug': lunette.slug, 'ref': lunette.ref }) }}">
+                      
+                        <img alt="lunette2" title="{{ lunette.name }}" 
+                             src="{{ asset('media/catalog/lunettes/' ~ lunette.image[0]) | imagine_filter('small') }}">
+                      </a>
+                   </figure>
+                   <header class="sliderSelectDescription">
+                      <h2>{{ lunette.name|upper }}</h2>
+                   </header>
+                   <footer class="sliderSelectDescription">
+                      <p>
+                         {{ lunette.ref|upper }} -
+
+                         {% for color in lunette.color %}
+                          {{ color|upper }}
+                         {% endfor %}
+                      </p>
+                      <p class="p-partir">
+                         {{ lunette.forme|capitalize }}		
+                      </p>
+                      <p id="product-price-6792" class="Price special-price">
+                         <span class="price">{{ lunette.prix }}<span>,00 dt</span></span>               
+                      </p>
+                   </footer>
+                </article>
+             	</li>
+
+				      {% endfor %}
+              
+            </ul>
+         </div>
+      </div>
+      <script type="text/javascript">jQuery(document).ready(function(){var htmlStr=jQuery('#mostviewed').html();jQuery('#most_viewed').html(htmlStr);jQuery('#mostviewed').remove();jQuery('#breadcrumbs').remove();});</script>
+               
+   </div>
+   <div id="voile"></div>
+   <script type="text/javascript" charset="utf-8">jQuery(function(){jQuery(".filter_select").change(function(){if(jQuery(this).val()!="")window.location=jQuery(this).val();});jQuery(".searchRight div:first-child #search").remove();});</script>
+
+
+{% endblock %}

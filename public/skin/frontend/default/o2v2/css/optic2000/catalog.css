@@ -1,0 +1,303 @@
+/*========================================================================================*/
+/*===================================== Vue produit ==========================================*/
+/*========================================================================================*/
+
+/***************************************************************** Bouttons *****************************************************************/
+button.validate-form {font-size: 16px; font-family: "AvenirLTStd55Roman"; color: #FFF; border: 1px solid #FFF; width: 320px; margin: 20px 0; display: block; height: 38px; cursor: pointer; text-transform: uppercase;}
+button.validate-form>span {vertical-align: middle; margin-left: 5px;}
+
+button.validate-form.orange {outline: 1px solid #F79428; background-color: #F79428;}
+button.validate-form.orange:hover {background-color: #FFA300;}
+
+button.validate-form.gris {outline: 1px solid #BDBEC0; background-color: #BDBEC0;}
+button.validate-form.gris:hover {background-color: #B5B6B8;}
+
+button.validate-form.gris-fonce {outline: 1px solid #888; background-color: #888;}
+button.validate-form.gris-fonce:hover {background-color: #666;}
+
+button.validate-form.black {outline: 1px solid #000; background-color: #000;}
+button.validate-form.black:hover {background-color: #272727;}
+
+button.validate-form.violet {outline: 1px solid #9DA4D2; background-color: #9DA4D2;}
+button.validate-form.violet:hover {background-color: #7488BB;}
+
+button.validate-form.rouge {outline: 1px solid #D2232A; background-color: #D2232A;}
+button.validate-form.rouge:hover {background-color: #B91313;}
+button.validate-form img#ajax-loader {vertical-align: text-top;}
+
+/************************************************************** Commun *********************************************************************/
+section.product-view h2 {font-size: 16px; font-family: "AvenirLTStd55Roman"; margin-bottom: 10px;  margin-top: 0px; color: #444; text-transform: uppercase;}
+section.product-view h2>span {font-family: "AvenirLTStd55Black";}
+section.product-view {padding: 0; background-color: white;}
+
+section.product-view>article {padding-bottom: 10px;}
+.block-container {border: 1px solid #8C8C8C; margin: 10px; padding: 10px;}
+section.product-view>article>div#product-media {padding: 0 10px;}
+p.note {font-size: 12px;}
+.asterisque {color: #D2232A !important; font-weight: bold !important; vertical-align: top;}
+
+/***************************************************** Block: header - titre du produit *****************************************************/
+section.product-view>article>header {text-align: left; clear: both;}
+section.product-view>article>header>hgroup {display: inline-block; width: 676px; text-indent: 20px; height: 40px; margin: 10px 0;}
+section.product-view>article>header>hgroup>h1 {font-size: 16px; margin: 0; text-transform: uppercase; font-family: "AvenirLTStd55Black"; }
+section.product-view>article>header>hgroup>h1>span {font-size: 20px;}
+section.product-view>article>header>hgroup>h3 {font-size: 12px; font-family: "AvenirLTStd55Roman"; margin: 0; color: #8D8D8D;}
+section.product-view>article>header>div.logo {display: inline-block; float: none; width: 348px; text-align: center; height: 40px; line-height: 40px; position: absolute;  margin: 10px 0;}
+section.product-view>article>header>div.logo>img {float: none;}
+
+/************************************************************* Block: media *****************************************************************/
+section.product-view figure.media {width: 666px; vertical-align: middle; text-align: center; display: inline-block; position: relative;}
+section.product-view figure.media>figcaption {bottom: 0; width: 100%;text-align: left;}
+section.product-view figure.media>figcaption>ul#more-views {display: inline-block; margin-bottom: 33px;}
+section.product-view figure.media>figcaption>ul#more-views>li {display: inline-block; margin: 0 8px; vertical-align: middle; padding-bottom: 6px; border-bottom: 4px solid transparent; border-bottom-color: #F5F5F5;}
+section.product-view figure.media>figcaption>ul#more-views>li.selected {border-bottom-color: #868686;}
+section.product-view figure.media>figcaption>ul#more-views>li.noborder {border: none !important;}
+section.product-view figure.media>figcaption>ul#more-views>li span {color: #444; font-size: 16px;}
+section.product-view figure.media>figcaption>ul#more-views>li a {color: #8183C2; font-weight: bold; outline: none; font-size: 15px;}
+section.product-view figure.media>figcaption>#product-fitphoto-link {display: inline-block; vertical-align: middle; outline: none; text-decoration: none; text-transform: uppercase;    float: right;  margin-right: 30px;}
+section.product-view figure.media>figcaption>#product-fitphoto-link .fitphoto-loading {display: block; margin: 0 auto;border: 1px solid #BDBEC0;width: 100px;height: 133px;background: url('https://www.optic2000.com/skin/frontend/default/o2v2/img/bx_loader.gif') no-repeat 50% 50%;}
+section.product-view figure.media>figcaption>#product-fitphoto-link>img {outline: 1px solid #BDBEC0; width: 100px; height: auto; -ms-interpolation-mode: bicubic;}
+section.product-view figure.media>figcaption>#product-fitphoto-link>button {margin: 1px auto;}
+section.product-view figure.media>figcaption>#fitphotoContainer {display: none; visibility: hidden; width: 0; height: 0; border: 0; margin: 0; padding: 0;}
+section.product-view figure.media #fitphotoContainer  {width: 0;}
+
+/********************************************************** Block : récap produit ***********************************************************/
+section.product-view aside {width: 332px; display: inline-block; vertical-align: top;}
+section.product-view aside>div.product-recap {font-size: 15px;}
+section.product-view aside>div.product-recap select {width: auto; display: inline-block;}
+section.product-view aside>div.product-recap a.link {font-size: 15px; font-family: "AvenirLTStd55Roman"; color: #7A7A7A; cursor: pointer; text-decoration: underline; font-style: italic; white-space: nowrap; outline: none; display: inline-block;}
+section.product-view aside>div.product-recap a.link:hover {color: #7A7A7A;}
+section.product-view aside>div.product-recap a.cgu {font-size: 11px !important;}
+section.product-view aside>div.product-recap ul.product-price-container {min-height: 60px;}
+section.product-view aside>div.product-recap ul.product-price-container li {display: inline-block; width: 162px; min-height: 60px; vertical-align: middle;}
+section.product-view aside>div.product-recap ul.product-price-container li label {display: block; font-size: 0.75em; text-align: left; text-indent: 2px;}
+section.product-view aside>div.product-recap ul.product-price-container li span.product-price {display: block; font-size: 57px; font-family: "AvenirLTStd55Roman"; line-height: 28px; height: 50px; position: relative; text-align: left;}
+section.product-view aside>div.product-recap ul.product-price-container li span.product-price>span.price {display: block; position: absolute; bottom: 0; width: 100%;}
+section.product-view aside>div.product-recap ul.product-price-container li span.product-price-second {font-size: 38px; font-family: "AvenirLTStd55Roman";}
+section.product-view aside>div.product-recap ul.product-price-container li span.product-old-price {text-decoration: line-through; font-size: 24px; font-family: "AvenirLTStd55Roman"; line-height: 60px;}
+section.product-view aside>div.product-recap ul.product-price-container li span.product-price>span.price>span {font-size: 30px;}
+section.product-view aside>div.product-recap>div {text-align: left; margin: 20px auto;}
+section.product-view aside>div.product-recap select::-ms-expand {display: none;}
+/*section.product-view aside>div.product-recap select {overflow : hidden; background : url("../../images/tunnel/select.png") no-repeat 290px 50%;
+    line-height: 29px; display: block; width: 320px; border: none; outline: 1px solid #BEBEBE; -webkit-appearance: none;
+    -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none;}*/
+section.product-view aside>div.product-recap select {overflow : hidden; height: 25px; display: block; width: 320px; outline: none; border: 1px solid #BEBEBE;}
+section.product-view aside>div.product-recap select#qty {display: inline; width: auto;}
+section.product-view aside>div.product-recap div.otherColor span, section.product-view aside>div.product-recap div.otherColor a {line-height: 20px;} 
+section.product-view aside>div.product-recap div.otherColor img {border: 2px solid #FFF; vertical-align: text-top;}
+section.product-view aside>div.product-recap div.otherColor img.selected {outline: 1px solid #B5B6B8;}
+section.product-view aside>div.product-recap p {text-align: left; padding-right: 5px; font-size: 15px; font-family: "AvenirLTStd55Roman"; margin-top: 20px;}
+section.product-view aside>div.product-recap ul.product-vente-flash{}
+section.product-view aside>div.product-recap ul.product-vente-flash>li {display: inline-block; min-width: 108px; text-align: center; vertical-align: middle;}
+section.product-view aside>div.product-recap ul.product-vente-flash li>label{font-family: "AvenirLTStd55Roman"; font-size: 9px; color: #D2232A; text-transform: uppercase; display: block;}
+section.product-view aside>div.product-recap ul.product-vente-flash li>span.vente-flash-saved{font-family: "AvenirLTStd55Heavy"; font-size: 35px; color: #D2232A;}
+section.product-view aside>div.product-recap ul.product-vente-flash li>span.vente-flash-saved>span{font-size: 17px;}
+section.product-view aside>div.product-recap ul.product-vente-flash li>div.vente-flash-compteur {font-size: 20px; font-family: "AvenirLTStd55Roman"; text-transform: uppercase;}
+section.product-view aside>div.product-recap ul.product-vente-flash li>div.vente-flash-compteur>span {}
+section.product-view aside>div.product-recap ul.product-vente-flash li>div.vente-flash-compteur>span.counter {color: #D2232A;}
+
+/****************************************************** Block: service Optic 2000 *************************************************************/
+div.services  {margin: 0 auto; font-size: 11px; font-family: "AvenirLTStd55Roman";}
+div.services >ul  {text-transform: uppercase; margin: 0;}
+div.services >ul>li {list-style: inside url('https://www.optic2000.com/skin/frontend/default/o2v2/images/tunnel/check.png'); line-height: 16px; margin: 5px 0; vertical-align: top;}
+
+/****************************************************** Block: réseau sociaux *************************************************************/
+section.product-view aside>div.reseau-sociaux {}
+section.product-view aside>div.reseau-sociaux span {color: #8183C2; font-size: 0.8em; }
+section.product-view aside>div.reseau-sociaux div.fb-like {vertical-align: middle; margin-top: -3px}
+section.product-view aside>div.reseau-sociaux div.fb-like span {vertical-align: middle !important; }
+section.product-view aside>div.reseau-sociaux div[id*='plusone_']{vertical-align: middle !important; height: 20px}
+section.product-view aside>div.reseau-sociaux iframe.twitter-share-button {vertical-align: middle; height: 20px; width: 60px !important;}
+section.product-view aside>div.reseau-sociaux a {cursor: pointer;}
+
+/****************************************************** Block: pictos & stickers ***********************************************************/
+
+/****************************************************** Block: parcours d'achat ************************************************************/
+div.parcours-achat {text-align: center;}
+
+/****************************************************** Block : description produit *********************************************************/
+section.product-view div.product-description-container {display: table; table-layout: fixed; border-spacing: 5px 0; margin: 5px;}
+section.product-view article.product-description {font-size: 12px; font-family: "AvenirLTStd55Roman"; margin: 0;}
+section.product-view article.product-description.short {display: table-cell; width: 645px; vertical-align: top;}
+section.product-view .product-equivalent {display: table-cell; width: 330px; margin-left: 0; padding: 0; vertical-align: top;}
+section.product-view .product-equivalent header {margin: 0; text-align: center;}
+section.product-view .product-equivalent header::after {content: ''; border-top: 12px solid #000; border-left: 15px transparent solid; border-right: 15px transparent solid; width: 0px; display: block; margin: 0 auto;}
+section.product-view .product-equivalent header h6 {color: #FFF; text-transform: uppercase; margin: 0; background-color: #000; padding: 5px; font-size: 15px; font-family: "AvenirLTStd55Heavy";}
+section.product-view .product-equivalent header h6>span {color: #F79428;}
+section.product-view .product-equivalent p {text-align: center;}
+section.product-view .product-equivalent p>a {display: block; color: #000;}
+section.product-view .product-equivalent p>a:visited {color: #000;}
+section.product-view .product-equivalent p>a>span {text-align: left; text-indent: 10px; font-size: 16px; font-family: "AvenirLTStd55Heavy"; display: block;}
+section.product-view article.product-description p {vertical-align: top; display: inline-block; text-align: left;}
+section.product-view article.product-description p a, section.product-view article.product-description p a:visited {color: #9DA3D3;}
+section.product-view article.product-description p#product-description-detail {}
+section.product-view article.product-description p#product-description-technique {width: 290px;}
+section.product-view article.product-description p#product-description-technique.lentille {width: 400px;}
+section.product-view article.product-description ul#product-description-dimension {font-size: 0.75em; vertical-align: top; display: inline-block; margin: 0 20px; width: 193px; text-align: justify;}
+section.product-view article.product-description ul#product-description-dimension>li {display: inline-block; text-align: center; margin-bottom: 10px; min-width: 95px;}
+section.product-view article.product-description ul#product-description-dimension>li>span {display: block;}
+section.product-view article.product-description ul#product-description-dimension>li>img {margin: 10px 0;}
+section.product-view article.product-description table {margin: 0 auto; border-collapse: separate;}
+section.product-view article.product-description th, td {vertical-align: top;}
+section.product-view article.product-description td:first-child {padding-right: 20px;}
+section.product-view article.product-description td:last-child {padding-left: 20px;}
+
+/****************************************************** Block : contact *********************************************************************/
+div.contact-banner {font-size: 11px; background-color: #F3F3F3;}
+div.contact-banner>ul>li {display: inline-block; width: 310px; vertical-align: middle; margin: 5px;}
+section.product-view div.contact-banner>ul>li {width: 350px;}
+section.product-view div.contact-banner>ul>li:last-child {width: auto;}
+div.contact-banner>ul>li>span {display: inline-block; max-width: 240px;  text-align: left; margin-left: 10px; vertical-align: middle;}
+div.contact-banner>ul>li>img {vertical-align: middle;}
+div.contact-banner>ul>li a {text-decoration: underline; color: #000; font-weight: bold;}
+div.contact-banner>ul>li a:visited {color: #000;}
+
+/****************************************************** Block : produits les plus consultés ***********************************************/
+.product-related  {clear: both;}
+.product-related h2 {font-size: 20px !important;}
+.product-related ul {text-align: left;}
+.product-related ul>li {display: inline-block; text-align: left; border-right: 1px solid #8C8C8C; padding: 5px; position: relative;}
+.product-related>ul>li:last-child {border-right: none;}
+.product-related ul>li {height: 250px; width: 230px; vertical-align: top;}
+.product-related ul>li h4 {margin: 0; font-size: 15px; font-family: "AvenirLTStd55Heavy"; font-weight: normal;}
+.product-related ul>li h5 {margin: 0; font-size: 12px; font-family: "AvenirLTStd55Roman"; font-weight: normal;}
+.product-related ul>li a {display: block; text-align: center;}
+.product-related ul>li p {margin: 0; font-size: 12px; font-family: "AvenirLTStd55Roman"; text-transform: uppercase;}
+.product-related ul>li div.price>p.Price {font-size: 20px; font-family: "AvenirLTStd55Heavy";}
+.product-related ul>li div.apartir {font-size: 20px; font-family: "AvenirLTStd55Heavy"; display: inline-block;}
+.product-related ul>li div.apartir span {font-size: 75%;}
+.product-related ul>li div.old-price {font-size: 12px; font-family: "AvenirLTStd55Roman"; display: inline-block; color: #868686; text-decoration: line-through;}
+.product-related ul>li div.old-price span {font-size: 75%;}
+
+/****************************************************** Fitphoto *****************************************************************************/
+.product-comment {color: #999; font-size: 0.75em; margin: 5px 10px 5px; padding: 20px 0;}
+#product-fitphoto-view {background-color: #FFF; padding: 30px; text-align: center; width: 964px;}
+#product-fitphoto-view>#product-fitphoto-container>div{width: 320px; margin: 0 auto; z-index: 9999;}
+#product-fitphoto-frames {margin: 0; text-align: center; white-space: nowrap; overflow-x: hidden; overflow-y: auto; padding: 5px 0; position: absolute; top: 0; right: 50px; height: 100%; width: 225px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;}
+#product-fitphoto-frames li {margin: 0 10px 10px; cursor: pointer; width: 190px;}
+#product-fitphoto-frames img.selected {outline: 1px dotted #F18800; }
+
+/****************************************************** IN Gallery Fitphoto *******************************************/
+div.product-sticker{z-index: 1;}
+#view-image {position: relative;overflow: hidden;}
+#view-image .viewImageFitBox {position: relative;top:0;left:0;width: auto;}
+#view-image .viewImageFitBox #product-fitphoto-view {width: 100%; margin: 0 auto;box-sizing: border-box;}
+#view-image .viewImageFitBox #product-fitphoto-view #product-fitphoto-popin {width: 100%!important; margin: 0 auto;}
+#view-image .viewImageFitBox #product-fitphoto-frames {display: none;}
+#view-image .viewImageFitBox .popup-close {display:block;position: absolute;top:15px;right:15px; padding: 5px;box-shadow: 1px 1px 3px #ccc;cursor: pointer;background-color: #F79428;color: #fff;}
+#more-views  {display:block;position: relative;}
+#more-views #more-views-popup-close {display:block;position: absolute;top:0; left:0;bottom:0;right:0;z-index: 1;}
+
+/********************************************************** CGU *****************************************************************************/
+.product-cgu {background-color: #FFF; padding: 30px;}
+.product-cgu a, .product-cgu a:visited {font-size: 16px; font-family: "AvenirLTStd55Roman"; color: #7A7A7A;}
+
+
+/*========================================================================================*/
+/*==================================== Choix de verres ========================================*/
+/*========================================================================================*/
+
+/********************************************************** Commun *************************************************************************/
+div.product-choice-glass {background-color: #FFF; padding-bottom: 10px;}
+div.product-choice-glass aside {display: inline-block; width: 346px; vertical-align: top; padding: 20px 0;}
+div.product-choice-glass aside div.block-container h1 {font-size: 24px; font-family: "AvenirLTStd55Roman"; text-transform: uppercase; margin: 0;}
+div.product-choice-glass aside div.block-container img#product-view {margin: 20px 0;}
+div.product-choice-glass aside div.block-container div.services {border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 20px;}
+div.product-choice-glass aside div.block-container div.total-price {padding: 20px 0;}
+div.product-choice-glass section.choice-glass {display: inline-block; width:652px; padding: 20px 10px;}
+div.product-choice-glass section.choice-glass article {margin-bottom: 40px; text-align: center;}
+div.product-choice-glass section.choice-glass article h1 {font-size: 24px; font-family: "AvenirLTStd55Roman"; text-transform: uppercase; margin: 0 0 20px; font-weight: normal; color: #000; text-align: left;}
+div.product-choice-glass .shadow {-moz-box-shadow: 1px 1px 10px 1px #E2E2E2; -webkit-box-shadow: 1px 1px 10px 1px #C2C2C2; -o-box-shadow: 1px 1px 10px 1px #C2C2C2; 
+    box-shadow: 1px 1px 10px 1px #C2C2C2; filter:progid:DXImageTransform.Microsoft.Shadow(color=#C2C2C2, Direction=134, Strength=10);}
+div.product-choice-glass section.choice-glass li {cursor: pointer;}
+div.product-choice-glass section.choice-glass form {text-align: right;}
+div.product-choice-glass section.choice-glass form>button {display: inline-block;}
+div.product-choice-glass section.choice-glass form>input {display:  inline-block; border: 1px solid #888; min-width: 450px; margin: 10px;}
+
+/********************************************************** Marque verre ********************************************************************/
+section.choice-glass article.glass-options>ul {text-align: center; margin: 10px 0;}
+section.choice-glass article.glass-options>ul>li {display: inline-block; width: 185px; height: 110px; margin: 0 4px; padding: 10px; text-align: center; text-transform: uppercase; vertical-align: middle; position: relative;}
+section.choice-glass article.glass-options>ul>li h5 {margin: 0;}
+section.choice-glass article.glass-options>ul>li img {margin: 5px 0;}
+section.choice-glass article.glass-options>ul>li p {margin: 5px 0; text-transform: none; font-size: 12px; font-family: "AvenirLTStd55Roman";}
+section.choice-glass article.glass-options>ul>li span {font-weight: bold; position: absolute; bottom: 0; left: 0; width: 100%;}
+section.choice-glass .selected {outline: 2px solid #F79428;}
+
+/************************************************************ Type verre *********************************************************************/
+section.choice-glass article#glass-type {}
+section.choice-glass article#glass-type>div>h2 {font-size: 14px; font-family: "AvenirLTStd55Roman"; padding-bottom: 5px; font-weight: normal;
+    color: #000; text-align: center; margin: 0 5px 20px 5px; height: 48px; line-height: 48px; border-bottom: 1px solid #B0B0B0; padding: 0;}
+section.choice-glass article#glass-type>div>h2:first-letter {text-transform: uppercase;}
+section.choice-glass article#glass-type>div>h2::after {background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/tunnel/fleche-grise.png") no-repeat 50% bottom; content: '';
+    display: block; height: 18px;}
+section.choice-glass article#glass-type>div {display: inline-block; vertical-align: top; min-height: 350px; min-width: 247px; position: relative;}
+section.choice-glass article#glass-type>div>ul {position: absolute; bottom: 0;}
+section.choice-glass article#glass-type>div>ul>li {min-width: 110px; margin-left: 5px; border: 1px solid #FFF; display: inline-block; text-align: left;}
+section.choice-glass article#glass-type>div>ul>li>ul>li {padding: 5px; text-indent: 5px; height: 20px; font-size: 14px;}
+section.choice-glass article#glass-type>div>ul>li>ul>li.traitement::before {background: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/tunnel/traitements.png") no-repeat; content: '';
+    width: 20px; height: 20px; display: inline-block; vertical-align: middle; margin: 0 10px 5px 0;}
+section.choice-glass article#glass-type>div>ul>li>ul>li.durcis::before {background-position: 0 0;}
+section.choice-glass article#glass-type>div>ul>li>ul>li.aminci::before {background-position: 0 -20px;}
+section.choice-glass article#glass-type>div>ul>li>ul>li.tres-aminci::before {background-position: 0 -40px;}
+section.choice-glass article#glass-type>div>ul>li>ul>li.anti-reflet::before {background-position: 0 -60px;}
+section.choice-glass article#glass-type>div>ul>li>ul>li.anti-salissure::before {background-position: 0 -80px;}
+section.choice-glass article#glass-type>div>ul>li>ul>li.label {color: #FFF; text-align: center;  background-color: #BFBFBF; text-indent: 0;}
+section.choice-glass article#glass-type>div>ul>li>ul>li.price{font-weight: bold; text-align: center; text-indent: 0 !important; margin: 10px 0; text-transform: uppercase; font-size: 16px;}
+section.choice-glass article#glass-type>div.glass-note{padding: 10px; min-height: 120px !important; max-height: 120px !important;}
+
+section.choice-glass article#glass-type>div#glass-type-clasic>ul>li>ul>li.label {background-color: #BFBFBF;}
+
+section.choice-glass article#glass-type>div#glass-type-thin {width: 400px;}
+section.choice-glass article#glass-type>div#glass-type-thin>ul {width: 100%;}
+section.choice-glass article#glass-type>div#glass-type-thin>ul>li>ul>li.label {background-color: #F79428;}
+
+section.choice-glass article#glass-type>div#glass-type-rayban {width: 246px;}
+section.choice-glass article#glass-type>div#glass-type-rayban>h2 {border-bottom-color: #D2232A;}
+section.choice-glass article#glass-type>div#glass-type-rayban>h2::after {background-image: url("https://www.optic2000.com/skin/frontend/default/o2v2/images/tunnel/fleche-rouge.png"); }
+section.choice-glass article#glass-type>div#glass-type-rayban>p {font-size: 12px; text-align: justify;}
+section.choice-glass article#glass-type>div#glass-type-rayban>ul {width: 90%;}
+section.choice-glass article#glass-type>div#glass-type-rayban>ul>li {width: 100%;}
+section.choice-glass article#glass-type>div#glass-type-rayban>ul>li>ul>li {text-indent: 40px;}
+section.choice-glass article#glass-type>div#glass-type-rayban>ul>li>ul>li.label {background-color: #D2232A; text-indent: 0;}
+section.choice-glass article#glass-type>div#glass-type-rayban>ul>li.selected {outline-color: #D2232A;}
+
+section.choice-glass .glass-teint {display: none;}
+
+/************************************************************ Type dégradée *****************************************************************/
+section.choice-glass article#glass-gradient ul>li {width: 295px; height: 17px; line-height: 19px;}
+
+/********************************************************* Verres polarisants ***************************************************************/
+section.choice-glass article#glass-polarizing {text-align: left; margin-left: 5px;}
+section.choice-glass article#glass-polarizing input, section.choice-glass article#glass-polarizing label {font-size: 1.125em; cursor: pointer;}
+
+/************************************************************ Recap produit *****************************************************************/
+div.product-choice-glass aside div.block-container {margin: 0 10px 0 0;}
+div.product-choice-glass aside div.contact-banner {border-bottom: 0;}
+div.product-choice-glass aside hgroup>h3 {font-size: 13px; font-family: "AvenirLTStd55Heavy"; text-transform: uppercase; margin: 0; color: #000; font-weight: normal;}
+div.product-choice-glass aside hgroup>h4 {font-size: 12px; font-family: "AvenirLTStd55Roman"; text-transform: uppercase; margin: 0; color: #000; font-weight: normal;}
+div.product-choice-glass aside div.service-o2k {margin: 20px 0; padding: 20px 0; border-top: 1px solid #8C8C8C; border-bottom: 1px solid #8C8C8C;}
+div.product-choice-glass aside div.service-o2k>img {margin-bottom: 10px;}
+div.product-choice-glass aside div.total-price>label, div.product-choice-glass aside div.total-price>span {font-size: 20px; font-family: "AvenirLTStd55Heavy"; display: inline-block; text-transform: uppercase;}
+div.product-choice-glass aside div.total-price>label {position: absolute;}
+div.product-choice-glass aside div.total-price>span {text-align: right; width: 100%;}
+div.product-choice-glass aside div.total-price>span.product-price>span.price {font-size: 24px; font-family: "AvenirLTStd55Heavy";}
+div.product-choice-glass aside div.total-price>span.product-price>span.price>span {font-size: 16px; font-family: "AvenirLTStd55Roman";}
+ul#product-options {font-size: 14px;}
+#popin-alert-shipping-method {display: none; background-color: #FFF; width: 800px; padding: 10px; overflow: hidden; text-align: center;}
+/*********************************************************** Options Lentilles ***************************************************************/
+table#options-lentille {width: 330px; margin-top: 10px;}
+table#options-lentille th {color: #F79428; font-weight: normal;}
+table#options-lentille td {width: 110px; height: 35px; vertical-align: middle; white-space: nowrap;}
+table#options-lentille td.total-price {text-align: right; font-weight: bold;}
+table#options-lentille td#total-price {text-align: right;}
+table#options-lentille .LigneForm {margin: 0px; display: table-row;}
+table#options-lentille .LigneForm .FormInfo {float: none; margin: 0; position: relative; display: inline-block;}
+table#options-lentille .LigneForm .FormInfo p {padding-right: 20px; white-space: normal;}
+table#options-lentille input[type=text], table#options-lentille select  {width: 100px !important; margin: 0;}
+table#options-lentille .LigneForm input.Disable {border: none; background: none; color: #000; text-align: center;}
+table#options-lentille td#total-price span.price {font-size: 20px; font-family: "AvenirLTStd55Heavy";}
+table#options-lentille td#total-price span.price>span {font-size: 16px; font-family: "AvenirLTStd55Roman";}
+table#options-lentille div.FormInfo {background: url('https://www.optic2000.com/skin/frontend/default/o2v2/images/tunnel/petit-interrogation.png')  0 5px no-repeat;}
+
+/*************************************************************** Reseaux sociaux ***********************************************************/
+div.reseaux-sociaux>a {cursor: pointer;}

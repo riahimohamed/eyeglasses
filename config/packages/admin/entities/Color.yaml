@@ -1,0 +1,13 @@
+easy_admin:
+    entities:
+        Color:
+            class: App\Entity\Color
+            form:
+              fields:
+                - name
+                - slug
+                - { property: 'color', type: 'color' }
+            list:
+              actions:
+                - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-secondary'}
+                - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}

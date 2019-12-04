@@ -1,0 +1,42 @@
+easy_admin:
+    entities:
+        Lunettes:
+            class: App\Entity\Lunettes      
+            form:
+                fields:
+                    - { type: 'group', columns: 6, label: 'Informations de base', icon: 'glasses' }
+                    - { property: 'marque', type: 'entity',
+                            placeholder: 'Choisissez une marque',
+                            type_options: { class: 'App\Entity\Marque' }
+                         }
+                    - { property: 'ref', label: 'Référence' }
+                    - { property: 'genre', type: 'choice',
+                         type_options: { expanded: true,
+                            placeholder: 'Choisissez un genere', 
+                            choices: { 'Homme':'h', 'Femme':'f', 'Enfant':'e', 'Mixte':'m'}} }
+                    - { property: 'type', type: 'choice',
+                         type_options: { expanded: false,
+                         placeholder: 'Choisissez un type',
+                         choices: { 'Lunettes de vue':'vue', 'Lunettes de soleil':'soleil', 'Lunettes de contact':'contact'}} }
+                    - { property: 'prix' }
+                    
+                    - { type: 'group', label: 'Les options', columns: 6 }
+                    - { property: 'matiere',
+                            type: 'choice', type_options: { placeholder: 'Choisissez une matière',
+                            choices: {'Métal':'metal','Plastique':'plastic','Titane':'titane'}} }
+                    - { property: 'taille',
+                            type: 'choice', type_options: { placeholder: 'Choisissez un taille',
+                            choices: {'Adulte L':'l','Adulte M':'s','Adulte S':'s'}} }
+                    - { property: 'files', type: 'file',
+                            type_options: { multiple: true },
+                            label: 'images',
+                            help: "largeur min 800 px et l'hauteur min 500 px " 
+                      }
+                    - { property: 'forme' }
+                    - { property: 'style' }
+                    - { property: 'color', type: 'entity',
+                            type_options: { class: 'App\Entity\Color' } }
+            list:
+                actions:
+                    - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-secondary'}
+                    - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
